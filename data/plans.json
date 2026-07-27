@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-07-23",
+    "updated": "2026-07-27",
     "cadence": "Mon/Thu 09:05",
     "currency": "USD",
     "sources": ["vendor official pricing pages", "official blogs", "third-party price trackers (verified 2026-07)"]
@@ -13,14 +13,14 @@
       "billing": "credit pool + usage multiplier; Auto mode unlimited (no credit burn)",
       "plans": [
         {"tier": "Hobby", "price": 0, "included": "limited agent + tab", "subscribable": true},
-        {"tier": "Pro", "price": 20, "included": "~$20 API usage", "subscribable": true},
-        {"tier": "Pro+", "price": 60, "included": "~$70 API usage (3x)", "subscribable": true},
-        {"tier": "Ultra", "price": 200, "included": "~$400 API usage (20x)", "subscribable": true},
-        {"tier": "Teams Standard", "price": 40, "unit": "per user/mo", "subscribable": true},
-        {"tier": "Teams Premium", "price": 120, "unit": "per user/mo", "note": "5x Standard usage (from 2026-07-01)", "subscribable": true},
-        {"tier": "Enterprise", "price": null, "note": "custom", "subscribable": "contact sales"}
+        {"tier": "Pro", "price": 20, "annual": 16, "included": "~$20 credit pool", "subscribable": true},
+        {"tier": "Pro+", "price": 60, "included": "~$70 credit pool (3x)", "subscribable": true},
+        {"tier": "Ultra", "price": 200, "included": "~$400 credit pool (20x)", "subscribable": true},
+        {"tier": "Teams Standard", "price": 40, "annual": 32, "unit": "per user/mo", "note": "annual cut 20% in Jun 2026", "subscribable": true},
+        {"tier": "Teams Premium", "price": 120, "unit": "per user/mo", "note": "5x Standard usage", "subscribable": true},
+        {"tier": "Enterprise", "price": null, "note": "custom; org governance layer", "subscribable": "contact sales"}
       ],
-      "notes": "Teams non-Auto agent requests add $0.25/MTok Cursor Token fee. Annual Pro ~$16/mo."
+      "notes": "Bugbot code review add-on $20 (Pro) / $40 (Teams). Non-Auto agent requests add $0.25/MTok Cursor Token fee. Native iOS app in beta (Jul 2026)."
     },
     {
       "name": "Claude Code",
@@ -28,15 +28,15 @@
       "billing": "via Claude subscription or API per token (no standalone sub)",
       "plans": [
         {"tier": "Free", "price": 0, "claude_code": false, "subscribable": true},
-        {"tier": "Pro", "price": 20, "annual": 17, "included": "~44K tok/5h", "subscribable": true},
+        {"tier": "Pro", "price": 20, "annual": 17, "included": "5h rolling + weekly cap", "subscribable": true},
         {"tier": "Max 5x", "price": 100, "subscribable": true},
         {"tier": "Max 20x", "price": 200, "subscribable": true},
-        {"tier": "Team Standard", "price": 25, "annual": 20, "unit": "per seat/mo", "subscribable": true},
-        {"tier": "Team Premium", "price": 125, "annual": 100, "unit": "per seat/mo", "subscribable": true},
+        {"tier": "Team Standard", "price": 25, "annual": 20, "unit": "per seat/mo", "claude_code": false, "note": "does NOT include Claude Code", "subscribable": true},
+        {"tier": "Team Premium", "price": 125, "annual": 100, "unit": "per seat/mo", "claude_code": true, "note": "includes Claude Code", "subscribable": true},
         {"tier": "Enterprise", "price": 20, "unit": "per seat + API", "subscribable": "contact sales"}
       ],
-      "api_rates_per_MTok": {"Haiku 4.5": [1, 5], "Sonnet 4.6": [3, 15], "Opus 4.7/4.8": [5, 25]},
-      "notes": "Fable 5 removed from Pro/Max on 2026-06-22 -> paid API $10/$50 per MTok."
+      "api_rates_per_MTok": {"Haiku 4.5": [1, 5], "Sonnet 5": [2, 10], "Sonnet 5 (after 2026-08-31)": [3, 15], "Opus 4.8": [5, 25], "Fable 5": [10, 50]},
+      "notes": "Usage capped by 5h rolling window + weekly cap (shared across chat/Code/Cowork). Opus-specific weekly limit removed; Sonnet has extra ceiling. May 2026 doubled Claude Code 5h limits (SpaceX compute deal). Planned move of programmatic usage (Agent SDK / claude -p) to separate API credits on 2026-06-15 was PAUSED before launch."
     },
     {
       "name": "GitHub Copilot",
@@ -50,7 +50,7 @@
         {"tier": "Business", "price": 19, "unit": "per user/mo", "included": "1900 credits (promo 3000 to Sep)", "subscribable": true},
         {"tier": "Enterprise", "price": 39, "unit": "per user/mo", "included": "3900 credits (promo 7000 to Sep)", "subscribable": true}
       ],
-      "notes": "Completions & Next Edit remain unlimited/free. First-party MAI-Code-1-Flash GA for Business/Enterprise."
+      "notes": "First full billing cycle closed 2026-06-30: heavy agentic seats saw 10x-50x bill surge ($600-3000/mo). Completions & Next Edit remain unlimited/free. Model menu spread ~60x. First-party MAI-Code-1-Flash ($0.75/$4.50) cheapest. Monthly subs auto-switched 6/1; annual subs keep old pricing until renewal."
     },
     {
       "name": "OpenAI Codex",
@@ -70,14 +70,15 @@
     {
       "name": "Windsurf / Devin Desktop",
       "owner": "Cognition AI (rebranded 2026-06-02; Cascade -> Devin Local)",
-      "billing": "daily/weekly quotas (overhauled Mar 2026)",
+      "billing": "daily/weekly quotas (overhauled 2026-03-19)",
       "plans": [
         {"tier": "Free", "price": 0, "included": "unlimited tab + 25 credits/mo", "subscribable": true},
         {"tier": "Pro", "price": 15, "note": "sources vary $15-20", "subscribable": true},
         {"tier": "Max", "price": 200, "subscribable": true},
-        {"tier": "Teams", "price": 40, "unit": "per user/mo", "note": "some sources: $80 base + $40/seat", "subscribable": true},
+        {"tier": "Teams", "price": 40, "unit": "per user/mo", "note": "sources $30-40", "subscribable": true},
         {"tier": "Enterprise", "price": 60, "unit": "per user/mo", "subscribable": "contact sales"}
-      ]
+      ],
+      "notes": "Tab completions always free/unlimited. Quota resets daily/weekly; sprint bursts can hit caps. Kept flat pricing -> attracting Copilot migration."
     },
     {
       "name": "Trae",
@@ -100,29 +101,34 @@
         {"tier": "Free (individual)", "price": 0, "included": "180k completions/mo, 240 chats/day", "subscribable": true},
         {"tier": "Standard", "price": 19, "annual": 19, "monthly": 22.8, "unit": "per user/mo", "subscribable": true},
         {"tier": "Enterprise", "price": 45, "annual": 45, "monthly": 54, "unit": "per user/mo", "subscribable": true}
-      ]
+      ],
+      "notes": "Gemini CLI free tier: 1,000 requests/day, open-source Apache 2.0, Google Search grounding."
     }
   ],
   "model_token_prices_per_MTok": [
     {"model": "Meta Muse Spark 1.1", "input": 1.25, "output": 4.25, "date": "2026-07-09"},
     {"model": "GPT-5.6 Luna", "input": 1.0, "output": 6.0, "date": "2026-07-09"},
     {"model": "xAI Grok 4.5", "input": 2.0, "output": 6.0, "date": "2026-07-08"},
+    {"model": "Claude Sonnet 5", "input": 2.0, "output": 10.0, "note": "intro price through 2026-08-31; then 3/15"},
     {"model": "Gemini 3.1 Pro", "input": 2.0, "output": 12.0},
     {"model": "GPT-5.6 Terra", "input": 2.5, "output": 15.0, "date": "2026-07-09"},
-    {"model": "Claude Sonnet 4.6", "input": 3.0, "output": 15.0},
     {"model": "Claude Haiku 4.5", "input": 1.0, "output": 5.0},
     {"model": "GPT-5.6 Sol", "input": 5.0, "output": 30.0, "date": "2026-07-09"},
     {"model": "Claude Opus 4.8", "input": 5.0, "output": 25.0},
     {"model": "Anthropic Fable 5 (API)", "input": 10.0, "output": 50.0, "date": "2026-06-22"}
   ],
   "latest_news": [
+    "2026-07-27: (weekly) Copilot first billing cycle closed 6/30 -> 10x-50x bill shock for heavy agentic seats; Cursor/Windsurf migration up",
+    "2026-06/07: Linux Foundation formed Tokenomics Foundation (Google/Microsoft/Salesforce/JPMorgan) for open token metering standards",
+    "2026-07: Anthropic launched Sonnet 5 (intro $2/$10 through 8/31, then $3/$15)",
+    "2026-06-15: Anthropic planned to move programmatic usage to separate API credits -> PAUSED before launch",
+    "2026-07-19: WAIC 2026 made 'token economy' a core theme; Volcano Engine 49.5% MaaS token share, Doubao 180T tokens/day",
+    "2026: Enterprise token budget controls (Microsoft limited internal Claude Code; Uber burned full-year AI coding budget in 4 months)",
     "2026-07-08/09: GPT-5.6, Grok 4.5, Muse Spark 1.1 launched - coding model price war",
-    "2026-06: xAI/SpaceX acquired Cursor (~$60B valuation)",
-    "2026-06-01: GitHub Copilot moved to AI Credits (token-metered)",
-    "2026-06-15: Copilot added Max $100/mo tier",
-    "2026-07-01: Cursor Teams split Standard($40)/Premium($120, 5x)",
+    "2026-06: xAI/SpaceX acquired Cursor (~$60B valuation); Cursor cut Teams annual 20% to $32, added org governance layer",
+    "2026-06-01: GitHub Copilot moved to AI Credits (token-metered); 6/15 added Max $100/mo",
+    "2026-07-01: Cursor iOS app beta + OpenClaw mobile launch",
     "2026-06-02: Windsurf rebranded to Devin Desktop (Cognition)",
-    "2026-06-22: Anthropic Fable 5 -> paid API only",
     "2026-07-20: GitHub Code Quality GA ($10/active committer + usage)"
   ]
 }
