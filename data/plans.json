@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-07-27",
+    "updated": "2026-07-30",
     "cadence": "Mon/Thu 09:05",
     "currency": "USD",
     "sources": ["vendor official pricing pages", "official blogs", "third-party price trackers (verified 2026-07)"]
@@ -103,6 +103,62 @@
         {"tier": "Enterprise", "price": 45, "annual": 45, "monthly": 54, "unit": "per user/mo", "subscribable": true}
       ],
       "notes": "Gemini CLI free tier: 1,000 requests/day, open-source Apache 2.0, Google Search grounding."
+    },
+    {
+      "name": "Baidu Qianfan Token Plan",
+      "owner": "Baidu",
+      "currency": "CNY",
+      "billing": "unified token quota across models (no input/output/cache distinction)",
+      "plans": [
+        {"tier": "Personal (ex-Coding Plan Lite)", "price": "unchanged from Lite contract price", "included": "42M tokens universal quota", "subscribable": true},
+        {"tier": "Personal (ex-Coding Plan Pro)", "price": "unchanged from Pro contract price", "included": "230M tokens universal quota", "subscribable": true}
+      ],
+      "notes": "Coding Plan all tiers STOPPED selling 2026-07-13; Token Plan Personal fully open same day. One-click migration: quota reset + validity extended 1 month; peak-hour throttling removed. Tokens usable on GLM-5.2, DeepSeek etc. for all personal scenarios."
+    },
+    {
+      "name": "Alibaba Model Studio (Bailian) Token Plan",
+      "owner": "Alibaba Cloud",
+      "currency": "CNY",
+      "billing": "Credits unified metering; limited-time 10% daytime / 2% night rates",
+      "plans": [
+        {"tier": "Personal", "price": "from 39 CNY/mo", "included": "multi-model (text/image) + Harness tools + Qwen3.8-Max-Preview (2.4T) early access", "subscribable": true},
+        {"tier": "Team", "price": "per seat", "included": "centralized member/usage management", "subscribable": true}
+      ],
+      "notes": "Launched 2026-07-19. Coding Plan retired: Lite stopped new purchase 2026-03-20, renewals 04-13; Pro limited stock, no restock; no migration between Coding Plan and Token Plan."
+    },
+    {
+      "name": "Zhipu GLM Coding Plan",
+      "owner": "Zhipu AI / Z.ai",
+      "billing": "prompt quota (5h rolling + weekly), peak-hour 3x multiplier for GLM-5.2",
+      "plans": [
+        {"tier": "Lite (CN)", "price": "49 CNY/mo", "included": "~80 prompts/5h, ~400/wk", "subscribable": true},
+        {"tier": "Pro (CN)", "price": "149 CNY/mo", "included": "5x Lite + MCP 1000/mo", "subscribable": true},
+        {"tier": "Max (CN)", "price": "469 CNY/mo", "included": "20x Lite + MCP 4000/mo", "subscribable": true},
+        {"tier": "Lite (Intl)", "price": 18, "annual": 12.6, "subscribable": true},
+        {"tier": "Pro (Intl)", "price": 72, "annual": 50.4, "subscribable": true},
+        {"tier": "Max (Intl)", "price": 160, "annual": 112, "subscribable": true}
+      ],
+      "notes": "Intl (Z.ai) repriced 2026-07-22: $18/$72/$160 (was ~$10/$30/$80, +26%-40%); discounts moved to billing-term ladder (monthly -10%, quarterly -20%, yearly -30%). Models: GLM-5.2 / GLM-5-Turbo / GLM-4.7 in 20+ tools (Claude Code, Cline, Roo Code...). API added GLM-5 line $1-1.4 in / $3.2-4.4 out per MTok."
+    },
+    {
+      "name": "Volcano Ark Coding Plan / Agent Plan",
+      "owner": "ByteDance (Volcengine)",
+      "currency": "CNY",
+      "billing": "quota with per-model deduction multipliers",
+      "plans": [
+        {"tier": "Lite", "price": "40 CNY/mo (promo 9.9 first 2 months, until 2026-08-08)", "subscribable": true},
+        {"tier": "Pro", "price": "200 CNY/mo (promo 49.9)", "included": "5x Lite + Auto model routing + priority scheduling", "subscribable": true}
+      ],
+      "notes": "Covers GLM-5.2, Kimi-K2.6/2.7, MiniMax-M3, DeepSeek-V4, Doubao-Seed-2.0 (6+ models). Extra deduction discounts (DeepSeek V4 Pro 40%, Kimi K2.7 Code 25%). Separate Agent Plan supports multimodal (image/video), more tiers."
+    },
+    {
+      "name": "KwaiKAT Coding Plan",
+      "owner": "Kuaishou StreamLake",
+      "billing": "subscription, 4 tiers",
+      "plans": [
+        {"tier": "4 tiers", "price": "5-50 USD/mo", "subscribable": true}
+      ],
+      "notes": "Launched Jul 2026 with KAT-Coder-Pro V2.5 agentic coding model (long-horizon tasks, multi-framework RL)."
     }
   ],
   "model_token_prices_per_MTok": [
@@ -118,6 +174,16 @@
     {"model": "Anthropic Fable 5 (API)", "input": 10.0, "output": 50.0, "date": "2026-06-22"}
   ],
   "latest_news": [
+    "2026-07-30: (this run) Domestic 'Coding Plan -> Token Plan' shift: Baidu Qianfan stopped selling Coding Plan 7/13 (Token Plan Personal open, 42M/230M token migration); Alibaba Bailian launched Token Plan Personal 7/19 (from 39 CNY/mo + Qwen3.8-Max-Preview 2.4T)",
+    "2026-07-22: Z.ai (Zhipu intl) repriced GLM Coding Plan to $18/$72/$160 (+26%-40%); quotas restated as multiples; billing-term discount ladder",
+    "2026-07: Kuaishou StreamLake launched KAT-Coder-Pro V2.5 + KwaiKAT Coding Plan ($5-50/mo, 4 tiers)",
+    "2026-07-27: Kimi K3 open weights released (2.8T params, first 3T-class open model); Day-0 vLLM/SGLang/OpenRouter; community bridges into Codex client",
+    "2026-07-28: Claude Opus 5 tops Artificial Analysis (61) & Frontier-Bench 43.3%, but only 4/17 checkpoints on long-horizon SlopCodeBench; 3 elevated-error incidents 7/27",
+    "2026-07-28: Grok 4.5 added to GitHub Copilot; MAI-Code-1-Flash GA for Copilot Business/Enterprise",
+    "2026-07-29: OpenAI open-sourced Codex Security CLI (repo/diff vulnerability scanning with exploitability verification)",
+    "2026-07: Volcano Ark Coding Plan promo (until 8/8): Lite 9.9 CNY, Pro 49.9 CNY first 2 months; covers GLM/Kimi/MiniMax/DeepSeek/Doubao",
+    "2026-07-26/28: Claude shared-chat privacy leak (Google-indexed); Claude Cowork ShareRoot sandbox-escape flaw (~500k Mac users)",
+    "REMINDER: Sonnet 5 intro pricing $2/$10 ends 2026-08-31, then $3/$15",
     "2026-07-27: (weekly) Copilot first billing cycle closed 6/30 -> 10x-50x bill shock for heavy agentic seats; Cursor/Windsurf migration up",
     "2026-06/07: Linux Foundation formed Tokenomics Foundation (Google/Microsoft/Salesforce/JPMorgan) for open token metering standards",
     "2026-07: Anthropic launched Sonnet 5 (intro $2/$10 through 8/31, then $3/$15)",
