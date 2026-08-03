@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-07-30",
+    "updated": "2026-08-03",
     "cadence": "Mon/Thu 09:05",
-    "currency": "USD",
-    "sources": ["vendor official pricing pages", "official blogs", "third-party price trackers (verified 2026-07)"]
+    "currency": "USD unless noted",
+    "sources": ["vendor official pricing pages", "official docs (docs.bigmodel.cn, platform.xiaomimimo.com, cloud.baidu.com)", "official blogs", "third-party price trackers (verified 2026-08-03)"]
   },
   "vendors": [
     {
@@ -16,11 +16,11 @@
         {"tier": "Pro", "price": 20, "annual": 16, "included": "~$20 credit pool", "subscribable": true},
         {"tier": "Pro+", "price": 60, "included": "~$70 credit pool (3x)", "subscribable": true},
         {"tier": "Ultra", "price": 200, "included": "~$400 credit pool (20x)", "subscribable": true},
-        {"tier": "Teams Standard", "price": 40, "annual": 32, "unit": "per user/mo", "note": "annual cut 20% in Jun 2026", "subscribable": true},
+        {"tier": "Teams Standard", "price": 40, "annual": 32, "unit": "per user/mo", "subscribable": true},
         {"tier": "Teams Premium", "price": 120, "unit": "per user/mo", "note": "5x Standard usage", "subscribable": true},
         {"tier": "Enterprise", "price": null, "note": "custom; org governance layer", "subscribable": "contact sales"}
       ],
-      "notes": "Bugbot code review add-on $20 (Pro) / $40 (Teams). Non-Auto agent requests add $0.25/MTok Cursor Token fee. Native iOS app in beta (Jul 2026)."
+      "notes": "Bugbot add-on $20 (Pro) / $40 (Teams). Non-Auto agent requests add $0.25/MTok. Official guidance: daily agent users ~$60-100/mo, power users $200+. Composer 2.5 + Mission Control UI preview shown late Jul 2026."
     },
     {
       "name": "Claude Code",
@@ -28,15 +28,16 @@
       "billing": "via Claude subscription or API per token (no standalone sub)",
       "plans": [
         {"tier": "Free", "price": 0, "claude_code": false, "subscribable": true},
-        {"tier": "Pro", "price": 20, "annual": 17, "included": "5h rolling + weekly cap", "subscribable": true},
-        {"tier": "Max 5x", "price": 100, "subscribable": true},
-        {"tier": "Max 20x", "price": 200, "subscribable": true},
+        {"tier": "Pro", "price": 20, "annual": 17, "included": "5h rolling + weekly cap; ~40-80h Sonnet/wk", "subscribable": true},
+        {"tier": "Max 5x", "price": 100, "included": "~140-280h/wk", "subscribable": true},
+        {"tier": "Max 20x", "price": 200, "included": "~240-480h/wk", "subscribable": true},
         {"tier": "Team Standard", "price": 25, "annual": 20, "unit": "per seat/mo", "claude_code": false, "note": "does NOT include Claude Code", "subscribable": true},
-        {"tier": "Team Premium", "price": 125, "annual": 100, "unit": "per seat/mo", "claude_code": true, "note": "includes Claude Code", "subscribable": true},
+        {"tier": "Team Premium", "price": 125, "annual": 100, "unit": "per seat/mo", "claude_code": true, "note": "includes Claude Code, 5x usage", "subscribable": true},
         {"tier": "Enterprise", "price": 20, "unit": "per seat + API", "subscribable": "contact sales"}
       ],
       "api_rates_per_MTok": {"Haiku 4.5": [1, 5], "Sonnet 5": [2, 10], "Sonnet 5 (after 2026-08-31)": [3, 15], "Opus 4.8": [5, 25], "Fable 5": [10, 50]},
-      "notes": "Usage capped by 5h rolling window + weekly cap (shared across chat/Code/Cowork). Opus-specific weekly limit removed; Sonnet has extra ceiling. May 2026 doubled Claude Code 5h limits (SpaceX compute deal). Planned move of programmatic usage (Agent SDK / claude -p) to separate API credits on 2026-06-15 was PAUSED before launch."
+      "deadlines": ["2026-08-05 Opus 4.1 API retirement -> Opus 4.8", "2026-08-17 legacy Workbench + 3 experimental prompt-tool APIs retire", "2026-08-31 Sonnet 5 intro pricing ends (+50% from 9/1)"],
+      "notes": "5h rolling window + weekly cap; Max tiers have an extra model-specific weekly cap. Quota shared across chat/Code/Cowork, no rollover. Rule of thumb: above ~$7/day API spend, Max subscription is cheaper. Cache reads ~1/10 of input price. Sonnet 5 is default model (native 1M ctx, SWE-Bench 82.1%). Opus 5 released 2026-07-24."
     },
     {
       "name": "GitHub Copilot",
@@ -47,25 +48,25 @@
         {"tier": "Pro", "price": 10, "included": "1500 credits (~$15)", "subscribable": true},
         {"tier": "Pro+", "price": 39, "included": "7000 credits (~$70)", "subscribable": true},
         {"tier": "Max", "price": 100, "included": "20000 credits (~$200)", "note": "added 2026-06-15", "subscribable": true},
-        {"tier": "Business", "price": 19, "unit": "per user/mo", "included": "1900 credits (promo 3000 to Sep)", "subscribable": true},
-        {"tier": "Enterprise", "price": 39, "unit": "per user/mo", "included": "3900 credits (promo 7000 to Sep)", "subscribable": true}
+        {"tier": "Business", "price": 19, "unit": "per user/mo", "included": "1900 credits (promo 3000 until 2026-09-01)", "subscribable": true},
+        {"tier": "Enterprise", "price": 39, "unit": "per user/mo", "included": "3900 credits (promo 7000 until 2026-09-01)", "subscribable": true}
       ],
-      "notes": "First full billing cycle closed 2026-06-30: heavy agentic seats saw 10x-50x bill surge ($600-3000/mo). Completions & Next Edit remain unlimited/free. Model menu spread ~60x. First-party MAI-Code-1-Flash ($0.75/$4.50) cheapest. Monthly subs auto-switched 6/1; annual subs keep old pricing until renewal."
+      "notes": "First full cycle closed 2026-06-30: heavy agentic seats saw 10x-50x bill surge ($600-3000/mo). Completions & Next Edit unlimited/free. Model menu spread ~60x. MAI-Code-1-Flash ($0.75/$4.50) cheapest, GA for Business/Enterprise. Grok 4.5 added 2026-07-28. Credits do not roll over. Cloud agent also consumes Actions minutes. Agent Skills went preview -> GA within a month."
     },
     {
       "name": "OpenAI Codex",
       "owner": "OpenAI (bundled in ChatGPT)",
-      "billing": "API token rates since 2026-04-02 (input/cached/output)",
+      "billing": "token credits since 2026-04-02 (input/cached/output)",
       "plans": [
-        {"tier": "Free", "price": 0, "subscribable": true},
+        {"tier": "Free", "price": 0, "included": "basic Codex access", "subscribable": true},
         {"tier": "Go", "price": 8, "subscribable": true},
-        {"tier": "Plus", "price": 20, "subscribable": true},
+        {"tier": "Plus", "price": 20, "included": "per 5h window: Sol 10-100 / Terra 25-200 / Luna 250-2000 messages", "subscribable": true},
         {"tier": "Pro 5x", "price": 100, "subscribable": true},
         {"tier": "Pro 20x", "price": 200, "subscribable": true},
-        {"tier": "Business", "price": 25, "unit": "per user/mo", "subscribable": true},
+        {"tier": "Business", "price": 25, "annual": 20, "unit": "per user/mo", "subscribable": true},
         {"tier": "Enterprise", "price": null, "subscribable": "contact sales"}
       ],
-      "notes": "WAU >5M. Heavy real cost ~$100-200/dev/mo. Token rate card GPT-5.5 125/12.5/750 credits per MTok."
+      "notes": "WAU >5M. Local + cloud tasks share one credit pool. After the 2026-07-31 price cut, Terra/Luna consume FEWER credits inside subscriptions while sub prices/quotas stay unchanged. Codex Security CLI open-sourced 2026-07-29."
     },
     {
       "name": "Windsurf / Devin Desktop",
@@ -73,19 +74,19 @@
       "billing": "daily/weekly quotas (overhauled 2026-03-19)",
       "plans": [
         {"tier": "Free", "price": 0, "included": "unlimited tab + 25 credits/mo", "subscribable": true},
-        {"tier": "Pro", "price": 15, "note": "sources vary $15-20", "subscribable": true},
+        {"tier": "Pro", "price": 15, "note": "sources vary $15-20; 500 credits/mo", "subscribable": true},
         {"tier": "Max", "price": 200, "subscribable": true},
         {"tier": "Teams", "price": 40, "unit": "per user/mo", "note": "sources $30-40", "subscribable": true},
         {"tier": "Enterprise", "price": 60, "unit": "per user/mo", "subscribable": "contact sales"}
       ],
-      "notes": "Tab completions always free/unlimited. Quota resets daily/weekly; sprint bursts can hit caps. Kept flat pricing -> attracting Copilot migration."
+      "notes": "Tab completions always free/unlimited. Devin itself bills by ACU: $20 platform fee + $2.25/ACU (Team from $500)."
     },
     {
       "name": "Trae",
       "owner": "ByteDance",
       "billing": "token-based since 2026-02-24 (Basic + Bonus Usage; On-Demand overflow)",
       "plans": [
-        {"tier": "Free", "price": 0, "subscribable": true},
+        {"tier": "Free", "price": 0, "parallel": 2, "subscribable": true},
         {"tier": "Lite", "price": 3, "basic_usage": 5, "parallel": 2, "subscribable": true},
         {"tier": "Pro", "price": 10, "basic_usage": 20, "parallel": 10, "subscribable": true},
         {"tier": "Pro+", "price": 30, "basic_usage": 90, "parallel": 15, "subscribable": true},
@@ -102,43 +103,64 @@
         {"tier": "Standard", "price": 19, "annual": 19, "monthly": 22.8, "unit": "per user/mo", "subscribable": true},
         {"tier": "Enterprise", "price": 45, "annual": 45, "monthly": 54, "unit": "per user/mo", "subscribable": true}
       ],
-      "notes": "Gemini CLI free tier: 1,000 requests/day, open-source Apache 2.0, Google Search grounding."
-    },
-    {
-      "name": "Baidu Qianfan Token Plan",
-      "owner": "Baidu",
-      "currency": "CNY",
-      "billing": "unified token quota across models (no input/output/cache distinction)",
-      "plans": [
-        {"tier": "Personal (ex-Coding Plan Lite)", "price": "unchanged from Lite contract price", "included": "42M tokens universal quota", "subscribable": true},
-        {"tier": "Personal (ex-Coding Plan Pro)", "price": "unchanged from Pro contract price", "included": "230M tokens universal quota", "subscribable": true}
-      ],
-      "notes": "Coding Plan all tiers STOPPED selling 2026-07-13; Token Plan Personal fully open same day. One-click migration: quota reset + validity extended 1 month; peak-hour throttling removed. Tokens usable on GLM-5.2, DeepSeek etc. for all personal scenarios."
-    },
-    {
-      "name": "Alibaba Model Studio (Bailian) Token Plan",
-      "owner": "Alibaba Cloud",
-      "currency": "CNY",
-      "billing": "Credits unified metering; limited-time 10% daytime / 2% night rates",
-      "plans": [
-        {"tier": "Personal", "price": "from 39 CNY/mo", "included": "multi-model (text/image) + Harness tools + Qwen3.8-Max-Preview (2.4T) early access", "subscribable": true},
-        {"tier": "Team", "price": "per seat", "included": "centralized member/usage management", "subscribable": true}
-      ],
-      "notes": "Launched 2026-07-19. Coding Plan retired: Lite stopped new purchase 2026-03-20, renewals 04-13; Pro limited stock, no restock; no migration between Coding Plan and Token Plan."
+      "notes": "Gemini CLI free tier: 1,000 requests/day, Apache 2.0. Google Antigravity: AI Pro $20 / AI Ultra $249.99."
     },
     {
       "name": "Zhipu GLM Coding Plan",
       "owner": "Zhipu AI / Z.ai",
-      "billing": "prompt quota (5h rolling + weekly), peak-hour 3x multiplier for GLM-5.2",
+      "currency": "CNY (CN) / USD (Intl)",
+      "billing": "CREDIT-BASED since 2026-07-30 (was prompt-count). Credits = (input*Ci + cached*Cc + output*Co)/10000",
+      "revamp_date": "2026-07-30",
+      "purchase_limit_lifted": "2026-07-31",
       "plans": [
-        {"tier": "Lite (CN)", "price": "49 CNY/mo", "included": "~80 prompts/5h, ~400/wk", "subscribable": true},
-        {"tier": "Pro (CN)", "price": "149 CNY/mo", "included": "5x Lite + MCP 1000/mo", "subscribable": true},
-        {"tier": "Max (CN)", "price": "469 CNY/mo", "included": "20x Lite + MCP 4000/mo", "subscribable": true},
-        {"tier": "Lite (Intl)", "price": 18, "annual": 12.6, "subscribable": true},
-        {"tier": "Pro (Intl)", "price": 72, "annual": 50.4, "subscribable": true},
-        {"tier": "Max (Intl)", "price": 160, "annual": 112, "subscribable": true}
+        {"tier": "Lite (CN, new credit plan)", "price": "118 CNY/mo", "credits_5h": 2000, "credits_week": 10000, "weekly_tokens_est": "43M-87M", "subscribable": true},
+        {"tier": "Pro (CN, new credit plan)", "price": "538 CNY/mo", "credits_5h": 12000, "credits_week": 60000, "weekly_tokens_est": "263M-526M", "subscribable": true},
+        {"tier": "Max (CN, new credit plan)", "price": "1078 CNY/mo", "credits_5h": 28000, "credits_week": 140000, "weekly_tokens_est": "613M-1226M", "subscribable": true},
+        {"tier": "Lite (CN, legacy V2)", "price": "49 CNY/mo", "quarterly": 44.1, "yearly": 39.2, "note": "existing users only; V1 users can buy until expiry, entry ~mid-Aug", "subscribable": "legacy only"},
+        {"tier": "Pro (CN, legacy V2)", "price": "149 CNY/mo", "quarterly": 134.1, "yearly": 119.2, "subscribable": "legacy only"},
+        {"tier": "Max (CN, legacy V2)", "price": "469 CNY/mo", "quarterly": 422.1, "yearly": 375.2, "subscribable": "legacy only"},
+        {"tier": "Lite (Intl Z.ai)", "price": 18, "promo": 12.6, "annual": 151.2, "subscribable": true},
+        {"tier": "Pro (Intl Z.ai)", "price": 72, "promo": 50.4, "annual": 604.8, "subscribable": true},
+        {"tier": "Max (Intl Z.ai)", "price": 160, "promo": 112, "annual": 1344, "subscribable": true}
       ],
-      "notes": "Intl (Z.ai) repriced 2026-07-22: $18/$72/$160 (was ~$10/$30/$80, +26%-40%); discounts moved to billing-term ladder (monthly -10%, quarterly -20%, yearly -30%). Models: GLM-5.2 / GLM-5-Turbo / GLM-4.7 in 20+ tools (Claude Code, Cline, Roo Code...). API added GLM-5 line $1-1.4 in / $3.2-4.4 out per MTok."
+      "price_change_pct": {"Lite": "+141%", "Pro": "+261%", "Max": "+130%"},
+      "credit_multipliers": {
+        "GLM-5.2": {"input": 6.9, "cached_input": 1.7, "output": 24},
+        "GLM-5-Turbo": {"input": 5.7, "cached_input": 1.5, "output": 21},
+        "GLM-4.7": {"input": 4.6, "cached_input": 1.2, "output": 16},
+        "GLM-4.6V (vision MCP)": {"input": 1.2, "cached_input": 0.3, "output": 2.7},
+        "MCP tools (web search / page read / open repo)": {"per_call": 1.2}
+      },
+      "peak_hours": "Mon-Fri 14:00-18:00 UTC+8 at 1x; ALL other times incl. full weekends at 0.5x",
+      "team_plans_legacy": {"standard": "78M tokens/5h, 390M/wk per seat", "premium": "208M tokens/5h, 1.04B/wk per seat", "note": "quota raised 30% on 2026-07-30"},
+      "promo": "Yearly 30% off / quarterly 20% off until 2026-08-15",
+      "notes": "Tier ratios changed: Pro=6x Lite, Max=14x Lite (was 5x/20x). Legacy V1/V2 and team plans keep original pricing & rules. Models: GLM-5.2 / GLM-5-Turbo / GLM-4.7 (GLM-5.1/GLM-5 auto-route to 5.2). 20+ tools; OpenClaw runs at secondary scheduling priority. Official claim: up to 92% cheaper than pay-as-you-go GLM-5.2 API when using off-peak. HighSpeed tier available by application. ZCode 3.0 ADE uses in-house agent kernel, GLM-5.2 gets 1.5x quota inside ZCode."
+    },
+    {
+      "name": "Baidu Qianfan Token Plan (Personal)",
+      "owner": "Baidu",
+      "currency": "CNY",
+      "billing": "unified token quota across models (no model multiplier, no input/output/cache distinction)",
+      "plans": [
+        {"tier": "Mini", "price": 9.9, "promo": 4.9, "included": "10M tokens", "subscribable": true},
+        {"tier": "Lite", "price": 40, "promo": 19.9, "included": "42M tokens", "subscribable": true},
+        {"tier": "Pro", "price": 200, "promo": 99.9, "included": "230M tokens", "subscribable": true},
+        {"tier": "Max", "price": 600, "promo": 299.9, "included": "700M tokens", "subscribable": true}
+      ],
+      "notes": "Coding Plan all tiers stopped selling 2026-07-13; Token Plan Personal fully open. THREE-LAYER throttling system fully removed - no peak-hour slowdown. Models: ERNIE-5.1, GLM-5.2, GLM-5.1, Kimi-K2.6, DeepSeek-V4-Pro/Flash. Tools: Cursor, Windsurf, Cline (10+), OpenAI + Anthropic protocol compatible. Dedicated personal API key isolated from postpaid/enterprise. Promo = daily 10:00 limited flash sale. Separate credit-based 'Token Welfare Pack': 50/100/200/400/800 CNY tiers."
+    },
+    {
+      "name": "Alibaba Model Studio (Bailian)",
+      "owner": "Alibaba Cloud",
+      "currency": "CNY",
+      "billing": "Coding Plan = request count (shrinking); Token Plan = Credits unified metering",
+      "plans": [
+        {"tier": "Coding Plan Lite", "price": 40, "included": "1200 req/5h, 18000/mo", "subscribable": false, "status": "discontinued 2026-03-20 (renewals ended 04-13)"},
+        {"tier": "Coding Plan Pro", "price": 200, "included": "6000 req/5h, 45000/wk, 90000/mo", "subscribable": "limited", "status": "daily 9:30 flash sale, sells out in minutes"},
+        {"tier": "Token Plan Personal", "price": "from 39", "included": "Credits unified; limited-time 10% daytime / 2% night; Qwen3.8-Max-Preview (2.4T) early access", "subscribable": true},
+        {"tier": "Token Plan Team", "price": "per seat", "subscribable": true}
+      ],
+      "notes": "Coding Plan models: qwen3.5-plus, qwen3-max, qwen3-coder-next/plus, glm-5, glm-4.7, kimi-k2.5, minimax-m2.5. Restrictions: primary account only, NO API calls (coding tools only), no refunds/cancellation. No migration between Coding Plan and Token Plan."
     },
     {
       "name": "Volcano Ark Coding Plan / Agent Plan",
@@ -146,10 +168,59 @@
       "currency": "CNY",
       "billing": "quota with per-model deduction multipliers",
       "plans": [
-        {"tier": "Lite", "price": "40 CNY/mo (promo 9.9 first 2 months, until 2026-08-08)", "subscribable": true},
-        {"tier": "Pro", "price": "200 CNY/mo (promo 49.9)", "included": "5x Lite + Auto model routing + priority scheduling", "subscribable": true}
+        {"tier": "Lite", "price": 40, "promo": 9.9, "promo_note": "first 2 months at 25%, order by 2026-08-27", "subscribable": true},
+        {"tier": "Pro", "price": 200, "promo": 49.9, "included": "5x Lite + Auto model routing + priority scheduling", "subscribable": true}
       ],
-      "notes": "Covers GLM-5.2, Kimi-K2.6/2.7, MiniMax-M3, DeepSeek-V4, Doubao-Seed-2.0 (6+ models). Extra deduction discounts (DeepSeek V4 Pro 40%, Kimi K2.7 Code 25%). Separate Agent Plan supports multimodal (image/video), more tiers."
+      "notes": "Promo deadline EXTENDED from 2026-08-08 to 2026-08-27. Models: Doubao-Seed-2.1-turbo (new), Doubao-Seed-2.0-Code, Kimi-K2.6/K2.5, GLM-5.2 (new), GLM-5, DeepSeek-V3.2/V4. Purchase-limited since May. Rules: '08-27' is the ORDER deadline not the benefit duration; max 2 promo months per account; promo eligibility shared across new/renew/upgrade. Separate Agent Plan supports multimodal."
+    },
+    {
+      "name": "Xiaomi MiMo Token Plan",
+      "owner": "Xiaomi",
+      "currency": "CNY / USD",
+      "billing": "Credits metering by actual token usage",
+      "plans": [
+        {"tier": "Lite", "price": 39, "usd": 6, "first_purchase": 34.32, "annual": 411.84, "credits_month": "4.1B", "note": "~200 medium-complex task rounds", "subscribable": true},
+        {"tier": "Standard", "price": 99, "usd": 16, "first_purchase": 87.12, "annual": 1045.44, "credits_month": "11B", "note": "~1600 rounds", "subscribable": true},
+        {"tier": "Pro", "price": 329, "usd": 50, "first_purchase": 289.52, "annual": 3474.24, "credits_month": "38B", "note": "~5600 rounds", "subscribable": true},
+        {"tier": "Max", "price": 659, "usd": 100, "first_purchase": 579.92, "annual": 6959.04, "credits_month": "82B", "note": "~12800 rounds", "subscribable": true}
+      ],
+      "notes": "2026-05-27 permanent API price cut up to 99% + Token Plan credits raised 5-8x at same price (0.6/2/7/16 hundred-million -> 41/110/380/820 hundred-million), with a one-time 'credits refresh reset' for existing users. Credit conversion: mimo-v2.5-pro cache-hit 2.5 credits/token, miss 300, output 600. Discounts: NIGHT 00:00-08:00 x0.8, first purchase 12% off, annual 12% off, first auto-renew 23% off. Models: mimo-v2.5-pro, mimo-v2.5, mimo-v2-omni, mimo-v2-flash, ASR, TTS (TTS free for limited time). Tools: Claude Code, OpenClaw, OpenCode, KiloCode, Roo Code, Cline, Codex, Cherry Studio, Zed, TRAE, CodeBuddy. OpenAI + Anthropic API compatible. Real-name required, no refunds."
+    },
+    {
+      "name": "MiniMax Token Plan",
+      "owner": "MiniMax",
+      "currency": "CNY",
+      "billing": "monthly token quota, shared across all modalities",
+      "plans": [
+        {"tier": "Plus", "price": 49, "annual": 490, "included": "600M+ tokens/mo, 3-4 agent concurrency", "subscribable": true},
+        {"tier": "Max", "price": 119, "annual": 1190, "included": "1.8B+ tokens/mo, 4-5 concurrency, 3 videos/day", "subscribable": true},
+        {"tier": "Ultra", "price": 469, "annual": 4690, "included": "7.1B+ tokens/mo, 6-7 concurrency, 5 videos/day", "subscribable": true}
+      ],
+      "notes": "Models: M3 (flagship, released 2026-05-31), M2.7, M2.7-highspeed + image/voice/music sharing the same quota. M2.7 Lite tier delisted. API-vlm repriced to 0.025 CNY/call from 2026-07-22. Tools: Claude Code, Roo Code, Kilo Code, Cline, Codex CLI, OpenCode, Droid, TRAE, Grok CLI, Cursor, OpenClaw."
+    },
+    {
+      "name": "Kimi Code Plan",
+      "owner": "Moonshot AI",
+      "currency": "CNY",
+      "billing": "5h token quota, refreshed every 7 days, no rollover",
+      "plans": [
+        {"tier": "Andante", "price": 49, "annual_monthly": 39, "included": "300-1200 API calls/5h", "subscribable": true},
+        {"tier": "Moderato", "price": 99, "annual_monthly": 79, "included": "K3 access, larger quota, multi-device shared", "subscribable": true},
+        {"tier": "Allegretto", "price": 199, "annual_monthly": 159, "included": "Agent 40/mo, Kimi Turbo, cluster 4 subtasks", "subscribable": true},
+        {"tier": "Allegro", "price": 699, "annual_monthly": 559, "included": "K3 1M context, 4 parallel agent tasks, cluster 8 subtasks, Kimi Claw group chat 10", "subscribable": true}
+      ],
+      "notes": "Kimi K3 released 2026-07-17 (2.8T params, 1M context), open weights late Jul; beat some US frontier models on benchmarks, cited as pressure behind OpenAI's 7/31 price cut. Max concurrency 30. Intl Kimi Code from $19/mo, API $3/$15 per MTok. Tools: Kimi CLI, Claude Code, Roo Code, Kimi Code for VS Code."
+    },
+    {
+      "name": "Tencent Cloud Coding Plan",
+      "owner": "Tencent Cloud",
+      "currency": "CNY",
+      "billing": "N/A - retired",
+      "plans": [
+        {"tier": "Lite", "price": 40, "included": "~1200 req/5h, ~18000/mo", "subscribable": false, "status": "delisted"},
+        {"tier": "Pro", "price": 200, "included": "~6000 req/5h, ~90000/mo", "subscribable": false, "status": "delisted"}
+      ],
+      "notes": "Coding Plan fully retired 2026-04-22 (page 404); moved to Token Plan (Credits metering). Former models: Tencent HY 2.0 Instruct, GLM-5, Kimi-K2.5, MiniMax-M2.7. Former tools: OpenClaw, CodeBuddy, Claude Code, Cline, Cursor."
     },
     {
       "name": "KwaiKAT Coding Plan",
@@ -162,39 +233,61 @@
     }
   ],
   "model_token_prices_per_MTok": [
+    {"model": "GPT-5.6 Luna", "input": 0.2, "output": 1.2, "date": "2026-07-31", "note": "cut 80% from $1/$6"},
+    {"model": "Claude Haiku 4.5", "input": 1.0, "output": 5.0},
     {"model": "Meta Muse Spark 1.1", "input": 1.25, "output": 4.25, "date": "2026-07-09"},
-    {"model": "GPT-5.6 Luna", "input": 1.0, "output": 6.0, "date": "2026-07-09"},
+    {"model": "GPT-5.6 Terra", "input": 2.0, "output": 12.0, "date": "2026-07-31", "note": "cut 20% from $2.5/$15"},
     {"model": "xAI Grok 4.5", "input": 2.0, "output": 6.0, "date": "2026-07-08"},
     {"model": "Claude Sonnet 5", "input": 2.0, "output": 10.0, "note": "intro price through 2026-08-31; then 3/15"},
     {"model": "Gemini 3.1 Pro", "input": 2.0, "output": 12.0},
-    {"model": "GPT-5.6 Terra", "input": 2.5, "output": 15.0, "date": "2026-07-09"},
-    {"model": "Claude Haiku 4.5", "input": 1.0, "output": 5.0},
-    {"model": "GPT-5.6 Sol", "input": 5.0, "output": 30.0, "date": "2026-07-09"},
+    {"model": "Kimi K3", "input": 3.0, "output": 15.0, "date": "2026-07-17", "note": "2.8T open weights, self-hostable"},
+    {"model": "GPT-5.6 Sol", "input": 5.0, "output": 30.0, "note": "unchanged; new Fast mode = 2.5x speed at 2x price, replaces Priority Processing"},
     {"model": "Claude Opus 4.8", "input": 5.0, "output": 25.0},
     {"model": "Anthropic Fable 5 (API)", "input": 10.0, "output": 50.0, "date": "2026-06-22"}
   ],
+  "upcoming_deadlines": [
+    {"date": "2026-08-05", "event": "Claude Opus 4.1 API retirement -> Opus 4.8"},
+    {"date": "2026-08-15", "event": "Zhipu GLM Coding Plan yearly 30% / quarterly 20% promo ends"},
+    {"date": "2026-08-17", "event": "Claude legacy Workbench + 3 experimental prompt-tool APIs retire"},
+    {"date": "2026-08-27", "event": "Volcano Ark 25%-off first-2-months ORDER deadline"},
+    {"date": "2026-08-31", "event": "Claude Sonnet 5 intro pricing ends -> $3/$15 (+50%)"},
+    {"date": "2026-09-01", "event": "GitHub Copilot Business/Enterprise promo credits end"},
+    {"date": "2026-08 mid", "event": "Zhipu V1 -> V2 legacy-price subscription entry expected to go live"}
+  ],
   "latest_news": [
-    "2026-07-30: (this run) Domestic 'Coding Plan -> Token Plan' shift: Baidu Qianfan stopped selling Coding Plan 7/13 (Token Plan Personal open, 42M/230M token migration); Alibaba Bailian launched Token Plan Personal 7/19 (from 39 CNY/mo + Qwen3.8-Max-Preview 2.4T)",
-    "2026-07-22: Z.ai (Zhipu intl) repriced GLM Coding Plan to $18/$72/$160 (+26%-40%); quotas restated as multiples; billing-term discount ladder",
+    "2026-07-30: (this run, HEADLINE) Zhipu GLM Coding Plan revamped to CREDIT-BASED metering; new CN pricing Lite 118 / Pro 538 / Max 1078 CNY (+141%/+261%/+130% vs legacy V2 49/149/469). Tier ratios changed Pro=6x, Max=14x Lite (was 5x/20x). Legacy V1/V2 + team plans keep original pricing; team seat quota +30%. Weekends now count as off-peak (0.5x). HighSpeed tier by application. Yearly 30% / quarterly 20% promo until 8/15",
+    "2026-07-31: Zhipu lifted purchase limits - no more daily 10:00 flash-sale scramble, open enrolment after compute expansion",
+    "2026-07-31: (this run) OpenAI cut GPT-5.6 prices ~3 weeks post-launch: Luna -80% to $0.20/$1.20, Terra -20% to $2/$12; Sol unchanged but gains Fast mode (2.5x speed, 2x price, replaces Priority Processing). ChatGPT/Codex sub prices & quotas unchanged; Terra/Luna now consume fewer credits inside subs",
+    "2026-08-27: (this run) Volcano Ark 25%-off first-2-months promo deadline EXTENDED from 8/8; newly added Doubao-Seed-2.1-turbo and GLM-5.2",
+    "2026-04-22: (this run, backfill) Tencent Cloud Coding Plan fully retired (page 404), moved to Token Plan Credits metering",
+    "2026: (this run, backfill) Alibaba Bailian Coding Plan Lite discontinued; only Pro 200 CNY remains via daily 9:30 flash sale, primary account only, no API calls, no refunds",
+    "2026-05-27: (this run, backfill) Xiaomi MiMo permanent API price cut up to 99% + Token Plan credits raised 5-8x at unchanged prices; night 00:00-08:00 x0.8 discount",
+    "2026-08-01: Zhipu ZCode 3.0 (ADE) in focus - in-house ZCode Agent kernel, drops third-party agent adapters, GLM-5.2 gets 1.5x quota inside ZCode (3.0 main release shipped with GLM-5.2 in June; date accounts vary)",
+    "2026-07-24: Anthropic released Claude Opus 5 - claimed best price/performance, matches Fable 5 at half the price",
+    "2026-07-17: Kimi K3 released (2.8T params, 1M context), open weights late Jul; cited by media as external pressure behind OpenAI's price cut",
+    "2026-07-30: Domestic 'Coding Plan -> Token Plan' shift: Baidu Qianfan stopped Coding Plan 7/13 (Token Plan Personal Mini/Lite/Pro/Max 9.9/40/200/600 CNY, 50% first-purchase promo, three-layer throttling removed)",
+    "2026-07-22: Z.ai (Zhipu intl) repriced GLM Coding Plan to $18/$72/$160 (+26%-40%)",
     "2026-07: Kuaishou StreamLake launched KAT-Coder-Pro V2.5 + KwaiKAT Coding Plan ($5-50/mo, 4 tiers)",
-    "2026-07-27: Kimi K3 open weights released (2.8T params, first 3T-class open model); Day-0 vLLM/SGLang/OpenRouter; community bridges into Codex client",
-    "2026-07-28: Claude Opus 5 tops Artificial Analysis (61) & Frontier-Bench 43.3%, but only 4/17 checkpoints on long-horizon SlopCodeBench; 3 elevated-error incidents 7/27",
     "2026-07-28: Grok 4.5 added to GitHub Copilot; MAI-Code-1-Flash GA for Copilot Business/Enterprise",
-    "2026-07-29: OpenAI open-sourced Codex Security CLI (repo/diff vulnerability scanning with exploitability verification)",
-    "2026-07: Volcano Ark Coding Plan promo (until 8/8): Lite 9.9 CNY, Pro 49.9 CNY first 2 months; covers GLM/Kimi/MiniMax/DeepSeek/Doubao",
+    "2026-07-29: OpenAI open-sourced Codex Security CLI",
     "2026-07-26/28: Claude shared-chat privacy leak (Google-indexed); Claude Cowork ShareRoot sandbox-escape flaw (~500k Mac users)",
-    "REMINDER: Sonnet 5 intro pricing $2/$10 ends 2026-08-31, then $3/$15",
-    "2026-07-27: (weekly) Copilot first billing cycle closed 6/30 -> 10x-50x bill shock for heavy agentic seats; Cursor/Windsurf migration up",
+    "2026-06-30: Copilot first billing cycle closed -> 10x-50x bill shock for heavy agentic seats; Cursor/Windsurf migration up",
     "2026-06/07: Linux Foundation formed Tokenomics Foundation (Google/Microsoft/Salesforce/JPMorgan) for open token metering standards",
-    "2026-07: Anthropic launched Sonnet 5 (intro $2/$10 through 8/31, then $3/$15)",
-    "2026-06-15: Anthropic planned to move programmatic usage to separate API credits -> PAUSED before launch",
     "2026-07-19: WAIC 2026 made 'token economy' a core theme; Volcano Engine 49.5% MaaS token share, Doubao 180T tokens/day",
     "2026: Enterprise token budget controls (Microsoft limited internal Claude Code; Uber burned full-year AI coding budget in 4 months)",
     "2026-07-08/09: GPT-5.6, Grok 4.5, Muse Spark 1.1 launched - coding model price war",
     "2026-06: xAI/SpaceX acquired Cursor (~$60B valuation); Cursor cut Teams annual 20% to $32, added org governance layer",
     "2026-06-01: GitHub Copilot moved to AI Credits (token-metered); 6/15 added Max $100/mo",
-    "2026-07-01: Cursor iOS app beta + OpenClaw mobile launch",
     "2026-06-02: Windsurf rebranded to Devin Desktop (Cognition)",
     "2026-07-20: GitHub Code Quality GA ($10/active committer + usage)"
+  ],
+  "trends": [
+    "Domestic Coding Plans enter a REPRICING phase: Zhipu raised CN prices 130-261% while lifting purchase limits - 'cheap but sold out' is being replaced by 'available but pricier'. New Pro 538 CNY (~$74) is now near Z.ai intl $72",
+    "Overseas moves the opposite way: OpenAI cut Luna 80%, pushing agent-capable models into the price band of old small models. The CN-vs-overseas price gap is narrowing fast",
+    "Billing paradigm migration complete: request-count -> token/credit/points across Copilot, Cursor, Codex, Zhipu, Baidu, Alibaba, Tencent, Xiaomi",
+    "TIME-OF-DAY pricing is the new lever: Zhipu 0.5x off-peak incl. all weekends, Xiaomi 0.8x nights, Alibaba 2% night rate - shifting heavy work off-peak yields 20-80% savings and is widely overlooked",
+    "Subscription price is a floor, not a ceiling: heavy Copilot users saw 10-50x list price",
+    "Model routing is the main cost lever; vendor in-house models (MAI-Code-1-Flash, Composer, Doubao, MiMo) keep high-frequency agent traffic on cheap rails",
+    "Agent-first product consensus: Zhipu ZCode ADE, Cursor Composer 2.5 + Mission Control, Copilot Agent Skills GA all landed in the same window - the human role shifts from author to reviewer"
   ]
 }
