@@ -1,14 +1,14 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-08-06",
-    "cadence": "Mon/Thu 09:05",
+    "updated": "2026-08-07",
+    "cadence": "Daily 09:05",
     "currency": "USD unless noted",
     "sources": [
       "vendor official pricing pages",
       "official docs (api-docs.deepseek.com, platform.kimi.com, docs.volcengine.com, help.aliyun.com/lingma, platform.claude.com, docs.bigmodel.cn, platform.xiaomimimo.com, cloud.baidu.com, opencode.ai)",
       "official blogs",
-      "third-party price trackers (verified 2026-08-06)"
+      "third-party price trackers (verified 2026-08-07)"
     ]
   },
   "vendors": [
@@ -870,27 +870,66 @@
       "pause_timeline": "7/17 K3 launched (2.8T, 1M ctx, largest open model); 7/19 23:00 paused all C-end new subs (compute crunch within 48h); 7/20-26 user backlash; 7/26 halted unreleased new tiers; 7/27 open-sourced K3 weights; as of 8/6 still reserve-only. Root cause: K3 needs ~3TB VRAM / 64x H800."
     },
     {
-      "name": "Tencent Cloud Coding Plan",
+      "name": "Tencent Cloud Token Plan",
       "owner": "Tencent Cloud",
       "currency": "CNY",
-      "billing": "N/A - retired",
+      "billing": "Token Plan (通用 + Hy 双线, Credits); Coding Plan retired 2026-04-22",
       "plans": [
         {
-          "tier": "Lite",
-          "price": 40,
-          "included": "~1200 req/5h, ~18000/mo",
-          "subscribable": false,
-          "status": "delisted"
+          "tier": "通用 Lite",
+          "price": 39,
+          "usd": 7,
+          "included": "3,500 万 Tokens, ≈70 轮",
+          "subscribable": true
         },
         {
-          "tier": "Pro",
-          "price": 200,
-          "included": "~6000 req/5h, ~90000/mo",
-          "subscribable": false,
-          "status": "delisted"
+          "tier": "通用 Standard",
+          "price": 99,
+          "usd": 17,
+          "included": "1 亿 Tokens",
+          "subscribable": true
+        },
+        {
+          "tier": "通用 Pro",
+          "price": 299,
+          "usd": 51,
+          "included": "3.2 亿 Tokens",
+          "subscribable": true
+        },
+        {
+          "tier": "通用 Max",
+          "price": 599,
+          "usd": 103,
+          "included": "6.5 亿 Tokens",
+          "subscribable": true
+        },
+        {
+          "tier": "Hy Lite",
+          "price": 28,
+          "first_month": 14,
+          "included": "3,500 万 Tokens",
+          "subscribable": true
+        },
+        {
+          "tier": "Hy Standard",
+          "price": 78,
+          "included": "1 亿 Tokens",
+          "subscribable": true
+        },
+        {
+          "tier": "Hy Pro",
+          "price": 238,
+          "included": "3.2 亿 Tokens",
+          "subscribable": true
+        },
+        {
+          "tier": "Hy Max",
+          "price": 468,
+          "included": "6.5 亿 Tokens",
+          "subscribable": true
         }
       ],
-      "notes": "Coding Plan fully retired 2026-04-22 (page 404); moved to Token Plan (Credits metering). Former models: Tencent HY 2.0 Instruct, GLM-5, Kimi-K2.5, MiniMax-M2.7. Former tools: OpenClaw, CodeBuddy, Claude Code, Cline, Cursor."
+      "notes": "Coding Plan 已于 4/22 下线（页面 404）；Token Plan 个人版双线在售（通用 + Hy，Hy 便宜约 22-28%）。可用 GLM-5.2/Kimi-K2.6/MiniMax-M2.7/DeepSeek-V4-Pro/Hunyuan 等；缓存命中/未命中/输出统一抵扣无差别定价。DeepSeek V4 由直供，不提供 SLA；模型库动态更新不承诺固定可用。"
     },
     {
       "name": "JD Cloud Coding Plan",
@@ -958,6 +997,470 @@
         "DeepSeek V4 Flash": 31650
       },
       "notes": "Aggregation play to bypass CN Coding Plan purchase limits/scramble. No quota, no flash sale, credit card/PayPal, good Chinese support. Reuse existing subs: login with GitHub for Copilot quota, or OpenAI for ChatGPT Plus/Pro. Privacy-first (no code stored). Downsides: CLI-only, no native persistent memory (200+ step tasks break), no in-house model, 4.4% card fee + $0.30/txn on some plans. Request range 264x (Grok 4.5 120 vs V4 Flash 31650)."
+    },
+    {
+      "name": "国家超算互联网 SCNet (China ScienceNet)",
+      "owner": "中科曙光 (Sugon) 运营",
+      "billing": "三线独立计费：按量(sk-)/Token Plan(sk-tp-)/Coding Plan(sk-sp-)，密钥不通用",
+      "plans": [
+        {
+          "tier": "Token Plan",
+          "price": 9.9,
+          "unit": "/月",
+          "included": "活动期最高 8,000 万词元；按月发 Credits",
+          "subscribable": true
+        },
+        {
+          "tier": "Coding Plan Lite",
+          "price": 20,
+          "unit": "/月",
+          "included": "~1,200 次/5h, ~9,000/周, ~18,000/月；送 OpenClaw 2核4G",
+          "subscribable": true
+        },
+        {
+          "tier": "Coding Plan Pro",
+          "price": 100,
+          "unit": "/月",
+          "included": "~6,000 次/5h, ~45,000/周, ~90,000/月；送 OpenClaw",
+          "subscribable": true
+        }
+      ],
+      "notes": "双协议接入 OpenAI/Anthropic；模型含 GLM-5.2/MiniMax M3/DeepSeek V4/Kimi K2.6；科研普惠平台非商业云，SLA 存差距；额度按模型调用次数（非提问次数）"
+    },
+    {
+      "name": "阶跃星辰 Coding Plan (StepFun)",
+      "owner": "阶跃星辰 (StepFun)",
+      "billing": "纯 prompt 次数制",
+      "plans": [
+        {
+          "tier": "Flash Mini",
+          "price": 49,
+          "unit": "/月",
+          "included": "100/5h, 400/周",
+          "subscribable": true
+        },
+        {
+          "tier": "Flash Plus",
+          "price": 99,
+          "unit": "/月",
+          "included": "~400/5h, ~1,600/周",
+          "subscribable": true
+        },
+        {
+          "tier": "Flash Pro",
+          "price": 199,
+          "unit": "/月",
+          "included": "~1,500/5h, ~6,000/周",
+          "subscribable": true
+        },
+        {
+          "tier": "Flash Max",
+          "price": 699,
+          "unit": "/月",
+          "included": "~5,000/5h, ~2万/周",
+          "subscribable": true
+        }
+      ],
+      "notes": "打包语音(TTS/ASR)+图像编辑；年内已涨价；Step 3.5 Flash / StepAudio 2.5 / Step Image Edit 2"
+    },
+    {
+      "name": "讯飞星火 (iFlytek Spark)",
+      "owner": "科大讯飞",
+      "billing": "Coding 收缩 + Token Plan 团队版主推",
+      "plans": [
+        {
+          "tier": "Coding 专业版",
+          "price": 39,
+          "first_month": 3.9,
+          "included": "1,200 次/5h, 18,000/月",
+          "subscribable": true,
+          "note": "限售"
+        },
+        {
+          "tier": "Coding 高效版",
+          "price": 199,
+          "included": "6,000 次/5h",
+          "subscribable": true,
+          "note": "限售"
+        },
+        {
+          "tier": "Token 团队 标准",
+          "price": 160,
+          "list_price": 200,
+          "included": "20,000 Credits/月, 200万 TPM",
+          "subscribable": true,
+          "note": "限时8折"
+        },
+        {
+          "tier": "Token 团队 高级",
+          "price": 420,
+          "list_price": 600,
+          "included": "60,000 Credits/月, 300万 TPM",
+          "subscribable": true,
+          "note": "限时7折"
+        },
+        {
+          "tier": "Token 团队 尊享",
+          "price": 1200,
+          "list_price": 2000,
+          "included": "200,000 Credits/月, 500万 TPM",
+          "subscribable": true,
+          "note": "限时6折"
+        }
+      ],
+      "notes": "无忧版(请求不限)已停售；折扣随档位递增推高客单价；模型含 Spark X2/GLM-5/Kimi-K2.6/MiniMax/Qwen3.5"
+    },
+    {
+      "name": "百度智能云 Coding Plan (Baidu AI Cloud)",
+      "owner": "百度智能云",
+      "billing": "按调用次数",
+      "plans": [
+        {
+          "tier": "Lite",
+          "price": 40,
+          "first_month": 7.9,
+          "next_month": 20,
+          "included": "1,200 次/5h, 9,000/周, 18,000/月",
+          "subscribable": true
+        },
+        {
+          "tier": "Pro",
+          "price": 200,
+          "included": "6,000 次/5h, 45,000/周, 90,000/月",
+          "subscribable": true
+        }
+      ],
+      "notes": "与百度千帆(模型平台)为两个独立售卖入口，后者已切 Token Plan；百度智能云 Coding Plan 仍在售"
+    },
+    {
+      "name": "摩尔线程 AI Coding Plan (Moore Threads)",
+      "owner": "摩尔线程",
+      "billing": "季度计费（无月付）",
+      "plans": [
+        {
+          "tier": "Free Trial",
+          "price": 0,
+          "unit": "30天",
+          "included": "轻量试水",
+          "subscribable": true
+        },
+        {
+          "tier": "Lite",
+          "price": 120,
+          "unit": "/季",
+          "included": "≈¥40/月, ~120 对话/5h (Claude Pro 3x)",
+          "subscribable": true
+        },
+        {
+          "tier": "Pro",
+          "price": 600,
+          "unit": "/季",
+          "included": "Lite 5x",
+          "subscribable": true
+        },
+        {
+          "tier": "Max",
+          "price": 1200,
+          "unit": "/季",
+          "included": "峰值优先保障",
+          "subscribable": true
+        }
+      ],
+      "notes": "MTT S5000 全功能 GPU + 硅基流动 + 智谱 GLM-4.7 全栈国产；GLM-4.7 Code Arena 开源/国产第一；唯一季度计费主流厂商"
+    },
+    {
+      "name": "优云智算 Coding Plan (Youyun)",
+      "owner": "优云智算",
+      "billing": "按调用次数（六档最细）",
+      "plans": [
+        {
+          "tier": "Mini",
+          "price": 49,
+          "unit": "/月",
+          "included": "≈200-300 次/5h",
+          "subscribable": true
+        },
+        {
+          "tier": "Lite",
+          "price": 99,
+          "unit": "/月",
+          "included": "≈400 次/5h",
+          "subscribable": true
+        },
+        {
+          "tier": "Basic",
+          "price": 199,
+          "unit": "/月",
+          "included": "≈800 次/5h",
+          "subscribable": true
+        },
+        {
+          "tier": "Pro",
+          "price": 499,
+          "unit": "/月",
+          "included": "≈2,000 次/5h",
+          "subscribable": true
+        },
+        {
+          "tier": "Max",
+          "price": 799,
+          "unit": "/月",
+          "included": "≈3,000 次/5h",
+          "subscribable": true
+        },
+        {
+          "tier": "Ultra",
+          "price": 999,
+          "unit": "/月",
+          "included": "≈4,000 次/5h",
+          "subscribable": true
+        }
+      ],
+      "notes": "档位最细的国产算力方"
+    },
+    {
+      "name": "无问芯穹 Infini Coding Plan (Infinigence)",
+      "owner": "无问芯穹",
+      "billing": "按调用次数",
+      "plans": [
+        {
+          "tier": "Infini Coding Plan",
+          "price": 40,
+          "first_month": 19.9,
+          "included": "1,000 次/5h, 12,000/月",
+          "subscribable": true
+        }
+      ],
+      "notes": "国产算力方"
+    },
+    {
+      "name": "九章智算云 (Jiuzhang)",
+      "owner": "九章智算云",
+      "billing": "按调用次数",
+      "plans": [
+        {
+          "tier": "Lite",
+          "price": 39,
+          "subscribable": false
+        },
+        {
+          "tier": "Plus",
+          "price": 199,
+          "subscribable": false
+        },
+        {
+          "tier": "Max",
+          "price": 699,
+          "subscribable": false,
+          "note": "曾主打独享 DeepSeek-V4-Pro 1M 上下文"
+        }
+      ],
+      "notes": "本期唯一确认整体退出（全线停售）的厂商"
+    },
+    {
+      "name": "联通云 (China Unicom Cloud)",
+      "owner": "中国联通",
+      "billing": "三线并行：Coding Plan + Token Plan 个人版 + 团队版",
+      "plans": [
+        {
+          "tier": "Coding Lite",
+          "price": 40,
+          "unit": "/月",
+          "included": "1,200 次/5h",
+          "subscribable": true
+        },
+        {
+          "tier": "Coding Pro",
+          "price": 200,
+          "unit": "/月",
+          "included": "6,000 次/5h",
+          "subscribable": true
+        },
+        {
+          "tier": "元景 Token Lite",
+          "price": 15,
+          "unit": "/月",
+          "included": "600 万 Tokens",
+          "subscribable": true,
+          "note": "全网最低付费 Token Plan"
+        },
+        {
+          "tier": "元景 Token Pro",
+          "price": 30,
+          "unit": "/月",
+          "included": "1,200 万 Tokens",
+          "subscribable": true
+        },
+        {
+          "tier": "元景 Token Max",
+          "price": 45,
+          "unit": "/月",
+          "included": "1,800 万 Tokens",
+          "subscribable": true
+        },
+        {
+          "tier": "Token 团队 Lite",
+          "price": 198,
+          "unit": "/月",
+          "included": "25,000 Credits",
+          "subscribable": true
+        },
+        {
+          "tier": "Token 团队 Pro",
+          "price": 698,
+          "unit": "/月",
+          "included": "100,000 Credits",
+          "subscribable": true
+        },
+        {
+          "tier": "Token 团队 Max",
+          "price": 1398,
+          "unit": "/月",
+          "included": "250,000 Credits",
+          "subscribable": true
+        }
+      ],
+      "notes": "唯一三线并行的运营商；元景 Token 个人版 ¥15 起全网最低付费 Token Plan"
+    },
+    {
+      "name": "天翼云 (China Telecom Tianyi)",
+      "owner": "中国电信",
+      "billing": "渠道转售智谱 GLM 套餐",
+      "plans": [
+        {
+          "tier": "GLM Lite",
+          "price": 49,
+          "unit": "/月",
+          "included": "80 次/5h",
+          "subscribable": true,
+          "note": "限售"
+        },
+        {
+          "tier": "GLM Pro",
+          "price": 149,
+          "unit": "/月",
+          "included": "400 次/5h",
+          "subscribable": true,
+          "note": "限售"
+        },
+        {
+          "tier": "GLM Max",
+          "price": 469,
+          "unit": "/月",
+          "included": "1,600 次/5h",
+          "subscribable": true,
+          "note": "限售"
+        }
+      ],
+      "notes": "本质是智谱 GLM 套餐的渠道分销（价格与智谱老版一致）；智谱新版涨价后或同步调整"
+    },
+    {
+      "name": "移动云 (China Mobile Cloud)",
+      "owner": "中国移动",
+      "billing": "按调用次数",
+      "plans": [
+        {
+          "tier": "Coding Lite",
+          "price": 40,
+          "first_month": 7.9,
+          "included": "1,200 次/5h",
+          "subscribable": true
+        },
+        {
+          "tier": "Coding Pro",
+          "price": 200,
+          "first_month": 39.9,
+          "included": "6,000 次/5h",
+          "subscribable": true
+        }
+      ],
+      "notes": "被第三方比价站标注「无购买价值」（模型阵容长期仅 MiniMax-M2.5）"
+    },
+    {
+      "name": "GitCode AtomCode",
+      "owner": "GitCode (CSDN)",
+      "billing": "全免费",
+      "plans": [
+        {
+          "tier": "Lite",
+          "price": 0,
+          "subscribable": true,
+          "note": "限售/限量放号"
+        },
+        {
+          "tier": "Pro",
+          "price": 0,
+          "subscribable": true,
+          "note": "限售/限量放号"
+        },
+        {
+          "tier": "Max",
+          "price": 0,
+          "subscribable": true,
+          "note": "限售/限量放号"
+        }
+      ],
+      "notes": "全部 ¥0 免费档，限量放号，不适合承载生产业务"
+    },
+    {
+      "name": "商汤科技 Token Plan Free (SenseTime)",
+      "owner": "商汤科技",
+      "billing": "按 Token（公测）",
+      "plans": [
+        {
+          "tier": "Free 公测",
+          "price": 0,
+          "unit": "/月",
+          "included": "SenseNova 1,500 次/5h；DeepSeek V4 Flash 150 次/5h",
+          "subscribable": true,
+          "note": "公测期"
+        }
+      ],
+      "notes": "唯一含 DeepSeek V4 Flash 的官方免费档，DeepSeek 涨价背景下的短期薅羊毛入口"
+    },
+    {
+      "name": "ZenMux",
+      "owner": "ZenMux",
+      "billing": "Flows 自定义计量（与次数/Token/积分不可直接换算）",
+      "plans": [
+        {
+          "tier": "Coding Pro",
+          "price": 20,
+          "unit": "/月",
+          "included": "50 Flows/5h",
+          "subscribable": true
+        },
+        {
+          "tier": "Coding Max",
+          "price": 100,
+          "unit": "/月",
+          "included": "300 Flows/5h",
+          "subscribable": true
+        },
+        {
+          "tier": "Coding Ultra",
+          "price": 200,
+          "unit": "/月",
+          "included": "800 Flows/5h",
+          "subscribable": true
+        }
+      ],
+      "notes": "海外聚合；Flows 计量需实测比价"
+    },
+    {
+      "name": "华为云码道 CodeArts (Huawei)",
+      "owner": "华为云",
+      "billing": "按 Token",
+      "plans": [
+        {
+          "tier": "Token Plan",
+          "price": 39,
+          "unit": "/月",
+          "included": "2,000 万 Tokens",
+          "subscribable": true
+        }
+      ],
+      "notes": "华为云 CodeArts 生态内 Token Plan"
     }
   ],
   "model_token_prices_per_MTok": [
@@ -1067,6 +1570,11 @@
   ],
   "upcoming_deadlines": [
     {
+      "date": "2026-08-07",
+      "event": "Volcano Ark 2.5x package promo MOST CONSERVATIVE deadline (dev-community official article 'until 2026-08-07'); conflicting 3rd-party 8/8 / activity-doc 11/8 exist - do NOT bet on 11/8",
+      "status": "passed"
+    },
+    {
       "date": "2026-08-05",
       "event": "Claude Opus 4.1 API retirement -> Opus 4.8 (DONE today)",
       "status": "passed"
@@ -1078,8 +1586,8 @@
     },
     {
       "date": "2026-11-08",
-      "event": "Volcano Ark Agent Plan / Coding Plan package first-2-months 25%-off ORDER deadline (official window 6/8-11/8; per-acct max 2 months; first-come-first-served)",
-      "status": "upcoming"
+      "event": "Volcano Ark Agent/Coding Plan package first-2-months 25%-off: WINDOWS CONFLICT - dev-community official article says 'until 2026-08-07', 3rd-party say 8/8, activity-doc says 11/8. Take MOST CONSERVATIVE = 2026-08-07. Per-acct max 2 months; first-come-first-served.",
+      "status": "disputed"
     },
     {
       "date": "2026-08-15",
@@ -1108,7 +1616,12 @@
     }
   ],
   "latest_news": [
-    "2026-08-06 (this run, HEADLINE): Volcano Ark 2.5x promo window CORRECTED - official activity doc (docs.volcengine.com/docs/82379/2525063) states 2026/6/8 to 2026/11/8, NOT 8/8. 8/8 only applies to GLM-5.2 deduction 25%-off (model billing, ends 8/8 23:59). Two promos were previously conflated. Caveat: quota first-come-first-served, can end early.",
+    "2026-08-07 (HEADLINE): DeepSeek (8/6) previewed an API-wide price HIKE ('整体上调、涨幅较大') - last low-price holdout reverses. U-shaped pricing: floor in 2024 -> peak-valley pricing 6/30 -> hike 8/6. Trigger: 8T tokens/day on V4 Flash (OpenCode), 8/4 capacity failure, agent-driven usage explosion. Still cheapest globally (task ~$0.03 vs Fable 5 $3.15, 105x). Devs: shift bulk/offline to off-peak (x0.5 now), raise cache-hit, build multi-model routing, do NOT pre-load balance.",
+    "2026-08-07: CORRECTION - Coding Plan category did NOT shrink to just Zhipu + Volcano Ark. Live scan (weloveai.cc / koudingke.cn / coding-plan.org) confirms 20+ vendors / 100+ plans still selling; head-cloud exits filled by national-supercomputing / carrier / domestic-GPU vendors. Added 15 new vendors (SCNet, StepFun, iFlytek, Baidu AI Cloud, Moore Threads, Youyun, Infinigence, Jiuzhang, China Unicom/Telecom/Mobile, GitCode, SenseTime, ZenMux, Huawei CodeArts).",
+    "2026-08-07: Price floor map - GitCode AtomCode & SenseTime Free are ¥0 (limited/public-beta); China Unicom Yuanjing Token Plan ¥15/mo is the cheapest paid Token Plan; SCNet Coding Plan Lite ¥20/mo cheapest paid Coding Plan (with free OpenClaw instance). Caveat: cheap = incomplete model roster / early ecosystem / can close anytime.",
+    "2026-08-07: Tencent Cloud Token Plan confirmed ON SALE (two lines: 通用 ¥39-599 / Hy ¥28-468) - earlier 'fully offline' finding was wrong (only Coding Plan retired 4/22).",
+    "2026-08-07: Zhipu CN new prices confirmed Lite 118 / Pro 538 / Max 1078; yearly 30% / quarterly 20% promo until 2026-08-15 (~8 days left).",
+    "2026-08-06 (this run, HEADLINE, CORRECTED 8/7): Volcano Ark 2.5x promo windows CONFLICT - dev-community official article states 'until 2026-08-07'; 3rd-party say 8/8; activity-doc says 11/8. Take MOST CONSERVATIVE = 8/7. 8/8 only applies to GLM-5.2 deduction 25%-off (model billing). Two promos were conflated.",
     "2026-08-06 (this run): Volcano Ark Agent Plan full tiers exposed - first 'Agent package' with AFP (Agent Fuel Points) metering, bundles multimodal models + Harness. Personal Small 40/9.9, Medium 200/49.9, Large 500, Max 1000 CNY; Team 120/600/1500/3000. Up to 80%+ cheaper than pay-as-you-go for V4 series.",
     "2026-08-06 (this run): Coding Plan category life-and-death ledger: from 9 vendors / 28 plans (Mar 2026) to basically only Zhipu + Volcano Ark still selling normally (Aug). Tencent Cloud (4/22), Baidu Qianfan (7/13), JD Cloud (new purchase halted), Alibaba (Pro only flash sale), Kimi (subscription paused 7/19) all exited or shrank.",
     "2026-08-06 (this run): Alibaba Bailian 4-plan system fully mapped - Token Plan (Personal + Team), Coding Plan (Pro only), Night Plan (23:00-07:00 as low as 0.2x, stacks), AI General Savings Plan (up to 5.3x). CRITICAL red line: Coding Plan and Token Plan mutually exclusive on same account; 3-way API Key incompatibility; both forbid non-interactive use.",
@@ -1154,6 +1667,7 @@
     "2026-07-20: GitHub Code Quality GA ($10/active committer + usage)"
   ],
   "trends": [
+    "DeepSeek hike ends the 'few-cents per MTok' era: as the global price anchor turns, peers get a pricing window. 2026 hikers include Zhipu (3x), Tencent Cloud (Hunyuan up to +460%), Moonshot, MiniMax, StepFun, Alibaba, Baidu. Competition shifts from unit price to 'model capability + ctx window + toolchain + SLA'.",
     "THREE-WAY price split in one week: OpenAI cut (Luna -80%), DeepSeek pushed lower (V4-Flash out $0.28), Zhipu raised (Pro +261%). Vendors pick strategy by compute cost & ecosystem position - not a single 'up/down' trend",
     "DeepSeek redefines the cost floor: 1 point behind on AA index (50 vs 51), 60% cheaper - destabilizes all mid-position models; most direct hit on CN coding/agent/long-ctx models esp GLM-5.2 (Zhipu stock -20% that week)",
     "WARNING nominal-cut/actual-rise: devs report OpenAI now charges cache-creation that was free; 'cost may feel 2x higher'. Always check cache billing rule changes, not just list price",
@@ -1163,7 +1677,7 @@
     "Model routing = cost lever: cheap models (V4-Flash/Luna/Haiku/GLM-4.7/MAI-Code-1-Flash) save multiples; Volcano flags high deduction coeff for MiniMax-M2.7/Kimi-K2.6/V4-Pro",
     "DEDICATED coding models replace frontier generalists: Kimi K2.7 Code ($4 out) not K3 ($15); MS MAI-Code-1-Flash; Kuaishou KAT-Coder-Pro. 'Frontier model for coding' becomes a luxury",
     "Migration cost is the soft spot: AI coding lacks social-network lock-in, user switching cost is low -> low price won't convert to long-term lock-in; users need not over-loyal to any vendor",
-    "DEADLINE-anxiety marketing warning: Volcano Ark 2.5x was widely misreported as 'ends 8/8' while official window is 11/8. Always verify the vendor official activity doc before acting on 'last chance' claims.",
+    "DEADLINE-anxiety marketing warning: Volcano Ark 2.5x windows CONFLICT (dev-community 8/7 / 3rd-party 8/8 / activity-doc 11/8). Take MOST CONSERVATIVE and label uncertainty; do NOT bet on 11/8. GLM-5.2 deduction 2.5x (8/8) is a separate promo. Always verify vendor official activity doc.",
     "Subscription expanding from 'Coding' to full 'Agent scenario': Volcano Ark Agent Plan bundles multimodal + Harness - 'Coding Plan' may just be a transitional form of 'Agent Plan'.",
     "Time-of-day discount leaderboard: Alibaba Night Plan 0.2x (strongest) > Zhipu off-peak 0.5x > Z.ai non-peak 1x (to Sep) > Xiaomi night 0.8x. Shifting heavy work off-peak = free 20%-99.8% discount.",
     "Model competition shifts from parameter scale to system engineering: V4-Flash gained capability via post-training + Harness, not bigger params. Future wins on 'model + Harness + tools + data' combo."
