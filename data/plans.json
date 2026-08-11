@@ -1,14 +1,14 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-08-07",
+    "updated": "2026-08-11",
     "cadence": "Daily 09:05",
     "currency": "USD unless noted",
     "sources": [
       "vendor official pricing pages",
       "official docs (api-docs.deepseek.com, platform.kimi.com, docs.volcengine.com, help.aliyun.com/lingma, platform.claude.com, docs.bigmodel.cn, platform.xiaomimimo.com, cloud.baidu.com, opencode.ai)",
       "official blogs",
-      "third-party price trackers (verified 2026-08-07)"
+      "third-party price trackers (verified 2026-08-11)"
     ]
   },
   "vendors": [
@@ -471,7 +471,13 @@
         "note": "quota raised 30% on 2026-07-30"
       },
       "promo": "Yearly 30% off / quarterly 20% off until 2026-08-15",
-      "notes": "Tier ratios changed: Pro=6x Lite, Max=14x Lite (was 5x/20x). Legacy V1/V2 and team plans keep original pricing & rules. Models: GLM-5.2 / GLM-5-Turbo / GLM-4.7 (GLM-5.1/GLM-5 auto-route to 5.2). 20+ tools; OpenClaw runs at secondary scheduling priority. Official claim: up to 92% cheaper than pay-as-you-go GLM-5.2 API when using off-peak. HighSpeed tier available by application. ZCode 3.0 ADE uses in-house agent kernel, GLM-5.2 gets 1.5x quota inside ZCode. CN uses CREDIT metering; Intl Z.ai retains PROMPT-COUNT (two systems now fully diverged)."
+      "notes": "Tier ratios changed: Pro=6x Lite, Max=14x Lite (was 5x/20x). Legacy V1/V2 and team plans keep original pricing & rules. Models: GLM-5.2 / GLM-5-Turbo / GLM-4.7 (GLM-5.1/GLM-5 auto-route to 5.2). 20+ tools; OpenClaw runs at secondary scheduling priority. Official claim: up to 92% cheaper than pay-as-you-go GLM-5.2 API when using off-peak. HighSpeed tier available by application. ZCode 3.0 ADE uses in-house agent kernel, GLM-5.2 gets 1.5x quota inside ZCode. CN uses CREDIT metering; Intl Z.ai retains PROMPT-COUNT (two systems now fully diverged).",
+      "discount": {
+        "annual": "30% off (7折)",
+        "quarterly": "20% off (8折)",
+        "deadline": "2026-08-15"
+      },
+      "note_2026_08_11": "New credit-plan prices (Lite ¥118 / Pro ¥538 / Max ¥1,078) confirmed. Discount (annual 7折 / quarterly 8折) ends 2026-08-15 (only 4 days left). GLM-5.2 deduction coeff Input 6.9 / Cached 1.7 / Output 24; weekend 0.5x, peak (Mon-Fri 14-18) 1x."
     },
     {
       "name": "Baidu Qianfan Token Plan (Personal)",
@@ -591,7 +597,8 @@
         }
       ],
       "red_line": "CRITICAL: Coding Plan and Token Plan benefits are MUTUALLY EXCLUSIVE - same account cannot subscribe to both; their API Keys and pay-as-you-go Keys are THREE-WAY incompatible. Both forbid non-interactive use (scripts, backend, batch) - violation may ban Key.",
-      "notes": "Token Plan uses 5h rolling + 7d dual window, Credits no rollover, interactive tools only (Qoder CN, Cursor, Claude Code, OpenClaw). Coding Plan bills by request count not token; Key prefix sk-sp-; Base URL https://coding.dashscope.aliyuncs.com/v1; primary account only, no API calls, no refund. Night Plan needs no extra subscription. Savings Plan covers all Bailian models, monthly quota cleared if unused. Free 70M Tokens for all Bailian users."
+      "notes": "Token Plan uses 5h rolling + 7d dual window, Credits no rollover, interactive tools only (Qoder CN, Cursor, Claude Code, OpenClaw). Coding Plan bills by request count not token; Key prefix sk-sp-; Base URL https://coding.dashscope.aliyuncs.com/v1; primary account only, no API calls, no refund. Night Plan needs no extra subscription. Savings Plan covers all Bailian models, monthly quota cleared if unused. Free 70M Tokens for all Bailian users.",
+      "alert_2026_08_11": "Token Plan Personal Lite/Standard temporarily SOLD OUT (only Pro ¥499 available); Coding Plan only Pro remains (first month ¥39.9, Lite delisted); Qwen3.8-Max-Preview limited-time Credits 10% off."
     },
     {
       "name": "Alibaba Qoder CN",
@@ -656,7 +663,7 @@
           "tier": "Small / Lite",
           "price": 40,
           "promo": 9.9,
-          "promo_window": "2026-06-08 to 2026-11-08 (first 2 months 25% off; per-acct max 2 months; first-come-first-served on quota)",
+          "promo_window": "Package 25%-off (first 2 months: Small ¥9.9 / Medium ¥49.9) ENDS 2026-08-27 (corrected Aug-11). GLM-5.2 deduction 25%-off ENDED 2026-08-08 23:59 (separate promo). Per-acct max 2 months; first-come-first-served on quota.",
           "subscribable": true
         },
         {
@@ -667,7 +674,7 @@
           "subscribable": true
         }
       ],
-      "notes": "CORRECTED promo window: official activity doc states 2026/6/8-2026/11/8 (NOT 8/8 - that applies only to GLM-5.2 deduction 25%-off ending 8/8 23:59). Two promos were previously conflated. Quota refresh: 5h rolls from first request; weekly resets Mon 00:00; monthly on sub-month day 1. RED LINE: quota valid only inside AI coding tools; using Base URL/API Key in non-coding tools may be flagged abuse -> suspension/ban. Use /api/coding/v3 (OpenAI) or /api/coding (Anthropic). MODEL REFRESH (Aug): added Kimi-K2.7-Code, MiniMax-M3, DeepSeek-V4-Flash, DeepSeek-V4-Pro, Doubao-Seed-2.1-turbo; retiring Doubao-Seed-2.0-Code/pro/Seed-Code. 1M ctx: glm-5.2, deepseek-v4-flash, deepseek-v4-pro. Tools: Claude Code, TRAE, Roo Code, Codex CLI, OpenCode, Cline, Kilo Code, OpenClaw, Cursor, Hermes Agent.",
+      "notes": "CORRECTED (Aug-11): package 25%-off ends 2026-08-27, NOT 11/8. GLM-5.2 deduction 25%-off ended 2026-08-08 23:59. Two promos were previously conflated. Quota refresh: 5h rolls from first request; weekly resets Mon 00:00; monthly on sub-month day 1. RED LINE: quota valid only inside AI coding tools.",
       "deadline": "2026-11-08"
     },
     {
@@ -792,7 +799,8 @@
           "subscribable": true
         }
       ],
-      "notes": "2026-05-27 permanent API price cut up to 99% + Token Plan credits raised 5-8x at same price (0.6/2/7/16 hundred-million -> 41/110/380/820 hundred-million), with a one-time 'credits refresh reset' for existing users. Credit conversion: mimo-v2.5-pro cache-hit 2.5 credits/token, miss 300, output 600. Discounts: NIGHT 00:00-08:00 x0.8, first purchase 12% off, annual 12% off, first auto-renew 23% off. Models: mimo-v2.5-pro, mimo-v2.5, mimo-v2-omni, mimo-v2-flash, ASR, TTS (TTS free for limited time). Tools: Claude Code, OpenClaw, OpenCode, KiloCode, Roo Code, Cline, Codex, Cherry Studio, Zed, TRAE, CodeBuddy. OpenAI + Anthropic API compatible. Real-name required, no refunds."
+      "notes": "2026-05-27 permanent API price cut up to 99% + Token Plan credits raised 5-8x at same price (0.6/2/7/16 hundred-million -> 41/110/380/820 hundred-million), with a one-time 'credits refresh reset' for existing users. Credit conversion: mimo-v2.5-pro cache-hit 2.5 credits/token, miss 300, output 600. Discounts: NIGHT 00:00-08:00 x0.8, first purchase 12% off, annual 12% off, first auto-renew 23% off. Models: mimo-v2.5-pro, mimo-v2.5, mimo-v2-omni, mimo-v2-flash, ASR, TTS (TTS free for limited time). Tools: Claude Code, OpenClaw, OpenCode, KiloCode, Roo Code, Cline, Codex, Cherry Studio, Zed, TRAE, CodeBuddy. OpenAI + Anthropic API compatible. Real-name required, no refunds.",
+      "alert_2026_08_11": "MiMo-V2.5-Pro API permanent $1/$3 per M (input/output). MiMoCode + MiMo-V2.5 still free."
     },
     {
       "name": "MiniMax Token Plan",
@@ -800,6 +808,12 @@
       "currency": "CNY",
       "billing": "monthly token quota, shared across all modalities",
       "plans": [
+        {
+          "tier": "Starter",
+          "price": 29,
+          "included": "150M+ tokens/mo, entry tier",
+          "subscribable": true
+        },
         {
           "tier": "Plus",
           "price": 49,
@@ -822,7 +836,8 @@
           "subscribable": true
         }
       ],
-      "notes": "Models: M3 (flagship, released 2026-05-31, 512K ctx), M2.7, M2.7-highspeed + image/voice/music sharing the same quota. M2.7 Lite tier delisted. API-vlm repriced to 0.025 CNY/call from 2026-07-22. Tools: Claude Code, Roo Code, Kilo Code, Cline, Codex CLI, OpenCode, Droid, TRAE, Grok CLI, Cursor, OpenClaw."
+      "notes": "Models: M3 (flagship, released 2026-05-31, 512K ctx), M2.7, M2.7-highspeed + image/voice/music sharing the same quota. M2.7 Lite tier delisted. API-vlm repriced to 0.025 CNY/call from 2026-07-22. Tools: Claude Code, Roo Code, Kilo Code, Cline, Codex CLI, OpenCode, Droid, TRAE, Grok CLI, Cursor, OpenClaw.",
+      "alert_2026_08_11": "Added Starter ¥29 entry tier. M3 API permanent 50% off."
     },
     {
       "name": "Kimi Code Plan",
@@ -867,7 +882,14 @@
       ],
       "notes": "Kimi K3 released 2026-07-17 (2.8T params, 1M context), open weights late Jul. Kimi K2.7 Code is now DEFAULT model in Kimi Code (thinking-only; falls back to K2.6 if thinking off; API ¥1.30/¥6.50/¥27 CN, $0.19/$0.95/$4.00 intl, HighSpeed 2x at $0.38/$1.90/$8.00). Max concurrency 30. Intl Kimi Code from $19/mo. Tools: Kimi CLI, Claude Code, Roo Code, Kimi Code for VS Code.",
       "subscription_status": "SUSPENDED (C-end new-user subscription paused since 2026-07-19; only reserve/预约; no reopen date)",
-      "pause_timeline": "7/17 K3 launched (2.8T, 1M ctx, largest open model); 7/19 23:00 paused all C-end new subs (compute crunch within 48h); 7/20-26 user backlash; 7/26 halted unreleased new tiers; 7/27 open-sourced K3 weights; as of 8/6 still reserve-only. Root cause: K3 needs ~3TB VRAM / 64x H800."
+      "pause_timeline": "7/17 K3 launched (2.8T, 1M ctx, largest open model); 7/19 23:00 paused all C-end new subs (compute crunch within 48h); 7/20-26 user backlash; 7/26 halted unreleased new tiers; 7/27 open-sourced K3 weights; as of 8/6 still reserve-only. Root cause: K3 needs ~3TB VRAM / 64x H800.",
+      "c_end_subscription_paused": true,
+      "k3_api_pricing": {
+        "input_cny_per_M": 20,
+        "cached_input_cny_per_M": 2,
+        "output_cny_per_M": 100
+      },
+      "alert_2026_08_11": "C-end subscription still paused since 7/19 (reservation only). K3 API recharge 10-30% bonus ended 2026-08-11. K3 API: input ¥20/M (cached ¥2/M), output ¥100/M."
     },
     {
       "name": "Tencent Cloud Token Plan",
@@ -929,7 +951,8 @@
           "subscribable": true
         }
       ],
-      "notes": "Coding Plan 已于 4/22 下线（页面 404）；Token Plan 个人版双线在售（通用 + Hy，Hy 便宜约 22-28%）。可用 GLM-5.2/Kimi-K2.6/MiniMax-M2.7/DeepSeek-V4-Pro/Hunyuan 等；缓存命中/未命中/输出统一抵扣无差别定价。DeepSeek V4 由直供，不提供 SLA；模型库动态更新不承诺固定可用。"
+      "notes": "Coding Plan 已于 4/22 下线（页面 404）；Token Plan 个人版双线在售（通用 + Hy，Hy 便宜约 22-28%）。可用 GLM-5.2/Kimi-K2.6/MiniMax-M2.7/DeepSeek-V4-Pro/Hunyuan 等；缓存命中/未命中/输出统一抵扣无差别定价。DeepSeek V4 由直供，不提供 SLA；模型库动态更新不承诺固定可用。",
+      "alert_2026_08_11": "Hy3 preview & Kimi-K2.5 will be EOL 2026-08-31 — migrate ahead."
     },
     {
       "name": "JD Cloud Coding Plan",
