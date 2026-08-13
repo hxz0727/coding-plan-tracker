@@ -1,14 +1,14 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-08-11",
+    "updated": "2026-08-13",
     "cadence": "Daily 09:05",
     "currency": "USD unless noted",
     "sources": [
       "vendor official pricing pages",
-      "official docs (api-docs.deepseek.com, platform.kimi.com, docs.volcengine.com, help.aliyun.com/lingma, platform.claude.com, docs.bigmodel.cn, platform.xiaomimimo.com, cloud.baidu.com, opencode.ai)",
+      "official docs (api-docs.deepseek.com, platform.kimi.com, docs.volcengine.com, help.aliyun.com/lingma, platform.claude.com, docs.bigmodel.cn, platform.xiaomimimo.com, cloud.baidu.com, opencode.ai, x.ai)",
       "official blogs",
-      "third-party price trackers (verified 2026-08-11)"
+      "third-party price trackers (verified 2026-08-13)"
     ]
   },
   "vendors": [
@@ -1507,7 +1507,8 @@
       "cache_hit": 0.003625,
       "input": 0.435,
       "output": 0.87,
-      "note": "1M ctx/384K out; still 'trial' on some platforms"
+      "note": "GA (0813); 1M ctx/384K out; still pre-hike price; peak/valley: 9:00-12:00 & 14:00-18:00 Beijing time 2x; overall API hike preview pending (est 9/1)",
+      "date": "2026-08-13"
     },
     {
       "model": "Kimi K2.7 Code",
@@ -1550,10 +1551,11 @@
       "note": "cut 20% from $2.5/$15"
     },
     {
-      "model": "xAI Grok 4.5",
+      "model": "xAI Grok 4.6",
       "input": 2.0,
       "output": 6.0,
-      "date": "2026-07-08"
+      "date": "2026-08-12",
+      "note": "500K ctx; >200K doubles to $4/$12 whole request; Fast variant 2x; AA Index 61 ties GPT-5.6 Sol"
     },
     {
       "model": "Claude Sonnet 5",
@@ -1593,24 +1595,14 @@
   ],
   "upcoming_deadlines": [
     {
-      "date": "2026-08-07",
-      "event": "Volcano Ark 2.5x package promo MOST CONSERVATIVE deadline (dev-community official article 'until 2026-08-07'); conflicting 3rd-party 8/8 / activity-doc 11/8 exist - do NOT bet on 11/8",
-      "status": "passed"
-    },
-    {
-      "date": "2026-08-05",
-      "event": "Claude Opus 4.1 API retirement -> Opus 4.8 (DONE today)",
+      "date": "2026-08-13",
+      "event": "DeepSeek-V4-Pro GA (0813); peak/valley pricing rules published (peak 2x); overall API hike preview still pending",
       "status": "passed"
     },
     {
       "date": "2026-08-08",
       "event": "Volcano Ark GLM-5.2 deduction 25%-off ends 23:59 (model billing discount, NOT package price)",
-      "status": "imminent"
-    },
-    {
-      "date": "2026-11-08",
-      "event": "Volcano Ark Agent/Coding Plan package first-2-months 25%-off: WINDOWS CONFLICT - dev-community official article says 'until 2026-08-07', 3rd-party say 8/8, activity-doc says 11/8. Take MOST CONSERVATIVE = 2026-08-07. Per-acct max 2 months; first-come-first-served.",
-      "status": "disputed"
+      "status": "passed"
     },
     {
       "date": "2026-08-15",
@@ -1623,8 +1615,18 @@
       "status": "upcoming"
     },
     {
+      "date": "2026-08-27",
+      "event": "Volcano Ark Coding/Agent Plan package first-2-months 25%-off ends (GLM-5.2 deduction 25%-off already ended 8/8); per-acct max 2 months, first-come-first-served",
+      "status": "upcoming"
+    },
+    {
       "date": "2026-08-31",
-      "event": "Claude Sonnet 5 intro pricing ends -> $3/$15 (+50%); GitHub Copilot Business/Enterprise promo credits end -> revert to $19/$39",
+      "event": "Claude Sonnet 5 intro pricing ends -> $3/$15 (+50%, now cancelled per 8/11 lock); GitHub Copilot Business/Enterprise promo credits end -> revert to $19/$39",
+      "status": "upcoming"
+    },
+    {
+      "date": "2026-09-01",
+      "event": "DeepSeek overall API price hike (est.) - V4-Pro peak/valley rules published, formal scheme TBD",
       "status": "upcoming"
     },
     {
@@ -1636,9 +1638,17 @@
       "date": "2026-08 mid",
       "event": "Zhipu V1 -> V2 legacy-price subscription entry expected to go live",
       "status": "upcoming"
+    },
+    {
+      "date": "2026-11-08",
+      "event": "Volcano Ark activity-doc states package 25%-off window extends to 11/8 (disputed vs 8/27 reading) - treat 8/27 as authoritative",
+      "status": "disputed"
     }
   ],
   "latest_news": [
+    "2026-08-13 (HEADLINE): DeepSeek-V4-Pro GA shipped as DeepSeek-V4-Pro-0813 - 1M ctx/384K out, Agent scores jump (DeepSWE 12.8->62.7, TerminalBench 87.9 vs Fable 5 88.0, CyberGym 83.3 beats Fable 5 83.1). Price = 3x Flash (cache-hit in 0.025 / in 3 / out 6 CNY). Concurrency 500 (Flash 2500). Peak/valley rules published (peak 2x, Beijing 9-12 & 14-18). Overall API hike preview still pending (est 9/1).",
+    "2026-08-12 (HEADLINE): xAI Grok 4.6 released - $2/$6 per MTok, 500K ctx (>200K doubles to $4/$12), Fast variant 2x. AA Index 61 ties GPT-5.6 Sol. Live in Cursor + Grok Build, API via OpenRouter/Vercel/Cloudflare; 2x included usage first week. Grok 4.7 (2.1T) in weeks, Grok 5 by year-end.",
+    "2026-08 (NEW VENDOR): Meta Muse Code enters at Contributor tier - output $0.20/MTok, pure usage-based, NO subscription; caveat: trains on your code (privacy-sensitive use caution).",
     "2026-08-07 (HEADLINE): DeepSeek (8/6) previewed an API-wide price HIKE ('整体上调、涨幅较大') - last low-price holdout reverses. U-shaped pricing: floor in 2024 -> peak-valley pricing 6/30 -> hike 8/6. Trigger: 8T tokens/day on V4 Flash (OpenCode), 8/4 capacity failure, agent-driven usage explosion. Still cheapest globally (task ~$0.03 vs Fable 5 $3.15, 105x). Devs: shift bulk/offline to off-peak (x0.5 now), raise cache-hit, build multi-model routing, do NOT pre-load balance.",
     "2026-08-07: CORRECTION - Coding Plan category did NOT shrink to just Zhipu + Volcano Ark. Live scan (weloveai.cc / koudingke.cn / coding-plan.org) confirms 20+ vendors / 100+ plans still selling; head-cloud exits filled by national-supercomputing / carrier / domestic-GPU vendors. Added 15 new vendors (SCNet, StepFun, iFlytek, Baidu AI Cloud, Moore Threads, Youyun, Infinigence, Jiuzhang, China Unicom/Telecom/Mobile, GitCode, SenseTime, ZenMux, Huawei CodeArts).",
     "2026-08-07: Price floor map - GitCode AtomCode & SenseTime Free are ¥0 (limited/public-beta); China Unicom Yuanjing Token Plan ¥15/mo is the cheapest paid Token Plan; SCNet Coding Plan Lite ¥20/mo cheapest paid Coding Plan (with free OpenClaw instance). Caveat: cheap = incomplete model roster / early ecosystem / can close anytime.",
@@ -1703,6 +1713,7 @@
     "DEADLINE-anxiety marketing warning: Volcano Ark 2.5x windows CONFLICT (dev-community 8/7 / 3rd-party 8/8 / activity-doc 11/8). Take MOST CONSERVATIVE and label uncertainty; do NOT bet on 11/8. GLM-5.2 deduction 2.5x (8/8) is a separate promo. Always verify vendor official activity doc.",
     "Subscription expanding from 'Coding' to full 'Agent scenario': Volcano Ark Agent Plan bundles multimodal + Harness - 'Coding Plan' may just be a transitional form of 'Agent Plan'.",
     "Time-of-day discount leaderboard: Alibaba Night Plan 0.2x (strongest) > Zhipu off-peak 0.5x > Z.ai non-peak 1x (to Sep) > Xiaomi night 0.8x. Shifting heavy work off-peak = free 20%-99.8% discount.",
-    "Model competition shifts from parameter scale to system engineering: V4-Flash gained capability via post-training + Harness, not bigger params. Future wins on 'model + Harness + tools + data' combo."
+    "Model competition shifts from parameter scale to system engineering: V4-Flash gained capability via post-training + Harness, not bigger params. Future wins on 'model + Harness + tools + data' combo.",
+    "Model releases + hike previews coexist: same week DeepSeek V4-Pro GA and Grok 4.6 shipped (capability up), yet DeepSeek's overall hike preview stands and V4-Pro is 3x Flash - industry now in 'capability up + price up' phase; track hike timelines, not just benchmarks."
   ]
 }
