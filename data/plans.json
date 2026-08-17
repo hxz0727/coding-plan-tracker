@@ -1,14 +1,14 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-08-14",
+    "updated": "2026-08-17",
     "cadence": "Daily 09:05",
     "currency": "USD unless noted",
     "sources": [
       "vendor official pricing pages",
       "official docs (api-docs.deepseek.com, platform.kimi.com, docs.volcengine.com, help.aliyun.com/lingma, platform.claude.com, docs.bigmodel.cn, platform.xiaomimimo.com, cloud.baidu.com, opencode.ai, x.ai)",
       "official blogs",
-      "third-party price trackers (verified 2026-08-14)"
+      "third-party price trackers (verified 2026-08-17)"
     ]
   },
   "vendors": [
@@ -1488,15 +1488,25 @@
   ],
   "model_token_prices_per_MTok": [
     {
+      "model": "GLM-5.3 (Zhipu)",
+      "api_price_published": false,
+      "coding_plan_only": true,
+      "lite_usd": 18,
+      "pro_usd": 80,
+      "max_usd": 168,
+      "date": "2026-08-14",
+      "note": "Released 2026-08-14 via GLM Coding Plan only; per-token API pricing not yet published (expected to follow GLM-5.2 ~$1.4/$4.4 per MTok). Terminal-Bench 3.0 4.6->28.3 (open-model #1). Weights (MIT) planned ~2026-08-28 after safety hardening."
+    },
+    {
       "model": "DeepSeek-V4-Flash",
-      "cache_hit": 0.0063,
+      "cache_hit": 0.0069,
       "input": 0.211,
       "output": 0.634,
       "peak_cache_hit": 0.0141,
       "peak_input": 0.423,
       "peak_output": 1.268,
       "date": "2026-08-14",
-      "note": "NEW peak/valley pricing eff 2026-08-17 (Beijing 9-12 & 14-18 = 2x valley). Off-peak (valley) shown as main. Pre-hike (to 8/16): cache-hit 0.0028 / in 0.14 / out 0.28 (CNY 0.02/1/2). Peak output 4.5x, peak cache-hit 5x vs old; weights MIT-open. USD at ~7.1."
+      "note": "OFFICIAL peak/valley pricing EFFECTIVE 2026-08-17 (Beijing 9-12 & 14-18 = 2x valley). Valley(main) cache-hit CNY 0.05 / in 1.5 / out 4.5; Peak cache-hit CNY 0.10 / in 3 / out 9. Pre-hike(to 8/16): cache-hit 0.02 / in 1 / out 2 (CNY). Peak output 4.5x, peak cache-hit 5x vs old; valley output 2.25x, valley cache-hit 2.5x."
     },
     {
       "model": "GPT-5.6 Luna",
@@ -1514,7 +1524,7 @@
       "peak_input": 1.268,
       "peak_output": 3.803,
       "date": "2026-08-14",
-      "note": "NEW peak/valley pricing eff 2026-08-17 (Beijing 9-12 & 14-18 = 2x valley). Off-peak (valley) shown as main. Pre-hike (to 8/16): cache-hit 0.025 / in 3 / out 6 CNY. Peak output 4.5x, peak cache-hit 12x vs old; V4-Pro-0813 weights (1.6T/490B active/1M ctx/384K out) + Harness v0.1 MIT-open. USD at ~7.1."
+      "note": "OFFICIAL peak/valley pricing EFFECTIVE 2026-08-17 (Beijing 9-12 & 14-18 = 2x valley). Valley(main) cache-hit CNY 0.15 / in 4.5 / out 13.5; Peak cache-hit CNY 0.30 / in 9 / out 27. Pre-hike(to 8/16): cache-hit 0.025 / in 3 / out 6 (CNY). Peak output 4.5x, peak cache-hit 12x vs old; valley output 2.25x, valley cache-hit 6x. V4-Pro exited preview -> GA commercial 2026-08-17."
     },
     {
       "model": "Kimi K2.7 Code",
@@ -1612,8 +1622,8 @@
     },
     {
       "date": "2026-08-15",
-      "event": "Zhipu GLM Coding Plan yearly 30% / quarterly 20% promo ends; Qwen3.8-27B weights also due (ModelScope countdown 2026-08-15 00:00 JST, Tongyi Qianwen license)",
-      "status": "upcoming"
+      "event": "Zhipu GLM Coding Plan yearly 30%/quarterly 20% promo ends; Qwen3.8-27B weights released 8/14-15 as APACHE 2.0 (correction: not Tongyi Qianwen license).",
+      "status": "passed"
     },
     {
       "date": "2026-08-17",
@@ -1623,7 +1633,8 @@
     {
       "date": "2026-08-27",
       "event": "Volcano Ark Coding/Agent Plan package first-2-months 25%-off ends (GLM-5.2 deduction 25%-off already ended 8/8); per-acct max 2 months, first-come-first-served",
-      "status": "upcoming"
+      "status": "superseded",
+      "note": "Official Volcano docs confirm 25%-off window extends to 2026-11-08; 8/27 reading withdrawn."
     },
     {
       "date": "2026-08-31",
@@ -1652,16 +1663,45 @@
     },
     {
       "date": "2026-11-08",
-      "event": "Volcano Ark activity-doc states package 25%-off window extends to 11/8 (disputed vs 8/27 reading) - treat 8/27 as authoritative",
-      "status": "disputed"
+      "event": "Volcano Ark Coding/Agent Plan package first-2-months 25%-off ends (Lite CNY 9.9/mo, Pro CNY 49.9/mo; third month onward list price). OFFICIAL per Volcano docs.",
+      "status": "upcoming"
+    },
+    {
+      "date": "2026-08-20",
+      "event": "Kimi K3 old-plan renewal cutoff: accounts whose subscription lapsed >7 days can no longer renew old plans (active/auto-renew unaffected)",
+      "status": "upcoming"
+    },
+    {
+      "date": "2026-08-28",
+      "event": "Zhipu GLM-5.3 weights (MIT) expected to open after ~2-week safety hardening",
+      "status": "upcoming"
     }
   ],
   "latest_news": [
+    {
+      "date": "2026-08-17",
+      "head": "DeepSeek peak/valley pricing TAKES EFFECT; V4-Pro exits preview -> GA commercial. Peak output 4.5x / cache-hit 12x vs old."
+    },
+    {
+      "date": "2026-08-14",
+      "head": "Zhipu GLM-5.3 ships to all GLM Coding Plan tiers (Terminal-Bench 3.0 4.6->28.3, open-model #1); subscription reopened after price hike."
+    },
+    {
+      "date": "2026-08-14",
+      "head": "Alibaba open-sources Qwen3.8-27B weights under Apache 2.0 (correction: not Tongyi Qianwen license); 27B Dense, 262K ctx, consumer-GPU runnable."
+    },
+    {
+      "date": "2026-08-17",
+      "head": "Volcano Ark 25%-off window confirmed to 2026-11-08 (Lite CNY 9.9 / Pro CNY 49.9 first 2 months), correcting earlier 8/27 reading."
+    },
+    {
+      "date": "2026-08-17",
+      "head": "Kimi K3 consumer subscriptions still paused since 7/19; from 8/20 old plans lapsed >7 days cannot renew."
+    },
     "2026-08-14 (HEADLINE): DeepSeek PUBLISHED final price hike - effective 2026-08-17 00:00 (NOT 9/1 as earlier est). Peak/valley: peak (Beijing 9-12 & 14-18) = 2x valley. V4-Pro peak cache-hit CNY 0.30 (12x old), in CNY 9, out CNY 27 (4.5x); valley 0.15/4.5/13.5. V4-Flash peak 0.10/3/9, valley 0.045/1.5/4.5. Even all-valley = 2.25x old output. Pre-hike prices valid only to 8/16.",
     "2026-08-13/14 (HEADLINE): DeepSeek open-sourced V4-Pro-0813 weights (MIT, 1.6T/490B active/1M ctx/384K out) AND DeepSeek Harness v0.1 (MIT, Cordis-based, everything-is-a-plugin, 4 modes, npx @deepseek-ai/dsh web) - strategic shift from selling tokens to selling Agent workspace/platform (rivals Claude Code/Cowork/Codex).",
     "2026-08-13 (NEW): Alibaba open-sourced Qwen3.8-2.4T-A95B weights (first Max-tier flagship open) on HF+ModelScope; 2.4T/95B active/256K ctx (to 1.01M); PaperBench 93.0, OSWorld-Verified 86.1, TerminalBench 2.1 86.6, SWE-bench Pro 67.7; AA Index 58; API $2/$6. Qwen3.8-27B weights due 2026-08-15 (Tongyi Qianwen license, not Apache).",
     "2026-08-14: Morgan Stanley (8/9 report Intelligence War Over Price War) - China LLM avg API input price reached CNY 4.9/MTok in 2026 Q2 (+48% vs 2025 Q1 CNY 3.3), output CNY 21.9/MTok (+80% vs CNY 12.2). Industry moving from price war to capability competition.",
-
     "2026-08-13 (HEADLINE): DeepSeek-V4-Pro GA shipped as DeepSeek-V4-Pro-0813 - 1M ctx/384K out, Agent scores jump (DeepSWE 12.8->62.7, TerminalBench 87.9 vs Fable 5 88.0, CyberGym 83.3 beats Fable 5 83.1). Price = 3x Flash (cache-hit in 0.025 / in 3 / out 6 CNY). Concurrency 500 (Flash 2500). Peak/valley rules published (peak 2x, Beijing 9-12 & 14-18). Overall API hike preview still pending (est 9/1).",
     "2026-08-12 (HEADLINE): xAI Grok 4.6 released - $2/$6 per MTok, 500K ctx (>200K doubles to $4/$12), Fast variant 2x. AA Index 61 ties GPT-5.6 Sol. Live in Cursor + Grok Build, API via OpenRouter/Vercel/Cloudflare; 2x included usage first week. Grok 4.7 (2.1T) in weeks, Grok 5 by year-end.",
     "2026-08 (NEW VENDOR): Meta Muse Code enters at Contributor tier - output $0.20/MTok, pure usage-based, NO subscription; caveat: trains on your code (privacy-sensitive use caution).",
@@ -1716,6 +1756,10 @@
     "2026-07-20: GitHub Code Quality GA ($10/active committer + usage)"
   ],
   "trends": [
+    {
+      "date": "2026-08-14",
+      "trend": "Post-training scaling beats pre-training: Zhipu lifted GLM-5.3 coding 50% over GLM-5.2 on same base weights - frontier capability gains now cheaper than capex suggests."
+    },
     "DeepSeek hike ends the 'few-cents per MTok' era: as the global price anchor turns, peers get a pricing window. 2026 hikers include Zhipu (3x), Tencent Cloud (Hunyuan up to +460%), Moonshot, MiniMax, StepFun, Alibaba, Baidu. Competition shifts from unit price to 'model capability + ctx window + toolchain + SLA'.",
     "THREE-WAY price split in one week: OpenAI cut (Luna -80%), DeepSeek pushed lower (V4-Flash out $0.28), Zhipu raised (Pro +261%). Vendors pick strategy by compute cost & ecosystem position - not a single 'up/down' trend",
     "DeepSeek redefines the cost floor: 1 point behind on AA index (50 vs 51), 60% cheaper - destabilizes all mid-position models; most direct hit on CN coding/agent/long-ctx models esp GLM-5.2 (Zhipu stock -20% that week)",
