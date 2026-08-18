@@ -1,14 +1,14 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-08-17",
+    "updated": "2026-08-18",
     "cadence": "Daily 09:05",
     "currency": "USD unless noted",
     "sources": [
       "vendor official pricing pages",
       "official docs (api-docs.deepseek.com, platform.kimi.com, docs.volcengine.com, help.aliyun.com/lingma, platform.claude.com, docs.bigmodel.cn, platform.xiaomimimo.com, cloud.baidu.com, opencode.ai, x.ai)",
       "official blogs",
-      "third-party price trackers (verified 2026-08-17)"
+      "third-party price trackers (verified 2026-08-18)"
     ]
   },
   "vendors": [
@@ -1632,7 +1632,7 @@
     },
     {
       "date": "2026-08-27",
-      "event": "Volcano Ark Coding/Agent Plan package first-2-months 25%-off ends (GLM-5.2 deduction 25%-off already ended 8/8); per-acct max 2 months, first-come-first-served",
+      "event": "Volcano Ark Coding/Agent Plan package first-2-months 25%-off - SUPERSEDED: official end is 2026-11-8 per Volcano docs (Lite CNY 9.9 / Pro CNY 49.9 first 2 months). GLM-5.2 deduction 25%-off already ended 8/8 (separate activity).",
       "status": "superseded",
       "note": "Official Volcano docs confirm 25%-off window extends to 2026-11-08; 8/27 reading withdrawn."
     },
@@ -1678,6 +1678,26 @@
     }
   ],
   "latest_news": [
+    {
+      "date": "2026-08-18",
+      "head": "DeepSeek peak/valley post-mortem: final rates exceed June plan (V4-Pro idle output CNY 13.5 > planned peak CNY 12) - a real overall hike, not just time-splitting. OpenCode Go quota cut ~94% (V4-Flash 63,300 -> 3,800 per 5h; V4-Pro 3,450 -> 1,050). Tencent CloudBase fully mirrors peak/valley (identical prices). Concurrency tightened: V4-Flash 2,500 / V4-Pro 500."
+    },
+    {
+      "date": "2026-08-18",
+      "head": "GLM-5.3 thinking layer now MANDATORY via API (breaking change: cannot disable). Self-host needs ~1.5TB fp / ~239GB quantized. Weights (MIT) expected ~Aug 28 after safety hardening; most sensitive cyber capability gated behind trusted-access, not open-sourced."
+    },
+    {
+      "date": "2026-08-18",
+      "head": "Kimi K3 C-end subscription still paused since Jul 19. Aug 20 hard cutoff: legacy plans lapsed >7 days can no longer renew; active/auto-renew unaffected. Official Jul 20 notice reaffirms old plans not removed, manual-rewind users can still renew, new plans blocked by compute."
+    },
+    {
+      "date": "2026-08-18",
+      "head": "Volcano Ark 2.5%-off (Coding/Agent Plan Lite/Pro, Small/Medium) OFFICIALLY confirmed through 2026-11-8 (Lite CNY 9.9 / Pro CNY 49.9 first 2 months) - corrects earlier \"8/27\" misread. Invite codes valid to 2026-12-31."
+    },
+    {
+      "date": "2026-08-17",
+      "head": "Price trackers refresh (Aug 17): Gemini 3.7 Flash $0.75/$3.75 (intro thru Dec 31, doubles Jan 1); Grok 4.6 GA $2/$6 (cached input $0.50); DeepSeek V4-Flash API now $0.22-0.44 / $0.66-1.32 (off-peak -> peak)."
+    },
     {
       "date": "2026-08-17",
       "head": "DeepSeek peak/valley pricing TAKES EFFECT; V4-Pro exits preview -> GA commercial. Peak output 4.5x / cache-hit 12x vs old."
@@ -1756,6 +1776,10 @@
     "2026-07-20: GitHub Code Quality GA ($10/active committer + usage)"
   ],
   "trends": [
+    {
+      "date": "2026-08-18",
+      "trend": "Upstream price hikes now transmit downstream: third-party cheap CodingPlans (OpenCode Go) slash quotas as DeepSeek raises API rates - the \"low-cost aggregator\" margin is collapsing, pushing heavy users toward direct model routing or self-hosting."
+    },
     {
       "date": "2026-08-14",
       "trend": "Post-training scaling beats pre-training: Zhipu lifted GLM-5.3 coding 50% over GLM-5.2 on same base weights - frontier capability gains now cheaper than capex suggests."
