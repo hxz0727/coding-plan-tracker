@@ -1,14 +1,14 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-08-18",
+    "updated": "2026-08-19",
     "cadence": "Daily 09:05",
     "currency": "USD unless noted",
     "sources": [
       "vendor official pricing pages",
       "official docs (api-docs.deepseek.com, platform.kimi.com, docs.volcengine.com, help.aliyun.com/lingma, platform.claude.com, docs.bigmodel.cn, platform.xiaomimimo.com, cloud.baidu.com, opencode.ai, x.ai)",
       "official blogs",
-      "third-party price trackers (verified 2026-08-18)"
+      "third-party price trackers (verified 2026-08-19)"
     ]
   },
   "vendors": [
@@ -1668,16 +1668,28 @@
     },
     {
       "date": "2026-08-20",
-      "event": "Kimi K3 old-plan renewal cutoff: accounts whose subscription lapsed >7 days can no longer renew old plans (active/auto-renew unaffected)",
+      "event": "Kimi K3 old-plan renewal cutoff: accounts whose subscription lapsed >7 days can no longer renew old plans (active/auto-renew unaffected). TOMORROW = 1 day left (Aug 20).",
       "status": "upcoming"
     },
     {
       "date": "2026-08-28",
-      "event": "Zhipu GLM-5.3 weights (MIT) expected to open after ~2-week safety hardening",
+      "event": "Zhipu GLM-5.3 weights to open-source NEXT FRIDAY = Aug 28 (CONFIRMED Aug 19; API already live, pricing = GLM-5.2). Responsible release; most sensitive cyber capability gated, not open-sourced. Coincides with 2026 Big Data Expo (Guiyang) opening same day.",
       "status": "upcoming"
     }
   ],
   "latest_news": [
+    {
+      "date": "2026-08-19",
+      "head": "Zhipu GLM-5.3 API GOES LIVE (Aug 19): pricing kept identical to GLM-5.2 (input/output ~$1.4/$4.4 per MTok, cache $0.26); AA Intelligence Index 60 pts = open-model #1 tied with Kimi K3; weights to open-source next Friday = Aug 28 (responsible release). Same base weights as 5.2, gains from post-training scaling; lowest per-task cost among frontier flagships."
+    },
+    {
+      "date": "2026-08-19",
+      "head": "GLM-5.3 integrated into ZCode and GLM Coding Plan; existing subscribers auto-upgraded to 5.3; thinking layer remains mandatory (API breaking change). Zhipu listed in HK (02513); market watches API+tooling monetization."
+    },
+    {
+      "date": "2026-08-19",
+      "head": "GLM-5.3 weight open-source date (Aug 28) coincides with 2026 Big Data Expo opening in Guiyang - open release may land at the expo."
+    },
     {
       "date": "2026-08-18",
       "head": "DeepSeek peak/valley post-mortem: final rates exceed June plan (V4-Pro idle output CNY 13.5 > planned peak CNY 12) - a real overall hike, not just time-splitting. OpenCode Go quota cut ~94% (V4-Flash 63,300 -> 3,800 per 5h; V4-Pro 3,450 -> 1,050). Tencent CloudBase fully mirrors peak/valley (identical prices). Concurrency tightened: V4-Flash 2,500 / V4-Pro 500."
@@ -1776,6 +1788,10 @@
     "2026-07-20: GitHub Code Quality GA ($10/active committer + usage)"
   ],
   "trends": [
+    {
+      "date": "2026-08-19",
+      "trend": "Post-training scaling = the new frontier lever: GLM-5.3 reaches 5.2-base + post-training parity with closed flagships at 5.2 price, pushing 'same-capability lower-cost domestic substitute' narrative; buyers should compare per-task cost, not headline model size."
+    },
     {
       "date": "2026-08-18",
       "trend": "Upstream price hikes now transmit downstream: third-party cheap CodingPlans (OpenCode Go) slash quotas as DeepSeek raises API rates - the \"low-cost aggregator\" margin is collapsing, pushing heavy users toward direct model routing or self-hosting."
