@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-08-19",
+    "updated": "2026-08-20",
     "cadence": "Daily 09:05",
     "currency": "USD unless noted",
     "sources": [
@@ -1484,6 +1484,42 @@
         }
       ],
       "notes": "华为云 CodeArts 生态内 Token Plan"
+    },
+    {
+      "name": "七牛云 (Qiniu Cloud)",
+      "owner": "Qiniu",
+      "billing": "dual line: Model Square (pay-as-you-go) + Token Plan (subscription, points)",
+      "plans": [
+        {
+          "tier": "大模型广场 DeepSeek-V4-Flash",
+          "price": 2.0,
+          "unit": "CNY/MTok output",
+          "included": "pay-as-you-go; 3M free tokens new user",
+          "subscribable": true
+        },
+        {
+          "tier": "Token Plan Enterprise S",
+          "price": 2999,
+          "unit": "CNY/mo",
+          "included": "~1.07B points/mo; 4 vendors 15 models unified key",
+          "subscribable": true
+        },
+        {
+          "tier": "Token Plan Enterprise M",
+          "price": 4999,
+          "unit": "CNY/mo",
+          "included": "~2.08B points/mo",
+          "subscribable": true
+        },
+        {
+          "tier": "Token Plan Enterprise B",
+          "price": 9999,
+          "unit": "CNY/mo",
+          "included": "~5.0B points/mo; near no rate limit",
+          "subscribable": true
+        }
+      ],
+      "notes": "Points base ~CNY 0.004/K tokens; weekly refresh, no carryover. Unified OpenAI/Anthropic API format. Integrates with Qiniu OSS/CDN/av processing."
     }
   ],
   "model_token_prices_per_MTok": [
@@ -1668,8 +1704,8 @@
     },
     {
       "date": "2026-08-20",
-      "event": "Kimi K3 old-plan renewal cutoff: accounts whose subscription lapsed >7 days can no longer renew old plans (active/auto-renew unaffected). TOMORROW = 1 day left (Aug 20).",
-      "status": "upcoming"
+      "event": "Kimi K3 old-plan renewal cutoff: accounts whose subscription lapsed >7 days can no longer renew old plans (active/auto-renew unaffected). TODAY (Aug 20).",
+      "status": "TODAY"
     },
     {
       "date": "2026-08-28",
@@ -1785,7 +1821,12 @@
     "2026-06: xAI/SpaceX acquired Cursor (~$60B valuation); Cursor cut Teams annual 20% to $32, added org governance layer",
     "2026-06-01: GitHub Copilot moved to AI Credits (token-metered); 6/15 added Max $100/mo",
     "2026-06-02: Windsurf rebranded to Devin Desktop (Cognition)",
-    "2026-07-20: GitHub Code Quality GA ($10/active committer + usage)"
+    "2026-07-20: GitHub Code Quality GA ($10/active committer + usage)",
+    "2026-08-20: DeepSeek Harness v0.1.0-rc.8 released: Claude Code/Codex as installable sub-agents, native image input, concurrent web_search, persistent Windows PowerShell; trademarked",
+    "2026-08-20: DeepSeek price-hike narrative as value pricing / free lunch over: cache-hit input +1100% (CNY 0.025->0.30); two funding rounds total CNY 100B, pre-money val CNY 500B (~USD 71B)",
+    "2026-08-20: Kimi K3 old-plan renewal HARD cutoff TODAY (Aug 20); accounts lapsed >7 days cannot renew old plans",
+    "2026-08-20: Claude Code 50% usage boost extended again (non-permanent); Aug 31 still sync deadline for Anthropic (promo end) and OpenAI (GPT-5.4 retires from Codex)",
+    "2026-08-20: Qiniu Cloud Token Plan added (Enterprise S/M/B CNY 2,999/4,999/9,999 per mo; 4 vendors 15 models unified key, no rate limit)"
   ],
   "trends": [
     {
