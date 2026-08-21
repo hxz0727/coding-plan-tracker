@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-08-20",
+    "updated": "2026-08-21",
     "cadence": "Daily 09:05",
     "currency": "USD unless noted",
     "sources": [
@@ -1674,7 +1674,7 @@
     },
     {
       "date": "2026-08-31",
-      "event": "Claude Sonnet 5 intro pricing ends -> $3/$15 (+50%, now cancelled per 8/11 lock); GitHub Copilot Business/Enterprise promo credits end -> revert to $19/$39",
+      "event": "Claude Sonnet 5 intro pricing ends -> $3/$15 (cancelled per 8/11 lock); GitHub Copilot Business/Enterprise promo credits end -> revert to $19/$39; ALSO on Aug 31: OpenAI GPT-5.4 retires from Codex; Kimi K2.5 API retired (auto-switch to K2.6). 10 days left as of 8/21.",
       "status": "upcoming"
     },
     {
@@ -1709,7 +1709,7 @@
     },
     {
       "date": "2026-08-28",
-      "event": "Zhipu GLM-5.3 weights to open-source NEXT FRIDAY = Aug 28 (CONFIRMED Aug 19; API already live, pricing = GLM-5.2). Responsible release; most sensitive cyber capability gated, not open-sourced. Coincides with 2026 Big Data Expo (Guiyang) opening same day.",
+      "event": "Zhipu GLM-5.3 weights to open-source NEXT FRIDAY = Aug 28 (CONFIRMED Aug 19; API already live, pricing = GLM-5.2). Responsible release; most sensitive cyber capability gated, not open-sourced. Coincides with 2026 Big Data Expo (Guiyang) opening same day. 7 days left as of 8/21.",
       "status": "upcoming"
     }
   ],
@@ -1826,7 +1826,12 @@
     "2026-08-20: DeepSeek price-hike narrative as value pricing / free lunch over: cache-hit input +1100% (CNY 0.025->0.30); two funding rounds total CNY 100B, pre-money val CNY 500B (~USD 71B)",
     "2026-08-20: Kimi K3 old-plan renewal HARD cutoff TODAY (Aug 20); accounts lapsed >7 days cannot renew old plans",
     "2026-08-20: Claude Code 50% usage boost extended again (non-permanent); Aug 31 still sync deadline for Anthropic (promo end) and OpenAI (GPT-5.4 retires from Codex)",
-    "2026-08-20: Qiniu Cloud Token Plan added (Enterprise S/M/B CNY 2,999/4,999/9,999 per mo; 4 vendors 15 models unified key, no rate limit)"
+    "2026-08-20: Qiniu Cloud Token Plan added (Enterprise S/M/B CNY 2,999/4,999/9,999 per mo; 4 vendors 15 models unified key, no rate limit)",
+    "2026-08-21: OpenAI open-sourced Codex Harness fully (Apache-2.0, openai/codex repo >100k Stars); codex exec + Codex SDK + app-server; same model GPT-5.6 Sol ARC-AGI-3 13.3%->38.3% via Harness-only optimization, 6x fewer output tokens",
+    "2026-08-21: \"Hundred-model war cools\" becomes mainstream finance narrative (21st Century Business Herald / Financial News): independent model vendors (Zhipu/MiniMax/DeepSeek/Kimi) lead hikes, self-owned-compute giants (Alibaba/ByteDance/Tencent) hold; value-war era begins",
+    "2026-08-21: Post-hike usage data: OpenCode platform DeepSeek V4-Flash volume fell 59.1% (6.17T tokens) and V4-Pro -55.7% after 8/17 repricing vs 8/16",
+    "2026-08-21: GLM-5.3 weights open-source countdown 7 days (Aug 28, MIT); Volcano 25%-off 79 days left; Copilot/Sonnet5/Claude Code boost/GPT-5.4 retirement all 10 days left (Aug 31)",
+    "2026-08-20: DeepSeek Harness v0.1.0-rc.8 gained 50k+ GitHub Stars in one day; DeepSeek posted IDC data-center jobs (electrical/HVAC/civil, Beijing/Hangzhou/Ulanqab); Liang Wenfeng entities gained CNY 1.1B+ on Unitree IPO"
   ],
   "trends": [
     {
@@ -1857,6 +1862,8 @@
     "Model competition shifts from parameter scale to system engineering: V4-Flash gained capability via post-training + Harness, not bigger params. Future wins on 'model + Harness + tools + data' combo.",
     "Model releases + hike previews coexist: same week DeepSeek V4-Pro GA and Grok 4.6 shipped (capability up), yet DeepSeek's overall hike preview stands and V4-Pro is 3x Flash - industry now in 'capability up + price up' phase; track hike timelines, not just benchmarks.",
     "DeepSeek 8/17 peak/valley ends the few-cents-per-MTok era: even all-valley output is 2.25x old price, peak 4.5x output / 12x cache-hit. Peak-hour cache-hit discount (was 2% of list) is the biggest casualty - re-audit cache-hit rates and shift bulk/offline to valley (50% off).",
-    "DeepSeek open-sourcing V4-Pro weights AND Harness v0.1 is a platform play: lock developers via an open, model-swappable Agent workspace (Cordis plugins) instead of low token price - mirrors Cursor/Claude Code, tied to IPO narrative."
+    "DeepSeek open-sourcing V4-Pro weights AND Harness v0.1 is a platform play: lock developers via an open, model-swappable Agent workspace (Cordis plugins) instead of low token price - mirrors Cursor/Claude Code, tied to IPO narrative.",
+    "Orchestration layer (Harness) open-sourcing becomes the new battleground: OpenAI 8/21 Apache-2.0 Codex Harness (>100k Stars) mirrors DeepSeek 8/13+8/20 MIT Harness; winner competes on 'make the brain work + cross-model orchestration + product embedding', not just model IQ.",
+    "'Hundred-model war cools' / value-war era: independent vendors hike, self-owned-compute giants hold; Token layering + pricing becomes the symbolic event of silicon-economy moving from tech narrative to price narrative."
   ]
 }
