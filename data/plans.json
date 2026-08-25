@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-08-24",
+    "updated": "2026-08-25",
     "cadence": "Daily 09:05",
     "currency": "USD unless noted",
     "sources": [
@@ -1674,7 +1674,7 @@
     },
     {
       "date": "2026-08-31",
-      "event": "Claude Sonnet 5 intro pricing ends -> $3/$15 (cancelled per 8/11 lock); GitHub Copilot Business/Enterprise promo credits end -> revert to $19/$39; ALSO on Aug 31: OpenAI GPT-5.4 retires from Codex; Kimi K2.5 API retired (auto-switch to K2.6). 7 days left as of 8/24.",
+      "event": "Claude Sonnet 5 intro pricing ends -> $3/$15 (cancelled per 8/11 lock); GitHub Copilot Business/Enterprise promo credits end -> revert to $19/$39; ALSO on Aug 31: OpenAI GPT-5.4 retires from Codex; Kimi K2.5 API retired (auto-switch to K2.6). 6 days left as of 8/25.",
       "status": "upcoming"
     },
     {
@@ -1709,7 +1709,7 @@
     },
     {
       "date": "2026-08-28",
-      "event": "Zhipu GLM-5.3 weights to open-source NEXT FRIDAY = Aug 28 (CONFIRMED Aug 19; API already live, pricing = GLM-5.2). Responsible release; most sensitive cyber capability gated, not open-sourced. Coincides with 2026 Big Data Expo (Guiyang) opening same day. 4 days left as of 8/24.",
+      "event": "Zhipu GLM-5.3 weights to open-source NEXT FRIDAY = Aug 28 (CONFIRMED Aug 19; API already live, pricing = GLM-5.2). Responsible release; most sensitive cyber capability gated, not open-sourced. Coincides with 2026 Big Data Expo (Guiyang) opening same day. 3 days left as of 8/25.",
       "status": "upcoming"
     }
   ],
@@ -1836,7 +1836,13 @@
     "2026-08-23: OpenAI Codex CLI local terminal coding agent released (macOS/Linux/Windows + IDE + desktop + cloud web) - directly challenges Anthropic Claude Code on terminal-first workflows; pairs with 8/21 open-sourced Codex Harness (exec/SDK/app-server).",
     "2026-08-23: Unreleased Anthropic Claude models 'Marshmallow' and 'Melon' spotted on platform - imminent release likely incl Opus update + new Haiku tier; watch for pricing moves around 8/31.",
     "2026-08-23: Vercel data - open-source AI token share jumped 28%->62% in two months, overtaking OpenAI+Anthropic combined; closed-frontier tokens still expected to retain 60-90% of economic value.",
-    "2026-08-22: OpenAI/Anthropic sprint to IPO - Anthropic may file Aug 2026, OpenAI targets 2027; US top-lab inference avg price fell ~25% mid-Jul to mid-Aug, industry faces $700-800B financing gap; 'AI bubble burst' narrative rises."
+    "2026-08-22: OpenAI/Anthropic sprint to IPO - Anthropic may file Aug 2026, OpenAI targets 2027; US top-lab inference avg price fell ~25% mid-Jul to mid-Aug, industry faces $700-800B financing gap; 'AI bubble burst' narrative rises.",
+    "2026-08-25: Cursor Auto pricing ends flat-rate; per-routed-model metering effective 8/24 (official email). Most requests draw higher rate; included limits raised. End of flat-rate AI coding subs; BYOK still tolls $0.25/MTok.",
+    "2026-08-25: Pricing divergence mainstream - DeepSeek V4-Pro cache-hit +11x (8/17); OpenAI Sol -20% (8/21)/Luna -80%/Terra -20%; Google Gemini 3.7 Flash halved. 'Chinamaxxing': 80% US startups run >=1 Chinese model; V4-Flash 11.31T tok/wk on OpenRouter = 3x Luna.",
+    "2026-08-25: CICC (中信建投) bullish compute chain - OpenAI Sol -20% drives Agent/codegen token growth; Alibaba AI Cloud revenue ~CNY 48.4B (+45% YoY), 12 quarters triple-digit AI growth.",
+    "2026-08-24: Anthropic 'Marshmallow'/'Melon' EAP models exposed in API. Marshmallow > Melon, chat > Opus 5; both sub-Fable. Rumored Opus 5.1 / Sonnet 5.1, Sept release. Food-code EAP pattern (Honeycomb=Opus 5).",
+    "2026-08-25: Fable 5 cold-shouldered - Ramp: 6% enterprise token / 11.4% spend 1mo post-launch vs Sol 25%/23%. Opus 5 at half price beats it. Open-source token share 11%(Apr)->29%(Jun)->62%(Aug).",
+    "2026-08-25: GLM-5.3 weights open-source countdown - 3 days to Aug 28 MIT release; 'Ox Alpha' mystery multimodal model on OpenRouter (1M ctx, free) suspected GLM-5.3 multimodal, stress-testing."
   ],
   "trends": [
     {
@@ -1871,6 +1877,8 @@
     "Orchestration layer (Harness) open-sourcing becomes the new battleground: OpenAI 8/21 Apache-2.0 Codex Harness (>100k Stars) mirrors DeepSeek 8/13+8/20 MIT Harness; winner competes on 'make the brain work + cross-model orchestration + product embedding', not just model IQ.",
     "'Hundred-model war cools' / value-war era: independent vendors hike, self-owned-compute giants hold; Token layering + pricing becomes the symbolic event of silicon-economy moving from tech narrative to price narrative.",
     "DeepSeek V4-Flash-Vision-Exp zero-premium vision (384-token cap) sets a new low for multimodal agent cost vs Claude Opus 4.8 (~280x cheaper per image) - vision pricing, not just text token price, becomes a new battleground; free Files API rewards agent loops that reuse file_id.",
-    "Terminal-first workflow converges: OpenAI Codex CLI (8/23) + open-sourced Codex Harness (8/21) vs Anthropic Claude Code; developer-entry fight shifts from chat box to local terminal, paired with orchestration-layer open-sourcing."
+    "Terminal-first workflow converges: OpenAI Codex CLI (8/23) + open-sourced Codex Harness (8/21) vs Anthropic Claude Code; developer-entry fight shifts from chat box to local terminal, paired with orchestration-layer open-sourcing.",
+    "Flat-rate AI coding subscriptions are ending: Cursor joins Anthropic (hard weekly caps) and Copilot (per-token, annual retired) in metered billing; 'unlimited $20/mo AI' is over. Vendors tax BYOK ($0.25/MTok) and route opaquely.",
+    "Price divergence is the new normal: DeepSeek hikes (cache-hit 11x), OpenAI/Google cut (Luna -80% -> +14x volume / +34% rev); Chinese models become global price anchor; 'Chinamaxxing' meme - 80% US startups on >=1 Chinese model."
   ]
 }
