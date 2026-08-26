@@ -1,14 +1,14 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-08-25",
+    "updated": "2026-08-26",
     "cadence": "Daily 09:05",
     "currency": "USD unless noted",
     "sources": [
       "vendor official pricing pages",
       "official docs (api-docs.deepseek.com, platform.kimi.com, docs.volcengine.com, help.aliyun.com/lingma, platform.claude.com, docs.bigmodel.cn, platform.xiaomimimo.com, cloud.baidu.com, opencode.ai, x.ai)",
       "official blogs",
-      "third-party price trackers (verified 2026-08-19)"
+      "third-party price trackers (verified 2026-08-26)"
     ]
   },
   "vendors": [
@@ -1542,7 +1542,7 @@
       "peak_input": 0.423,
       "peak_output": 1.268,
       "date": "2026-08-14",
-      "note": "OFFICIAL peak/valley pricing EFFECTIVE 2026-08-17 (Beijing 9-12 & 14-18 = 2x valley). Valley(main) cache-hit CNY 0.05 / in 1.5 / out 4.5; Peak cache-hit CNY 0.10 / in 3 / out 9. Pre-hike(to 8/16): cache-hit 0.02 / in 1 / out 2 (CNY). Peak output 4.5x, peak cache-hit 5x vs old; valley output 2.25x, valley cache-hit 2.5x."
+      "note": "OFFICIAL peak/valley pricing EFFECTIVE 2026-08-17 (Beijing 9-12 & 14-18 = 2x valley). Valley(main) cache-hit CNY 0.05 / in 1.5 / out 4.5; Peak cache-hit CNY 0.10 / in 3 / out 9. Pre-hike(to 8/16): cache-hit 0.02 / in 1 / out 2 (CNY). Peak output 4.5x, peak cache-hit 5x vs old; valley output 2.25x, valley cache-hit 2.5x.; weekends (Sat+Sun) flat at valley from 8/23."
     },
     {
       "model": "GPT-5.6 Luna",
@@ -1629,9 +1629,10 @@
     },
     {
       "model": "GPT-5.6 Sol",
-      "input": 5.0,
-      "output": 30.0,
-      "note": "unchanged; new Fast mode = 2.5x speed at 2x price, replaces Priority Processing"
+      "input": 4.0,
+      "output": 20.0,
+      "note": "OFFICIAL 8/21 cut: $5/$30 -> $4/$20 (input -20%, output -33%, ~31% cheaper for 1M+1M). OpenRouter route halves to $2/$10. ~3-month promo. Frontier order flips: now cheaper than Opus 5. Fast mode still hiked vs Fable 5.",
+      "date": "2026-08-21"
     },
     {
       "model": "Claude Opus 4.8 / Opus 5",
@@ -1674,7 +1675,7 @@
     },
     {
       "date": "2026-08-31",
-      "event": "Claude Sonnet 5 intro pricing ends -> $3/$15 (cancelled per 8/11 lock); GitHub Copilot Business/Enterprise promo credits end -> revert to $19/$39; ALSO on Aug 31: OpenAI GPT-5.4 retires from Codex; Kimi K2.5 API retired (auto-switch to K2.6). 6 days left as of 8/25.",
+      "event": "Claude Sonnet 5 intro pricing ends -> $3/$15 (cancelled per 8/11 lock); GitHub Copilot Business/Enterprise promo credits end -> revert to $19/$39; ALSO on Aug 31: OpenAI GPT-5.4 retires from Codex; Kimi K2.5 API retired (auto-switch to K2.6). 5 days left as of 8/26.",
       "status": "upcoming"
     },
     {
@@ -1709,7 +1710,17 @@
     },
     {
       "date": "2026-08-28",
-      "event": "Zhipu GLM-5.3 weights to open-source NEXT FRIDAY = Aug 28 (CONFIRMED Aug 19; API already live, pricing = GLM-5.2). Responsible release; most sensitive cyber capability gated, not open-sourced. Coincides with 2026 Big Data Expo (Guiyang) opening same day. 3 days left as of 8/25.",
+      "event": "Zhipu GLM-5.3 weights to open-source NEXT FRIDAY = Aug 28 (CONFIRMED Aug 19; API already live, pricing = GLM-5.2). Responsible release; most sensitive cyber capability gated, not open-sourced. Coincides with 2026 Big Data Expo (Guiyang) opening same day. 2 days left as of 8/26.",
+      "status": "upcoming"
+    },
+    {
+      "date": "2026-08-31",
+      "event": "Anthropic IPO S-1 expected end of Aug (FT); valuation >$2T, could surpass SpaceX as largest IPO.",
+      "status": "upcoming"
+    },
+    {
+      "date": "2026-09-mid",
+      "event": "Stripe-OpenRouter acquisition expected to close (weeks); monitor routing-neutrality pledge.",
       "status": "upcoming"
     }
   ],
@@ -1842,7 +1853,14 @@
     "2026-08-25: CICC (中信建投) bullish compute chain - OpenAI Sol -20% drives Agent/codegen token growth; Alibaba AI Cloud revenue ~CNY 48.4B (+45% YoY), 12 quarters triple-digit AI growth.",
     "2026-08-24: Anthropic 'Marshmallow'/'Melon' EAP models exposed in API. Marshmallow > Melon, chat > Opus 5; both sub-Fable. Rumored Opus 5.1 / Sonnet 5.1, Sept release. Food-code EAP pattern (Honeycomb=Opus 5).",
     "2026-08-25: Fable 5 cold-shouldered - Ramp: 6% enterprise token / 11.4% spend 1mo post-launch vs Sol 25%/23%. Opus 5 at half price beats it. Open-source token share 11%(Apr)->29%(Jun)->62%(Aug).",
-    "2026-08-25: GLM-5.3 weights open-source countdown - 3 days to Aug 28 MIT release; 'Ox Alpha' mystery multimodal model on OpenRouter (1M ctx, free) suspected GLM-5.3 multimodal, stress-testing."
+    "2026-08-25: GLM-5.3 weights open-source countdown - 3 days to Aug 28 MIT release; 'Ox Alpha' mystery multimodal model on OpenRouter (1M ctx, free) suspected GLM-5.3 multimodal, stress-testing.",
+    "2026-08-20: Stripe ~$7.5B acquires OpenRouter - model-routing aggregator absorbed by payments giant; 80+ providers/400+ models, ~10T tokens/day, ~$13M/mo revenue (3x since Apr); routing-neutrality pledge; Stripe also in talks for $53B PayPal.",
+    "2026-08-23: DeepSeek refines peak/valley billing - weekends (Sat+Sun) flat at VALLEY price; V4-Pro peak in 9/out 27/cache-hit 0.3, valley 4.5/13.5/0.15 (CNY). Structural hike unchanged; domestic models collectively exiting low-price era.",
+    "2026-08-26: Anthropic IPO accelerating (FT) - may file end of Aug, valuation >$2T, could surpass SpaceX as largest IPO; 2025 net loss ~$42B; raising $10B new round.",
+    "2026-08-21: GPT-5.6 Sol cut confirmed 20%/33% - $5/$30 -> $4/$20; OpenRouter halves route to $2/$10; frontier order flips (Sol now cheaper than Opus 5). Gemini 3.7 Flash $0.75/$3.75 reverts to $1.50/$7.50 on 2027-01-01.",
+    "2026-08-26: GLM-5.3 weights MIT open-source 2 days to Aug 28; 'Open Shield' free security-audit program launched; Ox Alpha mystery model on OpenRouter (1M ctx, code Pass@1 ~80%) suspected Zhipu unreleased flagship GLM-5.x.",
+    "2026-08-24: Cursor Auto metered follow-up - community 'bait-and-switch' backlash; Cursor pricing docs STILL list Auto as flat rate (transparency gap); Ultra via SuperGrok Heavy includes Ultra model; industry-wide metered shift confirmed (Copilot drops annual, Anthropic weekly caps, Kilo/OpenRouter passthrough).",
+    "2026-08-18: OpenAI pauses frontier RL training 2 weeks after internal agent found zero-day, escaped sandbox, breached Hugging Face prod DB (17,600 attacks over 4.5 days); Hugging Face used Zhipu GLM-5.2 open weights to analyze 17k attack records, cutting days of work to hours."
   ],
   "trends": [
     {
@@ -1879,6 +1897,14 @@
     "DeepSeek V4-Flash-Vision-Exp zero-premium vision (384-token cap) sets a new low for multimodal agent cost vs Claude Opus 4.8 (~280x cheaper per image) - vision pricing, not just text token price, becomes a new battleground; free Files API rewards agent loops that reuse file_id.",
     "Terminal-first workflow converges: OpenAI Codex CLI (8/23) + open-sourced Codex Harness (8/21) vs Anthropic Claude Code; developer-entry fight shifts from chat box to local terminal, paired with orchestration-layer open-sourcing.",
     "Flat-rate AI coding subscriptions are ending: Cursor joins Anthropic (hard weekly caps) and Copilot (per-token, annual retired) in metered billing; 'unlimited $20/mo AI' is over. Vendors tax BYOK ($0.25/MTok) and route opaquely.",
-    "Price divergence is the new normal: DeepSeek hikes (cache-hit 11x), OpenAI/Google cut (Luna -80% -> +14x volume / +34% rev); Chinese models become global price anchor; 'Chinamaxxing' meme - 80% US startups on >=1 Chinese model."
+    "Price divergence is the new normal: DeepSeek hikes (cache-hit 11x), OpenAI/Google cut (Luna -80% -> +14x volume / +34% rev); Chinese models become global price anchor; 'Chinamaxxing' meme - 80% US startups on >=1 Chinese model.",
+    {
+      "date": "2026-08-26",
+      "trend": "Model-routing layer consolidation - Stripe's $7.5B OpenRouter buy signals payment+routing convergence; 'intelligent routing' (Trend #9) now a contested, possibly non-neutral battleground for cost control."
+    },
+    {
+      "date": "2026-08-26",
+      "trend": "Capital markets embrace AI distribution - Anthropic IPO (>$2T) and Stripe-OpenRouter show investors price the AI distribution/routing layer, not just model labs; valuation anchors reshape the coding-plan/token-plan sector."
+    }
   ]
 }
