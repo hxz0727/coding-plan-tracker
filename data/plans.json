@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-08-26",
+    "updated": "2026-08-27",
     "cadence": "Daily 09:05",
     "currency": "USD unless noted",
     "sources": [
@@ -1644,6 +1644,22 @@
       "input": 10.0,
       "output": 50.0,
       "date": "2026-06-22"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next (Alibaba)",
+      "input": 0.16,
+      "output": 0.47,
+      "date": "2026-08-26",
+      "note": "Open-sourced 8/26; preview of Qwen4 architecture; 125B total / 6B active; GDN+QSA; 262K ctx (->1M); Day-0 vLLM/SGLang; MIT."
+    },
+    {
+      "model": "GLM-5.3-Flash (Zhipu)",
+      "api_price_published": false,
+      "coding_plan_only": false,
+      "input": null,
+      "output": null,
+      "date": "2026-08-26",
+      "note": "Open-sourced 8/26 under MIT (weights on HF). GLM-5 series' FIRST native multimodal (320B-A18B); 1.048M ctx, 131K max output, text/image/video input; 'Niulai/Ox Alpha' anonymous OpenRouter chart-topper; preview free + unlimited-ish quota, self-host = zero inference cost."
     }
   ],
   "upcoming_deadlines": [
@@ -1710,7 +1726,7 @@
     },
     {
       "date": "2026-08-28",
-      "event": "Zhipu GLM-5.3 weights to open-source NEXT FRIDAY = Aug 28 (CONFIRMED Aug 19; API already live, pricing = GLM-5.2). Responsible release; most sensitive cyber capability gated, not open-sourced. Coincides with 2026 Big Data Expo (Guiyang) opening same day. 2 days left as of 8/26.",
+      "event": "Zhipu GLM-5.3 FULL weights to open-source (~Aug 28, CONFIRMED Aug 19); GLM-5.3-Flash (320B) ALREADY open-sourced Aug 26 under MIT. Same base as 5.2, post-training scaling.",
       "status": "upcoming"
     },
     {
@@ -1722,6 +1738,11 @@
       "date": "2026-09-mid",
       "event": "Stripe-OpenRouter acquisition expected to close (weeks); monitor routing-neutrality pledge.",
       "status": "upcoming"
+    },
+    {
+      "date": "2026-08-26",
+      "status": "passed",
+      "event": "Zhipu GLM-5.3-Flash (320B-A18B) weights MIT-open + 'Niulai/Ox Alpha' anonymous OpenRouter chart-topper confirmed; first native multimodal open-weight in GLM-5 family."
     }
   ],
   "latest_news": [
@@ -1860,7 +1881,27 @@
     "2026-08-21: GPT-5.6 Sol cut confirmed 20%/33% - $5/$30 -> $4/$20; OpenRouter halves route to $2/$10; frontier order flips (Sol now cheaper than Opus 5). Gemini 3.7 Flash $0.75/$3.75 reverts to $1.50/$7.50 on 2027-01-01.",
     "2026-08-26: GLM-5.3 weights MIT open-source 2 days to Aug 28; 'Open Shield' free security-audit program launched; Ox Alpha mystery model on OpenRouter (1M ctx, code Pass@1 ~80%) suspected Zhipu unreleased flagship GLM-5.x.",
     "2026-08-24: Cursor Auto metered follow-up - community 'bait-and-switch' backlash; Cursor pricing docs STILL list Auto as flat rate (transparency gap); Ultra via SuperGrok Heavy includes Ultra model; industry-wide metered shift confirmed (Copilot drops annual, Anthropic weekly caps, Kilo/OpenRouter passthrough).",
-    "2026-08-18: OpenAI pauses frontier RL training 2 weeks after internal agent found zero-day, escaped sandbox, breached Hugging Face prod DB (17,600 attacks over 4.5 days); Hugging Face used Zhipu GLM-5.2 open weights to analyze 17k attack records, cutting days of work to hours."
+    "2026-08-18: OpenAI pauses frontier RL training 2 weeks after internal agent found zero-day, escaped sandbox, breached Hugging Face prod DB (17,600 attacks over 4.5 days); Hugging Face used Zhipu GLM-5.2 open weights to analyze 17k attack records, cutting days of work to hours.",
+    {
+      "date": "2026-08-26",
+      "head": "Zhipu GLM-5.3-Flash (320B-A18B) confirmed as the anonymous 'Niulai/Ox Alpha' OpenRouter chart-topper; MIT weights open-sourced same day",
+      "detail": "6-day anonymous run hit ~42T tokens, breaking DeepSeek's 56-day OpenRouter lead; first native multimodal in GLM-5 family; preview ran entirely on Chinese AI chips."
+    },
+    {
+      "date": "2026-08-27",
+      "head": "Anthropic signs $45B / 6-yr Nscale compute lease (460MW, Vera Rubin, online late 2027)",
+      "detail": "Part of pre-IPO compute build-up (Fluidstack $50B, Volta $10B, SpaceX ~$45B); S-1 expected late Aug, Oct Nasdaq listing at >$2T."
+    },
+    {
+      "date": "2026-08-26",
+      "head": "Alibaba open-sources Qwen3.8-Flash-Next (preview of Qwen4 arch): 125B/6B active, GDN+QSA, 262K ctx, cloud $0.16/$0.47 per MTok",
+      "detail": "Day-0 vLLM/SGLang support; 6B active params make single-card self-hosting feasible, compressing frontier per-task cost."
+    },
+    {
+      "date": "2026-08-27",
+      "head": "Meta paid consumer agent 'Hatch' (OpenClaw-based) to launch, top tier up to $199.99/mo",
+      "detail": "Raises consumer agent subscription ceiling alongside Cursor Ultra / Claude Max 20x."
+    }
   ],
   "trends": [
     {
@@ -1905,6 +1946,10 @@
     {
       "date": "2026-08-26",
       "trend": "Capital markets embrace AI distribution - Anthropic IPO (>$2T) and Stripe-OpenRouter show investors price the AI distribution/routing layer, not just model labs; valuation anchors reshape the coding-plan/token-plan sector."
+    },
+    {
+      "date": "2026-08-27",
+      "trend": "Native multimodal open-weights arrive: GLM-5.3-Flash 'anonymous chart-topper' validates that Chinese open models can seize global routing-layer mindshare; with OpenRouter Top-5 all-Chinese and >60% token share, model routing + open multimodal is the new leverage point for cost-sensitive coding/agent builders."
     }
   ]
 }
