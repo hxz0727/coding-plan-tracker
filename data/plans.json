@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-08-27",
+    "updated": "2026-08-28",
     "cadence": "Daily 09:05",
     "currency": "USD unless noted",
     "sources": [
@@ -1654,12 +1654,27 @@
     },
     {
       "model": "GLM-5.3-Flash (Zhipu)",
-      "api_price_published": false,
+      "api_price_published": true,
       "coding_plan_only": false,
+      "input": 0.11,
+      "output": 0.39,
+      "date": "2026-08-28",
+      "note": "API price confirmed 8/28: input CNY 0.8 / output CNY 2.8 per MTok (~$0.11/$0.39) - BELOW DeepSeek V4-Flash (CNY 1.5/4.5). MIT weights on HF (8/26). GLM-5 series' FIRST native multimodal (320B-A18B); 1.048M ctx, 131K max output, text/image/video input; 'Niulai/Ox Alpha' anonymous OpenRouter chart-topper; self-host = zero inference cost."
+    },
+    {
+      "model": "Qwen3.8-Flash (Alibaba)",
+      "input": 0.11,
+      "output": 0.38,
+      "date": "2026-08-27",
+      "note": "Open-sourced 8/27; 125B total / 6B active; Bailian cut to CNY 0.8/2.7 per MTok (8/27 12:00, ~1/3 of V4-Flash); training cost -90% vs Qwen3.7-Plus. DISTINCT from Qwen3.8-Flash-Next."
+    },
+    {
+      "model": "IBM Granite 4.2 (open)",
+      "api_price_published": false,
       "input": null,
       "output": null,
-      "date": "2026-08-26",
-      "note": "Open-sourced 8/26 under MIT (weights on HF). GLM-5 series' FIRST native multimodal (320B-A18B); 1.048M ctx, 131K max output, text/image/video input; 'Niulai/Ox Alpha' anonymous OpenRouter chart-topper; preview free + unlimited-ish quota, self-host = zero inference cost."
+      "date": "2026-08-27",
+      "note": "Apache-2.0 open-weight (3B/8B/30B); native reasoning + agentic RL; 30B SWE-Bench Verified 57.0, Terminal-Bench 2.1 29.24; self-host = zero inference cost."
     }
   ],
   "upcoming_deadlines": [
@@ -1726,8 +1741,8 @@
     },
     {
       "date": "2026-08-28",
-      "event": "Zhipu GLM-5.3 FULL weights to open-source (~Aug 28, CONFIRMED Aug 19); GLM-5.3-Flash (320B) ALREADY open-sourced Aug 26 under MIT. Same base as 5.2, post-training scaling.",
-      "status": "upcoming"
+      "event": "Zhipu GLM-5.3 FULL weights MIT-open TODAY (Aug 28, CONFIRMED). GLM-5.3-Flash (320B) already open-sourced Aug 26 under MIT. Same base as 5.2, post-training scaling; 200K ctx (not 1M), 128K out.",
+      "status": "TODAY"
     },
     {
       "date": "2026-08-31",
@@ -1746,6 +1761,51 @@
     }
   ],
   "latest_news": [
+    {
+      "date": "2026-08-28",
+      "head": "NVIDIA to acquire Hugging Face for ~$12.9B (reported 8/27) - largest open-source model hub (500k+ models, 30M MAU) changes hands; open-ecosystem neutrality questioned.",
+      "detail": "The biggest compute seller now owns the largest model-distribution portal; self-hosting/Coding-Plan open-weight supply chain neutrality becomes a strategic risk, not just a convenience."
+    },
+    {
+      "date": "2026-08-28",
+      "head": "Zhipu GLM-5.3 FULL weights MIT-open TODAY (Aug 28): 744B/400B active, post-training scaling, AA 60 tied #1 with K3. GLM-5.3-Flash API price confirmed CNY 0.8/2.8 per MTok - BELOW DeepSeek V4-Flash (1.5/4.5).",
+      "detail": "GLM-5.3 ctx window pulled back to 200K (not 1M), 128K out. Zhipu HK stock +11% intraday 8/27 on the news."
+    },
+    {
+      "date": "2026-08-27",
+      "head": "Alibaba open-sources Qwen3.8-Flash (125B/6B active); Bailian cuts its price to CNY 0.8/2.7 per MTok effective 8/27 12:00 (~1/3 of V4-Flash); training cost -90% vs Qwen3.7-Plus. New Qoder agent-workbench launched.",
+      "detail": "Distinct from Qwen3.8-Flash-Next (8/26, preview Qwen4 arch, $0.16/$0.47)."
+    },
+    {
+      "date": "2026-08-27",
+      "head": "OpenAI brings GPT-5.6 price-perf optimization into Kiro (8/25); Sol gets Ultrafast mode (14x), Luna free tier expanded - direct price war in coding workflows.",
+      "detail": "Same week OpenAI also pushed Sol price cut (-20%/-33% on 8/21)."
+    },
+    {
+      "date": "2026-08-27",
+      "head": "Kimi K2.5 / moonshot-v1 legacy models confirmed 8/31 full sunset; new sign-ups already blocked from old models, forced migration to K3 ($3/$15 per MTok, ~5x K2.6) - end of 'ultra-cheap Chinese AI' era.",
+      "detail": "K3 = 2.8T, WebDev Arena #1 among 99 models."
+    },
+    {
+      "date": "2026-08-27",
+      "head": "Google AI Mode now powered by Gemini 3.7 Flash (DeepSWE 65.3%, FrontierCode 43.6%, 1M ctx, price locked through 2026); Ask Gemini enters Google Chat (8/26).",
+      "detail": "Promo higher-limit access through Oct 1, 2026."
+    },
+    {
+      "date": "2026-08-27",
+      "head": "Moonshot AI (Kimi) in talks to host models on Microsoft / Amazon / Google clouds (The Decoder) - Chinese open models enter US enterprise cloud at scale; export/hosting still sensitive.",
+      "detail": "Unprecedented access to US enterprise customers via major hyperscalers."
+    },
+    {
+      "date": "2026-08-27",
+      "head": "IBM open-sources Granite 4.2 (Apache-2.0): 3B/8B/30B with native reasoning + agentic RL; 30B SWE-Bench Verified 57.0, Terminal-Bench 2.1 29.24.",
+      "detail": "Granite Speech 5.0 Turbo CTC transcribes 3 hours audio in 1 second."
+    },
+    {
+      "date": "2026-08-27",
+      "head": "Grok 4.6 GA on Amazon Bedrock + Google Enterprise Agent Platform - xAI expands beyond its own API.",
+      "detail": "Grok 4.6: $2/$6 per MTok, 500K ctx."
+    },
     {
       "date": "2026-08-19",
       "head": "Zhipu GLM-5.3 API GOES LIVE (Aug 19): pricing kept identical to GLM-5.2 (input/output ~$1.4/$4.4 per MTok, cache $0.26); AA Intelligence Index 60 pts = open-model #1 tied with Kimi K3; weights to open-source next Friday = Aug 28 (responsible release). Same base weights as 5.2, gains from post-training scaling; lowest per-task cost among frontier flagships."
@@ -1904,6 +1964,14 @@
     }
   ],
   "trends": [
+    {
+      "date": "2026-08-28",
+      "trend": "Compute-vendor captures open-source portal: NVIDIA's ~$12.9B Hugging Face acquisition means the largest compute seller now owns the largest model-distribution hub - open-weight self-hosting/Coding-Plan model supply chain neutrality becomes a strategic risk, not just a convenience."
+    },
+    {
+      "date": "2026-08-28",
+      "trend": "Open multimodal weights go sub-DeepSeek on price: GLM-5.3-Flash API (CNY 0.8/2.8 per MTok) undercuts DeepSeek V4-Flash (1.5/4.5) - the price floor itself is now an open, native-multimodal Chinese model; 'cheapest = open' thesis strengthens for cost-sensitive coding/agent builders."
+    },
     {
       "date": "2026-08-19",
       "trend": "Post-training scaling = the new frontier lever: GLM-5.3 reaches 5.2-base + post-training parity with closed flagships at 5.2 price, pushing 'same-capability lower-cost domestic substitute' narrative; buyers should compare per-task cost, not headline model size."
