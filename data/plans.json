@@ -1,14 +1,15 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-08-28",
+    "updated": "2026-08-31",
     "cadence": "Daily 09:05",
     "currency": "USD unless noted",
     "sources": [
       "vendor official pricing pages",
       "official docs (api-docs.deepseek.com, platform.kimi.com, docs.volcengine.com, help.aliyun.com/lingma, platform.claude.com, docs.bigmodel.cn, platform.xiaomimimo.com, cloud.baidu.com, opencode.ai, x.ai)",
       "official blogs",
-      "third-party price trackers (verified 2026-08-26)"
+      "third-party price trackers (verified 2026-08-26)",
+      "aipricing.guru daily price changelog (verified 2026-08-31)"
     ]
   },
   "vendors": [
@@ -1659,7 +1660,7 @@
       "input": 0.11,
       "output": 0.39,
       "date": "2026-08-28",
-      "note": "API price confirmed 8/28: input CNY 0.8 / output CNY 2.8 per MTok (~$0.11/$0.39) - BELOW DeepSeek V4-Flash (CNY 1.5/4.5). MIT weights on HF (8/26). GLM-5 series' FIRST native multimodal (320B-A18B); 1.048M ctx, 131K max output, text/image/video input; 'Niulai/Ox Alpha' anonymous OpenRouter chart-topper; self-host = zero inference cost."
+      "note": "API price confirmed 8/28: input CNY 0.8 / output CNY 2.8 per MTok (~$0.11/$0.39) - BELOW DeepSeek V4-Flash (CNY 1.5/4.5). MIT weights on HF (8/26). GLM-5 series' FIRST native multimodal (320B-A18B); 1.048M ctx, 131K max output, text/image/video input; 'Niulai/Ox Alpha' anonymous OpenRouter chart-topper; self-host = zero inference cost.; 8/29 Z.ai intl API cut another 50%: in $0.15->$0.075, out $0.50->$0.25, cached $0.03->$0.015 per MTok."
     },
     {
       "model": "Qwen3.8-Flash (Alibaba)",
@@ -1675,6 +1676,13 @@
       "output": null,
       "date": "2026-08-27",
       "note": "Apache-2.0 open-weight (3B/8B/30B); native reasoning + agentic RL; 30B SWE-Bench Verified 57.0, Terminal-Bench 2.1 29.24; self-host = zero inference cost."
+    },
+    {
+      "model": "MiniMax-M3 (MiniMax)",
+      "input": 0.6,
+      "output": 2.4,
+      "date": "2026-08-03",
+      "note": "512K ctx/128K out; M3 API permanent 50% off; among cheapest output tiers (above only GPT-5.6 Luna $1.20)."
     }
   ],
   "upcoming_deadlines": [
@@ -1696,7 +1704,7 @@
     {
       "date": "2026-08-17",
       "event": "Claude legacy Workbench + 3 experimental prompt-tool APIs retire",
-      "status": "upcoming"
+      "status": "passed"
     },
     {
       "date": "2026-08-27",
@@ -1707,12 +1715,13 @@
     {
       "date": "2026-08-31",
       "event": "Claude Sonnet 5 intro pricing ends -> $3/$15 (cancelled per 8/11 lock); GitHub Copilot Business/Enterprise promo credits end -> revert to $19/$39; ALSO on Aug 31: OpenAI GPT-5.4 retires from Codex; Kimi K2.5 API retired (auto-switch to K2.6). 5 days left as of 8/26.",
-      "status": "upcoming"
+      "status": "passed",
+      "note": "EXPIRED 8/31: Copilot promo credits ended (9/1 Business 3000->1900, Ent 7000->3900); Claude Code 50% bonus ended; GPT-5.4 retired from Codex; Kimi K2.5+moonshot-v1 sunset (auto-switch K2.6); Tencent Hy3 preview retired. Sonnet 5 lock $2/$10 permanent (cancelled)."
     },
     {
       "date": "2026-08-17",
       "event": "DeepSeek V4-Flash/V4-Pro NEW peak/valley pricing TAKES EFFECT (Beijing 9-12 & 14-18 peak = 2x valley). Pro peak out CNY 27/MTok (4.5x old), cache-hit CNY 0.30 (12x old); valley 0.15/4.5/13.5. Pre-hike prices valid only to 8/16.",
-      "status": "upcoming"
+      "status": "passed"
     },
     {
       "date": "2026-09-01",
@@ -1737,17 +1746,18 @@
     {
       "date": "2026-08-20",
       "event": "Kimi K3 old-plan renewal cutoff: accounts whose subscription lapsed >7 days can no longer renew old plans (active/auto-renew unaffected). TODAY (Aug 20).",
-      "status": "TODAY"
+      "status": "passed"
     },
     {
       "date": "2026-08-28",
       "event": "Zhipu GLM-5.3 FULL weights MIT-open TODAY (Aug 28, CONFIRMED). GLM-5.3-Flash (320B) already open-sourced Aug 26 under MIT. Same base as 5.2, post-training scaling; 200K ctx (not 1M), 128K out.",
-      "status": "TODAY"
+      "status": "passed"
     },
     {
       "date": "2026-08-31",
       "event": "Anthropic IPO S-1 expected end of Aug (FT); valuation >$2T, could surpass SpaceX as largest IPO.",
-      "status": "upcoming"
+      "status": "upcoming",
+      "note": "No public S-1 confirmed by 8/31; earliest Oct per Zacks/Polymarket; valuation target $2T+."
     },
     {
       "date": "2026-09-mid",
@@ -1758,6 +1768,16 @@
       "date": "2026-08-26",
       "status": "passed",
       "event": "Zhipu GLM-5.3-Flash (320B-A18B) weights MIT-open + 'Niulai/Ox Alpha' anonymous OpenRouter chart-topper confirmed; first native multimodal open-weight in GLM-5 family."
+    },
+    {
+      "date": "2026-08-29",
+      "event": "Zhipu GLM-5.3-Flash (Z.ai intl) API price cut 50%: in $0.15->$0.075, out $0.50->$0.25, cached $0.03->$0.015 per MTok",
+      "status": "passed"
+    },
+    {
+      "date": "2026-09-28",
+      "event": "GitHub Copilot Balanced code review becomes default + Chat/Mobile/Cloud Agent merge into one product (data retention to account lifetime) - silent cost increases",
+      "status": "upcoming"
     }
   ],
   "latest_news": [
@@ -1961,6 +1981,51 @@
       "date": "2026-08-27",
       "head": "Meta paid consumer agent 'Hatch' (OpenClaw-based) to launch, top tier up to $199.99/mo",
       "detail": "Raises consumer agent subscription ceiling alongside Cursor Ultra / Claude Max 20x."
+    },
+    {
+      "date": "2026-08-29",
+      "head": "Zhipu GLM-5.3-Flash (Z.ai intl) API cut another 50%: in $0.15->$0.075, out $0.50->$0.25, cached $0.03->$0.015 per MTok (aipricing.guru snapshot)",
+      "detail": "Cheapest frontier native multimodal, ~1/100 of Opus 4.8; price war extends from China to international."
+    },
+    {
+      "date": "2026-08-31",
+      "head": "GitHub Copilot Business/Enterprise promo credits expire 8/31; 9/1 Business 3000->1900 (-37%), Enterprise 7000->3900 (-44%), seat price unchanged",
+      "detail": "Heavy agent users face bill jump; overage opt-out by default. Claude Sonnet 5 promo $2/$10 on GitHub ends 8/31, post-9/1 rate unconfirmed (worst case $3/$15)."
+    },
+    {
+      "date": "2026-08-31",
+      "head": "Claude Code 50% usage bonus ends 8/31 (non-permanent); GPT-5.4 retires from Codex",
+      "detail": "Standard allowances apply from Sept."
+    },
+    {
+      "date": "2026-08-31",
+      "head": "Kimi K2.5 + moonshot-v1 fully sunset 8/31; Tencent Cloud Kimi K2.5 retired 00:00, auto-switch to K2.6 ($0.95/$4.00)",
+      "detail": "Kimi product line completes generational switch to K3/K2.6/K2.7 Code; C-end subscription still paused since 7/19."
+    },
+    {
+      "date": "2026-08-31",
+      "head": "Tencent Cloud Hy3 preview model retired 8/31",
+      "detail": "Migrate to Hy4 preview or other models."
+    },
+    {
+      "date": "2026-08-31",
+      "head": "Anthropic IPO silent sprint: S-1 confidentially filed 6/1; Bloomberg 8/13 reports Oct listing at $2T+ (largest IPO ever); no public S-1 confirmed by 8/31",
+      "detail": "Q2 revenue >$115B (14x YoY), 75-85% from usage-based API; Claude Code ~$1B ARR."
+    },
+    {
+      "date": "2026-08-30",
+      "head": "Frontier model output-price snapshot (digitalapplied): Fable 5 $50 > Opus 5 $25 > GPT-5.6 Terra $12 > Sonnet 5 $10 > Gemini 3.7 Flash $7.5 > Grok 4.6 $6 > GLM-5.3 $4.40 > DeepSeek V4-Pro peak $3.96 > MiniMax-M3 $2.40 > Luna $1.20",
+      "detail": "Reference list-output rates as of 8/30."
+    },
+    {
+      "date": "2026-08-28",
+      "head": "GitHub Copilot 8/28 changelog: beyond 9/1 credit cut, 9/28 Balanced code review becomes default + Chat/Mobile/Cloud Agent merge into one product (retention to account lifetime)",
+      "detail": "Two silent cost increases; set Lite explicitly before 9/28."
+    },
+    {
+      "date": "2026-08-29",
+      "head": "China model Aug API price roundup (yacms): DeepSeek peak/valley + weekend low, Qwen3.8-Flash Y0.8/Y2.7, GLM-5.3-Flash discount Y0.4/Y1.4, Kimi K3 Y20/Y100 (cache Y2), Tencent Hy3 Y1/Y4, Doubao 2.1 Pro Y6/Y30, MiMo-V2-Flash Y0.7/Y2.1",
+      "detail": "Scenario-based cheap-to-see expensive-to-use guidance."
     }
   ],
   "trends": [
@@ -2018,6 +2083,14 @@
     {
       "date": "2026-08-27",
       "trend": "Native multimodal open-weights arrive: GLM-5.3-Flash 'anonymous chart-topper' validates that Chinese open models can seize global routing-layer mindshare; with OpenRouter Top-5 all-Chinese and >60% token share, model routing + open multimodal is the new leverage point for cost-sensitive coding/agent builders."
+    },
+    {
+      "date": "2026-08-29",
+      "trend": "Price war crosses borders: GLM-5.3-Flash international (Z.ai) API drops another 50% to $0.075/$0.25 per MTok - Chinese open multimodal now sets the global cost floor, ~1/100 of Opus 4.8."
+    },
+    {
+      "date": "2026-08-31",
+      "trend": "Promo-dividend unwind: GitHub Copilot 9/1 credit cut (-37%/-44%) + Claude Code 50% bonus end + GPT-5.4/Kimi K2.5/Hy3 expirations concentrate on 8/31 - Sept 2026 resets real developer cost structure, ending the free/promo honeymoon for heavy agent users."
     }
   ]
 }
