@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-08-31",
+    "updated": "2026-09-01",
     "cadence": "Daily 09:05",
     "currency": "USD unless noted",
     "sources": [
@@ -9,7 +9,9 @@
       "official docs (api-docs.deepseek.com, platform.kimi.com, docs.volcengine.com, help.aliyun.com/lingma, platform.claude.com, docs.bigmodel.cn, platform.xiaomimimo.com, cloud.baidu.com, opencode.ai, x.ai)",
       "official blogs",
       "third-party price trackers (verified 2026-08-26)",
-      "aipricing.guru daily price changelog (verified 2026-08-31)"
+      "aipricing.guru daily price changelog (verified 2026-09-01)",
+      "Anthropic pricing changelog 8/10 + Claude Code v2.1.243 release notes 8/25 (Sonnet 5 $2/$10 permanent)",
+      "devtoolsreview / ecorpit / dev.to multi-source verification of Copilot 9/1 credit drop"
     ]
   },
   "vendors": [
@@ -148,7 +150,7 @@
         "2026-08-17 legacy Workbench + 3 experimental prompt-tool APIs retire",
         "2026-08-31 Sonnet 5 intro pricing ends (+50% from 9/1)"
       ],
-      "notes": "5h rolling window + weekly cap; Max tiers have an extra model-specific weekly cap. Quota shared across chat/Code/Cowork, no rollover. Rule of thumb: above ~$7/day API spend, Max subscription is cheaper. Cache reads ~1/10 of input price. Sonnet 5 is default model (native 1M ctx, SWE-Bench 82.1%). Opus 5 released 2026-07-24. SONNET 5 MIGRATION TWO PITFALLS: (1) temperature/top_p params now ERROR - must remove before switching model ID; (2) new tokenizer emits ~1/3 more tokens for same text vs Sonnet 4.6, so all prior token/cost budgets are systematically under-estimated. Opus 4.1 (claude-opus-4-1-20250805) retired 2026-08-05 - grep repos AND Bedrock/Vertex for old IDs."
+      "notes": "5h rolling window + weekly cap; Max tiers have an extra model-specific weekly cap. Quota shared across chat/Code/Cowork, no rollover. Rule of thumb: above ~$7/day API spend, Max subscription is cheaper. Cache reads ~1/10 of input price. Sonnet 5 is default model (native 1M ctx, SWE-Bench 82.1%). Opus 5 released 2026-07-24. SONNET 5 MIGRATION TWO PITFALLS: (1) temperature/top_p params now ERROR - must remove before switching model ID; (2) new tokenizer emits ~1/3 more tokens for same text vs Sonnet 4.6, so all prior token/cost budgets are systematically under-estimated. Opus 4.1 (claude-opus-4-1-20250805) retired 2026-08-05 - grep repos AND Bedrock/Vertex for old IDs. SONNET 5 PRICING (2026-09-01): the scheduled 9/1 increase to $3/$15 was CANCELLED - $2/$10 per MTok is now PERMANENT on Anthropic direct (Claude Code/API), confirmed by Anthropic pricing changelog 8/10 + Claude Code v2.1.243 release notes 8/25. NOTE: inside GitHub Copilot model menu, Sonnet 5 still reverted to $3/$15 on 9/1 (Microsoft-negotiated price)."
     },
     {
       "name": "GitHub Copilot",
@@ -195,7 +197,7 @@
           "subscribable": true
         }
       ],
-      "notes": "First full cycle closed 2026-06-30: heavy agentic seats saw 10x-50x bill surge ($600-3000/mo). Completions & Next Edit unlimited/free. Model menu spread ~60x. MAI-Code-1-Flash ($0.75/$4.50) cheapest, GA for Business/Enterprise. Grok 4.5 added 2026-07-28. Credits do not roll over. Cloud agent also consumes Actions minutes. Agent Skills went preview -> GA within a month. PROMO CREDITS END 2026-08-31: Business/Enterprise revert to $19/$39 base starting Sep 1 - bill jump risk. Code review now DOUBLE-METERED (AI Credits + Actions minutes). User-level budget controls GA."
+      "notes": "First full cycle closed 2026-06-30: heavy agentic seats saw 10x-50x bill surge ($600-3000/mo). Completions & Next Edit unlimited/free. Model menu spread ~60x. MAI-Code-1-Flash ($0.75/$4.50) cheapest, GA for Business/Enterprise. Grok 4.5 added 2026-07-28. Credits do not roll over. Cloud agent also consumes Actions minutes. Agent Skills went preview -> GA within a month. PROMO CREDITS DROPPED 2026-09-01 (CONFIRMED): Business 3000->1900 (-37%), Enterprise 7000->3900 (-44) credits/seat, base price $19/$39 unchanged - bill jump realized. Overage: GitHub says orgs 'choose whether to allow additional usage'; third parties read as opt-out default - admins must explicitly disable 'AI credits paid usage policy'. Sonnet 5 inside Copilot reverted to $3/$15 on 9/1. Code review now DOUBLE-METERED (AI Credits + Actions minutes). User-level budget controls GA."
     },
     {
       "name": "OpenAI Codex",
@@ -242,7 +244,7 @@
           "subscribable": "contact sales"
         }
       ],
-      "notes": "WAU >5M. Local + cloud tasks share one credit pool. After the 2026-07-31 price cut, Terra/Luna consume FEWER credits inside subscriptions while sub prices/quotas stay unchanged. Codex Security CLI open-sourced 2026-07-29. WARNING (科创板日报 2026-08-04): devs report GPT-5.6 now CHARGES for cache-creation that was FREE on 5.5 - 'real cost may feel 2x higher' despite Luna -80% list cut. Always verify cache billing rule changes, not just list price."
+      "notes": "WAU >5M. Local + cloud tasks share one credit pool. After the 2026-07-31 price cut, Terra/Luna consume FEWER credits inside subscriptions while sub prices/quotas stay unchanged. Codex Security CLI open-sourced 2026-07-29. WARNING (科创板日报 2026-08-04): devs report GPT-5.6 now CHARGES for cache-creation that was FREE on 5.5 - 'real cost may feel 2x higher' despite Luna -80% list cut. Always verify cache billing rule changes, not just list price. GPT-5.6 Sol cut to $4/$20 per MTok (was $5/$30), long-context $8/$30, promo through ~2026-11-21 - flows to Codex/ChatGPT usage counting (verified 2026-08-27)."
     },
     {
       "name": "Windsurf / Devin Desktop",
