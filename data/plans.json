@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-09-01",
+    "updated": "2026-09-02",
     "cadence": "Daily 09:05",
     "currency": "USD unless noted",
     "sources": [
@@ -11,7 +11,11 @@
       "third-party price trackers (verified 2026-08-26)",
       "aipricing.guru daily price changelog (verified 2026-09-01)",
       "Anthropic pricing changelog 8/10 + Claude Code v2.1.243 release notes 8/25 (Sonnet 5 $2/$10 permanent)",
-      "devtoolsreview / ecorpit / dev.to multi-source verification of Copilot 9/1 credit drop"
+      "devtoolsreview / ecorpit / dev.to multi-source verification of Copilot 9/1 credit drop",
+      "GitHub official changelog 8/28 (Copilot 9/28 unified experience + Balanced default + 10/1 prepaid seats)",
+      "Claude Fable 5.1 release Sept 2026 (llmreference / aipricing.guru)",
+      "OpenAI model page + Bedrock sync confirming GPT-5.6 Sol $4/$20 promo through 11/21",
+      "codingplan.org / Z.ai aggregator pricing (OpenCode Go BEST VALUE, GLM-5.3-Flash, DeepSeek V4, Kimi K2.6)"
     ]
   },
   "vendors": [
