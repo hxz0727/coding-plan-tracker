@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-09-02",
+    "updated": "2026-09-03",
     "cadence": "Daily 09:05",
     "currency": "USD unless noted",
     "sources": [
@@ -15,7 +15,8 @@
       "GitHub official changelog 8/28 (Copilot 9/28 unified experience + Balanced default + 10/1 prepaid seats)",
       "Claude Fable 5.1 release Sept 2026 (llmreference / aipricing.guru)",
       "OpenAI model page + Bedrock sync confirming GPT-5.6 Sol $4/$20 promo through 11/21",
-      "codingplan.org / Z.ai aggregator pricing (OpenCode Go BEST VALUE, GLM-5.3-Flash, DeepSeek V4, Kimi K2.6)"
+      "codingplan.org / Z.ai aggregator pricing (OpenCode Go BEST VALUE, GLM-5.3-Flash, DeepSeek V4, Kimi K2.6)",
+      "2026-09-03: Google Gemini 3.8 Flash launch (9/2), Meta Muse Spark 1.3 (9/3), Anthropic IPO Bloomberg Aug disclosure, digitalapplied 8/30 Sonnet 5 $2/$10 re-verification, 火山/腾讯/阿里/智谱 9/1 Token Plan repricing (史佚Agent aggregator)"
     ]
   },
   "vendors": [
