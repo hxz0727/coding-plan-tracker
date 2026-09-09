@@ -1037,11 +1037,43 @@
       "billing": "三线独立计费：按量(sk-)/Token Plan(sk-tp-)/Coding Plan(sk-sp-)，密钥不通用",
       "plans": [
         {
-          "tier": "Token Plan",
+          "tier": "Token Plan 基础版",
+          "price": 50,
+          "promo": 30,
+          "unit": "/月",
+          "included": "60,000 Credits（按月发放，Token 折算抵扣）",
+          "subscribable": true
+        },
+        {
+          "tier": "Token Plan 标准版",
+          "price": 185,
+          "promo": 110,
+          "unit": "/月",
+          "included": "240,000 Credits",
+          "subscribable": true
+        },
+        {
+          "tier": "Token Plan 高级版",
+          "price": 440,
+          "promo": 265,
+          "unit": "/月",
+          "included": "600,000 Credits",
+          "subscribable": true
+        },
+        {
+          "tier": "Token Plan 旗舰版",
+          "price": 1274,
+          "promo": 764,
+          "unit": "/月",
+          "included": "1,800,000 Credits；赠 OpenClaw 2核4G",
+          "subscribable": true
+        },
+        {
+          "tier": "Token Plan 618 限时（已结束）",
           "price": 9.9,
           "unit": "/月",
-          "included": "活动期最高 8,000 万词元；按月发 Credits",
-          "subscribable": true
+          "included": "最高 8,000 万词元；6/15-~7/15 智'惠'开发季活动，已过期",
+          "subscribable": false
         },
         {
           "tier": "Coding Plan Lite",
@@ -1058,7 +1090,7 @@
           "subscribable": true
         }
       ],
-      "notes": "双协议接入 OpenAI/Anthropic；模型含 GLM-5.2/MiniMax M3/DeepSeek V4/Kimi K2.6；科研普惠平台非商业云，SLA 存差距；额度按模型调用次数（非提问次数）"
+      "notes": "双协议接入 OpenAI/Anthropic；模型含 GLM-5.2/MiniMax M3/DeepSeek V4/Kimi K2.6；科研普惠平台非商业云，SLA 存差距；额度按模型调用次数（非提问次数）。⚠️ 更正：常驻四档（基础版¥30活动/标准版¥110/高级版¥265/旗舰版¥764）；『¥9.9+8,000万词元』为6/15-~7/15的618限时活动，已结束，非常驻基础版。"
     },
     {
       "name": "阶跃星辰 Coding Plan (StepFun)",
