@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-09-09",
+    "updated": "2026-09-10",
     "cadence": "Daily 09:05",
     "currency": "USD unless noted",
     "sources": [
@@ -18,7 +18,8 @@
       "codingplan.org / Z.ai aggregator pricing (OpenCode Go BEST VALUE, GLM-5.3-Flash, DeepSeek V4, Kimi K2.6)",
       "2026-09-03: Google Gemini 3.8 Flash launch (9/2), Meta Muse Spark 1.3 (9/3), Anthropic IPO Bloomberg Aug disclosure, digitalapplied 8/30 Sonnet 5 $2/$10 re-verification, 火山/腾讯/阿里/智谱 9/1 Token Plan repricing (史佚Agent aggregator)",
       "2026-09-08: OpenAI GPT-6 Astra launch (9/3, $10/$50, 1.05M ctx, ARC-AGI-3 99.9%), GitHub Copilot 9/1-9/4 changelog (GPT-6 Astra + Fable 5.1 in picker, 4 models retired 10/2, PR approval, signups reopened 9/3), Anthropic IPO timeline (S-1 late Sept, roadshow mid-Oct, list pre-midterms, $2T), Moonshot/Kimi HKEX confidential filing 9/3 ($50B), Tmall 'AI Space Station' domestic Token e-commerce (9/2-9/3), Zhipu GLM night free-use 9/3-9/20 + GLM-5.3-Flash 50% off ends 9/9",
-      "2026-09-09: GLM-5.3-Flash 50% off expires 9/9 24:00 UTC+8 (list $0.15/$0.50 from 9/10; night free-use campaign to 9/20 ZCode 0-quota, juejin/dev.to/aimodelscompared/glm-ai.chat/explainx.ai), SCNet Token Plan base Y9.9/mo confirmed (8000M tokens; Tencent Dev Community + SCNet official Coding Plan doc), GPT-6 Astra GA in GitHub Copilot Pro+/Max/Business/Enterprise (HuggingNews/geotoolbox 9/4-9/5), Anthropic public S-1 not yet filed as of 9/9 AM (Invezz/Axios 9/2, timeline late-Sept/early-Oct/$2T)"
+      "2026-09-09: GLM-5.3-Flash 50% off expires 9/9 24:00 UTC+8 (list $0.15/$0.50 from 9/10; night free-use campaign to 9/20 ZCode 0-quota, juejin/dev.to/aimodelscompared/glm-ai.chat/explainx.ai), SCNet Token Plan base Y9.9/mo confirmed (8000M tokens; Tencent Dev Community + SCNet official Coding Plan doc), GPT-6 Astra GA in GitHub Copilot Pro+/Max/Business/Enterprise (HuggingNews/geotoolbox 9/4-9/5), Anthropic public S-1 not yet filed as of 9/9 AM (Invezz/Axios 9/2, timeline late-Sept/early-Oct/$2T)",
+      "2026-09-10: DeepSeek V4.1 Flash launched + Flash-series peak/valley price cut effective 12:00 9/10 (idle cache-hit input Y0.02/M tokens, -60%; output Y4.0/M; peak = 2x idle); V4 Pro API requests auto-routed to V4.1 Flash at Flash price until V4.1 Pro ships (upgrade+price-cut); DeepSeek hires CITIC Securities to prepare STAR Market IPO (targets within-year listing, ~Y500B round-1 raise, >Y1000B cumulative, post-money >Y350B); Anthropic public S-1 still not filed as of 9/10 AM (timeline: S-1 late Sept / roadshow mid-Oct / list pre-midterms, $2T, >$100B raise)"
     ]
   },
   "vendors": [
