@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-09-18",
+    "updated": "2026-09-20",
     "cadence": "Daily 09:05",
     "currency": "USD unless noted",
     "sources": [
@@ -25,7 +25,8 @@
       "2026-09-15: Anthropic public S-1 'week of 9/8' window formally lapsed - Reuters via Calcalistech 9/15 confirms disclosure now anchored to 'late September', roadshow no earlier than mid-October, listing days before US midterms (11/3), $15B revolving credit facility (MS lead, GS/JPM/Citi); as of 9/15 AM no public S-1 on EDGAR (still confidential, quiet period); Zhipu Tmall official flagship store details confirmed (9/14 NetEase/21st Century Business Herald: 4 GLM Coding Plans at official prices Lite Y118/Pro Y538/Max Y1078/Team Y598, annual sales 100+, ~5,000 followers); countdown proximity: Copilot 9/28 unified experience + Balanced default 13 days, 10/1 prepaid 16 days, GLM-5.2 Volcano Ark delist 9/21 6 days, GLM night free-use ends 9/20 5 days; DeepSeek V4.1 Pro still not released as of 9/15 (official: 'in development, date TBD')",
       "2026-09-16: GitHub Copilot auto model selection adds cost/quality config knob (9/14 changelog) + custom properties suggestions (9/15); OpenAI to end direct model supply to Cursor on 11/12 (notice 8/28, post-SpaceX $60B acquisition, aibesttool verified 9/2) - Cursor model continuity risk; Codex $200 Pro tier new subscriptions paused due to GPT-6 Astra demand (Codex lead Tibo ~9/11); Zhipu GLM Coding Plan points-system clarified (peak 3x deduction coefficient, night free-use 0-quota window to 9/20, no refunds on personal subs); countdown proximity refreshed: Copilot 9/28 unified experience + Balanced default 12 days, 10/1 prepaid 15 days, GLM-5.2 Volcano Ark delist 9/21 5 days, GLM night free-use ends 9/20 4 days; DeepSeek V4.1 Pro still not released as of 9/16",
       "2026-09-17: CORRECTION - DeepSeek V4 Pro->V4.1 Flash auto-reroute announced 9/9 was REVERSED 9/11 after developer pushback; V4 Pro still served at off-peak $0.66/$1.98 as of 9/14 (OrcaRouter 9/17 double-check). OpenAI to retire GPT-5.5 on 2026-10-14 (ChatGPT/Work/Codex all tiers, API unaffected, migrate to GPT-5.6-Sol). Claude Code 2.1.273 mega-update (9/16: code-review + artifact-publishing fixes; Cowork folded into main chat; Design/Slides/Docs wired into Claude Code). GitHub Copilot '3-in-1' unified inline-suggestions model (9/16). Bolt.new Bolt Forge + $9/mo Bolt Lite (9/17); Amp free for BYO compute/model keys (9/13); Cognition SWE-2 coding model (FrontierCode 1.1 Main 50.0%, 64% cheaper than Fable 5.1). Anthropic IPO: no public S-1 on EDGAR as of 9/16 (MEXC/AOL); Nvidia cornerstone up to $10B; OpenAI IPO pushed to 2027; DeepSeek $71B pre-money round + first CFO + STAR Market IPO prep.",
-      "2026-09-18: Claude Code Projects redesign (9/17: goal-driven parallel agent orchestration, claude.com/blog/projects-redesigned); Qwen3.8-Omni-Flash launched (9/17: native omni-modal text/image/audio/video, 1M ctx, audio input price -98%+/hour, qwen.ai/blog); DeepSeek V4.1 Pro still not released as of 9/18 (OrcaRouter 9/16 / ai-indeed 9/11; deepseek.com?q=... 'released' is SEO fake URL non-official; DeepSeek Code 2.0 open-source coding model rumored within Sept targeting Mythos 5.1/GPT-6 Astra, cxgn.cn); Anthropic IPO 'S-1 cover page leaked' rumor (coindesk.cc, unverified) - EDGAR still no public S-1 (MEXC/winappnet/StockCram); timeline late-Sept S-1 / mid-Oct roadshow / pre-midterm listing, $2T, Nasdaq (TechTimes 9/14), $15B revolver, Nvidia cornerstone up to $10B, COO Brad Lightcap left Aug; Anthropic cache-read price cut 75% in early Sept (ai-master Sept trends, agentic cost tailwind); GPT-5.6 Sol partner discounts winding down (OpenCode Zen 50% off to 9/18, Devin 70% to 10/3, huggingnews)"
+      "2026-09-18: Claude Code Projects redesign (9/17: goal-driven parallel agent orchestration, claude.com/blog/projects-redesigned); Qwen3.8-Omni-Flash launched (9/17: native omni-modal text/image/audio/video, 1M ctx, audio input price -98%+/hour, qwen.ai/blog); DeepSeek V4.1 Pro still not released as of 9/18 (OrcaRouter 9/16 / ai-indeed 9/11; deepseek.com?q=... 'released' is SEO fake URL non-official; DeepSeek Code 2.0 open-source coding model rumored within Sept targeting Mythos 5.1/GPT-6 Astra, cxgn.cn); Anthropic IPO 'S-1 cover page leaked' rumor (coindesk.cc, unverified) - EDGAR still no public S-1 (MEXC/winappnet/StockCram); timeline late-Sept S-1 / mid-Oct roadshow / pre-midterm listing, $2T, Nasdaq (TechTimes 9/14), $15B revolver, Nvidia cornerstone up to $10B, COO Brad Lightcap left Aug; Anthropic cache-read price cut 75% in early Sept (ai-master Sept trends, agentic cost tailwind); GPT-5.6 Sol partner discounts winding down (OpenCode Zen 50% off to 9/18, Devin 70% to 10/3, huggingnews)",
+      "2026-09-20: Zhipu GLM-5.3-FlashX high-speed variant launched (9/18, official $0.37/$1.25 per M tok intl / CNY 2/7 domestic / cache-hit CNY 0.57, 200 tok/s, MIT open weights, llmpricing/tokenrate/docs.bigmodel.cn verified 9/18-9/20); Kimi K3 live on Amazon Bedrock (9/19); Claude Code 2.1.278 (9/20: Auto pre-flight safety checks no longer billed, AGENTS.md compat); MiniMax open-sourced MiniMax Code CLI v0.4.12 (MIT, 9/20); Zhipu GLM night free-use ends 9/20, GLM-5.2 Volcano Ark delist 9/21 14:00; Anthropic public S-1 still not filed as of 9/20 AM (late-Sept window now open); DeepSeek V4.1 Pro still unreleased as of 9/19 (qcode.cc tracker)"
     ]
   },
   "vendors": [
@@ -1731,6 +1732,16 @@
       "output": 2.4,
       "date": "2026-08-03",
       "note": "512K ctx/128K out; M3 API permanent 50% off; among cheapest output tiers (above only GPT-5.6 Luna $1.20)."
+    },
+    {
+      "model": "GLM-5.3-FlashX (Zhipu)",
+      "api_price_published": true,
+      "coding_plan_only": false,
+      "in_usd": 0.37,
+      "out_usd": 1.25,
+      "cache_hit_usd": 0.075,
+      "date": "2026-09-18",
+      "note": "High-speed variant of GLM-5.3-Flash; up to 200 tok/s (100k domestic chips). Same architecture/intelligence, 1M ctx, native multimodal (text/image/audio/video/PDF), MIT open weights. Official price intl $0.37/$1.25 per MTok, domestic CNY 2/7, cache-hit CNY 0.57 (~2.5x Flash). Listed on OpenRouter/Z.AI as z-ai/glm-5.3-flashx."
     }
   ],
   "upcoming_deadlines": [
@@ -1847,10 +1858,45 @@
       "date": "2026-09-late",
       "event": "Anthropic public S-1 (registration statement) expected late September; roadshow no earlier than mid-Oct; listing pre-US-midterm (Nov 3)",
       "status": "upcoming",
-      "note": "No public S-1 on EDGAR as of 9/16 (MEXC/AOL). Target $2T; Nvidia cornerstone up to $10B; Nasdaq rumored (unconfirmed)."
+      "note": "No public S-1 on EDGAR as of 9/20 AM (only 6/1 confidential). Late-Sept window now open; target $2T; Nvidia cornerstone up to $10B; Nasdaq rumored (unconfirmed)."
     }
   ],
   "latest_news": [
+    {
+      "date": "2026-09-20",
+      "head": "Zhipu GLM-5.3-FlashX high-speed variant launched (200 tok/s, $0.37/$1.25 per M tok intl, CNY 2/7 domestic, MIT open weights).",
+      "detail": "Speed-boosted sibling of GLM-5.3-Flash on 100k domestic chips; ~2.5x Flash price. Listed on OpenRouter/Z.AI as z-ai/glm-5.3-flashx."
+    },
+    {
+      "date": "2026-09-20",
+      "head": "Claude Code 2.1.278 (9/20): Auto pre-flight safety checks move to Anthropic servers and are no longer billed; AGENTS.md compat added.",
+      "detail": "Lowers hidden cost of Auto mode for heavy agent users; CLAUDE.md-absent projects now auto-read AGENTS.md (from OpenAI Codex convention)."
+    },
+    {
+      "date": "2026-09-19",
+      "head": "Moonshot Kimi K3 now live on Amazon Bedrock.",
+      "detail": "Fulfills the 9/3 HKEX-filing cloud-hosting roadmap; K3 (OpenAI Responses / Anthropic Messages API compatible) opens to AWS customers."
+    },
+    {
+      "date": "2026-09-20",
+      "head": "MiniMax open-sourced MiniMax Code CLI v0.4.12 under MIT (9/20).",
+      "detail": "Core of MiniMax Code client open-sourced; 23/30 pass on third-party FrontierHarness Eval (76%)."
+    },
+    {
+      "date": "2026-09-20",
+      "head": "Zhipu GLM night free-use campaign ends today (9/20); GLM-5.2 Volcano Ark delist tomorrow 9/21 14:00 (only 5.3 remains).",
+      "detail": "ZCode 0-quota window for GLM-5.3-Flash closes; points-system resumes (peak 3x / off-peak 1x). GLM-5.3-FlashX is a higher-throughput paid alternative."
+    },
+    {
+      "date": "2026-09-20",
+      "head": "Anthropic IPO: late-September S-1 window now open; no public S-1 on EDGAR as of 9/20 AM (only 6/1 confidential).",
+      "detail": "Timeline holds: S-1 late Sept / roadshow mid-Oct / pre-midterm listing, $2T target, Nasdaq, $15B revolver, Nvidia cornerstone up to $10B."
+    },
+    {
+      "date": "2026-09-19",
+      "head": "DeepSeek V4.1 Pro still not released as of 9/19 (qcode.cc tracker): no card/endpoint/price/date.",
+      "detail": "V4.1 Flash (9/10 GA) remains the strongest available tier; V4 Pro still served at off-peak $0.66/$1.98, reroute never took effect."
+    },
     {
       "date": "2026-08-28",
       "head": "NVIDIA to acquire Hugging Face for ~$12.9B (reported 8/27) - largest open-source model hub (500k+ models, 30M MAU) changes hands; open-ecosystem neutrality questioned.",
