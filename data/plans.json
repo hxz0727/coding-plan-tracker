@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-09-22",
+    "updated": "2026-09-24",
     "cadence": "Daily 09:05",
     "currency": "USD unless noted",
     "sources": [
@@ -28,7 +28,30 @@
       "2026-09-18: Claude Code Projects redesign (9/17: goal-driven parallel agent orchestration, claude.com/blog/projects-redesigned); Qwen3.8-Omni-Flash launched (9/17: native omni-modal text/image/audio/video, 1M ctx, audio input price -98%+/hour, qwen.ai/blog); DeepSeek V4.1 Pro still not released as of 9/18 (OrcaRouter 9/16 / ai-indeed 9/11; deepseek.com?q=... 'released' is SEO fake URL non-official; DeepSeek Code 2.0 open-source coding model rumored within Sept targeting Mythos 5.1/GPT-6 Astra, cxgn.cn); Anthropic IPO 'S-1 cover page leaked' rumor (coindesk.cc, unverified) - EDGAR still no public S-1 (MEXC/winappnet/StockCram); timeline late-Sept S-1 / mid-Oct roadshow / pre-midterm listing, $2T, Nasdaq (TechTimes 9/14), $15B revolver, Nvidia cornerstone up to $10B, COO Brad Lightcap left Aug; Anthropic cache-read price cut 75% in early Sept (ai-master Sept trends, agentic cost tailwind); GPT-5.6 Sol partner discounts winding down (OpenCode Zen 50% off to 9/18, Devin 70% to 10/3, huggingnews)",
       "2026-09-20: Zhipu GLM-5.3-FlashX high-speed variant launched (9/18, official $0.37/$1.25 per M tok intl / CNY 2/7 domestic / cache-hit CNY 0.57, 200 tok/s, MIT open weights, llmpricing/tokenrate/docs.bigmodel.cn verified 9/18-9/20); Kimi K3 live on Amazon Bedrock (9/19); Claude Code 2.1.278 (9/20: Auto pre-flight safety checks no longer billed, AGENTS.md compat); MiniMax open-sourced MiniMax Code CLI v0.4.12 (MIT, 9/20); Zhipu GLM night free-use ends 9/20, GLM-5.2 Volcano Ark delist 8/31 14:00 (CORRECTED 9/21: prior runs misreported as 9/21; official Volcano Ark Coding Plan doc / codingplan.org confirms 8/31 delist, auto-route to 5.3); Anthropic public S-1 still not filed as of 9/20 AM (late-Sept window now open); DeepSeek V4.1 Pro still unreleased as of 9/19 (qcode.cc tracker)",
       "2026-09-21: CORRECTION - Zhipu GLM-5.2 Volcano Ark (Volcengine) delist date was 2026-08-31 14:00, NOT 9/21 as previously logged in runs 9/15-9/20 (codingplan.org mirror of Volcano Ark Coding Plan doc + cheapestinference double-confirm; auto-routed to GLM-5.3). Z.ai direct API still lists GLM-5.2 ($1.40/$4.40), some aggregator pools alias id to 5.3 until 9/30. Anthropic public S-1 still not filed as of 9/21 AM (MEXC/winappnet recheck EDGAR only 6/1 confidential; window late-Sept/early-Oct; Nasdaq; $2T; some sources now say S-1 early Oct). GitHub Copilot to retire a set of models on 2026-10-19 across Chat/inline edits/code completion (9/18 changelog, oday-bakkour 9/19 cross-check) - distinct from 10/2 four-model switch. Copilot code review rework (9/18) + budget increase requests GA (9/16) + Copilot CLI 1.0.87. OpenAI Codex CLI 0.155.1 (9/18) fixes third-party OpenAI-compatible provider rejection. DeepSeek V4.1 Pro / Code 2.0 still unreleased as of 9/21 (qcode.cc tracker: Not released / One mention / Premise withdrawn).",
-      "2026-09-22: xAI Grok 4.7 launch (9/21) - 500K ctx, text+image input, no output limit, KB cutoff 2026-05, $2/$0.50 cached/$6 per M tokens <=200K prompt, $4/$1/$12 above; Grok 4.7 Fast (2x speed, $4/$12) only via Cursor + Grok Build, NOT on public xAI API; reasoning effort low/medium/high(default)/xhigh; CursorBench 4.0 46.3% (vs 4.6 40.4%), DeepSWE v1.1 71.0%, Terminal-Bench 4.0 38.0%, EEBench 64.0%; Artificial Analysis Intelligence Index 46 (16th of 655); sources x.ai/news/grok-4-7 + docs.x.ai release notes + docs.x.ai models. VentureBeat warns per-task token consumption is high - unit price parity does not equal ROI parity. GitHub Copilot ships Grok 4.7 on 9/21 (official changelog) to Pro/Pro+/Max/Business/Enterprise, in the model picker of VS Code, Visual Studio, Copilot CLI, cloud agent, Copilot app, JetBrains, Xcode, Eclipse; billed at provider list pricing under usage-based billing (1 credit = $0.01); Copilot Free excluded; Business/Enterprise admins manage via model policy, new models auto-enabled by default unless global default is off or the model is explicitly disabled; gradual rollout. Anthropic Claude 5.2 family silent canary routing confirmed 9/21 - since 9/19-9/20 Anthropic quietly routes Fable 5.1 requests to unreleased Fable 5.2, Opus 5 to Opus 5.2 / Opus Next, Sonnet 5 to Sonnet 5.2 (~9/18); frontend model name unchanged (Sina Finance 9/21, tech-flow 9/21, AX BRIEF 9/22). Reported uplift Opus 5.2 > Sonnet 5.2 > Fable 5.2 (Fable already strong; bottleneck is price not capability); Fable 5.2 uses deeper 'slow thinking' to beat GPT-6 Astra on long-horizon logical coherence at the cost of slower output and materially higher inference cost. NOT officially released - no official model ID, model card, price or date as of 9/21-9/22 (theneuralfeed 9/20: newest callable Claude is still claude-fable-5-1). Reuters 9/19: Anthropic weighing a capability release before its IPO to counter GPT-6 Astra momentum (Astra ~13% of tracked enterprise AI spend on Ramp vs Fable ~8%; OpenRouter user spend on OpenAI exceeded Anthropic for the first time in 2.5 years). Zhipu ZCode code-upload compliance fallout escalates + Coding Plan supply constraint - 9/18 Zhipu publicly apologized over ZCode repo-encyclopedia anomalous uploads but upload activity was still detected on internal networks the same day (Tencent News 9/21); customer Chengming Technology issued a written-answer ultimatum deadline 10/10 demanding physical deletion proof, operation logs, private-key custody and cross-border transfer explanations, reserving rights to report and litigate (Red Star News 9/20). Fix: ZCode 9/19 update 'fixed repo-encyclopedia anomalous upload issue'. Supply: in Feb 2026 GLM-5 launch week, call volume surged 10x, self-built and rented compute exhausted, forcing Zhipu to urgently delist its flagship subscription product Coding Plan; after resuming in July it achieved >15x sales growth, and Coding users grew >1M in the two weeks after interims (chief scientist Tang Jie: 'the compute gap has gripped revenue by the throat'). 9/20 Zhipu quietly launched a ZCode-exclusive paid trial tier 'Start Plan' (likely a new service beyond Coding Plan). Zhipu monetization and pricing-power signals (9/16 earnings call + 9/21 financial-media recap) - Co-work industry order value exceeded CNY 1B within one month of GLM-5.3 launch; API pricing up 101% YoY, MaaS platform call volume up >40x vs start of year, users past 7.4M, open-platform/API gross margin 24.6%; ARR path Mar $250M -> Jul $1.0B -> Aug $1.6B -> Sep $1.8B, year-end guidance raised from $2.4B to $3.0B; revenue-sharing agreements signed with leading overseas cloud vendors and top domestic clouds, GLM served as hosted API, revenue recognition from October. Funding: Sept placement of 21.965M new H shares at HK$714 (9.96% discount) plus CNY 20.14B zero-coupon convertible bonds (conversion HK$892.5, 12.55% premium), totalling ~HK$39.3B (~$5B), the second raise in two months. Negative signal: share price down >70% from its high, Sept market cap down ~35% (~HK$200B). Anthropic public S-1 still not filed as of 9/22 AM - anthropicvaluation.com continuously polls EDGAR and confirms only the 2026-06-01 confidential draft; no public S-1 or S-1/A has appeared, so share count, price range, exchange, ticker and listing date remain unavailable (last successful check 2026-09-21 21:25 UTC; goBull 9/21 same finding; MEXC 9/21 same). SEC rule: the draft and all amendments must be public at least 15 days before the roadshow starts, so a public S-1 must land first or a mid-October roadshow cannot happen. Nasdaq listing, $2T target valuation, raise possibly >$100B (would beat SpaceX as largest IPO ever), Nvidia in talks for a cornerstone of up to $10B, underwriters Goldman Sachs / JPMorgan / Morgan Stanley; per Sina Finance 9/21 the listing has slipped from October to November. Polymarket: ~56% for an October listing, ~85% year-end (Kalshi 'before 10/1' contract was ~3% on 9/8). DeepSeek V4.1 Pro parameter and timing leak (non-official) - The Information (relayed by IT Shidai / Tencent News / ZAKER 9/21) reports DeepSeek is training a 2T-parameter model scaling later to 8T, most likely the upcoming V4.1 Pro, expected mid-to-late October (unlikely before the holidays); architecture continues CED + Engram, Prefill/Decode split, asymmetric activation; training betting on domestic AI chips with emphasis on Huawei Ascend (Ascend 950 ~30k cards vs H200 ~30k) - if realised it would be the first public confirmation of a 2T-class model trained on domestic silicon. Official position still Yotta Labs' summary: no release date, size, price or benchmarks; two sentences only (V4.1 Flash is 'the smallest model in our new architecture family' and the routing plan runs 'until V4.1-Pro launches'). Live: V4.1 Flash (9/10 GA) + V4 Pro (off-peak $0.66/$1.98, reroute never took effect). Pre-holiday model release wave (9/21 to mid-Oct, AIBase / AI DAMN 9/21) - at least 10+ models: overseas OpenAI GPT-6 Sol/Terra/Luna (dev conference end of month), Anthropic Opus 5.2 + Fable 5.2 (skipping 5.1, Mythos 5.2 limited), Google Gemini 4.0 Pro/Flash, Grok 4.7 already out; domestic Step 5 Preview already live, Kimi K3.1 imminent, Qwen4 series, Xiaomi Mimo V2.6, Zhipu GLM-5.5 (rumoured >1T params), MiniMax M3.1 (1T), Tencent HY4 Pro, DeepSeek V4.1 Pro. Practical read-through: do not lock long-term annual tiers before end of September. GitHub Copilot 9/28 and 10/1 deadlines re-verified from official changelog - no earlier than 9/28 the cloud agent, Copilot Chat on github.com and Copilot Chat in GitHub Mobile merge into a single experience with one consolidated policy; chat data retention changes from 28 days to the life of the account; opting out means losing Copilot access on github.com and GitHub Mobile; Copilot code review default effort moves from Lite to Balanced (opt back into Lite in repo/org settings beforehand). From 10/1, assigned seats are billed upfront at the start of the billing cycle for credit-card/PayPal customers, unused seats included; GitHub states prices are unchanged, only the timing of the charge; new customers have a separate pay-before-access rule (signups reopened 9/1). Supporting sources: GitHub Changelog 9/21 (Grok 4.7), highcircl.com 9/2026 (Copilot 9/28 + 10/1 billing changes), xebia.ms weekly Copilot roundup 2026-09-21, CSDN procurement comparison 2026-09-17 + Sept 2026 plan roundup (Tencent Token Plan Hy 28/78/238/468; MiniMax 49/119/469; Trae 0/49/99/239/699; CodeBuddy 0/99/199/999; Zhipu price-hike warning), Sina Finance 9/21 (Anthropic 5.2 + IPO timeline), theneuralfeed 9/20 (no official Claude 5.2), pick-right.com 9/21 (Claude Code 2.1.278 classifier charging + LLM-gateway eligibility rule), releasebot.io OpenAI 9/21 (Privacy Center, Codex 0.155.0/0.155.1), aipricing.guru ChatGPT subscription pricing + Z.ai subscription pricing (checked 2026-09-21), greentreeone/MEXC (Claude plan/model matrix, ~30% extra tokens for Claude 4.7+ tokenizer, cache read at 1/10 input), aitoolsrecap (Cursor Pro+/Ultra), openaisuite.com (Hy4 preview routes), anthropicvaluation.com IPO timeline, gobull.ai 9/21, Pol / MEXC IPO odds."
+      "2026-09-22: xAI Grok 4.7 launch (9/21) - 500K ctx, text+image input, no output limit, KB cutoff 2026-05, $2/$0.50 cached/$6 per M tokens <=200K prompt, $4/$1/$12 above; Grok 4.7 Fast (2x speed, $4/$12) only via Cursor + Grok Build, NOT on public xAI API; reasoning effort low/medium/high(default)/xhigh; CursorBench 4.0 46.3% (vs 4.6 40.4%), DeepSWE v1.1 71.0%, Terminal-Bench 4.0 38.0%, EEBench 64.0%; Artificial Analysis Intelligence Index 46 (16th of 655); sources x.ai/news/grok-4-7 + docs.x.ai release notes + docs.x.ai models. VentureBeat warns per-task token consumption is high - unit price parity does not equal ROI parity. GitHub Copilot ships Grok 4.7 on 9/21 (official changelog) to Pro/Pro+/Max/Business/Enterprise, in the model picker of VS Code, Visual Studio, Copilot CLI, cloud agent, Copilot app, JetBrains, Xcode, Eclipse; billed at provider list pricing under usage-based billing (1 credit = $0.01); Copilot Free excluded; Business/Enterprise admins manage via model policy, new models auto-enabled by default unless global default is off or the model is explicitly disabled; gradual rollout. Anthropic Claude 5.2 family silent canary routing confirmed 9/21 - since 9/19-9/20 Anthropic quietly routes Fable 5.1 requests to unreleased Fable 5.2, Opus 5 to Opus 5.2 / Opus Next, Sonnet 5 to Sonnet 5.2 (~9/18); frontend model name unchanged (Sina Finance 9/21, tech-flow 9/21, AX BRIEF 9/22). Reported uplift Opus 5.2 > Sonnet 5.2 > Fable 5.2 (Fable already strong; bottleneck is price not capability); Fable 5.2 uses deeper 'slow thinking' to beat GPT-6 Astra on long-horizon logical coherence at the cost of slower output and materially higher inference cost. NOT officially released - no official model ID, model card, price or date as of 9/21-9/22 (theneuralfeed 9/20: newest callable Claude is still claude-fable-5-1). Reuters 9/19: Anthropic weighing a capability release before its IPO to counter GPT-6 Astra momentum (Astra ~13% of tracked enterprise AI spend on Ramp vs Fable ~8%; OpenRouter user spend on OpenAI exceeded Anthropic for the first time in 2.5 years). Zhipu ZCode code-upload compliance fallout escalates + Coding Plan supply constraint - 9/18 Zhipu publicly apologized over ZCode repo-encyclopedia anomalous uploads but upload activity was still detected on internal networks the same day (Tencent News 9/21); customer Chengming Technology issued a written-answer ultimatum deadline 10/10 demanding physical deletion proof, operation logs, private-key custody and cross-border transfer explanations, reserving rights to report and litigate (Red Star News 9/20). Fix: ZCode 9/19 update 'fixed repo-encyclopedia anomalous upload issue'. Supply: in Feb 2026 GLM-5 launch week, call volume surged 10x, self-built and rented compute exhausted, forcing Zhipu to urgently delist its flagship subscription product Coding Plan; after resuming in July it achieved >15x sales growth, and Coding users grew >1M in the two weeks after interims (chief scientist Tang Jie: 'the compute gap has gripped revenue by the throat'). 9/20 Zhipu quietly launched a ZCode-exclusive paid trial tier 'Start Plan' (likely a new service beyond Coding Plan). Zhipu monetization and pricing-power signals (9/16 earnings call + 9/21 financial-media recap) - Co-work industry order value exceeded CNY 1B within one month of GLM-5.3 launch; API pricing up 101% YoY, MaaS platform call volume up >40x vs start of year, users past 7.4M, open-platform/API gross margin 24.6%; ARR path Mar $250M -> Jul $1.0B -> Aug $1.6B -> Sep $1.8B, year-end guidance raised from $2.4B to $3.0B; revenue-sharing agreements signed with leading overseas cloud vendors and top domestic clouds, GLM served as hosted API, revenue recognition from October. Funding: Sept placement of 21.965M new H shares at HK$714 (9.96% discount) plus CNY 20.14B zero-coupon convertible bonds (conversion HK$892.5, 12.55% premium), totalling ~HK$39.3B (~$5B), the second raise in two months. Negative signal: share price down >70% from its high, Sept market cap down ~35% (~HK$200B). Anthropic public S-1 still not filed as of 9/22 AM - anthropicvaluation.com continuously polls EDGAR and confirms only the 2026-06-01 confidential draft; no public S-1 or S-1/A has appeared, so share count, price range, exchange, ticker and listing date remain unavailable (last successful check 2026-09-21 21:25 UTC; goBull 9/21 same finding; MEXC 9/21 same). SEC rule: the draft and all amendments must be public at least 15 days before the roadshow starts, so a public S-1 must land first or a mid-October roadshow cannot happen. Nasdaq listing, $2T target valuation, raise possibly >$100B (would beat SpaceX as largest IPO ever), Nvidia in talks for a cornerstone of up to $10B, underwriters Goldman Sachs / JPMorgan / Morgan Stanley; per Sina Finance 9/21 the listing has slipped from October to November. Polymarket: ~56% for an October listing, ~85% year-end (Kalshi 'before 10/1' contract was ~3% on 9/8). DeepSeek V4.1 Pro parameter and timing leak (non-official) - The Information (relayed by IT Shidai / Tencent News / ZAKER 9/21) reports DeepSeek is training a 2T-parameter model scaling later to 8T, most likely the upcoming V4.1 Pro, expected mid-to-late October (unlikely before the holidays); architecture continues CED + Engram, Prefill/Decode split, asymmetric activation; training betting on domestic AI chips with emphasis on Huawei Ascend (Ascend 950 ~30k cards vs H200 ~30k) - if realised it would be the first public confirmation of a 2T-class model trained on domestic silicon. Official position still Yotta Labs' summary: no release date, size, price or benchmarks; two sentences only (V4.1 Flash is 'the smallest model in our new architecture family' and the routing plan runs 'until V4.1-Pro launches'). Live: V4.1 Flash (9/10 GA) + V4 Pro (off-peak $0.66/$1.98, reroute never took effect). Pre-holiday model release wave (9/21 to mid-Oct, AIBase / AI DAMN 9/21) - at least 10+ models: overseas OpenAI GPT-6 Sol/Terra/Luna (dev conference end of month), Anthropic Opus 5.2 + Fable 5.2 (skipping 5.1, Mythos 5.2 limited), Google Gemini 4.0 Pro/Flash, Grok 4.7 already out; domestic Step 5 Preview already live, Kimi K3.1 imminent, Qwen4 series, Xiaomi Mimo V2.6, Zhipu GLM-5.5 (rumoured >1T params), MiniMax M3.1 (1T), Tencent HY4 Pro, DeepSeek V4.1 Pro. Practical read-through: do not lock long-term annual tiers before end of September. GitHub Copilot 9/28 and 10/1 deadlines re-verified from official changelog - no earlier than 9/28 the cloud agent, Copilot Chat on github.com and Copilot Chat in GitHub Mobile merge into a single experience with one consolidated policy; chat data retention changes from 28 days to the life of the account; opting out means losing Copilot access on github.com and GitHub Mobile; Copilot code review default effort moves from Lite to Balanced (opt back into Lite in repo/org settings beforehand). From 10/1, assigned seats are billed upfront at the start of the billing cycle for credit-card/PayPal customers, unused seats included; GitHub states prices are unchanged, only the timing of the charge; new customers have a separate pay-before-access rule (signups reopened 9/1). Supporting sources: GitHub Changelog 9/21 (Grok 4.7), highcircl.com 9/2026 (Copilot 9/28 + 10/1 billing changes), xebia.ms weekly Copilot roundup 2026-09-21, CSDN procurement comparison 2026-09-17 + Sept 2026 plan roundup (Tencent Token Plan Hy 28/78/238/468; MiniMax 49/119/469; Trae 0/49/99/239/699; CodeBuddy 0/99/199/999; Zhipu price-hike warning), Sina Finance 9/21 (Anthropic 5.2 + IPO timeline), theneuralfeed 9/20 (no official Claude 5.2), pick-right.com 9/21 (Claude Code 2.1.278 classifier charging + LLM-gateway eligibility rule), releasebot.io OpenAI 9/21 (Privacy Center, Codex 0.155.0/0.155.1), aipricing.guru ChatGPT subscription pricing + Z.ai subscription pricing (checked 2026-09-21), greentreeone/MEXC (Claude plan/model matrix, ~30% extra tokens for Claude 4.7+ tokenizer, cache read at 1/10 input), aitoolsrecap (Cursor Pro+/Ultra), openaisuite.com (Hy4 preview routes), anthropicvaluation.com IPO timeline, gobull.ai 9/21, Pol / MEXC IPO odds.",
+      {
+        "date": "2026-09-24",
+        "items": [
+          "Anthropic 'Introducing Opus 5.5' 官方发布公告 + system card（2026-09-22）：$4/$20、cache read $0.20、Batch 5 折、Fast $8/$40、1M/128K、claude-opus-5-5",
+          "llm-stats.com Claude Opus 5.5 launch 分析 + beam.ai / saascity.io / deepest.app 定价与基准复核（9/22–9/23）：SWE-bench Pro 89.9%、Terminal-Bench 4.0 66.4%、max effort 每任务约 11.9 万输出 token",
+          "ai-daily.dev（9/23）：Opus 5.5 取消 Pro/Max/Team 5 小时上限 + 限流重置按钮；Sonnet 5.5 / Haiku 5.5「数周内」；OpenAI 为 API 零数据留存客户开启私有安全处理",
+          "aitoolsreview.co.uk（9/23 更新）：确认 Opus 5.5 于 9/22 发布、**Fable 5.2 最终未发布**（更正 9/22「Claude 5.2 灰度」表述）",
+          "上海证券报/中国证券网、Quartz、Analytics India Magazine、GenAI Daily、DevX（9/22–9/23）：GPT-6 Sol $2/$10 与 GPT-6 Luna $0.10/$0.50 永久价（非促销）、1.05M 上下文、缓存读 90% 折扣、gpt-6-sol/gpt-6-luna",
+          "oday-bakkour（9/23）AI Coding Tools Roundup：Opus 5.5 同日进 Claude Code v2.1.280 默认与 GitHub Copilot 四档；GPT-6 Sol/Luna 进 Copilot；OpenCode 1.18.32 加 Grok 4.7 与 DeepSeek V4.1 Flash",
+          "agenccy.ai（9/22–9/23）：GitHub Copilot 三款新前沿模型「按供应商列表价、usage-based billing、不公示倍率」+「新模型默认自动启用」+ OpenTelemetry 导出（默认排除 prompt/response 内容）",
+          "technobezz / cloudninjas / peafowlit / highcircl / linkloot（9/22–9/23）：Copilot 10/19 退役清单（Gemini 3.7 Flash、GPT-5.5、GPT-5.4、GPT-5.4 mini、GPT-5 mini、Grok 4.5，覆盖 Chat/inline edits/ask/agent/completions）；9/28 与 10/1 政策复核",
+          "Inside AI（9/24）：Anthropic IPO 推迟过 11 月中期选举；WSJ（9/18）：由 10 月移至 11 月以带 Q3 财报",
+          "今日头条/ceomedium（9/24）：Anthropic Q2 2026 营收 $115 亿、首次调整后营业利润 $5.59 亿、毛利率约 40%、2028 年指引 $1,900–2,000 亿、目标估值最高 $2T、募资最高 $1,000 亿、$150 亿循环信贷、英伟达基石最高 $100 亿、Astra 占企业 AI 支出约 13% > Fable 约 8%",
+          "央广网（9/23）+ 封面新闻/今日头条（9/23）：智谱 ZCode 整改闭环（v3.14.0 移除 RepoWiki 与仓库快照生成/上传路径、代码 9/21 GitHub 开源 Apache-2.0、信通院+绿盟核查确认阿里云 OSS 数据对象已删除、承明科技撤回函件）、股价三日累跌逾 16%",
+          "火山引擎官方文档 volcengine.com/docs/ark/coding-plan-personal-plan-overview（9/23 读取）：9/23–10/30 deepseek-v4.1-flash 抵扣系数 5 折；9/18–9/30 Kimi-K2.8-Preview 可用量抵 Agent Plan 6 折；6/10–11/8 Auto 系数 1；非编程工具使用套餐 Base URL/Key 的封号红线重申",
+          "etnet 经济通（9/23 深圳国际通用 AI 博览会现场）：腾讯云 WorkBuddy 与 CodeBuddy 均 198 元/月/账号",
+          "站长之家 / AIBase / Wccftech（9/23）：Kimi K3.1 传 10 月发布，Low/High/Max 三档推理 + 1M「Extra Long」上下文 + Agent 模式 + Swarm 多智能体",
+          "ai.jp.net / AGI Market Watch（9/23）：DeepSeek V4.1 Flash 周用量 +483.62%（9/10 降价后由第 9 升至第 2）；四款国产轻量模型单周 token 均破 10 万亿；DeepSeek V4 Flash 14.59 万亿占 18.88%；腾讯 Hy3 单位基准任务成本最低 ¥0.308",
+          "vibecompare.dev（9/22 核验）Cursor 定价：Free $0 / Pro $20 / Pro+ $60 / Ultra $200 / Teams 标准席位 $40（年付 $32）/ 高级席位 $120（年付 $96）；Auto 平价模式 8/24 终止；SpaceX $60B 收购 8/14 交割（SpaceXAI 部门）",
+          "pondero.ai（9 月）Cursor/Copilot/OpenCode Q4 决策指南：OpenAI 拟 11/12 终止向 Cursor 供模型（变更控制条款），此后 Cursor 保留 Claude/Gemini/Grok、失去 GPT；Cursor 在 Ramp 企业支出份额由 41% 降至 26%",
+          "scriptbyai.com AI Coding Plan Comparison（9 月核验）：Kimi 会员 Andante ¥49 / Moderato ¥99 / Allegretto ¥199 / Allegro ¥699；GLM Coding Plan Lite $12.60（促销）/ Pro $56 / Max $117.60；BytePlus ModelArk Coding Plan Lite $10 / Pro $50；QwenCloud Token Plan Lite $6（促销）/ Standard $18 / Pro $68；Tencent Cloud Token Plan Lite $7 / Standard $17 / Pro $51 / Max $103；MiniMax Token Plan Plus $20 / Max $50 / Ultra $120"
+        ]
+      }
     ]
   },
   "vendors": [
@@ -160,14 +183,29 @@
         "Fable 5": [
           10,
           50
-        ]
+        ],
+        "claude-opus-5-5": {
+          "input": 4.0,
+          "output": 20.0,
+          "cache_read": 0.2,
+          "cache_write_5m": 5.0,
+          "cache_write_1h": 8.0,
+          "batch_input": 2.0,
+          "batch_output": 10.0,
+          "fast_input": 8.0,
+          "fast_output": 40.0,
+          "context": "1M in / 128K out (Batch beta 300K)",
+          "cache_read_discount_vs_opus5_pct": 60,
+          "date": "2026-09-22",
+          "api_id": "claude-opus-5-5"
+        }
       },
       "deadlines": [
         "2026-08-05 Opus 4.1 API retirement -> Opus 4.8 (DONE)",
         "2026-08-17 legacy Workbench + 3 experimental prompt-tool APIs retire",
         "2026-08-31 Sonnet 5 intro pricing ends (+50% from 9/1)"
       ],
-      "notes": "5h rolling window + weekly cap; Max tiers have an extra model-specific weekly cap. Quota shared across chat/Code/Cowork, no rollover. Rule of thumb: above ~$7/day API spend, Max subscription is cheaper. Cache reads ~1/10 of input price. Sonnet 5 is default model (native 1M ctx, SWE-Bench 82.1%). Opus 5 released 2026-07-24. SONNET 5 MIGRATION TWO PITFALLS: (1) temperature/top_p params now ERROR - must remove before switching model ID; (2) new tokenizer emits ~1/3 more tokens for same text vs Sonnet 4.6, so all prior token/cost budgets are systematically under-estimated. Opus 4.1 (claude-opus-4-1-20250805) retired 2026-08-05 - grep repos AND Bedrock/Vertex for old IDs. SONNET 5 PRICING (2026-09-01): the scheduled 9/1 increase to $3/$15 was CANCELLED - $2/$10 per MTok is now PERMANENT on Anthropic direct (Claude Code/API), confirmed by Anthropic pricing changelog 8/10 + Claude Code v2.1.243 release notes 8/25. NOTE: inside GitHub Copilot model menu, Sonnet 5 still reverted to $3/$15 on 9/1 (Microsoft-negotiated price)."
+      "notes": "5h rolling window + weekly cap; Max tiers have an extra model-specific weekly cap. Quota shared across chat/Code/Cowork, no rollover. Rule of thumb: above ~$7/day API spend, Max subscription is cheaper. Cache reads ~1/10 of input price. Sonnet 5 is default model (native 1M ctx, SWE-Bench 82.1%). Opus 5 released 2026-07-24. SONNET 5 MIGRATION TWO PITFALLS: (1) temperature/top_p params now ERROR - must remove before switching model ID; (2) new tokenizer emits ~1/3 more tokens for same text vs Sonnet 4.6, so all prior token/cost budgets are systematically under-estimated. Opus 4.1 (claude-opus-4-1-20250805) retired 2026-08-05 - grep repos AND Bedrock/Vertex for old IDs. SONNET 5 PRICING (2026-09-01): the scheduled 9/1 increase to $3/$15 was CANCELLED - $2/$10 per MTok is now PERMANENT on Anthropic direct (Claude Code/API), confirmed by Anthropic pricing changelog 8/10 + Claude Code v2.1.243 release notes 8/25. NOTE: inside GitHub Copilot model menu, Sonnet 5 still reverted to $3/$15 on 9/1 (Microsoft-negotiated price). | 2026-09-24: Claude Opus 5.5 released 2026-09-22 as first Claude 5.5-family model and new default flagship. $4/$20 per MTok (-20% vs Opus 5 $5/$25); cache read $0.20 (-60%); cache write $5 (5m)/$8 (1h); Batch 50% off ($2/$10); Fast mode $8/$40 (up to 2.5x speed). 1M context / 128K max output (Batch beta 300K); knowledge cutoff 2026-06; adaptive thinking always on, default effort medium. Self-reported: SWE-bench Pro 89.9%, Terminal-Bench 4.0 66.4%, CursorBench 4.0 57.8%, FrontierCode v1.1 Main 54.4%, HLE w/tools 67.7%, OSWorld 2.0 81.8%/48.7%. Positioned as Fable 5.1-class capability at ~40% of Fable 5.1's list price; Anthropic claims ~40% lower real workload cost vs Opus 5 (fewer tokens/task) and >30% faster output. CAUTION: independent measurement (Artificial Analysis) shows ~119k output tokens per task at max effort - medium effort is within ~1pt at ~1/4 the cost on several charts, so tune effort per step. Sensitive cyber tasks fall back to Opus 4.8, bio/frontier-LLM tasks to Opus 5 (Anthropic estimates ~2.5% general benchmark depression, up to 10% on Terminal-Bench 4.0). Subscription side: 5-hour usage caps removed for Pro/Max/Team and seat-based Enterprise, plus a rate-limit reset button; Sonnet 5.5 and Haiku 5.5 stated to be 'within weeks'. Available via API + AWS + Google Cloud + Microsoft Azure. Default Opus model in Claude Code v2.1.280. CORRECTION vs 2026-09-22 entry: Fable 5.2 never shipped - the 9/18-9/20 silent routing was to Opus 5.5."
     },
     {
       "name": "GitHub Copilot",
@@ -214,7 +252,7 @@
           "subscribable": true
         }
       ],
-      "notes": "First full cycle closed 2026-06-30: heavy agentic seats saw 10x-50x bill surge ($600-3000/mo). Completions & Next Edit unlimited/free. Model menu spread ~60x. MAI-Code-1-Flash ($0.75/$4.50) cheapest, GA for Business/Enterprise. Grok 4.5 added 2026-07-28. Credits do not roll over. Cloud agent also consumes Actions minutes. Agent Skills went preview -> GA within a month. PROMO CREDITS DROPPED 2026-09-01 (CONFIRMED): Business 3000->1900 (-37%), Enterprise 7000->3900 (-44) credits/seat, base price $19/$39 unchanged - bill jump realized. Overage: GitHub says orgs 'choose whether to allow additional usage'; third parties read as opt-out default - admins must explicitly disable 'AI credits paid usage policy'. Sonnet 5 inside Copilot reverted to $3/$15 on 9/1. Code review now DOUBLE-METERED (AI Credits + Actions minutes). User-level budget controls GA."
+      "notes": "First full cycle closed 2026-06-30: heavy agentic seats saw 10x-50x bill surge ($600-3000/mo). Completions & Next Edit unlimited/free. Model menu spread ~60x. MAI-Code-1-Flash ($0.75/$4.50) cheapest, GA for Business/Enterprise. Grok 4.5 added 2026-07-28. Credits do not roll over. Cloud agent also consumes Actions minutes. Agent Skills went preview -> GA within a month. PROMO CREDITS DROPPED 2026-09-01 (CONFIRMED): Business 3000->1900 (-37%), Enterprise 7000->3900 (-44) credits/seat, base price $19/$39 unchanged - bill jump realized. Overage: GitHub says orgs 'choose whether to allow additional usage'; third parties read as opt-out default - admins must explicitly disable 'AI credits paid usage policy'. Sonnet 5 inside Copilot reverted to $3/$15 on 9/1. Code review now DOUBLE-METERED (AI Credits + Actions minutes). User-level budget controls GA. | 2026-09-24 (major governance change): On 2026-09-22 GitHub added Claude Opus 5.5 and OpenAI GPT-6 Sol/Luna to Copilot within hours of launch, and the changelogs state all three are 'billed at provider list pricing under usage-based billing' - NO premium-request multiplier, credit conversion or price is published. Implication: the seat fee buys model ACCESS, not tokens, so Business/Enterprise per-head cost now carries an uncapped variable component that buyers cannot compute from GitHub's own announcement. Default direction runs toward spend: 'under default model enablement, new models are automatically enabled unless an administrator has turned off the global default or explicitly disables this model' - an admin who does nothing has the most expensive frontier models switched on, metered, across the org. Tier repositioning: Opus 5.5 and GPT-6 Sol both stop at Pro+ (Pro+/Max/Business/Enterprise); only GPT-6 Luna reaches base Pro. Tier access: Opus 5.5 and GPT-6 Sol = Pro+/Max/Business/Enterprise; GPT-6 Luna = Pro/Pro+/Max/Business/Enterprise; Grok 4.7 = Pro/Pro+/Max/Business/Enterprise (Free excluded). Also shipped: OpenTelemetry export for the Copilot app via enterprise managed-settings.json (prompt/response content excluded by default). Model deprecation 2026-10-19: Gemini 3.7 Flash, GPT-5.5, GPT-5.4, GPT-5.4 mini, GPT-5 mini, Grok 4.5 retired across Chat, inline edits, ask, agent and completions (distinct from the 10/2 four-model switch and OpenAI-side 10/14 GPT-5.5 retirement). Recommended action: audit model policy + usage-based billing budgets immediately and complete pinned-model migration before 10/19."
     },
     {
       "name": "OpenAI Codex",
@@ -261,7 +299,7 @@
           "subscribable": "contact sales"
         }
       ],
-      "notes": "WAU >5M. Local + cloud tasks share one credit pool. After the 2026-07-31 price cut, Terra/Luna consume FEWER credits inside subscriptions while sub prices/quotas stay unchanged. Codex Security CLI open-sourced 2026-07-29. WARNING (科创板日报 2026-08-04): devs report GPT-5.6 now CHARGES for cache-creation that was FREE on 5.5 - 'real cost may feel 2x higher' despite Luna -80% list cut. Always verify cache billing rule changes, not just list price. GPT-5.6 Sol cut to $4/$20 per MTok (was $5/$30), long-context $8/$30, promo through ~2026-11-21 - flows to Codex/ChatGPT usage counting (verified 2026-08-27)."
+      "notes": "WAU >5M. Local + cloud tasks share one credit pool. After the 2026-07-31 price cut, Terra/Luna consume FEWER credits inside subscriptions while sub prices/quotas stay unchanged. Codex Security CLI open-sourced 2026-07-29. WARNING (科创板日报 2026-08-04): devs report GPT-5.6 now CHARGES for cache-creation that was FREE on 5.5 - 'real cost may feel 2x higher' despite Luna -80% list cut. Always verify cache billing rule changes, not just list price. GPT-5.6 Sol cut to $4/$20 per MTok (was $5/$30), long-context $8/$30, promo through ~2026-11-21 - flows to Codex/ChatGPT usage counting (verified 2026-08-27). | 2026-09-24: GPT-6 Sol and GPT-6 Luna released 2026-09-22 and REPLACE GPT-5.6 Sol/Luna. GPT-6 Sol $2 input / $10 output per MTok (vs $4/$20 for the GPT-5.6 Sol promo price - a 50% cut); GPT-6 Luna $0.10 / $0.50 (Luna output down ~60%). OpenAI confirmed to VentureBeat the new rates are PERMANENT list prices with no expiration date, not a promotion. Specs: 1.05M context, 128K max output, 922K single-input cap, reasoning effort none->max; Responses API supports web search, file search, image generation, code execution, computer use and MCP. Caching: 90% discount on cached input-token reads, and changing reasoning effort or available tools no longer invalidates previously cached context - OpenAI says this cut the share of freshly-processed prompt tokens by more than half across billions of Copilot requests on GitHub. API ids: gpt-6-sol, gpt-6-luna. Rollout: ChatGPT Work + Codex for Plus/Pro/Business/Enterprise/Edu; Free and Go users can reach Luna via the desktop app; standard ChatGPT interface not yet included. Vendor benchmarks: Sol DeepSWE 68.8%, OSWorld 2.0 64.4%, AutomationBench 33.2% at $0.27/task, AA Intelligence Index 48. Sol is priced exactly at Claude Sonnet 5 level and half of Claude Opus 5.5. OpenAI-side deprecation: GPT-5.5 retires 2026-10-14 across ChatGPT/Work/Codex (API unaffected) - migrate pinned jobs to GPT-6 Sol or Astra."
     },
     {
       "name": "Windsurf / Devin Desktop",
@@ -491,7 +529,7 @@
         "note": "quota raised 30% on 2026-07-30"
       },
       "promo": "Yearly 30% off / quarterly 20% off until 2026-08-15",
-      "notes": "Tier ratios changed: Pro=6x Lite, Max=14x Lite (was 5x/20x). Legacy V1/V2 and team plans keep original pricing & rules. Models: GLM-5.2 / GLM-5-Turbo / GLM-4.7 (GLM-5.1/GLM-5 auto-route to 5.2). 20+ tools; OpenClaw runs at secondary scheduling priority. Official claim: up to 92% cheaper than pay-as-you-go GLM-5.2 API when using off-peak. HighSpeed tier available by application. ZCode 3.0 ADE uses in-house agent kernel, GLM-5.2 gets 1.5x quota inside ZCode. CN uses CREDIT metering; Intl Z.ai retains PROMPT-COUNT (two systems now fully diverged).",
+      "notes": "Tier ratios changed: Pro=6x Lite, Max=14x Lite (was 5x/20x). Legacy V1/V2 and team plans keep original pricing & rules. Models: GLM-5.2 / GLM-5-Turbo / GLM-4.7 (GLM-5.1/GLM-5 auto-route to 5.2). 20+ tools; OpenClaw runs at secondary scheduling priority. Official claim: up to 92% cheaper than pay-as-you-go GLM-5.2 API when using off-peak. HighSpeed tier available by application. ZCode 3.0 ADE uses in-house agent kernel, GLM-5.2 gets 1.5x quota inside ZCode. CN uses CREDIT metering; Intl Z.ai retains PROMPT-COUNT (two systems now fully diverged). | 2026-09-24: ZCode data-upload compliance incident CLOSED (as of 9/23, per CNR/央广网 + Cover News): Zhipu apologised and completed remediation; ZCode v3.14.0 removed the RepoWiki entry point and repository snapshot generation/upload paths; client source was published on GitHub on 9/21 under Apache-2.0; China Academy of Information and Communications Technology (CAICT) and NSFOCUS verified that the Alibaba Cloud OSS bucket and all data objects have been deleted; the complaining customer (Taiyuan Chengming Technology) issued a clarification and WITHDREW its letter and claims. Incident facts: a developer found a 313MB encrypted file in the ZCode data dir (generated from a ~345MB workspace, 42,411 files, .git = 86.6%, source/docs only ~13.4%); upload path was 'fetch upload credential + public key -> encrypt locally -> direct upload to Alibaba Cloud OSS'; the upload had failed 564 consecutive times. Zhipu's MaaS platform announced on 9/20 a forthcoming 'no data content retention' feature (inputs/outputs no longer statically stored). STILL UNDISCLOSED: scale of affected users; whether historical data was ever decrypted or accessed. The public GitHub repo was created 9/20 with only 2 commits and no version tags, so the buggy version (3.12.3) cannot be compared - verifiability is limited. Cost: Zhipu's share price fell more than 16% over three trading sessions. Enterprise guidance unchanged: avoid connecting repos containing private code or secrets to ZCode until the audit picture is fully transparent.",
       "discount": {
         "annual": "30% off (7折)",
         "quarterly": "20% off (8折)",
@@ -694,7 +732,7 @@
           "subscribable": true
         }
       ],
-      "notes": "CORRECTED (Aug-11): package 25%-off ends 2026-08-27, NOT 11/8. GLM-5.2 deduction 25%-off ended 2026-08-08 23:59. Two promos were previously conflated. Quota refresh: 5h rolls from first request; weekly resets Mon 00:00; monthly on sub-month day 1. RED LINE: quota valid only inside AI coding tools.",
+      "notes": "CORRECTED (Aug-11): package 25%-off ends 2026-08-27, NOT 11/8. GLM-5.2 deduction 25%-off ended 2026-08-08 23:59. Two promos were previously conflated. Quota refresh: 5h rolls from first request; weekly resets Mon 00:00; monthly on sub-month day 1. RED LINE: quota valid only inside AI coding tools. | 2026-09-24 (official doc read 9/23): New deduction-coefficient promotions - (1) 2026-09-23 00:00 to 10-30 18:00: deepseek-v4.1-flash gets an ADDITIONAL 50% off its Coding Plan deduction coefficient; (2) 2026-09-18 00:00 to 09-30 23:59: Kimi-K2.8-Preview usable volume in Coding Plan equals the Agent Plan 60%-deduction campaign period; (3) 2026-06-10 18:00 to 11-08 23:59: Auto mode deduction coefficient in Coding Plan is 1. RED LINE RESTATED verbatim: 'using the Base URL and API Key corresponding to Ark Coding Plan benefits in non-AI-coding tools may be identified as abuse/violation, leading to subscription suspension or account ban.' Required Base URLs: https://ark.cn-beijing.volces.com/api/coding/v3 (OpenAI-compatible) or https://ark.cn-beijing.volces.com/api/coding (Anthropic-compatible); other Base URLs will not draw on plan quota and may incur extra API charges. Plans: Coding Plan Lite CNY 40/mo (first two months CNY 9.9), Pro CNY 200/mo (first two months CNY 49.9); Agent Plan Small/Medium/Large/Max from CNY 40 (Medium CNY 200/mo, first month CNY 49.9). The 2.5-off plan-price promo official end remains 2026-11-08 23:59:59, limited quota first-come-first-served, max two months per account.",
       "deadline": "2026-11-08"
     },
     {
@@ -971,7 +1009,7 @@
           "subscribable": true
         }
       ],
-      "notes": "Coding Plan 已于 4/22 下线（页面 404）；Token Plan 个人版双线在售（通用 + Hy，Hy 便宜约 22-28%）。可用 GLM-5.2/Kimi-K2.6/MiniMax-M2.7/DeepSeek-V4-Pro/Hunyuan 等；缓存命中/未命中/输出统一抵扣无差别定价。DeepSeek V4 由直供，不提供 SLA；模型库动态更新不承诺固定可用。",
+      "notes": "Coding Plan 已于 4/22 下线（页面 404）；Token Plan 个人版双线在售（通用 + Hy，Hy 便宜约 22-28%）。可用 GLM-5.2/Kimi-K2.6/MiniMax-M2.7/DeepSeek-V4-Pro/Hunyuan 等；缓存命中/未命中/输出统一抵扣无差别定价。DeepSeek V4 由直供，不提供 SLA；模型库动态更新不承诺固定可用。 | 2026-09-24: At the Shenzhen International General AI Expo (9/23), Tencent Cloud staff quoted BOTH WorkBuddy (AI office assistant) and CodeBuddy (AI full-process coding assistant, based on Hunyuan code model) at CNY 198 per account per month (~CNY 6/day per person). NOTE: this is on-site expo wording and is a different product/billing basis from the existing CodeBuddy tiers (CNY 0/99/199/999) and the Token Plan dual lines (general CNY 39-599, Hy CNY 28-468). Confirm against the official site/quote before procurement.",
       "alert_2026_08_11": "Hy3 preview & Kimi-K2.5 will be EOL 2026-08-31 — migrate ahead."
     },
     {
@@ -1754,6 +1792,39 @@
       "context": "500K",
       "note": "Released 2026-09-21. Rates for <=200K prompt tokens; >200K prompt is $4/$1/$12. Same price as Grok 4.6. Grok 4.7 Fast (2x speed, $4/$12) only via Cursor and Grok Build, not on the public xAI API. Knowledge cutoff 2026-05; text+image input, text-only output, no output limit; reasoning effort low/medium/high(default)/xhigh; no Batch API. Benchmarks (vendor): CursorBench 4.0 46.3%, DeepSWE v1.1 71.0%, Terminal-Bench 4.0 38.0%, EEBench 64.0%, AA Briefcase v1.1 1657. Artificial Analysis Intelligence Index 46 (16th of 655). OpenRouter route $1.60/$4.80 with $0.40 cache read. CAUTION: VentureBeat notes high per-task token consumption, so list-price parity with 4.6 does not imply equal cost-to-complete; budget on cost per finished task.",
       "source": "x.ai/news/grok-4-7; docs.x.ai/developers/release-notes; docs.x.ai/developers/models; GitHub Changelog 2026-09-21; llmreference.com; VentureBeat"
+    },
+    {
+      "model": "Claude Opus 5.5 (Anthropic)",
+      "input_usd": 4.0,
+      "output_usd": 20.0,
+      "cache_read_usd": 0.2,
+      "cache_write_usd_5m": 5.0,
+      "batch_input_usd": 2.0,
+      "batch_output_usd": 10.0,
+      "fast_input_usd": 8.0,
+      "fast_output_usd": 40.0,
+      "context": "1M in / 128K out (Batch beta 300K)",
+      "date": "2026-09-22",
+      "api_id": "claude-opus-5-5",
+      "note": "First Claude 5.5-family model and new default flagship. 20% below Opus 5 on input/output, cache read down 60% from $0.50 to $0.20. Knowledge cutoff 2026-06, adaptive thinking always on, default effort medium. Fable 5.1-class capability at ~40% of Fable 5.1's list price. Self-reported SWE-bench Pro 89.9%, Terminal-Bench 4.0 66.4%. CAUTION: ~119k output tokens per task at max effort. Sensitive cyber -> Opus 4.8 fallback; bio -> Opus 5 fallback."
+    },
+    {
+      "model": "GPT-6 Sol (OpenAI)",
+      "input_usd": 2.0,
+      "output_usd": 10.0,
+      "context": "1.05M in / 128K out (922K single-input cap)",
+      "date": "2026-09-22",
+      "api_id": "gpt-6-sol",
+      "note": "PERMANENT list price (confirmed non-promotional, no expiration) - 50% below the GPT-5.6 Sol promotional price of $4/$20. Reasoning effort none->max. 90% discount on cached input reads; changing effort/tools no longer invalidates cache. DeepSWE 68.8%, OSWorld 2.0 64.4%, AutomationBench 33.2% at $0.27/task, AA Intelligence Index 48. Priced at Claude Sonnet 5 level; half of Claude Opus 5.5."
+    },
+    {
+      "model": "GPT-6 Luna (OpenAI)",
+      "input_usd": 0.1,
+      "output_usd": 0.5,
+      "context": "1.05M in / 128K out (922K single-input cap)",
+      "date": "2026-09-22",
+      "api_id": "gpt-6-luna",
+      "note": "PERMANENT list price; cheapest model in the GPT-6 family (output down ~60% from GPT-5.6 Luna's $1.20). Targets high-volume, narrow predictable work (extraction, summarisation, simple queries). Reaches Copilot base Pro tier (the only one of the three new Copilot models that does). Free/Go users can access via the desktop app."
     }
   ],
   "upcoming_deadlines": [
@@ -1915,6 +1986,71 @@
       "event": "Anthropic IPO now reportedly slipped from October to November (Sina Finance 9/21); public S-1 still unfiled as of 9/22 AM.",
       "status": "upcoming",
       "note": "SEC requires the draft and all amendments to be public at least 15 days before the roadshow, so a public S-1 must land first. Nasdaq, $2T target, raise possibly >$100B, Nvidia cornerstone up to $10B, underwriters GS/JPM/MS. Polymarket ~56% for October, ~85% year-end."
+    },
+    {
+      "event": "GitHub Copilot unified experience (chat on github.com + Mobile + cloud agent) + code review default Lite -> Balanced",
+      "date": "2026-09-28",
+      "status": "upcoming",
+      "days_remaining": 4,
+      "note": "Confirmed via GitHub changelog 8/28. Chat data retention changes from 28 days to life of the account; opting out means losing Copilot on github.com and Mobile. Repos/orgs wanting Lite must explicitly select it before the date."
+    },
+    {
+      "event": "GitHub Copilot Business/Enterprise upfront seat billing (existing credit-card/PayPal customers)",
+      "date": "2026-10-01",
+      "status": "upcoming",
+      "days_remaining": 7,
+      "note": "Prices unchanged, only charge timing moves earlier. Assigned seats charged at start of billing cycle; unused seats still charged; revoking a seat gives no prorated refund."
+    },
+    {
+      "date": "2026-10-19",
+      "event": "GitHub Copilot model retirement (6 models across Chat / inline edits / ask / agent / completions): Gemini 3.7 Flash, GPT-5.5, GPT-5.4, GPT-5.4 mini, GPT-5 mini, Grok 4.5",
+      "status": "upcoming",
+      "days_remaining": 25,
+      "note": "Distinct batch from the 10/2 four-model switch and from the OpenAI-side 10/14 GPT-5.5 retirement. Teams must migrate pinned model IDs in workflows, custom agents and CI configs."
+    },
+    {
+      "date": "2026-09-23",
+      "event": "Volcano Ark: deepseek-v4.1-flash deduction coefficient 50% off in Coding Plan (to 2026-10-30 18:00)",
+      "status": "active",
+      "days_remaining": 36,
+      "note": "Official doc read 2026-09-23. Additional 50% off the existing Coding Plan deduction coefficient for deepseek-v4.1-flash."
+    },
+    {
+      "date": "2026-09-18",
+      "event": "Volcano Ark: Kimi-K2.8-Preview usable volume in Coding Plan equals Agent Plan 60%-deduction campaign (to 2026-09-30 23:59)",
+      "status": "active",
+      "days_remaining": 6
+    },
+    {
+      "date": "2026-10-30",
+      "event": "Volcano Ark: deepseek-v4.1-flash Coding Plan 50%-deduction promotion ends (18:00)",
+      "status": "upcoming",
+      "days_remaining": 36
+    },
+    {
+      "date": "2026-09-22",
+      "event": "Claude Opus 5.5 released: $4/$20 per MTok, cache read $0.20 (-60%), 1M/128K context, claude-opus-5-5; new default flagship",
+      "status": "released",
+      "note": "Also entered Claude Code v2.1.280 as default Opus model and GitHub Copilot on the same day. Fable 5.2 did NOT ship (correction to the 9/22 gray-test entry). Sonnet 5.5 and Haiku 5.5 said to be 'within weeks'."
+    },
+    {
+      "date": "2026-09-22",
+      "event": "OpenAI GPT-6 Sol and GPT-6 Luna released: $2/$10 and $0.10/$0.50, permanent prices, replacing GPT-5.6 Sol/Luna",
+      "status": "released",
+      "note": "50% price cut vs predecessors' promotional pricing; non-promotional, no expiration date. 1.05M context, 90% cached-input discount."
+    },
+    {
+      "date": "2026-09-23",
+      "event": "Zhipu ZCode data-upload compliance incident closed: v3.14.0 removed RepoWiki + repo snapshot upload, source open-sourced 9/21 (Apache-2.0), CAICT/NSFOCUS verified OSS data deleted, Chengming withdrew its letter",
+      "status": "closed",
+      "note": "Still undisclosed: affected-user scale and whether historical data was decrypted/accessed. Zhipu share price fell >16% over three sessions. Replaces the prior 10/10 written-response ultimatum item."
+    },
+    {
+      "date": "2026-09-18",
+      "event": "Anthropic IPO moved from October to November (WSJ 9/18); 9/24 reports further say slipped past the November midterms",
+      "status": "upcoming",
+      "days_remaining": null,
+      "note": "Reason given: wanting to present Q3 results rather than projections (annualised revenue >$65B at end of July). Public S-1 still not filed as of 9/24. SEC rule requires the draft and all amendments public >=15 days before the roadshow. Target valuation up to $2T, raise up to $100B."
     }
   ],
   "latest_news": [
@@ -2316,6 +2452,81 @@
       "date": "2026-09-21",
       "head": "OpenAI x Cerebras research preview: GPT-5.3-Codex-Spark at >1000 tok/s.",
       "detail": "Optimised for real-time software development on Cerebras hardware; available to ChatGPT Pro users through the Codex app, CLI and VS Code extension. Codex CLI 0.155.0 also added experimental /voice, live reasoning summaries, agent task management, Touch ID verification and Amazon Bedrock credentials; 0.155.1 disabled reasoning summaries by default in the local TUI."
+    },
+    {
+      "date": "2026-09-22",
+      "head": "Anthropic releases Claude Opus 5.5 at $4/$20 per MTok - first Claude 5.5-family model and new default flagship, priced ~40% below Fable 5.1 for Fable-class capability.",
+      "detail": "Cache read cut 60% to $0.20; cache write $5 (5m)/$8 (1h); Batch 50% off; Fast mode $8/$40 (up to 2.5x). 1M context / 128K output (Batch beta 300K); knowledge cutoff 2026-06; adaptive thinking always on, default effort medium. Self-reported SWE-bench Pro 89.9%, Terminal-Bench 4.0 66.4%, CursorBench 4.0 57.8%, FrontierCode v1.1 54.4%, HLE w/tools 67.7%. API id claude-opus-5-5; available via API + AWS + Google Cloud + Azure. CAUTION: ~119k output tokens per task at max effort - medium is within ~1pt on several charts at ~1/4 the cost. Sensitive cyber/bio tasks fall back to Opus 4.8 / Opus 5."
+    },
+    {
+      "date": "2026-09-22",
+      "head": "CORRECTION: Fable 5.2 never shipped - the 9/18-9/20 silent 'Claude 5.2 gray test' was actually Opus 5.5.",
+      "detail": "The earlier leak cluster (reported in the 2026-09-22 entry) named Fable 5.2 and Sonnet 5.2 alongside Opus 5.2/Next, but the official 9/22 launch was Opus 5.5 only. Lesson: codenames in leak clusters cannot be used as product-planning input. Anthropic says Sonnet 5.5 and Haiku 5.5 are 'within weeks'."
+    },
+    {
+      "date": "2026-09-22",
+      "head": "OpenAI releases GPT-6 Sol and GPT-6 Luna with PERMANENT 50% API price cuts, replacing GPT-5.6 Sol/Luna.",
+      "detail": "GPT-6 Sol $2/$10 per MTok (from $4/$20); GPT-6 Luna $0.10/$0.50 (from $0.20/$1.20, output down ~60%). OpenAI confirmed no expiration date - permanent list prices, not a promotion. 1.05M context, 128K max output, 922K single-input cap, reasoning effort none->max. 90% discount on cached input reads and changing effort/tools no longer invalidates cache. API ids gpt-6-sol / gpt-6-luna. Rolling out in ChatGPT Work and Codex for Plus/Pro/Business/Enterprise/Edu; Free/Go reach Luna via desktop app. Sol is priced at Claude Sonnet 5 level and exactly half of Claude Opus 5.5."
+    },
+    {
+      "date": "2026-09-22",
+      "head": "GitHub Copilot adds Opus 5.5, GPT-6 Sol and GPT-6 Luna - all three billed at provider list pricing under usage-based billing, with no published multiplier.",
+      "detail": "The three changelog entries state access is covered by the seat but tokens are not: 'this model is billed at provider list pricing under usage-based billing.' No premium-request multiplier, credit conversion or price is published, so buyers cannot compute cost from GitHub's own announcement. New models are automatically enabled unless an admin turns off the global default or disables the model - the path of least action is the most expensive frontier model switched on and metered org-wide. Tier split: Opus 5.5 and GPT-6 Sol stop at Pro+; only GPT-6 Luna reaches base Pro. Same window: OpenTelemetry export for the Copilot app (prompt/response content excluded by default)."
+    },
+    {
+      "date": "2026-09-23",
+      "head": "GitHub Copilot's 2026-10-19 deprecation list confirmed: six models retired across Chat, inline edits, ask, agent and completions.",
+      "detail": "Gemini 3.7 Flash, GPT-5.5, GPT-5.4, GPT-5.4 mini, GPT-5 mini and Grok 4.5, with recommended replacements named. This is a different batch from the 10/2 four-model switch and from the OpenAI-side 10/14 GPT-5.5 retirement - audit pinned model IDs in workflows, custom agents and CI configs. Also unchanged: 9/28 three-surface merge + code review default Lite->Balanced; 10/1 upfront seat billing for existing Business/Enterprise credit-card/PayPal customers."
+    },
+    {
+      "date": "2026-09-23",
+      "head": "Zhipu ZCode data-upload compliance incident closed, but the cost has already shown: share price down more than 16% over three sessions.",
+      "detail": "Zhipu told CNR it apologised and completed remediation. ZCode v3.14.0 removed the RepoWiki entry point and repository snapshot generation/upload paths; client source was published on GitHub 9/21 (Apache-2.0); CAICT and NSFOCUS verified the Alibaba Cloud OSS bucket and all data objects were deleted; complainant Taiyuan Chengming Technology withdrew its letter and claims. Incident facts: 313MB encrypted file generated from a ~345MB workspace, 42,411 files, .git = 86.6%, source/docs ~13.4%; upload had failed 564 consecutive times. STILL UNDISCLOSED: affected-user scale and whether historical data was decrypted or accessed; the public repo has only 2 commits and no version tags, so v3.12.3 cannot be compared. Zhipu MaaS announced a forthcoming 'no data content retention' feature on 9/20."
+    },
+    {
+      "date": "2026-09-23",
+      "head": "Volcano Ark (official docs): deepseek-v4.1-flash gets an extra 50% off its Coding Plan deduction coefficient from 9/23 to 10/30, plus restated account-ban red line.",
+      "detail": "(1) 2026-09-23 00:00 - 10-30 18:00: deepseek-v4.1-flash deduction coefficient an additional 50% off in Coding Plan. (2) 2026-09-18 - 09-30 23:59: Kimi-K2.8-Preview usable volume in Coding Plan equals the Agent Plan 60%-deduction campaign. (3) 2026-06-10 - 11-08: Auto mode coefficient is 1 in Coding Plan. Red line restated verbatim: using Coding Plan Base URLs/API keys in non-AI-coding tools may be flagged as abuse/violation leading to subscription suspension or account ban. Required Base URLs: /api/coding/v3 (OpenAI-compatible) or /api/coding (Anthropic-compatible)."
+    },
+    {
+      "date": "2026-09-24",
+      "head": "Anthropic IPO: WSJ (9/18) confirms the move from October to November; 9/24 reporting further says it has slipped past the November midterms. Public S-1 still not filed.",
+      "detail": "Stated rationale: entering investor meetings with Q3 results rather than projections - annualised revenue exceeded $65B at end of July (roughly $9B at end of 2025). Q2 2026 revenue $11.5B (vs $787M a year earlier), first adjusted operating profit $559M, gross margin ~40% (targeting 77% by 2028), 2028 revenue guidance $190-200B. Target valuation up to $2T, raise up to $100B (would beat SpaceX's $86.2B record); May private round valued it at $965B post-money. Morgan Stanley and Goldman lead with JPMorgan and Citi; $15B revolving credit facility to be finalised before the roadshow; Nvidia in talks as anchor for up to $10B. Competitive backdrop: GPT-6 Astra ~13% of enterprise AI spend vs Fable ~8%; OpenAI has confirmed no IPO in 2026. SEC rule: draft registration and all amendments must be public at least 15 days before the roadshow - the public S-1 remains the only reliable observation point."
+    },
+    {
+      "date": "2026-09-23",
+      "head": "Tencent Cloud: WorkBuddy and CodeBuddy both quoted at CNY 198 per account per month at the Shenzhen AI Expo.",
+      "detail": "On-site staff said the AI office assistant WorkBuddy and the AI full-process coding assistant CodeBuddy (based on the Hunyuan code model) are both CNY 198/month per account, about CNY 6 per person per day. This is expo-floor wording and a different product/billing basis from the existing CodeBuddy tiers (CNY 0/99/199/999) and the Token Plan dual lines (general CNY 39-599, Hy CNY 28-468) - verify against the official site or a commercial quote."
+    },
+    {
+      "date": "2026-09-23",
+      "head": "Kimi K3.1 rumoured for October: three reasoning tiers, 1M 'Extra Long' context, Agent mode and Swarm multi-agent.",
+      "detail": "Per Wccftech / @MaxForAI, identifiers such as 'k3d1-agent' were spotted in Moonshot internal JSON/API responses, along with Agent mode, application scenarios and configuration switches. Claimed capabilities: Low/High/Max reasoning tiers, an 'Extra Long' context option up to 1M tokens, Agent mode, Swarm multi-agent collaboration, and search/batch task modes. K3 (July 2026) is 2.8T parameters, native vision, 1M context window, using Kimi Delta Attention, Attention Residuals and sparse MoE. Non-official; no announcement date confirmed."
+    },
+    {
+      "date": "2026-09-23",
+      "head": "Usage-side price elasticity confirmed: DeepSeek V4.1 Flash weekly usage up 483.62% after the 9/10 price cut, rising from 9th to 2nd.",
+      "detail": "AGI Market Watch: four Chinese lightweight models each exceeded 10 trillion weekly tokens; DeepSeek V4 Flash reached 14.59 trillion (18.88% share). The top three models account for nearly half of usage and the top five for more than three quarters - strong market concentration. Tencent Hy3 has the lowest cost per benchmark task at CNY 0.308; per-million-token prices range from CNY 1.25 (Xiaomi MiMo-V2.5) to CNY 40 (Kimi K3), about 32x. Implication: price cuts are the most effective share weapon right now, but 'cheapest list price' still differs from 'cheapest completed task'."
+    },
+    {
+      "date": "2026-09-21",
+      "head": "OpenCode 1.18.32 adds Grok 4.7 and DeepSeek V4.1 Flash support.",
+      "detail": "Released 2026-09-21, alongside fixes for Bedrock image attachments (now scoped to Claude, Nova and Llama 4 models) and Together AI streaming-usage reporting. Evidence that open-source terminal agents now track frontier models at the same cadence as commercial tools. Cline, Kilo Code and Roo Code followed with the same models per their changelogs."
+    },
+    {
+      "date": "2026-09-22",
+      "head": "Cursor pricing verified 2026-09-22; OpenAI's contract to supply models to Cursor still winding down with a 11/12 shutoff.",
+      "detail": "Cursor: Free $0, Pro $20/mo, Pro+ $60/mo, Ultra $200/mo, Teams standard seat $40/mo ($32 annual), premium seat $120/mo ($96 annual, 5x usage), Enterprise quote-based. The flat-rate Auto mode ended 2026-08-24 - Auto now bills at the routed model's list price, with an added token-rate surcharge for Teams/Enterprise on third-party models. Anysphere's $60B all-stock acquisition by SpaceX closed 2026-08-14 (SpaceXAI division, legal entity still Anysphere). OpenAI's 8/28 notice cites the change-of-control clause and sets a 2026-11-12 shutoff: after that Cursor keeps Claude, Gemini and Grok but loses GPT. Cursor's share of Ramp corporate-spend data slid from 41% to 26%."
+    },
+    {
+      "date": "2026-09-23",
+      "head": "Non-US coding-plan and token-plan price reference set (9-month verification): Kimi, GLM, BytePlus, QwenCloud, Tencent, MiniMax.",
+      "detail": "Kimi membership (Kimi Code): Andante CNY 49, Moderato CNY 99, Allegretto CNY 199, Allegro CNY 699; K2.7 Code on all tiers, K3 from Moderato, 1M context + HighSpeed from Allegretto; Kimi Code shares credits with Kimi Work/Claw/Deep Research/slides and carries a 5-hour rolling limit plus a weekly quota. GLM Coding Plan: Lite $12.60/mo (promo, 10,000 credits/week), Pro $56, Max $117.60; works with 20+ agents. BytePlus ModelArk Coding Plan: Lite $10/mo (listed as 3x Claude Pro usage), Pro $50; GLM/DeepSeek/Dola/Kimi/GPT-OSS. QwenCloud Token Plan: Lite $6 (temp), Standard $18, Pro $68; 7-day credit windows of 2,500/10,000/40,000. Tencent Cloud Token Plan: Lite $7 (1,000 credits), Standard $17 (2,600), Pro $51 (7,900), Max $103 (15,900). MiniMax Token Plan: Plus $20, Max $50, Ultra $120; all tiers include M3 + multimodal + image/voice generation, Max/Ultra add video."
+    },
+    {
+      "date": "2026-09-22",
+      "head": "NVIDIA open-sources Isaac ROS 5.0, bringing agent workflows and reusable 'Skills' into robotics development.",
+      "detail": "Released 2026-09-22: ROS Lyrical and Ubuntu 24.04 support, spanning Jetson Orin Nano through Jetson Thor. Skills here are repeatable task methods bundling tools, steps and documentation - not chat prompts - with a FoundationStereo fine-tuning Skill, the FoundationPose inference library and standalone pick-and-place Skills. Signal that the agent/Skill abstraction is spreading into vertical domains beyond coding."
     }
   ],
   "trends": [
