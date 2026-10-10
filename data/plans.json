@@ -1,12 +1,24 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-10-09",
+    "updated": "2026-10-10",
     "cadence": "Daily 09:05",
     "currency": "USD unless noted",
     "sources": {
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "items": [
+        "Google Cloud official sunset doc (docs.cloud.google.com/gemini/docs/codeassist/sunset, effective 2026-10-09) + rohitai.com 2026-10-09: Google ended new Gemini Code Assist Standard and Enterprise subscription sales on 10/09. Existing subscriptions keep working for their contractual term. Published transition schedule: licenses can be added until 2027-01-31, annual subscriptions can auto-renew until 2027-01-31, monthly subscriptions can auto-renew until 2027-12-31; after those dates neither expansion nor renewal is possible. Google points teams to Antigravity, which is included in Gemini Enterprise editions: Standard and Plus start at US$30 per seat per month with included developer-tool credits of US$10 (Standard) and US$15 (Plus) per user per month, enforced as seven-day pools that do not carry forward and are separated by edition, project and location. Two other routes exist: Gemini Enterprise Pay-as-you-go (US$0 seat fee plus consumption) and direct Agent Platform API access billed through a Cloud project. Google explicitly warns not to confuse 'Gemini Code Assist Enterprise' (the retiring coding subscription) with 'Gemini Enterprise' (the broader replacement bundle), and the edition matrix includes AI developer tools only in Standard, Plus and Pay-as-you-go - not Business or Frontline. The notice promises no automatic migration, refunds or billing-cadence changes, and the subscription route requires an invoiced Cloud Billing account, an eligible subscription and the appropriate usage role (an Admin role alone does not grant developer-tool access). Consumer Gemini Code Assist for individuals, Google AI Pro and Ultra already lost IDE-extension and Gemini CLI access on 2026-06-18 and were directed to Antigravity.",
+        "GitHub Copilot cost structure re-verified (aipricing.guru 2026-10-08 + digisoftsolution 2026-10-08 + dev.to 2026-10-08 + toolradar September): Pro US$10 per month includes 1,500 AI Credits (about US$15 of usage), Pro+ US$39 includes 7,000 (about US$70), Max US$100 includes 20,000 (about US$200), Business US$19 per seat includes 1,900 pooled credits and Enterprise US$39 per seat includes 3,900. One AI Credit equals US$0.01. The individual tiers carry a 1.5x to 2.0x credit premium while Business and Enterprise are exactly 1.0x, so team tiers buy governance and seat management rather than a discount. Free includes 2,000 completions and 50 chat or agent requests per month. Copilot has billed chat, agents and CLI through credits by tokens at each model's published rate since 2026-06-01, with code completions still included and unmetered.",
+        "finout.io 2026-10-09 (GitHub Copilot as a variable AI cost): between 2026-09-01 and 2026-10-19 GitHub retires 17 Copilot models and adds eight. The 10/19 retirements are Gemini 3.7 Flash, GPT-5.5, GPT-5.4, GPT-5.4 mini, GPT-5 mini and Grok 4.5. Prior waves: six retired on 09/01, one on 09/10, four on 10/02. Additions: Gemini 3.8 Flash (09/03), GPT-6 Astra (09/04), Grok 4.7 (09/21), GPT-6 Sol and GPT-6 Luna plus Claude Opus 5.5 (09/22), Claude Sonnet 5.5 (09/28) and GPT-6.1 Sol (09/29). Every retirement ships with a suggested replacement whose price may be higher or lower, and for Copilot Business and Enterprise the suggested replacements switch on automatically unless an admin has turned off default model enablement. Auto model selection routes each request by task complexity and system availability across Chat, the CLI, the Copilot app and the cloud agent, and paid plans get a 10% discount on model costs for using it.",
+        "codingplan.link/zh 2026-10-09 review: Zhipu GLM Coding Plan on its transparent credit system - Lite CNY 118/month (2,000 credits per 5 hours, 10,000 per week), Pro CNY 538/month (12,000 and 60,000), Max CNY 1,078/month (28,000 and 140,000); off-peak calls at 50% and annual billing at 30% off, working out to CNY 82.6, 376.6 and 754.6 per month. MiniMax's new three tiers are Plus CNY 49, Max CNY 119 and Ultra CNY 469 on a unified all-modality pool sized at roughly 3-4, 4-5 and 6-7 concurrent agents, with extra credit packs available. Kimi Code Plan is CNY 49, 99 and 199 monthly or CNY 39, 79 and 159 annually with the K3 flagship and 1M context from Pro upward. Xiaomi MiMo Token Plan is CNY 39, 99, 329 and 659 for 60M, 200M, 700M and 1,600M credits per month, or CNY 411.84, 1,045.44, 3,474.24 and 6,959.04 annually, covering eight models with no five-hour cap and limited-time free TTS. Alibaba Cloud Bailian's Coding Plan Lite has stopped new sales with only legacy users retained; Pro at CNY 200 per month (first month CNY 39.9 for new customers) is the main tier. Baiyun Zhisuan bills by usage and gives CNY 150 on real-name registration plus CNY 300 on first API call for up to CNY 450 of vouchers. Global entry prices: Claude $20, Cursor $20, GitHub Copilot $10 (new Max $100), ChatGPT $20, Gemini Code Assist free or migrating to Antigravity, Windsurf/Devin from $15.",
+        "Alibaba Cloud developer community and help centre (2026-10-09): Bailian's four product lines and their boundaries. Coding Plan is a fixed CNY 200 per month subscription usable only in coding-tool scenarios, cannot be cancelled or refunded mid-term, and its quota is independent of the account balance so usage continues while the account is in arrears - which silently breaks auto-renewal. Token Plan for teams is a one-off per-seat credit pre-purchase: Standard seat CNY 198/month for 25,000 credits, Advanced CNY 698/month for 100,000, Premium CNY 1,398/month for 250,000, and seats with no consumption can be refunded per seat with the money returned to the original payment channel. Token Plan individual tiers are Lite CNY 39 (list CNY 60) for 11,500 credits, Essential CNY 79 (120) for 25,500, Standard CNY 139 (180) for 45,000 and Pro CNY 499 (600) for 180,000, with a top-up pack of CNY 100 for 20,000 credits; the cycle runs 30 days from subscription and unused quota does not carry over. Resource packs are one-off token or image pre-purchases matched strictly by model name - a qwen-plus pack cannot offset qwen-max calls - and expire with the remainder void. Google explicitly warns that Token Plan, Coding Plan and pay-as-you-go API keys and base URLs are mutually incompatible and mixing them causes extra charges.",
+        "Baidu Qianfan official docs (cloud.baidu.cn/doc/qianfan, checked 2026-10-09): Coding Plan Lite is CNY 40 per month with about 1,200 requests per 5 hours, 9,000 per week and 18,000 per month; Pro is CNY 200 per month with about 6,000, 45,000 and 90,000. Quota may only be used interactively inside coding tools such as Claude Code and Qwen Code; API-driven automation scripts, application back ends and any non-interactive batch use are prohibited and may trigger throttling, subscription suspension or account bans. Lite is recommended for at most one terminal, Pro for at most two; running multiple OpenClaw instances across machines or containers can trigger platform rate limiting.",
+        "coding-plans.jqknono.com 2026-10-09: Baidu Qianfan Token Plan shows a limited-time 50% discount across four tiers - Mini from CNY 9.9 to 4.9, Lite from 40 to 19.9, Pro from 200 to 99.9 and Max from 600 to 299.9 - with Cursor, Windsurf and Cline among the supported tools and GLM, DeepSeek and Kimi in the model pool. Note this restates the same first-purchase discount documented on the Alibaba and Baidu side; treat the console price as authoritative.",
+        "Smzdm 2026-10-09 (AI membership temperature check): Doubao Professional has three paid tiers at CNY 68, 200 and 500 per month (CNY 688, 2,048 and 5,088 annually), where Standard gives about five times the free tier's office and expert-mode quota, Enhanced four times that and Advanced ten times, with peak-hour priority. Feishu AI individual membership is CNY 69 per month and Plus CNY 138, the latter advertised at twice the quota. WorkBuddy individual is free for a limited time then CNY 99, 199 and 999 with an enterprise edition at CNY 198 and 316 per seat per month; Qianwen Office individual is free, CNY 98 or CNY 198 (CNY 78 and 158 on continuous monthly billing) with an enterprise standard seat at CNY 198. SemiAnalysis's cross-provider re-check found that for the same US$200 a month, ChatGPT/Codex token allowance per week is less than half of Claude Code's; priced at published API rates under a specific agent workload, OpenAI's plan delivered roughly one fifth of Claude's usable value, and Anthropic's premium subscription delivered up to five times OpenAI's API-equivalent value on everyday mid-tier models. The study also found up to 20% allowance variance across individual accounts, which the vendor confirmed was small-scale A/B testing, and measured the new US$500 tier as only about 21% more usage than the old US$200 tier.",
+        "Volcengine official campaign (ByteDance Data Platform, 2026-10-09): Ark Agent Plan individual edition x Volcengine digital-intelligence professional datasets free-call campaign, 2026-10-08 to 2026-11-08. Subscribing to Agent Plan individual (any of Small, Medium, Large or Max) and enabling professional datasets under Configure Harness grants 1,000 free dataset calls: 400 enterprise registry, 400 enterprise risk and 200 macroeconomic. Eligibility and quota are granted per account and shared across new purchases, renewals and upgrades.",
+        "havoptic.com 2026-10-09 (AI coding tool release timeline): Claude Code v2.1.296 syncs code settings across Claude Desktop and the gateway and adds window-compaction and model-selection controls; v2.1.295 lets hooks block actions on failure and adds terminal status updates; v2.1.294 fixes instruction-based hook interpretation. OpenAI Codex CLI rust-v0.162.1 fixes a critical crash on multi-line questions and startup failures from feature-setting mismatches. GitHub Copilot CLI v1.0.95 improves macOS authentication persistence and session context control. Antigravity CLI v1.3.2 adds a CLI plugin marketplace. Kiro CLI v2.29.0 remembers work context across sessions.",
+        "anothergptwrapper.com 2026-10-09: Tencent Hy3 is $0.13 input and $0.53 output per MTok, MiniMax M3 is $0.30 and $1.20, giving Hy3 a blended $0.66 versus M3's $1.50 per million in and out - 56% cheaper. Hy3 leads 8 of 13 shared benchmarks while MiniMax M3 leads on SWE-bench Verified at 80.5% against Hy3's 78%; Hy3 has a 262K context window versus M3's 1M, so filling a larger window bills more input tokens and the cheaper-per-million model can still cost more on long documents.",
+        "TMTPost Edge AI Daily 2026-10-10: astrophysicist Brice Menard used Anthropic's Claude Science workbench to produce the first complete all-sky ultraviolet map, published by Anthropic on 2026-10-08. NASA's GALEX mission made about 38,000 observations between 2003 and 2013 covering roughly two thirds of the sky, leaving a third unobserved around bright stars. The result is a data-engineering achievement rather than a new discovery; predicted pixels are not measurements, self-reported error is about 10%, and it was published only on Anthropic's blog without peer review. Two AI review passes missed atmospheric glow footprints that Menard found by eye and directed to be corrected. Claude Science opens 10,000 free or discounted seats to academic scientists in 2026, and on 10/08 Anthropic committed US$150M over three years to the US federal Genesis Mission covering more than 15 agencies including NASA, NIH and NSF. Anthropic's September 2026 internal figures say Claude had taken over about 26% of the company's AI research and development work as of August.",
         "OpenAI Developers 2026-10-09: GPT-6.1 Sol Ultrafast ships across API, Codex and ChatGPT Work. $12 input / $60 output per MTok = 6x the Sol standard rate of $2/$10, up to 8x Sol Standard token speed. Positioned as 'near-Astra intelligence, 8x Sol speed, only 1.2x Astra's cost'. Entitlement is the story: only Pro 500 ($500/mo), qualifying usage-based Enterprise and credit-based Edu can enable it; Pro $200 and Plus CANNOT even by buying extra credits. Enterprise defaults to off and needs a workspace owner to enable. Metering: included subscription allowance burns at 8x Standard, purchased credits and Enterprise usage-based are billed at 6x. Fast is 2.5x / 2x. Codex and ChatGPT Work share one allowance, credit pool and usage limit. Codex steering became immediately effective. Global availability with US and EU data residency.",
         "Tencent Research Institute AI briefing 2026-10-09 + AI Impact Hub 2026-10-09 + AI Breaking Wire 2026-10-09 + 12PB AI Daily 2026-10-08: GPT-6 rolls out to every ChatGPT user replacing GPT-5.6 Sol and Luna; paid tiers run on GPT-6 Sol while Free and Go use GPT-6 Luna (opened the next day). Intelligent UI composes text, charts, buttons and forms and streams them, and thinking can interleave with answering. On search-dependent questions GPT-6 Instant starts answering 44% earlier on average than GPT-5.6 Instant. The update is limited to the Chat surface; Work and Codex model lineups are unchanged. ChatGPT weekly actives exceed 1.2 billion. OpenAI also shipped the Decisions API in public beta, claiming up to 10x faster model/tool/action selection than calling GPT-6 Luna through the Responses API.",
         "finopsllm 2026-10-09 (measured 2026-09-27 to 10-08): six fully drained ChatGPT Pro $100 weekly windows priced from Codex's own JSONL logs under ~/.codex/sessions/, every request valued at the API list price of the model that served it. A full Plus ($20) week holds a median $67 of API-equivalent value. Pro $100 windows held $100-$234, median $175, best 3.5x and worst 1.5x of Plus, with not one window reaching 4x. Advertised 5x Plus, measured 2.6x. Per dollar of monthly price: Plus $3.35, Pro $1.75. Implication for the 10/30 change: Pro $200 advertising 10x Plus works out to roughly 5.2x at the measured ratio. Three explanations the author cannot separate: the meter does not track API prices (gpt-6-luna was 49% of tokens but only 8% of dollars), Pro windows run heavier cache-heavy agent loops, and OpenAI labels limits as approximate ceilings rather than promises.",
@@ -22,7 +34,7 @@
         "Stacklok 2026-10-08: Kubernetes co-creators Craig McLuckie and Joe Beda released Mecatl, an open-source cloud-native agent harness that moves AI coding loops off local developer machines to run centrally in the cloud for monitoring, isolation and security."
       ]
     },
-    "notes": " | 9/30 supplement (user question on Baidu Qianfan vs Xiaomi MiMo Token Plan value): added Baidu Qianfan Token Plan individual-tier detail (Token-plan vs credit-plan dual billing), National-Day campaign pack 9/24-10/7, all-hours tiered discount, enterprise seat pricing; rewrote Xiaomi MiMo entry to V2.6 generation with the 10/21 V2.5 sunset and the new team plan; added section 3.7.1 head-to-head comparison with locally verified value multiples (Qianfan 0.40x-5.16x vs MiMo a flat 1.05x-1.24x). | 9/30 scheduled-run refresh: added the Anthropic IPO prospectus draft (Reuters, 261 pages, $518B compute obligations, target >$2T), corrected the 9/28 morning call on Claude Sonnet 5.5 (it did ship on 9/28 at $2/$10, Terminal-Bench 4.0 70.6%), added the MiniMax Token Plan -> M Plan transition with new-purchase shutdown, OpenAI $200 Pro reopen detail (halved API-equivalent allowance, 10/30 cutoff, 62,500 credits), Copilot Sonnet 5.5 / GPT-6.1 Sol default-on additions, Claude Code cloud-session credits, the Tianyi Cloud Starry Sky TokenHub coding Token Plan and the three-carrier token-package landscape, the Alibaba Bailian 9/30 campaign expiry, the Windsurf brand fold into Devin, Z.ai discount/credit structure, and DeepSeek V4.1 Pro grayscale testing. | 10/08 scheduled-run refresh (window 09/30-10/08): Claude Haiku 5.5 launched 10/07 with a two-band price structure whose real average saving is about 75% rather than 90%; Sonnet 5.5 cache reads permanently halved and Max/Team gained monthly API allowances; Microsoft committed to local model inference inside Copilot with local calls not billed as inference and MAI Code 1.1 Flash shipping; GitHub Copilot retired four models on 10/02 with no transition period and published code-review cost bands billed to the PR author; Google's Gemini 4 'Argon' went into a whitelisted controlled release; MiniMax M Plan prices landed and Kimi reopened its membership ladder on 10/01; SemiAnalysis measured Anthropic at roughly 5x OpenAI in subscription API-equivalent value; and the Anthropic S-1 turned public with a $518B non-cancellable compute book and a Founder LLC Class F super-voting share. DeepSeek V4.1 Pro remains unreleased as of 10/07. | 10/09 scheduled-run refresh (window 10/08-10/09): OpenAI shipped GPT-6.1 Sol Ultrafast at $12/$60 per MTok (6x Sol, up to 8x speed) restricted to Pro 500, usage-based Enterprise and credit-based Edu, with included allowance burning at 8x and credits or usage-based billed at 6x; GPT-6 rolled out to all ChatGPT users with Intelligent UI and the Decisions API entered public beta; independent measurement priced a full ChatGPT Pro $100 week at a median $175 (2.6x Plus, not the advertised 5x); Claude Code 2.1.293 switched the default Haiku to claude-haiku-5-5 while Anthropic opened Docs/Sheets/Slides editing in beta and set Sonnet 4.5's retirement for 11/30; GitHub Copilot's Haiku 5.5 rate card, seat credits and access limits were documented; Google's Argon per-task cost was independently measured at $1.99 and a persistent work Gemini agent launched 10/08; Step 5 Preview promised open weights for 10/15; and LMCache CVE-2026-105192 (CVSS 9.8, no fix at disclosure) affects self-hosted vLLM deployments."
+    "notes": " | 9/30 supplement (user question on Baidu Qianfan vs Xiaomi MiMo Token Plan value): added Baidu Qianfan Token Plan individual-tier detail (Token-plan vs credit-plan dual billing), National-Day campaign pack 9/24-10/7, all-hours tiered discount, enterprise seat pricing; rewrote Xiaomi MiMo entry to V2.6 generation with the 10/21 V2.5 sunset and the new team plan; added section 3.7.1 head-to-head comparison with locally verified value multiples (Qianfan 0.40x-5.16x vs MiMo a flat 1.05x-1.24x). | 9/30 scheduled-run refresh: added the Anthropic IPO prospectus draft (Reuters, 261 pages, $518B compute obligations, target >$2T), corrected the 9/28 morning call on Claude Sonnet 5.5 (it did ship on 9/28 at $2/$10, Terminal-Bench 4.0 70.6%), added the MiniMax Token Plan -> M Plan transition with new-purchase shutdown, OpenAI $200 Pro reopen detail (halved API-equivalent allowance, 10/30 cutoff, 62,500 credits), Copilot Sonnet 5.5 / GPT-6.1 Sol default-on additions, Claude Code cloud-session credits, the Tianyi Cloud Starry Sky TokenHub coding Token Plan and the three-carrier token-package landscape, the Alibaba Bailian 9/30 campaign expiry, the Windsurf brand fold into Devin, Z.ai discount/credit structure, and DeepSeek V4.1 Pro grayscale testing. | 10/08 scheduled-run refresh (window 09/30-10/08): Claude Haiku 5.5 launched 10/07 with a two-band price structure whose real average saving is about 75% rather than 90%; Sonnet 5.5 cache reads permanently halved and Max/Team gained monthly API allowances; Microsoft committed to local model inference inside Copilot with local calls not billed as inference and MAI Code 1.1 Flash shipping; GitHub Copilot retired four models on 10/02 with no transition period and published code-review cost bands billed to the PR author; Google's Gemini 4 'Argon' went into a whitelisted controlled release; MiniMax M Plan prices landed and Kimi reopened its membership ladder on 10/01; SemiAnalysis measured Anthropic at roughly 5x OpenAI in subscription API-equivalent value; and the Anthropic S-1 turned public with a $518B non-cancellable compute book and a Founder LLC Class F super-voting share. DeepSeek V4.1 Pro remains unreleased as of 10/07. | 10/09 scheduled-run refresh (window 10/08-10/09): OpenAI shipped GPT-6.1 Sol Ultrafast at $12/$60 per MTok (6x Sol, up to 8x speed) restricted to Pro 500, usage-based Enterprise and credit-based Edu, with included allowance burning at 8x and credits or usage-based billed at 6x; GPT-6 rolled out to all ChatGPT users with Intelligent UI and the Decisions API entered public beta; independent measurement priced a full ChatGPT Pro $100 week at a median $175 (2.6x Plus, not the advertised 5x); Claude Code 2.1.293 switched the default Haiku to claude-haiku-5-5 while Anthropic opened Docs/Sheets/Slides editing in beta and set Sonnet 4.5's retirement for 11/30; GitHub Copilot's Haiku 5.5 rate card, seat credits and access limits were documented; Google's Argon per-task cost was independently measured at $1.99 and a persistent work Gemini agent launched 10/08; Step 5 Preview promised open weights for 10/15; and LMCache CVE-2026-105192 (CVSS 9.8, no fix at disclosure) affects self-hosted vLLM deployments. | 10/10 scheduled-run refresh (window 10/09-10/10): Google ended new Gemini Code Assist Standard and Enterprise sales on 10/09 with a published transition schedule (add licenses and annual auto-renewal through 2027-01-31, monthly auto-renewal through 2027-12-31) and pointed customers to Antigravity bundled inside Gemini Enterprise from US$30 per seat per month - the first mainstream vendor to exit the seat-based coding assistant category. GitHub Copilot's tier economics were quantified (individual tiers carry a 1.5x-2.0x credit premium while Business and Enterprise are exactly 1.0x) and the churn was counted (17 models retired and eight added between 09/01 and 10/19). Zhipu published a recomputable credit formula for GLM Coding Plan, and four domestic Coding/Token Plans were re-priced on the same day (MiniMax 49/119/469, Kimi 49/99/199, Xiaomi MiMo 39/99/329/659, Baidu Qianfan four tiers at limited-time 50% off), with Alibaba Cloud Bailian's Coding Plan Lite confirmed as no longer sold to new customers. Volcengine bundled 1,000 professional dataset calls into Agent Plan individual (10/08-11/08), the first time a vendor has attached external data to a subscription. Alibaba Cloud officially warned that Token Plan, Coding Plan and pay-as-you-go API keys and base URLs are mutually incompatible and that mixing them causes extra charges."
   },
   "vendors": [
     {
@@ -1630,6 +1642,113 @@
     {
       "name": "OpenAI ChatGPT (Pro 500)",
       "notes": "2026-09-30: The leaked $500/month tier shipped at DevDay 2026 on 9/29 as ChatGPT Pro 500, the only individual plan that includes Ultrafast compute for GPT-6 Astra in ChatGPT Work and Codex, and the plan with the highest included usage ($6,000/year). The same announcement reopened sign-ups for the $200 Pro plan (paused on 9/10) with the compute allowance halved from 20x to 10x the Plus tier and GPT-6 Pro weekly messages cut from 200 to 100; existing subscribers receive a one-time credit and the net effect is about half the API spend of the prior plan. DevDay also shipped GPT-6.1 Sol (near-Astra at roughly one-fifth the cost per task), Codex cloud environments, a Voice CLI and /agents view, Codex Security Cloud, Agents API computer use, Decisions API, Sign in with ChatGPT with 16 launch partners including Notion, Vercel and Cognition's Devin, Dots always-on agents, ChatGPT Space and the OpenAI Marketplace. GPT-6.1 Astra, the planned flagship, was withheld indefinitely on 9/28 over safety findings. Reported scale: 1.2B weekly ChatGPT users, 2.5M enterprise customers and over 35M weekly ChatGPT Work and Codex users."
+    },
+    {
+      "name": "Google Gemini Code Assist / Antigravity",
+      "owner": "Google Cloud",
+      "billing": "Seat-based subscription historically (Standard $19, Enterprise $45 per user per month on annual terms); from 2026-10-09 new sales ended and the forward path is Antigravity packaged inside Gemini Enterprise at $30+ per seat per month plus 7-day non-carrying developer-tool credit pools, or Gemini Enterprise Pay-as-you-go at $0 seat fee plus consumption, or direct Agent Platform API access billed through a Cloud project",
+      "plans": [
+        {
+          "tier": "Gemini Code Assist Standard",
+          "price": 19,
+          "included": "higher quota, enterprise security, IP indemnity",
+          "subscribable": false,
+          "note": "New purchases ended 2026-10-09. Existing subscriptions: licenses can be added through 2027-01-31; annual auto-renewal allowed through 2027-01-31."
+        },
+        {
+          "tier": "Gemini Code Assist Enterprise",
+          "price": 45,
+          "included": "private repo awareness, Google Cloud grounding",
+          "subscribable": false,
+          "note": "New purchases ended 2026-10-09. Migrate to Antigravity via Gemini Enterprise (Standard/Plus from $30 per seat per month). No automatic migration or refunds promised."
+        },
+        {
+          "tier": "Gemini Enterprise Standard / Plus (Antigravity)",
+          "price": 30,
+          "included": "AI developer tools in Standard, Plus and Pay-as-you-go editions only (not Business or Frontline); developer-tool credits $10 (Standard) and $15 (Plus) per user per month, enforced as seven-day pools that do not carry forward",
+          "subscribable": true
+        },
+        {
+          "tier": "Gemini Enterprise Pay-as-you-go",
+          "price": 0,
+          "included": "$0 seat fee plus consumption charges; a zero seat fee is not free agent execution",
+          "subscribable": true
+        },
+        {
+          "tier": "Gemini Code Assist for individuals / Google AI Pro / Ultra (consumer)",
+          "price": 0,
+          "included": "IDE extensions and Gemini CLI stopped serving on 2026-06-18",
+          "subscribable": false,
+          "note": "Users directed to the Antigravity family of products."
+        }
+      ],
+      "notes": "Google Cloud official sunset doc effective 2026-10-09. Distinct dates apply: license expansion and annual auto-renewal both stop 2027-01-31, monthly auto-renewal stops 2027-12-31. Set-up prerequisites for the subscription route are an invoiced Cloud Billing account, an eligible subscription and the appropriate usage role - an Admin role alone does not grant developer-tool access, and direct API access follows a separate onboarding path."
+    },
+    {
+      "name": "GitHub Copilot (tier economics)",
+      "owner": "Microsoft / GitHub",
+      "billing": "GitHub AI Credits at $0.01 per credit, charged by tokens at each model's published rate since 2026-06-01; code completions remain included and unmetered; Auto model selection gives paid plans a 10% discount on model costs",
+      "plans": [
+        {
+          "tier": "Free",
+          "price": 0,
+          "included": "2,000 completions + 50 chat or agent requests per month",
+          "subscribable": true
+        },
+        {
+          "tier": "Pro",
+          "price": 10,
+          "included": "1,500 AI Credits (about $15) = 1.5x premium",
+          "subscribable": true
+        },
+        {
+          "tier": "Pro+",
+          "price": 39,
+          "included": "7,000 AI Credits (about $70) = 1.8x premium",
+          "subscribable": true
+        },
+        {
+          "tier": "Max",
+          "price": 100,
+          "included": "20,000 AI Credits (about $200) = 2.0x premium",
+          "subscribable": true
+        },
+        {
+          "tier": "Business",
+          "price": 19,
+          "included": "1,900 pooled AI Credits per seat = exactly 1.0x, no premium; buys governance and seat management",
+          "subscribable": true
+        },
+        {
+          "tier": "Enterprise",
+          "price": 39,
+          "included": "3,900 pooled AI Credits per seat = exactly 1.0x; policy, audit and residency controls",
+          "subscribable": true
+        }
+      ],
+      "notes": "Model churn quantified: 17 models retired and eight added between 2026-09-01 and 2026-10-19 (six on 09/01, one on 09/10, four on 10/02, six on 10/19). The 10/19 retirements are Gemini 3.7 Flash, GPT-5.5, GPT-5.4, GPT-5.4 mini, GPT-5 mini and Grok 4.5. Suggested replacements switch on automatically for Business and Enterprise unless an admin turned off default model enablement, so model mix - and therefore the bill - can shift without anyone deciding. Tracking cost per model moved from optimisation to necessity."
+    },
+    {
+      "name": "Tencent Hunyuan Hy3 / Hy4",
+      "owner": "Tencent",
+      "billing": "API per token via Tencent Cloud TokenHub or OpenRouter",
+      "plans": [
+        {
+          "tier": "Hy3",
+          "price_in_per_mtok": 0.13,
+          "price_out_per_mtok": 0.53,
+          "included": "262K context; SWE-bench Verified 78%; leads 8 of 13 shared benchmarks; blended $0.66 per million in and out, 56% cheaper than MiniMax M3's $1.50",
+          "subscribable": true
+        },
+        {
+          "tier": "Hy4 (preview)",
+          "price_in_per_mtok": 0.834,
+          "price_out_per_mtok": 2.501,
+          "included": "770B total / 49B active MoE across 78 layers with 256 routed experts plus one shared expert; 1M+ context; Tencent claims it can orchestrate multiple parallel OpenAI Codex sessions, grade them against each other and redirect research direction; internal blind eval 2.99/4 across 163 experts and 203 engineering tasks (GLM-5.3 2.92); Terminal Bench 2.1 85.4 beating DeepSeek V4 Pro; DeepSWE 28.0 to 64.3",
+          "subscribable": true
+        }
+      ],
+      "notes": "Hy4 numbers are Tencent's own, not independent. Hy3 is the cheapest credible mid-tier coding API as of 2026-10-09."
     }
   ],
   "model_token_prices_per_MTok": [
@@ -1948,9 +2067,49 @@
       "max_usd": null,
       "date": "2026-10-08",
       "note": "$3/$15 per MTok. Retires 2026-11-30 with Sonnet 5.5 named by Anthropic as the replacement. Sonnet 5 is also legacy with retirement no sooner than mid-2027. Opus 5 and Opus 4.8 stay on sale at $5/$25 - more than Opus 5.5's $4/$20 - and are also the fallback targets for flagged requests, which are therefore billed above the Opus 5.5 rate."
+    },
+    {
+      "model": "Tencent Hy3",
+      "api_price_published": true,
+      "coding_plan_only": false,
+      "lite_usd": null,
+      "pro_usd": null,
+      "max_usd": null,
+      "date": "2026-10-09",
+      "note": "$0.13 input / $0.53 output per MTok; 262K context; SWE-bench Verified 78% vs MiniMax M3 80.5%; leads 8 of 13 shared benchmarks; blended $0.66 per MTok in+out is 56% below MiniMax M3's $1.50, making it the cheapest credible mid-tier coding API."
+    },
+    {
+      "model": "Tencent Hunyuan Hy4 (preview)",
+      "api_price_published": true,
+      "coding_plan_only": false,
+      "lite_usd": null,
+      "pro_usd": null,
+      "max_usd": null,
+      "date": "2026-10-09",
+      "note": "$0.834 input / $2.501 output per MTok; 770B total / 49B active MoE, 1M+ context; Tencent claims parallel OpenAI Codex session orchestration with cross-grading; vendor-reported scores only."
     }
   ],
   "upcoming_deadlines": [
+    {
+      "date": "2026-10-10",
+      "event": "Devin SWE-2 free period ends on Devin Desktop and CLI - confirm the forward billing path today",
+      "status": "expires-today"
+    },
+    {
+      "date": "2026-11-08",
+      "event": "Volcengine Ark Agent Plan individual x professional datasets campaign ends (1,000 free dataset calls: 400 enterprise registry + 400 enterprise risk + 200 macroeconomic)",
+      "status": "active"
+    },
+    {
+      "date": "2027-01-31",
+      "event": "Gemini Code Assist Standard/Enterprise: last date to ADD LICENSES and last date for ANNUAL auto-renewal",
+      "status": "scheduled"
+    },
+    {
+      "date": "2027-12-31",
+      "event": "Gemini Code Assist Standard/Enterprise: last date for MONTHLY auto-renewal",
+      "status": "scheduled"
+    },
     {
       "date": "2026-08-13",
       "event": "DeepSeek-V4-Pro GA (0813) + V4-Pro-0813 weights MIT-open + Harness v0.1 (open, Cordis, MIT) released; peak/valley pricing PUBLISHED (peak 2x)",
@@ -2421,6 +2580,56 @@
     }
   ],
   "latest_news": [
+    {
+      "date": "2026-10-09",
+      "head": "Google ends new Gemini Code Assist Standard and Enterprise subscription sales; Antigravity inside Gemini Enterprise is the replacement route.",
+      "detail": "Existing subscriptions keep working for their contractual term. Licenses can be added through 2027-01-31, annual auto-renewal runs through 2027-01-31 and monthly through 2027-12-31. Antigravity arrives via Gemini Enterprise from $30 per seat per month with $10/$15 per-user-per-month developer-tool credits enforced as seven-day pools that do not carry forward. No automatic migration or refunds are promised. Consumer access already ended 2026-06-18."
+    },
+    {
+      "date": "2026-10-10",
+      "head": "GitHub Copilot tier economics quantified: individual tiers carry a 1.5x-2.0x credit premium, Business and Enterprise exactly 1.0x.",
+      "detail": "Pro $10 gives 1,500 credits ($15), Pro+ $39 gives 7,000 ($70), Max $100 gives 20,000 ($200); Business $19 gives 1,900 pooled and Enterprise $39 gives 3,900. One credit is $0.01. Team tiers buy governance, not a discount."
+    },
+    {
+      "date": "2026-10-10",
+      "head": "Copilot model churn counted: 17 retirements and 8 additions between 2026-09-01 and 2026-10-19.",
+      "detail": "The 10/19 wave removes Gemini 3.7 Flash, GPT-5.5, GPT-5.4, GPT-5.4 mini, GPT-5 mini and Grok 4.5. Suggested replacements default-enable on Business and Enterprise, and Auto routing plus the 10% paid-tier model-cost discount mean the model mix is decided by Copilot rather than the team."
+    },
+    {
+      "date": "2026-10-10",
+      "head": "Zhipu's GLM Coding Plan credit system is now recomputable: credits = (input x 6.9 + cached x 1.7 + output x 24) / 10,000 for GLM-5.3.",
+      "detail": "GLM-5.3-Flash uses (input x 2.3 + cached x 0.56 + output x 8) / 10,000. Domestic tiers are CNY 118/538/1,078 with off-peak 50% and annual 30% off, working out to CNY 82.6/376.6/754.6 per month. An output token costs about 3.5 uncached input tokens or 14 cached ones, so file-writing agents burn quota far faster than read-heavy ones. A third-party worked example prices a typical agent task at 292 credits, i.e. roughly 34 tasks per week on Lite, below Zhipu's optimistic range."
+    },
+    {
+      "date": "2026-10-10",
+      "head": "Four domestic Coding/Token Plans re-priced on the same day.",
+      "detail": "MiniMax M Plan Plus/Max/Ultra at CNY 49/119/469 (official naming Go/Explore/Build) on a unified all-modality pool sized at 3-4, 4-5 and 6-7 agents; Kimi Code Plan CNY 49/99/199 (annual 39/79/159); Xiaomi MiMo CNY 39/99/329/659 for 60M-1,600M credits; Baidu Qianfan four tiers at a limited-time 50% discount (CNY 4.9/19.9/99.9/299.9). Alibaba Cloud Bailian's Coding Plan Lite is confirmed as no longer sold to new customers, leaving Pro at CNY 200 per month."
+    },
+    {
+      "date": "2026-10-09",
+      "head": "Alibaba Cloud officially warns that Token Plan, Coding Plan and pay-as-you-go API keys and base URLs are mutually incompatible.",
+      "detail": "Mixing keys causes extra charges. Quota is independent of the account balance, so usage continues while an account is in arrears - which silently breaks auto-renewal. Four product lines documented: Coding Plan (fixed CNY 200/month, coding tools only, non-refundable), Token Plan for teams (per-seat credit pre-purchase from CNY 198 for 25,000 credits), Token Plan individual (CNY 39/79/139/499 for 11,500-180,000 credits plus a CNY 100 top-up for 20,000), and resource packs matched strictly by model name."
+    },
+    {
+      "date": "2026-10-08",
+      "head": "Volcengine attaches 1,000 professional dataset calls to Ark Agent Plan individual subscriptions (10/08-11/08).",
+      "detail": "Enabling professional datasets under Configure Harness grants 400 enterprise registry, 400 enterprise risk and 200 macroeconomic calls, granted per account and shared across new purchases, renewals and upgrades. The first time a vendor has attached external data access to a subscription, extending the metering unit from tokens to tokens plus tools plus data."
+    },
+    {
+      "date": "2026-10-09",
+      "head": "Round two of the subscription value audit: SemiAnalysis re-check confirms OpenAI delivers roughly one fifth of Claude's API-equivalent value per dollar.",
+      "detail": "For the same US$200 a month, ChatGPT/Codex weekly token allowance is less than half of Claude Code's. Up to 20% allowance variance across individual accounts was confirmed by the vendor as small-scale A/B testing, and the US$500 tier measures about 21% more usage than the old US$200 tier."
+    },
+    {
+      "date": "2026-10-09",
+      "head": "CLI release wave: Claude Code v2.1.296 syncs settings across Desktop and gateway, Codex CLI 0.162.1 fixes multi-line crashes, Copilot CLI 1.0.95 improves macOS auth, Antigravity CLI 1.3.2 adds a plugin marketplace, Kiro CLI 2.29.0 remembers context across sessions.",
+      "detail": "Claude Code v2.1.295 lets hooks block actions on failure and v2.1.294 fixed instruction-based hook interpretation. Policy and state are moving from the conversation into CLI configuration - and neither is currently a line item on any price sheet."
+    },
+    {
+      "date": "2026-10-08",
+      "head": "Anthropic and astronomer Brice Menard produce the first gap-free all-sky ultraviolet map via Claude Science.",
+      "detail": "A data-engineering result rather than a discovery: predicted pixels are not measurements, self-reported error is about 10%, and it was published only on the Anthropic blog without peer review. Two AI review passes missed atmospheric glow footprints that the human researcher found by eye. Claude Science opens 10,000 free or discounted seats to academic scientists in 2026 and Anthropic committed US$150M over three years to the US federal Genesis Mission."
+    },
     {
       "date": "2026-09-20",
       "head": "Zhipu GLM-5.3-FlashX high-speed variant launched (200 tok/s, $0.37/$1.25 per M tok intl, CNY 2/7 domestic, MIT open weights).",
@@ -3232,6 +3441,22 @@
     }
   ],
   "trends": [
+    {
+      "date": "2026-10-10",
+      "trend": "Exit, not repricing: Google ended new Gemini Code Assist seat sales on 10/09 and wrote explicit sunset dates into the docs (licenses and annual renewal through 2027-01-31, monthly through 2027-12-31) rather than raising the $19/$45 seat price. Combined with MiniMax stopping new Token Plan purchases, Zhipu's earlier suspension and Kimi's pause, the order of vendor responses when a subscription falls below inference cost is limit, stop selling, then leave. Google is the largest player to complete that sequence in public, so a seat-based coding assistant tier now has a documented expiry date."
+    },
+    {
+      "date": "2026-10-10",
+      "trend": "The seat tier and the individual tier are not the same product. Copilot's credits show individual plans carrying a 1.5x-2.0x premium while Business and Enterprise sit at exactly 1.0x. Enterprise purchasing therefore buys governance, policy and seat management rather than cheaper tokens, and any comparison that prices a team seat against an individual plan is comparing two different contracts."
+    },
+    {
+      "date": "2026-10-10",
+      "trend": "Domestic price bands have converged while metering units have diverged. Four plans reviewed on the same day all land in a CNY 39-199 four-tier structure, but quota is denominated in credits, Credits, tokens, AFP or request counts. Nominal prices are comparable, metering is not, so the only reliable comparison is the end-to-end monthly bill for one representative workload - which is exactly why Zhipu publishing a recomputable credit formula matters more than any discount announcement."
+    },
+    {
+      "date": "2026-10-10",
+      "trend": "Subscription entitlements are expanding from tokens into capabilities and data. Volcengine now bundles 1,000 professional dataset calls into Agent Plan individual, following September's all-modality plus Harness bundling. This raises near-term plan value while making 'what the plan includes' progressively harder to convert into a token price, so price sheets will keep losing explanatory power."
+    },
     {
       "date": "2026-08-28",
       "trend": "Compute-vendor captures open-source portal: NVIDIA's ~$12.9B Hugging Face acquisition means the largest compute seller now owns the largest model-distribution hub - open-weight self-hosting/Coding-Plan model supply chain neutrality becomes a strategic risk, not just a convenience."
