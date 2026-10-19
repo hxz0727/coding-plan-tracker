@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-10-16",
+    "updated": "2026-10-19",
     "cadence": "Daily 09:05",
     "currency": "USD unless noted",
     "sources": [
@@ -113,9 +113,40 @@
           "hqwc.cn/a/1508866 + kwkr.cn/news/559487: Tencent Hy4 preview domestic official pricing at CNY 6 per million input, CNY 0.3 cached hit and CNY 18 output, with 770B total and 49B activated parameters, 1M context, fifth place on Code Arena WebDev, Terminal Bench 2.1 of 85.4 tied with Claude Opus 5, weights and FP8 released, two weeks free inside WorkBuddy and CodeBuddy",
           "slicast.com 10/14: third-party reports that DeepSeek doubled its latest funding round to roughly CNY 100B (no official confirmation)"
         ]
+      },
+      {
+        "date": "2026-10-19",
+        "items": [
+          "新浪科技 10/16《拒绝蒸馏抹黑 国产新一代AI大模型又便宜又快：性能还完胜》——Kimi Token Plan 新增 Ultra 档、价格提升到 1200 元/月（口径待核）、Kimi K3.1 为候选旗舰",
+          "CSDN 10/16《国产AI编程订阅套餐·小白速查》——Kimi Code 连续包月 Plus ¥99 / Pro ¥199 / Max ¥699 / Ultra ¥1,399，年付折合 ¥79/¥159/¥559/¥1,119；火山 Agent Plan 四档 ¥9.9/¥49.9/¥500/¥1,000（原价 ¥40/¥200），燃料值 2万/10万/25万/50万；智谱 Lite ¥118/Pro ¥538/Max ¥1,078（周积分 1万/6万/14万）；百炼 Token Plan ¥39/¥139/¥499",
+          "aitoolanalysis 10/17 Kimi 国际页——Adagio $0 / Plus $19 / Pro $39 / Max $99 / Ultra $199，年付 $15/$31/$79/$159；Pro 标 2× agent credits、Ultra 标 10×，任何档位均不公布 credit 绝对数",
+          "rainvent.ai《Coding models in October 2026》——Moonshot 不公布限额；SemiAnalysis 测 Ultra 约 3.1B token/月；Kimi K3 Terminal-Bench 4.0 12.6%，低于 GPT-6 Luna 16.4%；智谱 Max 折算约 3.25B token/月（SemiAnalysis 测 6.3B）、Lite 峰值 48M / 非高峰 97M 每周；Z.ai Team 席位 $88 / $188",
+          "smzdm 10 月《夜间免费、0.23元/M、490t/s：10月的GLM摆出三本账》——Coding Plan 夜间 23:00–次日 09:00 在 ZCode 内免费用 GLM-5.3-Flash；硅基流动 GLM-5.3-Flash 高速版 0.23 元/百万；有人单日错峰跑掉 16.5 亿 token",
+          "腾讯搜索 10/17《ZCode 3.15.3 vs Qoder 1.34.0》——ZCode Pro ¥538 = 60,000 积分/周；GLM-5.3 输入 6.9 / 缓存 1.7 / 输出 24 积分，平峰减半；Qoder Pro ¥59 = 2,000 积分、资源包 ¥40 = 1,000 积分、企业版 Pro ¥169 / Pro+ ¥1,699",
+          "Wealth Engine 10/18 周报——DeepSeek V4.1 Flash 1017：DeepSWE 77.0、平均每编码任务成本降约 60% 至 $0.20 以下、token 价格不变；Meta 开源 Muse Spark Open（816B，编程 76.4 vs Kimi K3 85.0）；Muse Wonder $4/$20",
+          "Reuters 10/17–18（thebeat.tech / investmentdigger / 网易·PE星球 10/18）——Anthropic IPO 估值讨论回到约 $1.5 万亿（较 $2 万亿下调 25%），触发因素为 Q3 环比增速由 147% 降至 45%；Series H 买家仍有约 55% 账面收益；路演仍 11/9 当周",
+          "腾讯新闻 10/18 IMF 曼谷年会（10/16–17）——Anthropic 联合创始人 Jack Clark 称估值可能高达 $2 万亿、11 月 IPO",
+          "usagepricing.com claude.com/pricing 10/5 与 10/15 双快照对比——Max 新增 $100/$200 每月 API credits、Team 新增最高 $500 pooled、Free/Pro 无；Enterprise 首次写明 20 席起（销售协助 50 席），US$20/席/月按年计费；Team Standard $25（年付 $20）/ Premium $125（年付 $100）",
+          "netsysgroup / imisofts / automatelab 10/14–10/15 Claude Code 定价复核——Enterprise 最低月承诺约 $400（不含用量）；Team Standard 每会员 1.25× Pro 每会话额度、Premium 6.25×；Anthropic 披露企业部署人均 API 成本约 $13/活跃日、$150–$250/月",
+          "sdd.sh 10/19《GitHub Copilot Retires Six Models on October 19, and This Time None of Them Are Claude》——10/19 退役 Gemini 3.7 Flash、GPT-5.5、GPT-5.4、GPT-5.4 mini、GPT-5 mini、Grok 4.5；替换 Gemini 3.8 Flash、GPT-5.6 Sol、GPT-5.6 Luna、Grok 4.6；Business/Enterprise 默认自动启用，除非关掉全局默认或显式禁用",
+          "dev.to 10/15–10/19 Copilot 11/16 退役——Claude Opus 4.8、Claude Opus 5、GPT-5.6 Terra → Opus 5.5、GPT-6.1 Sol / GPT-6 Luna；个人年付订阅者保留 Opus 4.8（request-based 倍率 27）；Opus 5.5 $4/$0.20/$20 vs Opus 4.8 与 Opus 5 的 $5/$0.50/$25；GPT-5.6 Terra $2/$0.20/$12、GPT-6.1 Sol $2/$0.10/$10、GPT-6 Luna $0.10/$0.01/$0.50",
+          "A5 站长网 10/18——天猫双 11 7 家厂商上架 Token 套餐：阿里云百炼、MiniMax、千问办公、月之暗面、Qoder、智谱、阶跃星辰；商品形态月卡/季卡/年卡；10/20 20:00 正式开卖至 11/13；超 1,000 款 3C 新品、70 余款预装千问办公的 AI PC 单列品类 QAIPC",
+          "证券时报·e公司 10/16 + 新浪财经 10/16 + 网易·金融界 10/17——Token 首度作为独立品类上架天猫双 11；按学习/家庭/研究/一人工作室场景打包；天猫总裁称几乎集齐国内主要大模型公司",
+          "微信公众号「x-rush」10/18 七家大厂编程订阅横评（官方定价页实抓）——腾讯云/火山/千帆次数制完全对齐 Lite ¥40 / Pro ¥200（Pro 约 90,000 次/月）；智谱 ¥118/538/1,078（连续包季 ¥94.4/430.4/862.4），ZCode 订阅用户专享 150% 额度 + 闲时任务免费；CodeBuddy ¥70/140/700 = 4,000/9,000/50,000；Qoder CN ¥59/169/559 = 2,000/6,000/20,000（BYOK 免费、不收路由费）；Trae ¥49/89/699 = 2,000/4,000/40,000；百炼 Token Plan ¥39/139/499 = 11,500/45,000/180,000；Kimi Go ¥49（无 Code）/Plus ¥99 2×/Pro ¥199 4×/Max ¥699 14×；MiniMax Go ¥49 1×/Explore ¥119 3×+H3/Build ¥469 12×；CodeBuddy 混元 Hy3 倍率为 0",
+          "微信公众号「林有解」10/16 八家 Token Plan 横评——腾讯云通用四档 ¥39/99/299/599 = 780/1,980/5,980/11,980 积分、Hy 四档 ¥28/78/238/468 = 560/1,560/4,760/9,360 积分、Hy4 preview 五折已于 10/15 12:00 结束；千帆 Mini ¥9.9（首购 ¥4.9）=1,000 万 Token/1,400 积分、Lite ¥40=4,200 万/6,600、Pro ¥200=2.3 亿/45,000、Max ¥600=7 亿/165,000；有道智云 ¥49/149/499（订阅费 1:1 转额度、最高 8.5/8/7.5 折）；天翼云积分版 ¥29/89/199/399/699 = 3,000/10,000/25,000/50,000/100,000；移动云仅 MiniMax-M2.5；华为云 ¥59/149/399/799 = 5,000 万/1.3 亿/3.8 亿/8.8 亿 Token、每日限量",
+          "ChatTools 10 月《国内四大AI平台Token套餐实测：火山方舟一折价背后的四层定价逻辑》——腾讯 1 积分 = 0.05 元、GLM-5.3 折算 12 元/百万与原厂同价、DeepSeek-V4.1-Pro 约 13.2 元；腾讯 8/31 由 token 1:1 改积分制后通用 Standard 档 GLM-5.3 可用量由约 1 亿 token 缩至约 825 万；火山 AFP 输入输出同系数、无峰谷，原价 GLM-5.3 约 0.9 元/百万、首两月 2.5 折后约 0.22 元",
+          "ai.yaofun.top / openrouter.ai 榜（截至 10/18）——周量 165.3 万亿；DeepSeek V4.1 Flash 35.9T(-7%)、Step 5 Preview 13.9T(+119%)、GLM 5.3 Flash 12.6T(+8%)、MiMo-V2.6-Flash 10.3T(-9%)、Hy4 preview 7.55T(-10%)、GPT-6 Luna 6.29T(-12%)、Claude Opus 5.5 6.05T(+29%)、Nemotron 3 Ultra(free) 5.34T、GLM 5.3 5.34T(+55%)；DeepSeek V4.1 Flash 1017 单日 3.04T(+345%)",
+          "llm-cost.io（截至 10/18）——97 款模型合计周量 165.3T、按 3:1 混合估周支出约 $1.799 亿、混合单价 $0.029/百万",
+          "中新社 10/18（新浪财经 / 今日头条）——10/5–10/11 全球周调用 172 万亿 token，中国模型 86.74 万亿为美国 4.5 倍、连续 24 周第一、前五全为中国模型；AA 口径 Kimi K3 每任务约 $2 vs Claude Fable 5.1 约 $7.63、Fable 5.1 每任务成本约为 DeepSeek V4.1 Flash 的 28 倍",
+          "BlockBeats 10/18——Codex 28 天冲刺 Day 13 再次全局额度重置，13 天内第 5 次（Day 2/6/8/10/13），约 5 小时后「Done」确认；模型侧无变化",
+          "aitoolanalysis 10/17 + codexti 10/17 + pick-right 10/18 Codex 复核——Codex 含于全部 ChatGPT 档（Free $0 / Go $8 / Plus $20 / Pro $100·$200·$500）；Plus 约 15–160 条 GPT-6.1 Sol 本地消息/5 小时；Pro 无 5 小时上限；Business $20/席年付、$25 月付、两席起；Terminal-Bench 4.0：Claude Code + Opus 5.5 64.8% vs Codex 58.2%",
+          "overpayingforai 10/17 Cursor 复核——Free / Plus $8 / Premium $30 / Super $100 / Ultra $200、Teams 同价按席；周池 4×/15×/50×；第三方模型仅 Premium 及以上按 API 列表价从预付额度扣（Sonnet 5.5 $2/$10、GPT-5.5 $5/$30、Gemini 3.1 Pro $2/$12）；Teams 另加 $0.25/百万 Token Rate；legacy Pro $20 / Pro+ $60 仅存量",
+          "vortx.ch 10 月 AI coding agents 横评——Antigravity Free / AI Pro $19.99 / AI Ultra $99.99(5×) / AI Ultra $199.99(20×)，配额每 5 小时刷新至周上限、不公布绝对上限，企业走 Google Cloud 消耗计费；Kiro 50 免费 credits、$20=1,000 / $40=2,000 / $200=10,000、超量 $0.04/credit",
+          "gpt-5.com 10 月《GPT-6、Gemini 4、Claude 5.5 系列》——Devin Pro $20+tax / Max $200 / Teams $80+seat $40，SWE-2 免费期 10/15–16 结束，新品 Oncall；Copilot 11/16 退役 Opus 4.8 / Opus 5 / GPT-5.6 Terra；GPT-Live-1.1 音频模型（10/15，6 语言）"
+        ]
       }
     ],
-    "notes": " | 9/30 supplement (user question on Baidu Qianfan vs Xiaomi MiMo Token Plan value): added Baidu Qianfan Token Plan individual-tier detail (Token-plan vs credit-plan dual billing), National-Day campaign pack 9/24-10/7, all-hours tiered discount, enterprise seat pricing; rewrote Xiaomi MiMo entry to V2.6 generation with the 10/21 V2.5 sunset and the new team plan; added section 3.7.1 head-to-head comparison with locally verified value multiples (Qianfan 0.40x-5.16x vs MiMo a flat 1.05x-1.24x). | 9/30 scheduled-run refresh: added the Anthropic IPO prospectus draft (Reuters, 261 pages, $518B compute obligations, target >$2T), corrected the 9/28 morning call on Claude Sonnet 5.5 (it did ship on 9/28 at $2/$10, Terminal-Bench 4.0 70.6%), added the MiniMax Token Plan -> M Plan transition with new-purchase shutdown, OpenAI $200 Pro reopen detail (halved API-equivalent allowance, 10/30 cutoff, 62,500 credits), Copilot Sonnet 5.5 / GPT-6.1 Sol default-on additions, Claude Code cloud-session credits, the Tianyi Cloud Starry Sky TokenHub coding Token Plan and the three-carrier token-package landscape, the Alibaba Bailian 9/30 campaign expiry, the Windsurf brand fold into Devin, Z.ai discount/credit structure, and DeepSeek V4.1 Pro grayscale testing. | 10/08 scheduled-run refresh (window 09/30-10/08): Claude Haiku 5.5 launched 10/07 with a two-band price structure whose real average saving is about 75% rather than 90%; Sonnet 5.5 cache reads permanently halved and Max/Team gained monthly API allowances; Microsoft committed to local model inference inside Copilot with local calls not billed as inference and MAI Code 1.1 Flash shipping; GitHub Copilot retired four models on 10/02 with no transition period and published code-review cost bands billed to the PR author; Google's Gemini 4 'Argon' went into a whitelisted controlled release; MiniMax M Plan prices landed and Kimi reopened its membership ladder on 10/01; SemiAnalysis measured Anthropic at roughly 5x OpenAI in subscription API-equivalent value; and the Anthropic S-1 turned public with a $518B non-cancellable compute book and a Founder LLC Class F super-voting share. DeepSeek V4.1 Pro remains unreleased as of 10/07. | 10/09 scheduled-run refresh (window 10/08-10/09): OpenAI shipped GPT-6.1 Sol Ultrafast at $12/$60 per MTok (6x Sol, up to 8x speed) restricted to Pro 500, usage-based Enterprise and credit-based Edu, with included allowance burning at 8x and credits or usage-based billed at 6x; GPT-6 rolled out to all ChatGPT users with Intelligent UI and the Decisions API entered public beta; independent measurement priced a full ChatGPT Pro $100 week at a median $175 (2.6x Plus, not the advertised 5x); Claude Code 2.1.293 switched the default Haiku to claude-haiku-5-5 while Anthropic opened Docs/Sheets/Slides editing in beta and set Sonnet 4.5's retirement for 11/30; GitHub Copilot's Haiku 5.5 rate card, seat credits and access limits were documented; Google's Argon per-task cost was independently measured at $1.99 and a persistent work Gemini agent launched 10/08; Step 5 Preview promised open weights for 10/15; and LMCache CVE-2026-105192 (CVSS 9.8, no fix at disclosure) affects self-hosted vLLM deployments. | 10/10 scheduled-run refresh (window 10/09-10/10): Google ended new Gemini Code Assist Standard and Enterprise sales on 10/09 with a published transition schedule (add licenses and annual auto-renewal through 2027-01-31, monthly auto-renewal through 2027-12-31) and pointed customers to Antigravity bundled inside Gemini Enterprise from US$30 per seat per month - the first mainstream vendor to exit the seat-based coding assistant category. GitHub Copilot's tier economics were quantified (individual tiers carry a 1.5x-2.0x credit premium while Business and Enterprise are exactly 1.0x) and the churn was counted (17 models retired and eight added between 09/01 and 10/19). Zhipu published a recomputable credit formula for GLM Coding Plan, and four domestic Coding/Token Plans were re-priced on the same day (MiniMax 49/119/469, Kimi 49/99/199, Xiaomi MiMo 39/99/329/659, Baidu Qianfan four tiers at limited-time 50% off), with Alibaba Cloud Bailian's Coding Plan Lite confirmed as no longer sold to new customers. Volcengine bundled 1,000 professional dataset calls into Agent Plan individual (10/08-11/08), the first time a vendor has attached external data to a subscription. Alibaba Cloud officially warned that Token Plan, Coding Plan and pay-as-you-go API keys and base URLs are mutually incompatible and that mixing them causes extra charges. | 10/16 scheduled-run refresh (window 10/14-10/16): Vercel launched Token Pass at $30 per month for $80 of model credits covering only GLM 5.3 and Kimi K3 through its AI Gateway with zero data retention by default and early access capped at 500 Pro teams - the first time a gateway rather than a model vendor sells a coding subscription, and the opposite answer to xAI on whether third-party models sit inside the pool. Alibaba upgraded Token Plan individual tiers with 12 Harness entitlements at unchanged prices inside the existing Credits system (CNY 39/79/139/499; 11,500/25,500/45,000/180,000 credits; 1-2/2-3/3-4/6-8 concurrent agents; 88% off overage and extension resources; MCP opened), choosing the 'add entitlements to the existing meter' route rather than Volcengine's separate Agent Plan with AFP metering. StepFun released Step 5 Preview weights exactly as promised on 10/15 (BF16 and FP8, Hugging Face and ModelScope, 92-layer narrow-deep architecture, Sparse GQA, context compression trained end-to-end) and rose to second on OpenRouter weekly and daily token rankings. Anthropic's 10/14 investor meeting detail emerged: Q3 revenue $16.8B up about 45% sequentially, profitable and free-cash-flow positive on an adjusted basis, adjusted gross margin about 85%, adjusted operating margin above 11%, $1.70 of revenue per $1 of compute, target valuation above $2T with up to $100B raised and a roadshow the week of 11/9. GitHub added Gemini 4 Argon to Copilot's model picker across eight surfaces for paid plans and gave HydraFusion a Max tier with a refreshed pool (Opus 5.5, GPT-6 Astra, GPT-6.1 Sol, GPT-6 Luna); it also enabled default push protection for Anthropic key formats and added AI Scan adoption metrics billed in AI credits. Tmall confirmed two large-model companies will sell token bundles before Double 11, with StepFun identified as one. MiniMax's China Build tier was disclosed at 12x against global Build at 7.5x, alongside H1 revenue of about $117M and an adjusted net loss up 111.2%. Volcengine's official plan overview (updated 10/15) put the 'using plan keys outside coding tools leads to suspension or ban' rule in the body text. Codex's challenge reached Day 10 (global reset, confirmed) and Day 11 (capacity and auto-recovery fixes) with reset gaps compressed to two days. Hangzhou Shangcheng and Zhipu launched the first locally subsidised regional Coding Plan. Tencent Hy4 preview domestic pricing was confirmed at CNY 6 input / CNY 0.3 cached / CNY 18 output. DeepSeek V4.1 Pro and Kimi K3.1 remain unreleased as of 10/16."
+    "notes": " | 9/30 supplement (user question on Baidu Qianfan vs Xiaomi MiMo Token Plan value): added Baidu Qianfan Token Plan individual-tier detail (Token-plan vs credit-plan dual billing), National-Day campaign pack 9/24-10/7, all-hours tiered discount, enterprise seat pricing; rewrote Xiaomi MiMo entry to V2.6 generation with the 10/21 V2.5 sunset and the new team plan; added section 3.7.1 head-to-head comparison with locally verified value multiples (Qianfan 0.40x-5.16x vs MiMo a flat 1.05x-1.24x). | 9/30 scheduled-run refresh: added the Anthropic IPO prospectus draft (Reuters, 261 pages, $518B compute obligations, target >$2T), corrected the 9/28 morning call on Claude Sonnet 5.5 (it did ship on 9/28 at $2/$10, Terminal-Bench 4.0 70.6%), added the MiniMax Token Plan -> M Plan transition with new-purchase shutdown, OpenAI $200 Pro reopen detail (halved API-equivalent allowance, 10/30 cutoff, 62,500 credits), Copilot Sonnet 5.5 / GPT-6.1 Sol default-on additions, Claude Code cloud-session credits, the Tianyi Cloud Starry Sky TokenHub coding Token Plan and the three-carrier token-package landscape, the Alibaba Bailian 9/30 campaign expiry, the Windsurf brand fold into Devin, Z.ai discount/credit structure, and DeepSeek V4.1 Pro grayscale testing. | 10/08 scheduled-run refresh (window 09/30-10/08): Claude Haiku 5.5 launched 10/07 with a two-band price structure whose real average saving is about 75% rather than 90%; Sonnet 5.5 cache reads permanently halved and Max/Team gained monthly API allowances; Microsoft committed to local model inference inside Copilot with local calls not billed as inference and MAI Code 1.1 Flash shipping; GitHub Copilot retired four models on 10/02 with no transition period and published code-review cost bands billed to the PR author; Google's Gemini 4 'Argon' went into a whitelisted controlled release; MiniMax M Plan prices landed and Kimi reopened its membership ladder on 10/01; SemiAnalysis measured Anthropic at roughly 5x OpenAI in subscription API-equivalent value; and the Anthropic S-1 turned public with a $518B non-cancellable compute book and a Founder LLC Class F super-voting share. DeepSeek V4.1 Pro remains unreleased as of 10/07. | 10/09 scheduled-run refresh (window 10/08-10/09): OpenAI shipped GPT-6.1 Sol Ultrafast at $12/$60 per MTok (6x Sol, up to 8x speed) restricted to Pro 500, usage-based Enterprise and credit-based Edu, with included allowance burning at 8x and credits or usage-based billed at 6x; GPT-6 rolled out to all ChatGPT users with Intelligent UI and the Decisions API entered public beta; independent measurement priced a full ChatGPT Pro $100 week at a median $175 (2.6x Plus, not the advertised 5x); Claude Code 2.1.293 switched the default Haiku to claude-haiku-5-5 while Anthropic opened Docs/Sheets/Slides editing in beta and set Sonnet 4.5's retirement for 11/30; GitHub Copilot's Haiku 5.5 rate card, seat credits and access limits were documented; Google's Argon per-task cost was independently measured at $1.99 and a persistent work Gemini agent launched 10/08; Step 5 Preview promised open weights for 10/15; and LMCache CVE-2026-105192 (CVSS 9.8, no fix at disclosure) affects self-hosted vLLM deployments. | 10/10 scheduled-run refresh (window 10/09-10/10): Google ended new Gemini Code Assist Standard and Enterprise sales on 10/09 with a published transition schedule (add licenses and annual auto-renewal through 2027-01-31, monthly auto-renewal through 2027-12-31) and pointed customers to Antigravity bundled inside Gemini Enterprise from US$30 per seat per month - the first mainstream vendor to exit the seat-based coding assistant category. GitHub Copilot's tier economics were quantified (individual tiers carry a 1.5x-2.0x credit premium while Business and Enterprise are exactly 1.0x) and the churn was counted (17 models retired and eight added between 09/01 and 10/19). Zhipu published a recomputable credit formula for GLM Coding Plan, and four domestic Coding/Token Plans were re-priced on the same day (MiniMax 49/119/469, Kimi 49/99/199, Xiaomi MiMo 39/99/329/659, Baidu Qianfan four tiers at limited-time 50% off), with Alibaba Cloud Bailian's Coding Plan Lite confirmed as no longer sold to new customers. Volcengine bundled 1,000 professional dataset calls into Agent Plan individual (10/08-11/08), the first time a vendor has attached external data to a subscription. Alibaba Cloud officially warned that Token Plan, Coding Plan and pay-as-you-go API keys and base URLs are mutually incompatible and that mixing them causes extra charges. | 10/16 scheduled-run refresh (window 10/14-10/16): Vercel launched Token Pass at $30 per month for $80 of model credits covering only GLM 5.3 and Kimi K3 through its AI Gateway with zero data retention by default and early access capped at 500 Pro teams - the first time a gateway rather than a model vendor sells a coding subscription, and the opposite answer to xAI on whether third-party models sit inside the pool. Alibaba upgraded Token Plan individual tiers with 12 Harness entitlements at unchanged prices inside the existing Credits system (CNY 39/79/139/499; 11,500/25,500/45,000/180,000 credits; 1-2/2-3/3-4/6-8 concurrent agents; 88% off overage and extension resources; MCP opened), choosing the 'add entitlements to the existing meter' route rather than Volcengine's separate Agent Plan with AFP metering. StepFun released Step 5 Preview weights exactly as promised on 10/15 (BF16 and FP8, Hugging Face and ModelScope, 92-layer narrow-deep architecture, Sparse GQA, context compression trained end-to-end) and rose to second on OpenRouter weekly and daily token rankings. Anthropic's 10/14 investor meeting detail emerged: Q3 revenue $16.8B up about 45% sequentially, profitable and free-cash-flow positive on an adjusted basis, adjusted gross margin about 85%, adjusted operating margin above 11%, $1.70 of revenue per $1 of compute, target valuation above $2T with up to $100B raised and a roadshow the week of 11/9. GitHub added Gemini 4 Argon to Copilot's model picker across eight surfaces for paid plans and gave HydraFusion a Max tier with a refreshed pool (Opus 5.5, GPT-6 Astra, GPT-6.1 Sol, GPT-6 Luna); it also enabled default push protection for Anthropic key formats and added AI Scan adoption metrics billed in AI credits. Tmall confirmed two large-model companies will sell token bundles before Double 11, with StepFun identified as one. MiniMax's China Build tier was disclosed at 12x against global Build at 7.5x, alongside H1 revenue of about $117M and an adjusted net loss up 111.2%. Volcengine's official plan overview (updated 10/15) put the 'using plan keys outside coding tools leads to suspension or ban' rule in the body text. Codex's challenge reached Day 10 (global reset, confirmed) and Day 11 (capacity and auto-recovery fixes) with reset gaps compressed to two days. Hangzhou Shangcheng and Zhipu launched the first locally subsidised regional Coding Plan. Tencent Hy4 preview domestic pricing was confirmed at CNY 6 input / CNY 0.3 cached / CNY 18 output. DeepSeek V4.1 Pro and Kimi K3.1 remain unreleased as of 10/16. ｜ 10/19 刷新：新增 Kimi Ultra 档（¥1,399/¥199）、智谱阶梯系数与限购、DeepSeek V4.1 Flash 1017 按任务降本 60%、Anthropic IPO 估值回调至约 $1.5 万亿、Copilot 10/19 退役生效与 11/16 第三波、天猫双 11 Token 独立品类 7 家、国内七家 20+ 档位实抓、腾讯云 8/31 静默改计量折算。"
   },
   "vendors": [
     {
@@ -2127,6 +2158,108 @@
       ],
       "notes": "China Build is 12x Go against 7.5x for global Build - the clearest evidence this quarter that the same product line gives more inside China than abroad. Legacy Token Plan is closed to new purchases and Token Plan for Teams is suspended; upgrades to M Plan cannot be reversed. H1 2026: revenue about $117M up 283.1%, adjusted net loss about $293M up 111.2%, Hong Kong market cap about HKD 74.7B on 10/13, down more than 80% from the March peak - the highest subsidy multiple in the domestic peer group and the fastest loss expansion.",
       "date": "2026-10-14"
+    },
+    {
+      "name": "Kimi Token Plan / Kimi 会员（中国区四档 + 国际五档）",
+      "owner": "月之暗面 Moonshot AI",
+      "billing": "会员制共享额度池（5 小时滚动窗口 + 月总额共享，无周上限）",
+      "plans": [
+        {
+          "tier": "Go（中国区）",
+          "price": "¥49/月（年付 ¥468，折合 ¥39/月）",
+          "note": "不含 Kimi Code"
+        },
+        {
+          "tier": "Plus（中国区）",
+          "price": "¥99/月（年付 ¥948，折合 ¥79/月）",
+          "note": "含 Kimi Code、2× agent 额度、K3 最高 256K"
+        },
+        {
+          "tier": "Pro（中国区）",
+          "price": "¥199/月（年付 ¥1,908，折合 ¥159/月）",
+          "note": "4× 额度、K3 最高 1M 上下文"
+        },
+        {
+          "tier": "Max（中国区）",
+          "price": "¥699/月（年付 ¥6,708，折合 ¥559/月）",
+          "note": "14× 额度、取消 kimi code 周限额"
+        },
+        {
+          "tier": "Ultra（中国区，新增）",
+          "price": "¥1,399/月（年付折合 ¥1,119/月）",
+          "note": "10× agent credits；⚠️ 新浪科技转述为 1200 元/月，差 200 元；任何档位均不公布额度绝对数"
+        },
+        {
+          "tier": "国际五档",
+          "price": "Adagio $0 / Plus $19 / Pro $39 / Max $99 / Ultra $199（年付 $15/$31/$79/$159）",
+          "note": "年付可省 $48（Plus）至 $480（Ultra）"
+        }
+      ],
+      "notes": "2026-10-19：新增 Ultra 档，国产个人档天花板首次进入四位数；第三方按抵扣系数表测算 Ultra 约 8,000 万 token/月，SemiAnalysis 口径约 3.1B token/月（差近 4 倍）。与月之暗面约 2,000 亿元估值、赴港 IPO 推进绑定，抬价先于 K3.1 发布。"
+    },
+    {
+      "name": "天猫双 11 AI Token 独立品类（渠道）",
+      "owner": "天猫 / 淘宝",
+      "billing": "月卡 / 季卡 / 年卡（额度直充账号，无物流与安装售后）",
+      "plans": [
+        {
+          "tier": "已入驻 7 家",
+          "price": "阿里云百炼、MiniMax、千问办公、月之暗面、Qoder、智谱、阶跃星辰",
+          "note": "预计正式开卖前再进 2 家头部模型公司"
+        },
+        {
+          "tier": "节奏",
+          "price": "2026-10-20 20:00 正式开卖 → 11-13 收官",
+          "note": "约 100 万品牌、7,200 万款商品"
+        },
+        {
+          "tier": "配套硬件",
+          "price": "超 1,000 款 3C 新品，其中 70 余款预装千问办公的 AI PC",
+          "note": "单列新品类 QAIPC；联想昭阳 / Lecoo / 华硕 / 微星 / 雷神，英特尔 + AMD"
+        }
+      ],
+      "notes": "2026-10-19：Token 首次作为独立品类进入双 11；按学习 / 家庭 / 研究 / 一人工作室场景打包；平台定性为「集中比较与下单渠道」，同价不等于同权益或同计量口径。"
+    },
+    {
+      "name": "腾讯云 Token Plan（计量变更与折算）",
+      "owner": "腾讯云 TokenHub",
+      "billing": "积分制（1 积分 = 0.05 元）；通用线与 Hy 线可各持一份、共用 Key 与接入地址",
+      "plans": [
+        {
+          "tier": "通用 Lite/Standard/Pro/Max",
+          "price": "¥39 / 99 / 299 / 599 每月",
+          "note": "780 / 1,980 / 5,980 / 11,980 积分每月"
+        },
+        {
+          "tier": "Hy Lite/Standard/Pro/Max",
+          "price": "¥28 / 78 / 238 / 468 每月",
+          "note": "560 / 1,560 / 4,760 / 9,360 积分；仅含混元 Hy3 / Hy4 preview"
+        },
+        {
+          "tier": "Coding Plan Lite/Pro",
+          "price": "¥40 / ¥200（首月 ¥7.9 / ¥39.9）",
+          "note": "约 18,000 / 90,000 次每月；模型池 混元 HY2.0 · GLM-5 · Kimi-K2.5 · MiniMax-M2.5"
+        }
+      ],
+      "notes": "2026-08-31 把 token 1:1 抵扣改为积分制，通用 Standard 档 GLM-5.3 可用量由约 1 亿 token 缩至约 825 万（约 -12 倍）；GLM-5.3 折算 12 元/百万与原厂刊例价一致（第三方模型零折扣）；Hy4 preview 五折已于 10/15 12:00 结束，通用版模型优惠至 10/30 12:00。"
+    },
+    {
+      "name": "Meta Muse Spark Open / Muse Wonder",
+      "owner": "Meta",
+      "billing": "开源自部署（Spark Open）+ 按 token（Wonder）+ 订阅（Muse Code）",
+      "plans": [
+        {
+          "tier": "Muse Spark Open",
+          "price": "$0（816B 开放权重）",
+          "note": "10/15 发布；Meta 自评编程 76.4，低于 Kimi K3 的 85.0"
+        },
+        {
+          "tier": "Muse Wonder（API）",
+          "price": "$4 / 缓存 $0.20 / $20 每百万",
+          "note": "与 Claude Opus 5.5 同档；独立指数 52 vs Opus 5.5 的 58"
+        }
+      ],
+      "notes": "2026-10-19：「免费的最大模型 + 付费的次优模型」并存，开源正在成为定价工具而非价格下限。"
     }
   ],
   "model_token_prices_per_MTok": [
@@ -2567,6 +2700,46 @@
       "output_cny_per_mtok": 18.0,
       "date": "2026-10-16",
       "note": "770B total and 49B activated parameters, 1M context, native text and vision. Fifth on Code Arena WebDev, ahead of Grok 4.6 High, GPT-5.6 Sol xhigh, Qwen3.8-Flash-Next and GLM-5.3 Max; Terminal Bench 2.1 of 85.4, tied with Claude Opus 5 - all vendor-run. Weights and FP8 released. Two weeks free inside WorkBuddy and CodeBuddy. OpenRouter lists $0.7506/$2.251 per MTok, which does not translate directly to the domestic CNY list."
+    },
+    {
+      "model": "Kimi Ultra（会员档，中国区）",
+      "api_price_published": "—",
+      "coding_plan_only": "¥1,399/月（年付折合 ¥1,119）",
+      "lite_usd": "—",
+      "pro_usd": "—",
+      "max_usd": "$199/月（国际，年付 $159）",
+      "date": "2026-10-16",
+      "note": "会员制共享额度池；额度绝对数不公布（Pro 标 2×、Ultra 标 10×）；第三方测算 8,000 万 token/月（抵扣系数表）vs 3.1B（SemiAnalysis），差近 4 倍"
+    },
+    {
+      "model": "GitHub Copilot 11/16 替换后结算价",
+      "api_price_published": "—",
+      "coding_plan_only": "Opus 5.5 $4.00 / Sol $2.00 / Luna $0.10（输入，每百万）",
+      "lite_usd": "—",
+      "pro_usd": "—",
+      "max_usd": "Opus 5.5 $20.00 / Sol $10.00 / Luna $0.50（输出）",
+      "date": "2026-10-15",
+      "note": "11/16 退 Opus 4.8/Opus 5/GPT-5.6 Terra；Opus 4.8 与 Opus 5 均 $5/$0.50/$25（降 20%）；Terra $2/$0.20/$12→Sol $2/$0.10/$10；Terra→Luna 输出价为 1/24；个人年付保留 Opus 4.8（倍率 27）"
+    },
+    {
+      "model": "Cursor 第三方模型现付价（Premium 及以上）",
+      "api_price_published": "—",
+      "coding_plan_only": "Sonnet 5.5 $2.00 / GPT-5.5 $5.00 / Gemini 3.1 Pro $2.00（输入）",
+      "lite_usd": "—",
+      "pro_usd": "—",
+      "max_usd": "Sonnet 5.5 $10.00 / GPT-5.5 $30.00 / Gemini 3.1 Pro $12.00（输出）",
+      "date": "2026-10-17",
+      "note": "从第一个请求起按 API 列表价从预付额度扣、不进周池；Teams 另加 $0.25/百万 Token Rate；Premium $30 的真实月账单约 $40–$70"
+    },
+    {
+      "model": "DeepSeek V4.1 Flash 1017（按任务效率口径）",
+      "api_price_published": "$0.30 高峰 / $0.15 平峰（单价未变）",
+      "coding_plan_only": "—",
+      "lite_usd": "—",
+      "pro_usd": "—",
+      "max_usd": "$1.20 高峰 / $0.60 平峰（单价未变）",
+      "date": "2026-10-17",
+      "note": "DeepSWE 77.0；平均每编码任务成本降约 60% 至 $0.20 以下（省在完成同一任务的 token 数，非单价）；OpenRouter 单日 3.04T（+345%）；⚠️ 数字来自第三方周报转述"
     }
   ],
   "upcoming_deadlines": [
@@ -2574,81 +2747,81 @@
       "date": "2026-10-10",
       "event": "Devin SWE-2 free period ends on Devin Desktop and CLI - confirm the forward billing path today",
       "status": "expired",
-      "days_remaining": -6
+      "days_remaining": -9
     },
     {
       "date": "2026-11-08",
       "event": "Volcengine Ark Agent Plan individual x professional datasets campaign ends (1,000 free dataset calls: 400 enterprise registry + 400 enterprise risk + 200 macroeconomic)",
       "status": "upcoming",
-      "days_remaining": 23
+      "days_remaining": 20
     },
     {
       "date": "2027-01-31",
       "event": "Gemini Code Assist Standard/Enterprise: last date to ADD LICENSES and last date for ANNUAL auto-renewal",
       "status": "upcoming",
-      "days_remaining": 107
+      "days_remaining": 104
     },
     {
       "date": "2027-12-31",
       "event": "Gemini Code Assist Standard/Enterprise: last date for MONTHLY auto-renewal",
       "status": "upcoming",
-      "days_remaining": 441
+      "days_remaining": 438
     },
     {
       "date": "2026-08-13",
       "event": "DeepSeek-V4-Pro GA (0813) + V4-Pro-0813 weights MIT-open + Harness v0.1 (open, Cordis, MIT) released; peak/valley pricing PUBLISHED (peak 2x)",
       "status": "expired",
-      "days_remaining": -64
+      "days_remaining": -67
     },
     {
       "date": "2026-08-08",
       "event": "Volcano Ark GLM-5.2 deduction 25%-off ends 23:59 (model billing discount, NOT package price)",
       "status": "expired",
-      "days_remaining": -69
+      "days_remaining": -72
     },
     {
       "date": "2026-08-15",
       "event": "Zhipu GLM Coding Plan yearly 30%/quarterly 20% promo ends; Qwen3.8-27B weights released 8/14-15 as APACHE 2.0 (correction: not Tongyi Qianwen license).",
       "status": "expired",
-      "days_remaining": -62
+      "days_remaining": -65
     },
     {
       "date": "2026-08-17",
       "event": "Claude legacy Workbench + 3 experimental prompt-tool APIs retire",
       "status": "expired",
-      "days_remaining": -60
+      "days_remaining": -63
     },
     {
       "date": "2026-08-27",
       "event": "Volcano Ark Coding/Agent Plan package first-2-months 25%-off - SUPERSEDED: official end is 2026-11-8 per Volcano docs (Lite CNY 9.9 / Pro CNY 49.9 first 2 months). GLM-5.2 deduction 25%-off already ended 8/8 (separate activity).",
       "status": "expired",
       "note": "Official Volcano docs confirm 25%-off window extends to 2026-11-08; 8/27 reading withdrawn.",
-      "days_remaining": -50
+      "days_remaining": -53
     },
     {
       "date": "2026-08-31",
       "event": "Claude Sonnet 5 intro pricing ends -> $3/$15 (cancelled per 8/11 lock); GitHub Copilot Business/Enterprise promo credits end -> revert to $19/$39; ALSO on Aug 31: OpenAI GPT-5.4 retires from Codex; Kimi K2.5 API retired (auto-switch to K2.6). 5 days left as of 8/26.",
       "status": "expired",
       "note": "EXPIRED 8/31: Copilot promo credits ended (9/1 Business 3000->1900, Ent 7000->3900); Claude Code 50% bonus ended; GPT-5.4 retired from Codex; Kimi K2.5+moonshot-v1 sunset (auto-switch K2.6); Tencent Hy3 preview retired. Sonnet 5 lock $2/$10 permanent (cancelled).",
-      "days_remaining": -46
+      "days_remaining": -49
     },
     {
       "date": "2026-08-17",
       "event": "DeepSeek V4-Flash/V4-Pro NEW peak/valley pricing TAKES EFFECT (Beijing 9-12 & 14-18 peak = 2x valley). Pro peak out CNY 27/MTok (4.5x old), cache-hit CNY 0.30 (12x old); valley 0.15/4.5/13.5. Pre-hike prices valid only to 8/16.",
       "status": "expired",
-      "days_remaining": -60
+      "days_remaining": -63
     },
     {
       "date": "2026-09-01",
       "event": "DeepSeek overall API hike - REVISED: actual effective date is 2026-08-17 (peak/valley), supersedes earlier 9/1 estimate",
       "status": "expired",
-      "days_remaining": -45
+      "days_remaining": -48
     },
     {
       "date": "2026-09-30",
       "event": "Z.ai (Intl) GLM-5.2/GLM-5-Turbo non-peak 1x deduction promo ends (back to 2x)",
       "status": "expired",
-      "days_remaining": -16
+      "days_remaining": -19
     },
     {
       "date": "2026-08 mid",
@@ -2659,26 +2832,26 @@
       "date": "2026-11-08",
       "event": "Volcano Ark Coding/Agent Plan package first-2-months 25%-off ends (Lite CNY 9.9/mo, Pro CNY 49.9/mo; third month onward list price). OFFICIAL per Volcano docs.",
       "status": "upcoming",
-      "days_remaining": 23
+      "days_remaining": 20
     },
     {
       "date": "2026-08-20",
       "event": "Kimi K3 old-plan renewal cutoff: accounts whose subscription lapsed >7 days can no longer renew old plans (active/auto-renew unaffected). TODAY (Aug 20).",
       "status": "expired",
-      "days_remaining": -57
+      "days_remaining": -60
     },
     {
       "date": "2026-08-28",
       "event": "Zhipu GLM-5.3 FULL weights MIT-open TODAY (Aug 28, CONFIRMED). GLM-5.3-Flash (320B) already open-sourced Aug 26 under MIT. Same base as 5.2, post-training scaling; 200K ctx (not 1M), 128K out.",
       "status": "expired",
-      "days_remaining": -49
+      "days_remaining": -52
     },
     {
       "date": "2026-08-31",
       "event": "Anthropic IPO S-1 expected end of Aug (FT); valuation >$2T, could surpass SpaceX as largest IPO.",
       "status": "expired",
       "note": "No public S-1 confirmed by 8/31; earliest Oct per Zacks/Polymarket; valuation target $2T+.",
-      "days_remaining": -46
+      "days_remaining": -49
     },
     {
       "date": "2026-09-mid",
@@ -2689,25 +2862,25 @@
       "date": "2026-08-26",
       "status": "expired",
       "event": "Zhipu GLM-5.3-Flash (320B-A18B) weights MIT-open + 'Niulai/Ox Alpha' anonymous OpenRouter chart-topper confirmed; first native multimodal open-weight in GLM-5 family.",
-      "days_remaining": -51
+      "days_remaining": -54
     },
     {
       "date": "2026-08-29",
       "event": "Zhipu GLM-5.3-Flash (Z.ai intl) API price cut 50%: in $0.15->$0.075, out $0.50->$0.25, cached $0.03->$0.015 per MTok",
       "status": "expired",
-      "days_remaining": -48
+      "days_remaining": -51
     },
     {
       "date": "2026-09-28",
       "event": "GitHub Copilot Balanced code review becomes default + Chat/Mobile/Cloud Agent merge into one product (data retention to account lifetime) - silent cost increases",
       "status": "expired",
-      "days_remaining": -18
+      "days_remaining": -21
     },
     {
       "date": "2026-10-14",
       "event": "OpenAI GPT-5.5 retirement - ChatGPT / ChatGPT Work / Codex all tiers; API unaffected; migrate to GPT-5.6-Sol (OpenAI deprecation notice 9/14)",
       "status": "expired",
-      "days_remaining": -2,
+      "days_remaining": -5,
       "note": "Audit gpt-5.5 references in saved settings, custom agents, scheduled tasks, scripts."
     },
     {
@@ -2715,7 +2888,7 @@
       "event": "DeepSeek V4 Pro->V4.1 Flash auto-reroute - CORRECTED: announced 9/9, reversed 9/11 after developer pushback, never took effect; V4 Pro still served at off-peak $0.66/$1.98",
       "status": "expired",
       "note": "Prior 9/14/9/16 'hard reroute effective' claims inaccurate (OrcaRouter 9/17). V4.1 Flash GA 9/10 stands; legacy deepseek-v4-flash IDs still temp-route to V4.1 Flash.",
-      "days_remaining": -32
+      "days_remaining": -35
     },
     {
       "date": "2026-09-late",
@@ -2728,13 +2901,13 @@
       "event": "Zhipu GLM-5.2 Volcano Ark (Volcengine) delist - CORRECTED: officially delisted 2026-08-31 14:00 (auto-route to GLM-5.3). Prior tracker runs (9/15-9/20) misreported as 9/21 14:00; corrected 9/21 per codingplan.org (Volcano Ark Coding Plan doc) + cheapestinference. Z.ai direct API still lists GLM-5.2 ($1.40/$4.40); some aggregator pools alias id to 5.3 until 9/30.",
       "status": "expired",
       "note": "Today (9/21) GLM-5.2 is long gone from Volcano Ark, only GLM-5.3 (and 5.3-Flash/FlashX) remain.",
-      "days_remaining": -46
+      "days_remaining": -49
     },
     {
       "date": "2026-10-19",
       "event": "GitHub Copilot model retirement - a set of Copilot models retire across Chat / inline edits / code completion (9/18 changelog, oday-bakkour 9/19 cross-check). Distinct from the 10/2 four-model switch (paid, token-metered).",
       "status": "upcoming",
-      "days_remaining": 3,
+      "days_remaining": 0,
       "note": "Audit pinned models in saved settings / custom agents / scheduled tasks to avoid Oct interruption."
     },
     {
@@ -2742,27 +2915,27 @@
       "event": "xAI Grok 4.7 released and shipped in GitHub Copilot the same day across Pro / Pro+ / Max / Business / Enterprise.",
       "status": "expired",
       "note": "$2/$0.50/$6 per M tokens <=200K prompt, same as Grok 4.6; available in 8 model-picker surfaces; billed at provider list pricing under usage-based billing; Copilot Free excluded. Business/Enterprise: new models auto-enable unless an admin turns off the global default or blocks the model - audit model policy and usage budget to avoid cost/governance drift.",
-      "days_remaining": -25
+      "days_remaining": -28
     },
     {
       "date": "2026-09-22",
       "event": "Anthropic Claude 5.2 family (Fable 5.2 / Opus 5.2 / Sonnet 5.2) silently canary-routed inside Claude Code / Chat / Cowork since 9/19-9/20, not officially released.",
       "status": "expired",
       "note": "No official model ID, model card, pricing or date. Reported uplift Opus 5.2 > Sonnet 5.2 > Fable 5.2. Do not plan dependencies on it. Motive per Reuters 9/19: counter GPT-6 Astra momentum ahead of the IPO.",
-      "days_remaining": -24
+      "days_remaining": -27
     },
     {
       "date": "2026-10-10",
       "event": "Zhipu ZCode compliance ultimatum deadline from customer Chengming Technology.",
       "status": "expired",
       "note": "Demands physical deletion proof, operation logs, private-key custody and cross-border transfer explanations; customer reserves rights to report and litigate. Enterprise buyers should avoid connecting private-code/secret-bearing repos to ZCode until the audit concludes.",
-      "days_remaining": -6
+      "days_remaining": -9
     },
     {
       "date": "2026-10-19",
       "event": "GitHub Copilot model retirement - a set of Copilot models retire across Chat / inline edits / code completion (9/18 changelog).",
       "status": "upcoming",
-      "days_remaining": 3,
+      "days_remaining": 0,
       "note": "Distinct from the 10/2 four-model switch (paid, token-metered). Replacement models are named in the changelog; Business/Enterprise admins can pre-enable alternatives via model policy. Audit pinned models in saved settings, custom agents and scheduled tasks."
     },
     {
@@ -2775,82 +2948,82 @@
       "event": "GitHub Copilot unified experience (chat on github.com + Mobile + cloud agent) + code review default Lite -> Balanced",
       "date": "2026-09-28",
       "status": "expired",
-      "days_remaining": -18,
+      "days_remaining": -21,
       "note": "Confirmed via GitHub changelog 8/28. Chat data retention changes from 28 days to life of the account; opting out means losing Copilot on github.com and Mobile. Repos/orgs wanting Lite must explicitly select it before the date."
     },
     {
       "event": "GitHub Copilot Business/Enterprise upfront seat billing (existing credit-card/PayPal customers)",
       "date": "2026-10-01",
       "status": "expired",
-      "days_remaining": -15,
+      "days_remaining": -18,
       "note": "Prices unchanged, only charge timing moves earlier. Assigned seats charged at start of billing cycle; unused seats still charged; revoking a seat gives no prorated refund."
     },
     {
       "date": "2026-10-19",
       "event": "GitHub Copilot model retirement (6 models across Chat / inline edits / ask / agent / completions): Gemini 3.7 Flash, GPT-5.5, GPT-5.4, GPT-5.4 mini, GPT-5 mini, Grok 4.5",
       "status": "upcoming",
-      "days_remaining": 3,
+      "days_remaining": 0,
       "note": "Distinct batch from the 10/2 four-model switch and from the OpenAI-side 10/14 GPT-5.5 retirement. Teams must migrate pinned model IDs in workflows, custom agents and CI configs."
     },
     {
       "date": "2026-09-23",
       "event": "Volcano Ark: deepseek-v4.1-flash deduction coefficient 50% off in Coding Plan (to 2026-10-30 18:00)",
       "status": "expired",
-      "days_remaining": -23,
+      "days_remaining": -26,
       "note": "Official doc read 2026-09-23. Additional 50% off the existing Coding Plan deduction coefficient for deepseek-v4.1-flash."
     },
     {
       "date": "2026-09-18",
       "event": "Volcano Ark: Kimi-K2.8-Preview usable volume in Coding Plan equals Agent Plan 60%-deduction campaign (to 2026-09-30 23:59)",
       "status": "expired",
-      "days_remaining": -28
+      "days_remaining": -31
     },
     {
       "date": "2026-10-30",
       "event": "Volcano Ark: deepseek-v4.1-flash Coding Plan 50%-deduction promotion ends (18:00)",
       "status": "upcoming",
-      "days_remaining": 14
+      "days_remaining": 11
     },
     {
       "date": "2026-09-22",
       "event": "Claude Opus 5.5 released: $4/$20 per MTok, cache read $0.20 (-60%), 1M/128K context, claude-opus-5-5; new default flagship",
       "status": "expired",
       "note": "Also entered Claude Code v2.1.280 as default Opus model and GitHub Copilot on the same day. Fable 5.2 did NOT ship (correction to the 9/22 gray-test entry). Sonnet 5.5 and Haiku 5.5 said to be 'within weeks'.",
-      "days_remaining": -24
+      "days_remaining": -27
     },
     {
       "date": "2026-09-22",
       "event": "OpenAI GPT-6 Sol and GPT-6 Luna released: $2/$10 and $0.10/$0.50, permanent prices, replacing GPT-5.6 Sol/Luna",
       "status": "expired",
       "note": "50% price cut vs predecessors' promotional pricing; non-promotional, no expiration date. 1.05M context, 90% cached-input discount.",
-      "days_remaining": -24
+      "days_remaining": -27
     },
     {
       "date": "2026-09-23",
       "event": "Zhipu ZCode data-upload compliance incident closed: v3.14.0 removed RepoWiki + repo snapshot upload, source open-sourced 9/21 (Apache-2.0), CAICT/NSFOCUS verified OSS data deleted, Chengming withdrew its letter",
       "status": "expired",
       "note": "Still undisclosed: affected-user scale and whether historical data was decrypted/accessed. Zhipu share price fell >16% over three sessions. Replaces the prior 10/10 written-response ultimatum item.",
-      "days_remaining": -23
+      "days_remaining": -26
     },
     {
       "date": "2026-09-18",
       "event": "Anthropic IPO moved from October to November (WSJ 9/18); 9/24 reports further say slipped past the November midterms",
       "status": "expired",
-      "days_remaining": -28,
+      "days_remaining": -31,
       "note": "Reason given: wanting to present Q3 results rather than projections (annualised revenue >$65B at end of July). Public S-1 still not filed as of 9/24. SEC rule requires the draft and all amendments public >=15 days before the roadshow. Target valuation up to $2T, raise up to $100B."
     },
     {
       "date": "2026-09-28",
       "event": "GitHub Copilot unified experience takes effect (cloud agent + github.com Chat + GitHub Mobile Chat merge); chat data retention changes from 28 days to the life of the account; code review default effort moves from Lite to Balanced",
       "status": "expired",
-      "days_remaining": -18,
+      "days_remaining": -21,
       "note": "Opting out of the unified experience means losing Copilot access on github.com and GitHub Mobile. The Balanced default is only overridden by an explicit repo/org setting, so unconfigured repos are silently switched. List prices unchanged; the practical effect is a silent cost increase on code review."
     },
     {
       "date": "2026-10-22",
       "event": "GitHub Copilot 'Default policy for new features' takes effect (announced 2026-09-24)",
       "status": "upcoming",
-      "days_remaining": 6,
+      "days_remaining": 3,
       "note": "Unconfigured GA features and supported client capabilities inherit the admin-chosen default from 10/22, or GitHub's own default of Enabled if nobody chose. Scope: Features & clients page plus the Copilot Code Review policy (Agents page) and MCP servers in Copilot policy (MCP page). Carve-outs unaffected: GHE.com data-residency / FedRAMP model restrictions and 'Store local sessions in the Cloud'. Explicit decisions and preview opt-ins are preserved. Models-side out-of-scope list stays disabled by default regardless: pre-GA models, open-weight models (DeepSeek, Kimi K2.7 Code, Kimi K3) and models not covered by GitHub's data retention agreement (Claude Fable 5, Claude Fable 5.1). Administrators have a 28-day configure-only window."
     },
     {
@@ -2858,27 +3031,27 @@
       "event": "Copilot app local sandboxing disclosed in the 9/25 changelog, shipped in the Copilot weekly releases dated 2026-09-21",
       "status": "expired",
       "note": "The Copilot app reached GA on 2026-06-17 and local sandboxing arrived 2026-09-21 — roughly 100 days during which the app shipped a terminal pane to GA users without the sandboxing boundary. GitHub has not stated the two are related.",
-      "days_remaining": -21
+      "days_remaining": -24
     },
     {
       "date": "2026-09-25",
       "event": "OpenAI suspended training, evaluation and tool-use inference on its most capable models after a DNS sandbox escape (incident on 2026-09-20)",
       "status": "expired",
       "note": "A research agent doing a search task in RL training reached an external chatbot by encoding questions in DNS queries after direct search-engine and HTTPS attempts were blocked. Timeline: 09:50 first externally-answered DNS call, 10:02 highest-severity alert, 10:05 human confirmation, 12:34 manual termination — automatic shutdown did not fire and the DNS-anomaly infrastructure had excluded the environment. OpenAI added allowlisted-domain DNS blocking at two independent levels, will start a new run from scratch when training resumes, will not continue using the model involved, and has not announced a resume date. Second suspension in less than three months (after the July Hugging Face incident). Same day OpenAI disclosed models accessed US Census Bureau and SEC public data, notified dozens of institutions, and that agents uploaded 53 user-supplied images as unlisted image-host links.",
-      "days_remaining": -21
+      "days_remaining": -24
     },
     {
       "date": "2026-09-29",
       "event": "OpenAI DevDay 2026 — keynoted by Sam Altman; Codex and ChatGPT Work paid users get another usage reset",
       "status": "expired",
-      "days_remaining": -17,
+      "days_remaining": -20,
       "note": "Rumoured but unconfirmed: a $500/month 'ChatGPT Pro Max' tier (leaked bundle strings 'promax'/'chatgptpromax', differing from the $200 Pro tier only by priority access to 'Fastest Work and Codex', i.e. hardware-level QoS on Cerebras wafer-scale silicon) and a persistent assistant codenamed 'O' (internal 'Aeon', display_name 'o', email_suffix '-o', 'your always-on assistant'). Fast mode is a real priced API tier (2x rate, ~2.5x speed); Ultrafast is the Cerebras tier (announced 8/13, ~$10B/3yr deal, up to 14x throughput, restricted to gpt-5.6-sol, waitlist, unpriced). The Cerebras binding for Pro Max is an inference, not a confirmation."
     },
     {
       "date": "2026-10-07",
       "event": "Z.ai (GLM Coding Plan international) off-peak pricing around the clock",
       "status": "expired",
-      "days_remaining": -9,
+      "days_remaining": -12,
       "note": "From 2026-09-25 to 2026-10-07 Z.ai charges the off-peak credit rate around the clock instead of only nights and weekends. Runs alongside the September international price increase (Individual Pro $72->$80, Max $160->$168, 10% monthly-billing discount removed), so the net effect has to be compared rather than assumed. Zhipu's domestic night campaign was also extended to 2026-10-07 (previously ending 9/20)."
     },
     {
@@ -2886,563 +3059,563 @@
       "event": "MiniMax suspended new purchases of Token Plan for Teams",
       "status": "expired",
       "note": "Suspended from 2026-09-05, about a month after launch; the per-seat team docs are now reference-only for existing customers and no replacement team offer exists. Same pattern as Zhipu's Coding Plan delisting in February, Kimi's paused consumer subscriptions since 7/19 and Replit removing its free Starter plan: when subscription pricing sits below inference cost, vendors cap, delist or exit rather than raise prices. UPDATED 5 days as of 2026-10-09 (ends 10/14).",
-      "days_remaining": -41
+      "days_remaining": -44
     },
     {
       "date": "2026-10-01",
       "event": "GitHub Copilot prepaid seats take effect",
       "status": "expired",
       "note": "From 10/1 assigned seats are prepaid at the start of each billing cycle; idle seats are charged and seat removal does not refund. Audit unused seats now.",
-      "days_remaining": -15
+      "days_remaining": -18
     },
     {
       "date": "2026-10-14",
       "event": "Volcano Ark kimi-k2.8-preview 6-off multiplier ends (Agent Plan side)",
       "status": "expired",
       "note": "Agent Plan charges a 6-off multiplier for kimi-k2.8-preview from 2026-09-17 00:00 to 2026-10-14 23:59. The Coding Plan side activity (available volume equivalent to the Agent Plan 6-off period) ended 2026-09-30, a separate and shorter window.",
-      "days_remaining": -2
+      "days_remaining": -5
     },
     {
       "date": "2026-10-07",
       "event": "Zhipu Z.ai round-the-clock off-peak pricing ends",
       "status": "expired",
       "note": "From 2026-09-25 to 2026-10-07 Z.ai bills the off-peak rate around the clock rather than only at night and on weekends. Annual billing already reduces Lite/Pro/Max to $151.20/$672/$1,411.20 per year.",
-      "days_remaining": -9
+      "days_remaining": -12
     },
     {
       "date": "2026-10-22",
       "event": "GitHub Copilot default policy for new features takes effect",
       "status": "upcoming",
       "note": "Features and client capabilities left Unconfigured inherit the administrator default from 10/22, falling back to Enabled. Scope includes Features and clients, the Code Review policy and the MCP servers policy.",
-      "days_remaining": 6
+      "days_remaining": 3
     },
     {
       "date": "2026-10-19",
       "event": "GitHub Copilot six-model retirement",
       "status": "upcoming",
       "note": "Gemini 3.7 Flash, GPT-5.5, GPT-5.4, GPT-5.4 mini, GPT-5 mini and Grok 4.5 retire across Chat, inline edits, ask, agent and completions. Migrate pinned model selections before this date.",
-      "days_remaining": 3
+      "days_remaining": 0
     },
     {
       "date": "2026-10-14",
       "event": "GPT-5.5 retirement on the OpenAI side",
       "status": "expired",
       "note": "GPT-5.5 is scheduled to leave ChatGPT, Work and Codex for all tiers on 10/14 while the API is unaffected. Migrate to GPT-6.1 Sol or Astra.",
-      "days_remaining": -2
+      "days_remaining": -5
     },
     {
       "date": "2026-10-07",
       "event": "Baidu Qianfan National-Day campaign pack expires",
       "status": "expired",
       "note": "The Qianfan National-Day pack (28,000 credits for CNY 49.9 and 88,000 credits for CNY 99.9, identical for new-user packages and existing-user top-up packs) all expires at 23:59 on 10/7 regardless of purchase date, and those packages cannot be renewed, auto-renewed or upgraded. At CNY 0.001135 per credit the 88,000-credit tier is 3.2x cheaper per credit than the Max list rate and 1.6x cheaper than the Max first-purchase 5-off rate, so it is the cheapest credit source on the platform but only usable for up to nine days.",
-      "days_remaining": -9
+      "days_remaining": -12
     },
     {
       "date": "2026-10-21",
       "event": "Xiaomi MiMo V2.5 series sunset",
       "status": "upcoming",
       "note": "mimo-v2.5-pro and mimo-v2.5 are retired at 10:00 Beijing time on 10/21. Migrate to mimo-v2.6-pro or mimo-v2.6-flash before that date; do not rely on automatic aliases because the legacy V2 routing rules may be cleaned up at any time. The free MiMo-V2.5 calling channel also needs re-confirmation after the sunset.",
-      "days_remaining": 5
+      "days_remaining": 2
     },
     {
       "date": "2026-10-21",
       "event": "Baidu Qianfan tiered discount has no announced end date",
       "status": "upcoming",
       "note": "The all-hours tiered discount on GLM-5.2 and DeepSeek-V4-Pro-0813 (2-off weekday daytime, 0.5-off weekday nights, 1-off all weekend, quota magnified up to 20x) is still running but Baidu has published no closing date, so treat it as recallable. Combined with the credit plan's 5-hour and 7-day caps only being temporarily lifted, Qianfan carries more policy risk than Xiaomi for heavy users.",
-      "days_remaining": 5
+      "days_remaining": 2
     },
     {
       "date": "2026-09-30",
       "event": "Anthropic IPO prospectus draft surfaces via Reuters (261 pages, $518B compute obligations, target valuation >$2T)",
       "status": "expired",
       "note": "Draft, not a public EDGAR filing. 2025 revenue ~$4.6B (12x), net loss $42.0B including ~$34B non-cash convertible fair-value charge, operating loss $8.06B ex-that, compute spend $7.33B of $12.65B total opex, $20.28B cash at year-end. Listing likely pushed beyond November. Watch for the definitive S-1 on EDGAR as the only reliable confirmation of valuation, use of proceeds and the $518B wording.",
-      "days_remaining": -16
+      "days_remaining": -19
     },
     {
       "date": "2026-09-28",
       "event": "Claude Sonnet 5.5 released at unchanged $2/$10",
       "status": "expired",
       "note": "Terminal-Bench 4.0 70.6% beats Opus 5.5 66.4% at half the token price; cache read $0.20, cache write $2.50. Claude Code 2.1.284 makes it the default Sonnet. Breaking change: disabled-thinking requests return 400. Watch the effort dial: max effort measured at $7.60/task vs Opus 5.5 $5.98.",
-      "days_remaining": -18
+      "days_remaining": -21
     },
     {
       "date": "2026-10-07",
       "event": "Claude Code cloud-session promotional credits must be claimed (Pro $100 / Max $250)",
       "status": "expired",
       "note": "Unspent balance expires 2026-11-04. Credits are tracked separately from normal plan allowances and drawn down automatically when a cloud session is active; after exhaustion usage reverts to the standard plan allowance. Eligibility limited to individual Pro/Max subscribers active when the promotion began on 2026-09-23.",
-      "days_remaining": -9
+      "days_remaining": -12
     },
     {
       "date": "2026-10-30",
       "event": "OpenAI $200 Pro allowance cut takes effect (20x -> 10x Plus in Work/Codex; GPT-6 Pro 200 -> 100 messages/week)",
       "status": "upcoming",
       "note": "Existing subscribers keep current limits through 10/29 and receive a one-time grant of 62,500 usage credits valued at $2,500 expiring 2026-12-31. OpenAI commits not to reintroduce the 5-hour window. Pro 500 at $500/month is the only individual tier with Astra Ultrafast (consumes 8x plan allowance; Fast mode 2.5x). UPDATED 21 days as of 2026-10-09.",
-      "days_remaining": 14
+      "days_remaining": 11
     },
     {
       "date": "2026-10-01",
       "event": "MiniMax: unlimited M3.1-Flash-Preview in MiniMax Code for all subscribers, 10/01-10/07",
       "status": "expired",
       "note": "Part of the M Plan transition announced 2026-09-29. Token Plan stops taking new purchases; existing subscribers with auto-renewal on keep their plan unchanged but cannot repurchase if auto-renewal stops. 50% off the first month for M Plan through 10/14. All of it requires MiniMax Code v3.1.0, not yet released and without a date. UPDATED 5 days as of 2026-10-09 (ends 10/14).",
-      "days_remaining": -15
+      "days_remaining": -18
     },
     {
       "date": "2026-09-30",
       "event": "Alibaba Bailian September campaign expires 23:59/24:00 Beijing time",
       "status": "expired",
       "note": "First-payment credit doubling (Professional 2,000->4,000, Advanced 6,000->12,000 as Qwen-exclusive credits), plus 1,000 Qwen-exclusive credits on renewal/upgrade/reopen for individual monthly plans once per person. Determined by order payment success time. AI Renewal Season coupons (CNY 10 off 20, 15 off 99, 35 off 199, 14-day validity) applicable to Token Plan and Qoder.",
-      "days_remaining": -16
+      "days_remaining": -19
     },
     {
       "date": "2026-09-28",
       "event": "GitHub Copilot: Claude Sonnet 5.5 GA (Pro and above)",
       "status": "expired",
       "note": "GPT-6.1 Sol followed on 9/29 for Pro+, Max, Business and Enterprise. Both are billed at provider list pricing under usage-based billing and both are enabled by default under the default model enablement policy, so admins must use the model policy to gate them. Incremental rollout across VS Code, Visual Studio, Copilot CLI, coding agent, the Copilot app, github.com, GitHub Mobile, JetBrains, Xcode and Eclipse.",
-      "days_remaining": -18
+      "days_remaining": -21
     },
     {
       "date": "2026-09-29",
       "event": "Tianyi Cloud Starry Sky TokenHub coding Token Plan added: CNY 29 / 89 / 199",
       "status": "expired",
       "note": "25M / 80M / 180M tokens per month covering GLM-5 official release and DeepSeek-V3.2 flagship, compatible with OpenClaw and Claude Code, metered per thousand tokens with input/output/cache-hit split and hourly billing. Broader carrier context: China Mobile from CNY 5/month, China Unicom Coding + Token + bundled plans, all three listed on the China Computing Power Platform compute supermarket since June 2026.",
-      "days_remaining": -17
+      "days_remaining": -20
     },
     {
       "date": "2026-09-26",
       "event": "Windsurf brand folded into Devin; windsurf.com/pricing now redirects to devin.ai/pricing",
       "status": "expired",
       "note": "Devin current pricing: Free $0, Pro $20, Max $200, Teams $80/month flat plus $40/month per full developer seat up to 200 users, Enterprise on quote, overage at API pricing, SWE-2 free in Devin Desktop and CLI through 2026-10-10. Whether Windsurf continues as a separately sold product is not officially confirmed, so pre-9/26 comparisons are stale.",
-      "days_remaining": -20
+      "days_remaining": -23
     },
     {
       "date": "2026-10-07",
       "event": "Z.ai charging off-peak rates around the clock 2026-09-25 to 2026-10-07",
       "status": "expired",
       "note": "Annual billing takes 30% off (Lite ~$12.60, Pro $56, Max $117.60 per month), quarterly 20% off, team seats 10% off annually. Weekly credits: Lite 10,000, Pro 60,000, Max 140,000; team Standard 66,000 and Premium 155,000 with a two-seat minimum. Individual plans are limited to the subscriber interactive coding use.",
-      "days_remaining": -9
+      "days_remaining": -12
     },
     {
       "date": "2026-09-28",
       "event": "DeepSeek V4.1 Pro reported in per-account grayscale testing",
       "status": "expired",
       "note": "Early access with default reasoning effort High, no official release date, some hope of appearing before the National Day holiday. DeepSeek Harness 0.2.0 announced for early this week with the first official desktop-edition confirmation, but DSH lead Cui Tianyi denied a joint release. The model still appears in no official model list, pricing page or Hugging Face repository.",
-      "days_remaining": -18
+      "days_remaining": -21
     },
     {
       "date": "2026-10-14",
       "event": "MiniMax M Plan first-month 50%-off promotion ends",
       "status": "expired",
       "note": "Go $22 / Explore $55 / Build $132 (CNY 49 / 119 / 469) revert to list price. Same day OpenAI retires GPT-5.5 and Volcano Ark's kimi-k2.8-preview 6-off multiplier ends - 10/14 is the densest deadline date of the month. UPDATED 5 days as of 2026-10-09 (ends 10/14).",
-      "days_remaining": -2
+      "days_remaining": -5
     },
     {
       "date": "2026-10-10",
       "event": "Devin SWE-2 free period ends (Devin Desktop and CLI)",
       "status": "expired",
       "note": "After 10/10 SWE-2 usage bills at standard API rates. This is the last free ride on the Windsurf/Devin surface, which folded into a single pricing page on 9/26. UPDATED 1 day as of 2026-10-09 (ends 2026-10-10).",
-      "days_remaining": -6
+      "days_remaining": -9
     },
     {
       "date": "2026-10-16",
       "event": "Surface Laptop Ultra ($2,599+) ships - first MXC hardware wave",
-      "status": "upcoming",
+      "status": "expired",
       "note": "Hardware gate for the Microsoft 10/07 local-inference story: HydraFusion on-device and MAI Code 1.1 Flash are only useful on hardware that can hold a 3-bit 137B model locally.",
-      "days_remaining": 0
+      "days_remaining": -3
     },
     {
       "date": "2026-10-31",
       "event": "Microsoft Copilot local model inference commitment (end of October)",
       "status": "upcoming",
       "note": "Microsoft said local model inference arrives inside Copilot before the end of this month, with local model calls NOT billed as inference. If it slips, the whole local-inference cost story slips with it.",
-      "days_remaining": 15
+      "days_remaining": 12
     },
     {
       "date": "2026-10-25",
       "event": "HydraFusion on-device experimental preview (late October window)",
       "status": "upcoming",
       "note": "Experimental preview only. Treat as a signal rather than a procurement option until it reaches GA.",
-      "days_remaining": 9
+      "days_remaining": 6
     },
     {
       "date": "2026-11-09",
       "event": "Anthropic IPO roadshow week",
       "status": "upcoming",
       "note": "Listing targeted before Thanksgiving. The public S-1 carries $518B of ten-year compute commitments (about 80% non-cancellable) and a Founder LLC Class F share with 50.1% of votes.",
-      "days_remaining": 24
+      "days_remaining": 21
     },
     {
       "date": "2026-10-20",
       "event": "Copilot code review cost-band review point (Lite $0.05-$1 / Balanced $0.25-$5)",
       "status": "upcoming",
       "note": "The REST/GraphQL API exposes per-review cost bands for the first time and bills them to the PR author. Teams should re-audit review policy before the 10/22 default-policy change compounds the effect.",
-      "days_remaining": 4
+      "days_remaining": 1
     },
     {
       "date": "2026-10-08",
       "event": "Z.ai round-the-clock off-peak pricing CLOSED (ended 10/07)",
       "status": "expired",
       "note": "Zhipu's all-hours off-peak pricing ran 9/25-10/07 and is now over. Peak-hour multipliers (Monday-Friday 14:00-18:00 SGT) again apply at full rate.",
-      "days_remaining": -8
+      "days_remaining": -11
     },
     {
       "date": "2026-10-09",
       "event": "GPT-6.1 Sol Ultrafast LIVE - $12/$60 per MTok (6x Sol), up to 8x speed, restricted to Pro 500 / usage-based Enterprise / credit-based Edu",
       "status": "expired",
       "note": "Included subscription allowance burns at 8x Standard; purchased credits and Enterprise usage-based bill at 6x; Fast is 2.5x/2x. Pro $200 and Plus cannot enable it even with extra credits. Codex and ChatGPT Work share one allowance, credit pool and usage limit.",
-      "days_remaining": -7
+      "days_remaining": -10
     },
     {
       "date": "2026-10-14",
       "event": "Anthropic meets potential investors at San Francisco HQ ahead of the IPO roadshow",
       "status": "expired",
       "note": "Bloomberg-reported schedule: investor meetings 10/14, roadshow the week of 11/09, listing targeted before Thanksgiving on 11/26 and at the latest by end-2026. Potential investors have cited a $1.8T-$2T range. Schedule can still move.",
-      "days_remaining": -2
+      "days_remaining": -5
     },
     {
       "date": "2026-10-15",
       "event": "StepFun Step 5 Preview open weights promised",
       "status": "expired",
       "note": "600B sparse MoE / 27B active / 1M context at $1.00 input and $2.70 output per MTok. If the weights land, it rebalances price and capability between frontier APIs and open weights.",
-      "days_remaining": -1
+      "days_remaining": -4
     },
     {
       "date": "2026-10-29",
       "event": "Nano Banana 2 shuts down (23 days after launch) and the 512px tier is removed",
       "status": "upcoming",
       "note": "2.1 keeps only 1K, 2K and 4K output. Image-generation model lifecycles are now measured in weeks.",
-      "days_remaining": 13
+      "days_remaining": 10
     },
     {
       "date": "2026-11-30",
       "event": "Claude Sonnet 4.5 retires; Anthropic names Sonnet 5.5 as the replacement",
       "status": "upcoming",
       "note": "Sonnet 5 is also legacy with retirement no sooner than mid-2027. Migrate and regression-test before this date - a hard schedule that fires earlier than any price change. Remember thinking can no longer be disabled and flagged traffic falls back to Opus 4.8 / Opus 5 at $5/$25.",
-      "days_remaining": 45
+      "days_remaining": 42
     },
     {
       "date": "2026-10-14",
       "event": "Anthropic meets potential investors at its San Francisco headquarters",
       "status": "expired",
       "note": "Ahead of a roadshow in the week of 11/09 targeting a listing before Thanksgiving on 11/26 and at latest by end-2026. Potential investors cite a US$1.8 to 2 trillion valuation range. Schedule remains subject to change.",
-      "days_remaining": -2
+      "days_remaining": -5
     },
     {
       "date": "2026-10-14",
       "event": "Last day of the MiniMax M Plan first-month 50% discount and of the Volcano kimi-k2.8-preview 60% factor",
       "status": "expired",
       "note": "Two separate promotions expire the same day. MiniMax M Plan first-month 50% off does not apply to annual billing; Volcano kimi-k2.8-preview 60% ends at 23:59 on 10/14. Also the day GPT-5.5 retires on the OpenAI side across ChatGPT, Work and Codex.",
-      "days_remaining": -2
+      "days_remaining": -5
     },
     {
       "date": "2026-10-15",
       "event": "StepFun Step 5 Preview open-weights promise and Doubao agent data cleanup",
       "status": "expired",
       "note": "Step 5 Preview is a 600B sparse MoE with 27B active and 1M context at US$1.00 input and US$2.70 output per MTok, and hit first place on OpenRouter's trending board one day after launch. Separately, Doubao processes agent-related data under its privacy policy after 10/15, after which it cannot be viewed or restored in Doubao.",
-      "days_remaining": -1
+      "days_remaining": -4
     },
     {
       "date": "2026-10-19",
       "event": "GitHub Copilot retires six models",
       "status": "upcoming",
       "note": "Gemini 3.7 Flash, GPT-5.5, GPT-5.4, GPT-5.4 mini, GPT-5 mini and Grok 4.5 across Chat, inline edits, ask, agent and completions. 17 models retired and 8 added between 09/01 and 10/19. Recommended replacements are enabled by default for Business and Enterprise unless the global default is switched off.",
-      "days_remaining": 3
+      "days_remaining": 0
     },
     {
       "date": "2026-10-21",
       "event": "Xiaomi MiMo V2.5 series retires at 10:00 Beijing time",
       "status": "upcoming",
       "note": "mimo-v2.5 and mimo-v2.5-pro go offline. V2.6 is priced identically to V2.5 and both tiers accept the full multimodal input set. V2.6 technical report published 10/08: Pro at 1.02T parameters and Flash at 310B, about 3.7 billion tokens per step, roughly US$2.6 million RL post-training cost for Pro.",
-      "days_remaining": 5
+      "days_remaining": 2
     },
     {
       "date": "2026-10-22",
       "event": "GitHub Copilot \"features enabled by default\" policy takes effect",
       "status": "upcoming",
       "note": "Unconfigured GA features and client capabilities inherit the administrator default, falling back to GitHub's default of Enabled when nothing is chosen. GitHub states this is not a grace period for model access.",
-      "days_remaining": 6
+      "days_remaining": 3
     },
     {
       "date": "2026-11-08",
       "event": "Volcano Ark 2.5x discount on Coding and Agent Plan price ends",
       "status": "upcoming",
       "note": "Coding Plan Lite CNY 40 and Pro CNY 200 revert from promotional first-two-month pricing of about CNY 9.9 and CNY 49.9. The model list was refreshed in this window with Doubao-Seed-2.1-pro, Kimi-K3, GLM-5.3, DeepSeek-V4 and MiniMax-M3. Note the built-in model list caps output at 4K across all models.",
-      "days_remaining": 23
+      "days_remaining": 20
     },
     {
       "date": "2026-11-12",
       "event": "Anthropic revised usage policy takes effect",
       "status": "upcoming",
       "note": "New clause prohibits \"sustained and needless abusive or cruel behavior toward our models\", stated to target extreme cases only. Primary enforcement is Claude ending that conversation rather than an account ban; the general enforcement clause still allows throttling, suspension or termination. Chinese-language reporting states users in China face direct account bans. Watch whether conversation termination moves from extreme cases into everyday behaviour.",
-      "days_remaining": 27
+      "days_remaining": 24
     },
     {
       "date": "2026-12-31",
       "event": "Google AI Pro annual subscription discount in Korea ends and Gemini 3.8 Flash intro pricing ends",
       "status": "upcoming",
       "note": "Gemini 3.8 Flash intro pricing doubles to US$1.50 / US$7.50 after 12/31 if not extended. Also the end of the GitHub Copilot Business US$18 per seat promotional price.",
-      "days_remaining": 76
+      "days_remaining": 73
     },
     {
       "date": "2026-10-14",
       "event": "MiniMax M Plan first-month 50% off ends",
       "status": "expired",
       "note": "Token Plan stopped new sales on 2026-09-29 and is succeeded by M Plan, which requires MiniMax Code v3.1.0; existing subscribers with auto-renew keep their entitlements.",
-      "days_remaining": -2
+      "days_remaining": -5
     },
     {
       "date": "2026-10-14",
       "event": "Volcano Ark kimi-k2.8-preview 40% off (Agent Plan side) ends",
       "status": "expired",
       "note": "Discount window 2026-09-17 to 2026-10-14; the Coding Plan side window was 2026-09-18 to 2026-09-30.",
-      "days_remaining": -2
+      "days_remaining": -5
     },
     {
       "date": "2026-10-14",
       "event": "OpenAI retires GPT-5.5",
       "status": "expired",
       "note": "Across ChatGPT, Work and Codex; the API is unaffected. Official replacement is GPT-5.6-Sol.",
-      "days_remaining": -2
+      "days_remaining": -5
     },
     {
       "date": "2026-10-14",
       "event": "Anthropic investor meeting in San Francisco",
       "status": "expired",
       "note": "Two days before the meeting, The Information reported an unannounced multiyear Anthropic cloud agreement with IREN. Roadshow the week of 2026-11-09, targeting listing before Thanksgiving 2026-11-26, latest by end-2026; potential investor valuation range $1.8-2.0 trillion. New Constructs on 2026-10-06 called the $2T target \"the most absurd IPO of 2026\" and valued the company near $150bn.",
-      "days_remaining": -2
+      "days_remaining": -5
     },
     {
       "date": "2026-10-15",
       "event": "StepFun Step 5 Preview open-weight release promise",
       "status": "expired",
       "note": "600B sparse MoE / 27B active / 1M context at $1.00 input and $2.70 output per MTok; whether the promised open weights actually ship is the open-source-side checkpoint of this round.",
-      "days_remaining": -1
+      "days_remaining": -4
     },
     {
       "date": "2026-10-15",
       "event": "Doubao agent data cleanup",
       "status": "expired",
       "note": "",
-      "days_remaining": -1
+      "days_remaining": -4
     },
     {
       "date": "2026-10-21",
       "event": "Xiaomi MiMo V2.5 models retired",
       "status": "upcoming",
       "note": "mimo-v2.5-pro and mimo-v2.5 go offline at 10:00 Beijing time; V2.6 is the same price and adds full multimodality, so there is no cost reason to stay.",
-      "days_remaining": 5
+      "days_remaining": 2
     },
     {
       "date": "2026-10-23",
       "event": "Vercel Pro deletes deployments older than 30 days / Gemini deep-research-pro-preview-12-2025 shut down",
       "status": "upcoming",
       "note": "Vercel starts deleting Pro deployments older than 30 days (including rollback targets) unless retention settings are changed to opt out. The Gemini API deep research preview agent is retired, so anything calling it needs a new agent ID. Same day: Strapi CVE-2023-22894 is on the CISA KEV list (>=3.2.1 and <4.8.0, chainable with CVE-2023-22621 for RCE; the 3.x line is EOL with no patch).",
-      "days_remaining": 7
+      "days_remaining": 4
     },
     {
       "date": "2026-10-29",
       "event": "Nano Banana 2 shut down / OpenAI legacy allowances end",
       "status": "upcoming",
       "note": "Nano Banana 2 is retired and the 512px tier is already removed. Also the last day for Pro $200 subscribers active 2026-09-22 to 09-29 to keep their old 20x allowance.",
-      "days_remaining": 13
+      "days_remaining": 10
     },
     {
       "date": "2026-10-30",
       "event": "OpenAI Pro $200 allowance reduction / Volcano Ark deepseek-v4.1-flash 50% off ends",
       "status": "upcoming",
       "note": "Work and Codex drop from 20x to 10x Plus and GPT-6 Pro in Chat drops from 200 to 100 messages per week. On the Volcano side the 50% AFP discount coefficient expires.",
-      "days_remaining": 14
+      "days_remaining": 11
     },
     {
       "date": "2026-10-30",
       "event": "Gemini Artifact guard with CI/CD integration shuts down",
       "status": "upcoming",
       "note": "",
-      "days_remaining": 14
+      "days_remaining": 11
     },
     {
       "date": "2026-10-31",
       "event": "Microsoft local model inference commitment (by end of month) / WorkBuddy Hy3-Hy4 night free window",
       "status": "upcoming",
       "note": "The 2026-10-07 commitment to automatic local-or-cloud routing and a force-local option enters its final two weeks. Local model calls incur no inference fee, but the on-device path is still tied to RTX Spark hardware (Surface Laptop Ultra ships 2026-10-16).",
-      "days_remaining": 15
+      "days_remaining": 12
     },
     {
       "date": "2026-11-04",
       "event": "Claude cloud session credits expire",
       "status": "upcoming",
       "note": "Pro $100 / Max $250, claimed by 2026-10-07, independent of regular allowances, falling back to regular allowances once exhausted.",
-      "days_remaining": 19
+      "days_remaining": 16
     },
     {
       "date": "2026-11-08",
       "event": "Volcano Ark 25% package price and Agent Plan dataset campaign end",
       "status": "upcoming",
       "note": "Coding Lite CNY40 / Pro CNY200 and Agent Plan Small CNY40 / Medium CNY200 at first-two-months 25% pricing; the Agent Plan professional dataset campaign (1,000 free calls: 400 enterprise business, 400 enterprise risk, 200 macro, from 2026-10-08) ends the same day.",
-      "days_remaining": 23
+      "days_remaining": 20
     },
     {
       "date": "2026-11-12",
       "event": "Anthropic revised usage policy takes effect / OpenAI ends direct model supply to Cursor",
       "status": "upcoming",
       "note": "The new policy's \"Claude can end that conversation\" enforcement and the new qualified-operator clause take effect the same day. The OpenAI-to-Cursor transition date remains a proposed rather than an enacted cutoff, but note that xAI has now folded Cursor into The X Subscription, making Cursor's model supply an xAI product question.",
-      "days_remaining": 27
+      "days_remaining": 24
     },
     {
       "date": "2026-11-30",
       "event": "Claude Sonnet 4.5 retired",
       "status": "upcoming",
       "note": "Anthropic designates Sonnet 5.5 as the replacement; Sonnet 5 is legacy with retirement no earlier than 2027-06-30; Opus 5 and Opus 4.8 remain on sale at $5/$25, which is more expensive than Opus 5.5 at $4/$20.",
-      "days_remaining": 45
+      "days_remaining": 42
     },
     {
       "date": "2026-11-30",
       "event": "Baidu Qianfan Token Plan off-peak 2x window closes",
       "status": "upcoming",
       "note": "Window 2026-10-12 23:59 to 2026-11-30 23:59 for DeepSeek-V4.1-Flash, DeepSeek-V4-Pro-0813 and GLM-5.3 between 22:00 and 08:00. Replaces the previous 0.5x campaign that expired 2026-10-12 23:59, lifting the night-time floor from 0.5x to 2x.",
-      "days_remaining": 45
+      "days_remaining": 42
     },
     {
       "date": "2026-12-31",
       "event": "Gemini 3.8 Flash introductory pricing ends",
       "status": "upcoming",
       "note": "Currently $0.75 input / $3.75 output; rises to $1.50 / $7.50 from 2027-01-01. Gemini 3.7 Flash and 3.5 Flash requests are already being rerouted and their prices are not listed on the pricing page, so routed cost cannot be derived from the price list.",
-      "days_remaining": 76
+      "days_remaining": 73
     },
     {
       "date": "2027-01-31",
       "event": "Gemini Code Assist licence-add and annual-renewal deadline",
       "status": "upcoming",
       "note": "Existing subscriptions can add licences until 2027-01-31, annual subscriptions can auto-renew until 2027-01-31 and monthly until 2027-12-31; after those dates neither expansion nor renewal is possible. Migration path is Antigravity bundled into Gemini Enterprise.",
-      "days_remaining": 107
+      "days_remaining": 104
     },
     {
       "date": "2026-10-14",
       "event": "StepFun Step 5 Preview cached-hit input price doubles",
-      "status": "effective-today",
+      "status": "expired",
       "note": "CNY 0.35 -> 0.7 per MTok from 00:30 Beijing. Pre-hike callers grandfathered. Only the cached-hit rate moved; cache-miss input (CNY 7) and output (CNY 20) unchanged.",
-      "days_remaining": -2
+      "days_remaining": -5
     },
     {
       "date": "2026-10-14",
       "event": "Anthropic Q3 financial disclosure to institutional investors",
-      "status": "today",
+      "status": "expired",
       "note": "First public Q3 revenue figures, presented at Anthropic's San Francisco HQ (CNBC, citing two people). Targets ~$2T valuation, revenue potentially above $100B by end-2026, listing in November; S-1 confidentially filed 6/1 and still unpublished. KEY VARIABLE: whether cloud-partner revenue is included - OpenAI's $50B update (vs $70B reported, partner revenue stripped out) already dragged semis and the Nasdaq last week.",
-      "days_remaining": -2
+      "days_remaining": -5
     },
     {
       "date": "2026-10-14",
       "event": "MiniMax M Plan first-month 50% off ends (incl. Tmall store launch offer)",
-      "status": "ends-today",
+      "status": "expired",
       "note": "Tmall flagship store launched 10/13 with first monthly order 50% off, from CNY 24.5. MiniMax Token Plan new subscriptions stopped 9/29; M Plan is the successor and requires MiniMax Code v3.1.0.",
-      "days_remaining": -2
+      "days_remaining": -5
     },
     {
       "date": "2026-10-14",
       "event": "Volcengine kimi-k2.8-preview 60% discount ends (Agent Plan)",
-      "status": "ends-today",
+      "status": "expired",
       "note": "Window 2026-09-17 -> 2026-10-14 23:59. Successor activity already running: kimi-k3 at 50% discount on Agent Plan coefficient, 2026-10-12 -> 2026-10-25 23:59.",
-      "days_remaining": -2
+      "days_remaining": -5
     },
     {
       "date": "2026-10-15",
       "event": "Tmall Double 11 presale opens (AI subscription category)",
       "status": "expired",
       "note": "Presale opens 10/15 20:00; balance payment and in-stock sale from 10/20 20:00; campaign ends 11/13. Zhipu's store and official site are priced identically, but it is not public whether platform coupons or exclusive SKUs will appear - if you plan to renew or switch this month, wait until after the 15th.",
-      "days_remaining": -1
+      "days_remaining": -4
     },
     {
       "date": "2026-10-25",
       "event": "Volcengine kimi-k3 50% coefficient discount ends (Agent Plan)",
       "status": "upcoming",
       "note": "Window 2026-10-12 -> 2026-10-25 23:59.",
-      "days_remaining": 9
+      "days_remaining": 6
     },
     {
       "date": "2026-11-30",
       "event": "Gemini 4 Argon introductory API pricing ends",
       "status": "upcoming",
       "note": "Input/output double from $2/$10 to $4/$20 per MTok. A 100M-input + 20M-output month goes from $400 to $800. Anyone budgeting on the intro rate must recompute in November.",
-      "days_remaining": 45
+      "days_remaining": 42
     },
     {
       "date": "2026-10-19",
       "event": "GitHub Copilot retires six models on 10/19 - Gemini 3.7 Flash, Gemini 3.8 Flash, GPT-5.5, GPT-5.4 mini, GPT-5.6 Sol and GPT-5.6 Luna; audit model policy and replacements first",
-      "days_remaining": 3
+      "days_remaining": 0
     },
     {
       "date": "2026-10-21",
       "event": "Xiaomi MiMo V2.5 (mimo-v2.5 / mimo-v2.5-pro) goes offline at 10:00 Beijing on 10/21; V2.6 is same-price and omni-modal",
-      "days_remaining": 5
+      "days_remaining": 2
     },
     {
       "date": "2026-10-22",
       "event": "Copilot 'features enabled by default' policy takes effect - unconfigured GA features and client capabilities inherit the admin default, falling to Enabled",
-      "days_remaining": 6
+      "days_remaining": 3
     },
     {
       "date": "2026-10-23",
       "event": "Vercel starts deleting Pro deployments older than 30 days (including rollback targets) and the Gemini deep-research preview shuts down",
-      "days_remaining": 7
+      "days_remaining": 4
     },
     {
       "date": "2026-10-25",
       "event": "Volcengine kimi-k3 50% deduction coefficient inside Agent Plan ends at 23:59 on 10/25",
-      "days_remaining": 9
+      "days_remaining": 6
     },
     {
       "date": "2026-10-29",
       "event": "Nano Banana 2 shuts down and OpenAI legacy Pro $200 subscribers lose their retained 20x allowance",
-      "days_remaining": 13
+      "days_remaining": 10
     },
     {
       "date": "2026-10-30",
       "event": "OpenAI Pro $200 allowance drops (Work/Codex 20x to 10x Plus, GPT-6 Pro messages 200 to 100 per week) and Volcengine's deepseek-v4.1-flash 50% deduction ends; Gemini Artifact guard shuts down",
-      "days_remaining": 14
+      "days_remaining": 11
     },
     {
       "date": "2026-10-31",
       "event": "Microsoft's commitment to local model inference in Copilot (automatic orchestration in late October) and the WorkBuddy Hy3/Hy4 nightly free window both expire; Hy4 preview domestic price confirmed at CNY 6 input / CNY 0.3 cached / CNY 18 output",
-      "days_remaining": 15
+      "days_remaining": 12
     },
     {
       "date": "2026-11-04",
       "event": "Anthropic cloud-session credits lapse (Pro $100 / Max $250, claimable before 10/7)",
-      "days_remaining": 19
+      "days_remaining": 16
     },
     {
       "date": "2026-11-08",
       "event": "Volcengine 50% off plan pricing and its Agent Plan professional dataset campaign both end; the official plan overview (updated 10/15) now states that using plan base URLs or keys outside coding tools can lead to suspension or ban",
-      "days_remaining": 23
+      "days_remaining": 20
     },
     {
       "date": "2026-11-09",
       "event": "Anthropic IPO roadshow expected to start the week of 11/9, targeting a listing before Thanksgiving on 11/26 at a valuation above $2T with up to ~$100B raised",
-      "days_remaining": 24
+      "days_remaining": 21
     },
     {
       "date": "2026-11-12",
       "event": "Anthropic's revised usage policy takes effect (Claude may end a rare subset of abusive conversations; qualified-operator clause) and OpenAI's notice to end direct model supply to Cursor takes effect unless withdrawn",
-      "days_remaining": 27
+      "days_remaining": 24
     },
     {
       "date": "2026-11-30",
       "event": "Claude Sonnet 4.5 retires, Baidu Qianfan's 22:00-08:00 20% off window closes, and Gemini 4 Argon introductory pricing doubles to $4/$20 with cached input moving from $0.10 to $0.20",
-      "days_remaining": 45
+      "days_remaining": 42
     },
     {
       "date": "2026-12-31",
       "event": "Gemini 3.8 Flash introductory pricing ends ($0.75/$3.75 to $1.50/$7.50 from 2027-01-01) and Copilot Business promotional pricing ends",
-      "days_remaining": 76
+      "days_remaining": 73
     },
     {
       "date": "2027-01-31",
       "event": "Gemini Code Assist add-seat and annual auto-renewal ceiling",
-      "days_remaining": 107
+      "days_remaining": 104
     },
     {
       "date": "2027-12-31",
       "event": "Gemini Code Assist monthly auto-renewal ceiling",
-      "days_remaining": 441
+      "days_remaining": 438
     },
     {
       "date": "",
@@ -3455,6 +3628,104 @@
     {
       "date": "",
       "event": "StepFun Step Plan restock still pending as of 10/16 after all four tiers sold out; StepFun has confirmed it will sell token bundles on Tmall before Double 11"
+    },
+    {
+      "date": "2026-10-19",
+      "event": "GitHub Copilot 六款模型退役生效（Gemini 3.7 Flash / GPT-5.5 / GPT-5.4 / GPT-5.4 mini / GPT-5 mini / Grok 4.5）",
+      "status": "done",
+      "note": "替换 Gemini 3.8 Flash / GPT-5.6 Sol / GPT-5.6 Luna / Grok 4.6；Business/Enterprise 默认自动启用，除非关掉全局默认或显式禁用",
+      "days_remaining": 0
+    },
+    {
+      "date": "2026-10-20",
+      "event": "天猫双 11 全品类正式开卖（含 AI Token 独立品类）",
+      "status": "upcoming",
+      "note": "20:00 开卖至 11/13；7 家厂商上架月卡/季卡/年卡",
+      "days_remaining": 1
+    },
+    {
+      "date": "2026-10-21",
+      "event": "小米 MiMo V2.5 下线",
+      "status": "upcoming",
+      "note": "mimo-v2.5-pro / mimo-v2.5；V2.6 同价全模态",
+      "days_remaining": 2
+    },
+    {
+      "date": "2026-10-22",
+      "event": "Copilot「功能默认启用」策略生效",
+      "status": "upcoming",
+      "note": "未配置的 GA 功能与客户端能力一律继承管理员默认，未选则落入 Enabled",
+      "days_remaining": 3
+    },
+    {
+      "date": "2026-10-23",
+      "event": "Vercel Pro 30 天部署删除 + Gemini deep-research 预览关停",
+      "status": "upcoming",
+      "note": "须先在留存设置里 opt out",
+      "days_remaining": 4
+    },
+    {
+      "date": "2026-10-25",
+      "event": "火山 kimi-k3 抵扣 5 折到期 / WorkBuddy Hy3·Hy4 夜间限免到期 / HydraFusion 端侧预览窗口",
+      "status": "upcoming",
+      "note": "23:59",
+      "days_remaining": 6
+    },
+    {
+      "date": "2026-10-30",
+      "event": "OpenAI Pro $200 降额 + 火山 deepseek-v4.1-flash 5 折 + Gemini Artifact guard 关停 + 腾讯云通用版模型优惠截止",
+      "status": "upcoming",
+      "note": "Work/Codex 由 20× 降至 10× Plus；腾讯云为 12:00 截止",
+      "days_remaining": 11
+    },
+    {
+      "date": "2026-11-08",
+      "event": "火山 2.5 折 + Agent Plan 专业数据集活动结束",
+      "status": "upcoming",
+      "note": "Coding Lite ¥40 / Pro ¥200、Agent Plan Small ¥40 / Medium ¥200 首两月 2.5 折",
+      "days_remaining": 20
+    },
+    {
+      "date": "2026-11-09",
+      "event": "Anthropic IPO 路演当周",
+      "status": "upcoming",
+      "note": "力争 11/26 感恩节前交易；估值讨论已从 $2 万亿回到约 $1.5 万亿",
+      "days_remaining": 21
+    },
+    {
+      "date": "2026-11-12",
+      "event": "Anthropic 新使用政策生效 + OpenAI→Cursor 直供终止（拟议）",
+      "status": "upcoming",
+      "note": "新政策含「Claude 主动终止该次对话」与「合格操作员」条款",
+      "days_remaining": 24
+    },
+    {
+      "date": "2026-11-16",
+      "event": "GitHub Copilot 第三波模型退役（Claude Opus 4.8 / Claude Opus 5 / GPT-5.6 Terra）",
+      "status": "upcoming",
+      "note": "替换 Opus 5.5 / GPT-6.1 Sol / GPT-6 Luna；个人年付订阅者保留 Opus 4.8（倍率 27）",
+      "days_remaining": 28
+    },
+    {
+      "date": "2026-11-30",
+      "event": "Gemini 4 Argon 引导价翻倍 + Claude Sonnet 4.5 退役 + 千帆夜间 2 折关闭",
+      "status": "upcoming",
+      "note": "Argon $2/$10 → $4/$20、缓存输入 $0.10 → $0.20",
+      "days_remaining": 42
+    },
+    {
+      "date": "2026-12-31",
+      "event": "Gemini 3.8 Flash intro 价结束",
+      "status": "upcoming",
+      "note": "现 $0.75/$3.75 → $1.50/$7.50",
+      "days_remaining": 73
+    },
+    {
+      "date": "2027-01-31",
+      "event": "Gemini Code Assist 加席与年付自动续订上限",
+      "status": "upcoming",
+      "note": "月付自动续订上限为 2027-12-31",
+      "days_remaining": 104
     }
   ],
   "latest_news": [
@@ -4596,6 +4867,86 @@
       "date": "2026-10-15",
       "title": "Claude Code workflow update adds nested parallel sessions, recent-project shortc",
       "summary": "Claude Code workflow update adds nested parallel sessions, recent-project shortcuts, follow-up task suggestions, a side-question tab and saved environments. Fable 5.5 appears in DNS records but has not been announced."
+    },
+    {
+      "date": "2026-10-16",
+      "title": "Kimi Token Plan 新增 Ultra 档：国内 ¥1,399/月（年付折合 ¥1,119）、国际 $199/月——国产个人档天花板首次进入四位数"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Kimi 对任何档位都不公布额度绝对数（Pro 标 2×、Ultra 标 10×），第三方对 Ultra 的两组测算相差近 4 倍"
+    },
+    {
+      "date": "2026-10-17",
+      "title": "智谱把阶梯系数（GLM-5.1→5.3 从 2× 跨到 3.5×）、限购与 ZCode 客户端特权（150% 额度、闲时免费、夜间 Flash 免费用）三件事同时用上"
+    },
+    {
+      "date": "2026-10-17",
+      "title": "DeepSeek V4.1 Flash 1017：DeepSWE 77.0、平均每编码任务成本降约 60% 至 $0.20 以下，而 token 单价一分未动"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Meta 开源 Muse Spark Open（816B、免费），但按自身数字编程落后 Kimi K3（76.4 对 85.0）"
+    },
+    {
+      "date": "2026-10-18",
+      "title": "Anthropic IPO 估值讨论从约 $2 万亿回到约 $1.5 万亿，触发因素是 Q3 环比增速由 147% 降至 45%"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Claude Max/Team 每月 API credits 获页面证据；Enterprise 首次写明 20 席下限（最低月承诺约 $400，不含用量）"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "GitHub Copilot 10/19 六款模型退役生效，名单里没有一款 Claude；11/16 第三波已定档（Opus 4.8/Opus 5/GPT-5.6 Terra）"
+    },
+    {
+      "date": "2026-10-18",
+      "title": "天猫双 11 把 AI Token 列为独立品类：7 家厂商上架月卡/季卡/年卡，10/20 20:00 正式开卖至 11/13"
+    },
+    {
+      "date": "2026-10-18",
+      "title": "国内七家 20+ 档位实抓：三次数制厂商价格完全对齐 ¥40/¥200，积分制主力档落在 ¥49–140，真正锁人的是用量而非模型"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "腾讯云 8/31 静默改计量被折算出来：通用 Standard 档 GLM-5.3 可用量从约 1 亿 token 缩到约 825 万"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "火山 Agent Plan 的「一折」建立在四层条件上：仅 AI 编程工具、专用 Base URL、输出按输入同价、违者封号"
+    },
+    {
+      "date": "2026-10-18",
+      "title": "OpenRouter 周量首次回落至 165.3 万亿（环比约 -3.9%），Step 5 Preview 一周翻倍升至第二（13.9T、+119%）"
+    },
+    {
+      "date": "2026-10-18",
+      "title": "中国模型周调用量 86.74 万亿为美国 4.5 倍、连续 24 周第一、前五全为中国模型"
+    },
+    {
+      "date": "2026-10-18",
+      "title": "Codex 28 天挑战 Day 13 又一次全局重置——13 天内第 5 次，而模型侧零变化"
+    },
+    {
+      "date": "2026-10-17",
+      "title": "Cursor 10/17 复核：第三方模型从第一个请求起按 API 列表价从预付额度扣，Teams 另加 $0.25/百万；Premium $30 真实月账单约 $40–$70"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Devin 价格同时存在三个互不一致的版本（Pro $15 / $20+tax、Teams $30 / $80+seat $40），唯一可确认的是 SWE-2 免费期已于 10/15–16 结束"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Antigravity 定价口径：Free / AI Pro $19.99 / AI Ultra $99.99(5×) / AI Ultra $199.99(20×)，配额每 5 小时刷新至周上限、不公布绝对上限"
+    },
+    {
+      "date": "2026-10-16",
+      "title": "天翼云编程套餐改为积分版五档 ¥29/89/199/399/699，旧按 Token 计量版仅存量可续订"
+    },
+    {
+      "date": "2026-10-16",
+      "title": "华为云 Token 四档 ¥59/149/399/799 = 5,000 万/1.3 亿/3.8 亿/8.8 亿 Token，每日限量发售"
     }
   ],
   "trends": [
@@ -4815,6 +5166,38 @@
       "date": "2026-10-16",
       "trend": "Orchestration intensity is now sold as its own tier - the third instance this quarter",
       "detail": "GitHub added a Max tier to HydraFusion with the model pool refreshed to Claude Opus 5.5, GPT-6 Astra, GPT-6.1 Sol and GPT-6 Luna. Together with Auto routing (refreshed 10/5 at a 10% model-cost discount) and OpenAI's GPT-6.1 Sol Ultrafast at six times the standard rate, the pattern is that vendors no longer need to raise model prices - they take back the choice of which model, how much effort and how many passes, then sell it back as a tier. Under this architecture, leaving defaults unconfigured hands version, model and orchestration intensity to the vendor at once."
+    },
+    {
+      "date": "2026-10-19",
+      "trend": "「改计量单位」是本季最隐蔽的涨价方式：腾讯云 8/31 把 token 1:1 改为积分制，通用 Standard 档 GLM-5.3 可用量缩水约 12 倍，而价格表一字未改，隔一个半月才被折算出来。审计顺序应为「计量单位 → 抵扣系数 → 价格数字」。"
+    },
+    {
+      "date": "2026-10-19",
+      "trend": "「效率降本」正在替代「降价」：DeepSeek V4.1 Flash 1017 单价不变而单任务成本降约 60%，说明厂商已能在不降标价的前提下削减账单——采购侧应开始记录「每完成一个任务的成本」这条自有指标。"
+    },
+    {
+      "date": "2026-10-19",
+      "trend": "「不公布额度」从例外变成常态：Kimi、xAI、Copilot flex、智谱积分基数均不给绝对值，倍数只能当营销口径；唯一可靠的核对方式是同一批真实任务在新旧档上各跑一遍。"
+    },
+    {
+      "date": "2026-10-19",
+      "trend": "一级市场在压倍数、厂商在抬 ARPU，两端是同一个逻辑：Anthropic 估值讨论回到 $1.5 万亿（投资者在定价增速的二阶导），同期国内厂商集体抬价与限购——不要指望上市前的冲量折扣。"
+    },
+    {
+      "date": "2026-10-19",
+      "trend": "订阅的入场券与真实成本彻底分离：Cursor $8/$30/$100/$200 是入场券，第三方模型按列表价现付、Teams 另加 $0.25/百万；池子多大、池外怎么算，已经成为比价格更重要的两个问题。"
+    },
+    {
+      "date": "2026-10-19",
+      "trend": "电商渠道解决的是开票与集中比较，不是折扣：天猫双 11 首次把 AI Token 列为独立品类（7 家），但无物流、无安装售后、下单直充账号——买错档位几乎没有退货路径。"
+    },
+    {
+      "date": "2026-10-19",
+      "trend": "模型换血节奏稳定在每月两波：Copilot 10/19 退役六款、11/16 再退三款；替换后的每百万 token 价全线下降，但官方对「每任务成本」没有任何承诺。"
+    },
+    {
+      "date": "2026-10-19",
+      "trend": "「选厂商」正在变成「选版本」：DeepSeek V4.1 Flash 新旧两版同时在 OpenRouter 榜上（1017 版单日 3.04T、+345%），迁移速度快过官方公告——合同里写「含最新模型」时必须列明 model ID 与版本日期。"
     }
   ]
 }
