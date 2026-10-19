@@ -2988,10 +2988,11 @@
       "days_remaining": -31
     },
     {
-      "date": "2026-10-30",
-      "event": "Volcano Ark: deepseek-v4.1-flash Coding Plan 50%-deduction promotion ends (18:00)",
+      "date": "2026-12-30",
+      "event": "Volcano Ark: deepseek-v4.1-flash 50%-deduction promotion ends (23:59:59)",
       "status": "upcoming",
-      "days_remaining": 11
+      "days_remaining": 72,
+      "note": " | 更正(10/19 官方文档)：Agent 9/15 起、Coding 9/23 起，均至 2026-12-30 23:59:59，此前记 10/30 18:00 有误。"
     },
     {
       "date": "2026-09-22",
@@ -3078,11 +3079,11 @@
       "days_remaining": -18
     },
     {
-      "date": "2026-10-14",
+      "date": "2026-12-14",
       "event": "Volcano Ark kimi-k2.8-preview 6-off multiplier ends (Agent Plan side)",
-      "status": "expired",
-      "note": "Agent Plan charges a 6-off multiplier for kimi-k2.8-preview from 2026-09-17 00:00 to 2026-10-14 23:59. The Coding Plan side activity (available volume equivalent to the Agent Plan 6-off period) ended 2026-09-30, a separate and shorter window.",
-      "days_remaining": -5
+      "status": "upcoming",
+      "note": "Agent Plan charges a 6-off multiplier for kimi-k2.8-preview from 2026-09-17 00:00 to 2026-10-14 23:59. The Coding Plan side activity (available volume equivalent to the Agent Plan 6-off period) ended 2026-09-30, a separate and shorter window. | 更正(10/19 官方文档)：活动已延长至 2026-12-14 23:59:59，此前记 10/14 有误。",
+      "days_remaining": 56
     },
     {
       "date": "2026-10-07",
@@ -3372,11 +3373,11 @@
       "days_remaining": -5
     },
     {
-      "date": "2026-10-14",
+      "date": "2026-12-14",
       "event": "Volcano Ark kimi-k2.8-preview 40% off (Agent Plan side) ends",
-      "status": "expired",
-      "note": "Discount window 2026-09-17 to 2026-10-14; the Coding Plan side window was 2026-09-18 to 2026-09-30.",
-      "days_remaining": -5
+      "status": "upcoming",
+      "note": "Discount window 2026-09-17 to 2026-10-14; the Coding Plan side window was 2026-09-18 to 2026-09-30. | 更正(10/19 官方文档)：活动已延长至 2026-12-14 23:59:59，此前记 10/14 有误。",
+      "days_remaining": 56
     },
     {
       "date": "2026-10-14",
@@ -3429,9 +3430,9 @@
     },
     {
       "date": "2026-10-30",
-      "event": "OpenAI Pro $200 allowance reduction / Volcano Ark deepseek-v4.1-flash 50% off ends",
+      "event": "OpenAI Pro $200 allowance reduction",
       "status": "upcoming",
-      "note": "Work and Codex drop from 20x to 10x Plus and GPT-6 Pro in Chat drops from 200 to 100 messages per week. On the Volcano side the 50% AFP discount coefficient expires.",
+      "note": "Work and Codex drop from 20x to 10x Plus and GPT-6 Pro in Chat drops from 200 to 100 messages per week. On the Volcano side the 50% AFP discount coefficient expires. | 火山部分已延期至 12/30，本条目仅余 OpenAI / Gemini 到期事项。",
       "days_remaining": 11
     },
     {
@@ -3519,11 +3520,11 @@
       "days_remaining": -5
     },
     {
-      "date": "2026-10-14",
+      "date": "2026-12-14",
       "event": "Volcengine kimi-k2.8-preview 60% discount ends (Agent Plan)",
-      "status": "expired",
-      "note": "Window 2026-09-17 -> 2026-10-14 23:59. Successor activity already running: kimi-k3 at 50% discount on Agent Plan coefficient, 2026-10-12 -> 2026-10-25 23:59.",
-      "days_remaining": -5
+      "status": "upcoming",
+      "note": "Window 2026-09-17 -> 2026-10-14 23:59. Successor activity already running: kimi-k3 at 50% discount on Agent Plan coefficient, 2026-10-12 -> 2026-10-25 23:59. | 更正(10/19 官方文档)：活动已延长至 2026-12-14 23:59:59，此前记 10/14 有误。",
+      "days_remaining": 56
     },
     {
       "date": "2026-10-15",
@@ -3586,7 +3587,8 @@
       "date": "2026-10-30",
       "event": "OpenAI Pro $200 allowance drops (Work/Codex 20x to 10x Plus, GPT-6 Pro messages 200 to 100 per week) and Volcengine's deepseek-v4.1-flash 50% deduction ends; Gemini Artifact guard shuts down",
       "days_remaining": 11,
-      "status": "upcoming"
+      "status": "upcoming",
+      "note": " | 火山部分已延期至 12/30，本条目仅余 OpenAI / Gemini 到期事项。"
     },
     {
       "date": "2026-10-31",
@@ -3698,9 +3700,9 @@
     },
     {
       "date": "2026-10-30",
-      "event": "OpenAI Pro $200 降额 + 火山 deepseek-v4.1-flash 5 折 + Gemini Artifact guard 关停 + 腾讯云通用版模型优惠截止",
+      "event": "OpenAI Pro $200 降额 + Gemini Artifact guard 关停 + 腾讯云通用版模型优惠截止",
       "status": "upcoming",
-      "note": "Work/Codex 由 20× 降至 10× Plus；腾讯云为 12:00 截止",
+      "note": "Work/Codex 由 20× 降至 10× Plus；腾讯云为 12:00 截止 | 火山部分已延期至 12/30，本条目仅余 OpenAI / Gemini 到期事项。",
       "days_remaining": 11
     },
     {
