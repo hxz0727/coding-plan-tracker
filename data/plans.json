@@ -1,10 +1,23 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-11-11",
+    "updated": "2026-11-12",
     "cadence": "Daily 09:05",
     "currency": "USD unless noted",
     "sources": [
+      {
+        "date": "2026-11-12",
+        "items": [
+          "Google DeepMind blog 'Gemini 4 Carbon is now available' (Koray Kavukcuoglu, 2026-11-10) + Antigravity blog and /swarm docs (2026-11-10): Carbon opened to all paid developers via Gemini API (AI Studio, Android Studio paid tier) and Gemini for business; consumer access limited to Google AI Ultra ($99.99/mo and up) via Antigravity, Gemini app and Search AI Mode; intro price $2 input / $10 output per M tok until 2026-11-30, then $4/$20; Batch $1/$5; cache $0.05-$0.10; 1,048K context.",
+          "Anthropic official news/roadshow-launch (2026-11-10) + Bloomberg / FT / MarketWatch / Morningstar 11/11-11/12 + 21st Century Business Herald / CNINFO / Titanium Media 11/12: 825M Class A shares at $70-78, gross up to $64.35B IPO plus $26B concurrent private placement ($90.4B combined), final price 11/18, Nasdaq listing 11/19 under ANT; roadshow day one multiple-times oversubscribed; underwriters discussing pricing above $78 and a $1.5T valuation.",
+          "Anthropic product post 'Introducing Claude Whiteboards, Claude Sheets, and Claude Data' (2026-11-10) + Claude Help Center guides + The Verge / TechCrunch / Reuters: Sheets and Whiteboards in beta, Dashboards now GA as Claude Data; available on all paid plans; on by default for Team, off by default for Enterprise (Sheets/Whiteboards in Organization settings > Artifacts), Data auto-enables 2026-11-19; Sheets capped at ~100,000 cells, 144 functions, no pivot tables/filters/PDF export.",
+          "planyield.dev Claude Code limits history (snapshot 2026-11-11): Anthropic granted all Pro, Max, Ultra and Team users one free full reset across all models and limits on 2026-11-10 UTC, usable until 2026-12-10 2:00 PM PT.",
+          "WeChat public accounts 'Mainstream API and Token Plan lowest prices (2026.11.11)' and 'AI model and plan discount list as of 2026-11-11': Alibaba Token Plan Qwen4-Max preview (subscription-only, credits at 20% of standard rate, 4% overnight), Bailian DeepSeek-V4.1-Flash cache-hit price cut to CNY 0.02/0.04 per M tok on 11/11 00:00, Volcengine Agent Plan annual 50% off closing 11/12 24:00, Tencent Cloud multi-model promo windows.",
+          "National Business Daily / Labour Daily / China Fund News / Eastmoney / Tencent News 2026-11-11: Token entered Double-11 as a standalone category; MiniMax all three monthly cards 50% off, Alibaba two cards from 50% off, Zhipu weekly cards from 50% off, Qwen Work basic card 30% of list first month, Qoder monthly card 33% of list at CNY 19.9; Li Jiaqi 0.01 yuan Qwen Work card sold ~100k units in 30 min (~2T tokens); category GMV +450% on day one.",
+          "CAICT 'LLM token service performance monitoring report (2026)' as cited 2026-11-11: domestic daily token consumption ~500T in June 2026, nearly 4x the December 2025 level; normalized average price rose from CNY 6.8 to CNY 13.46 per M tokens.",
+          "aifreeapi / origami.sa / qcode.cc 2026-11-11 re-check of OpenAI shared-allowance help article: from December, Plus/Pro/Business share one token-based allowance with Codex and ChatGPT Work; Instant chat exempt; Go/Free/Enterprise/Edu not mentioned; start date, pool sizes and chat conversion rates still unpublished."
+        ]
+      },
       {
         "date": "2026-10-10",
         "items": [
@@ -3726,6 +3739,122 @@
         }
       ],
       "notes": "2026-11-10. Published the evening of 11/8, apologising for not announcing the discount adjustment in time. First case this season of a vendor compensating users retroactively for an unannounced promo change rather than issuing a reset."
+    },
+    {
+      "name": "Gemini 4 Carbon general availability (2026-11-10)",
+      "owner": "Google",
+      "billing": "pay-as-you-go + subscription gating",
+      "plans": [
+        {
+          "name": "Gemini API (introductory)",
+          "price": "$2 input / $10 output per M tok",
+          "credits": "until 2026-11-30; then $4/$20 from 12/1; Batch $1/$5; cache hit $0.05-$0.10; 1,048K context"
+        },
+        {
+          "name": "Google AI Ultra",
+          "price": "from $99.99/mo",
+          "credits": "Carbon available in Antigravity, Gemini app and Search AI Mode; /swarm also available on AI Pro"
+        }
+      ],
+      "notes": "2026-11-10. Same intro price as Gemini 4 Argon, but the gate moved to the subscription tier: $20 Google AI Pro users can run /swarm and Argon but NOT Carbon. Google states Carbon is designed to consume more tokens (longer thinking plus extra verification loops), so equal unit price does not mean equal bill. Official claims: #1 on CursorBench 4.0, Perplexity WANDR and Zapier AutomationBench; MKA 2nd behind Claude Fable 5.2 ($31.97 vs $6.29 per task); SEC-bench Pro 88.2%."
+    },
+    {
+      "name": "Claude Sheets / Whiteboards / Data (2026-11-10)",
+      "owner": "Anthropic",
+      "billing": "included in paid plans (consumes plan usage)",
+      "plans": [
+        {
+          "name": "All paid plans",
+          "price": "included in Pro $20 / Max $100 / Ultra $200 / Team / Enterprise",
+          "credits": "Sheets and Whiteboards beta, Claude Data GA; usage counts against plan allowance"
+        }
+      ],
+      "notes": "2026-11-10. On by default for Team; off by default for Enterprise (Sheets/Whiteboards under Organization settings > Artifacts), Claude Data auto-enables 2026-11-19. Sheets: ~100,000 cells per sheet, 144 functions, formulas inspectable in-cell, version history, xlsx/CSV export, no pivot tables / protected ranges / multi-column sort / filter views / PDF export, mobile read-only. Claude Meetings still 'coming soon' officially; TechCrunch reports beta on Team/Enterprise with Google Meet first."
+    },
+    {
+      "name": "Claude one free full reset (2026-11-10 UTC)",
+      "owner": "Anthropic",
+      "billing": "included",
+      "plans": [
+        {
+          "name": "Pro / Max / Ultra / Team",
+          "price": "no extra charge",
+          "credits": "one free full reset covering all models and all limits, usable until 2026-12-10 2:00 PM PT"
+        }
+      ],
+      "notes": "2026-11-10. First all-model (not model-scoped) full reset this season, two days after the Fable 5.2 tenure-based resets which applied only to Fable. Anthropic has not published the trigger or the eligibility rules, nor whether it stacks with the Fable resets."
+    },
+    {
+      "name": "Qwen4-Max preview (2026-11-11)",
+      "owner": "Alibaba Cloud / Qwen",
+      "billing": "subscription-only (no pay-as-you-go)",
+      "plans": [
+        {
+          "name": "Token Plan Individual",
+          "price": "CNY 39 / 79 / 139 / 312 per month (20,000 / 45,000 / 80,000 / 200,000 credits)",
+          "credits": "qwen4-max-preview burns credits at 20% of its standard rate, 4% overnight (UTC+8); preview 2026-11-11 10:00 to 2026-11-25 24:00"
+        },
+        {
+          "name": "Token Plan Individual (international)",
+          "price": "$6 / $10 / $18 / $43 per month",
+          "credits": "new-user $3 / $5 until 2026-11-30; ~4,444-4,651 credits per dollar on Essential/Standard/Pro, 3,333 on Lite"
+        }
+      ],
+      "notes": "2026-11-11. First flagship released exclusively through a subscription: no pay-as-you-go price exists during the preview. 1M context, max output 393,216 tokens. Parameter count, benchmarks and API price unpublished. Also wired into Qwen Work, Qoder, Qwen App and QwenStudio."
+    },
+    {
+      "name": "StepFun Step Plan tiers (2026-11-11 check)",
+      "owner": "StepFun",
+      "billing": "monthly credits",
+      "plans": [
+        {
+          "name": "Mini",
+          "price": "CNY 49/mo",
+          "credits": "400M credits; listed as sold out on 11/11"
+        },
+        {
+          "name": "Plus",
+          "price": "CNY 99/mo",
+          "credits": "1,600M credits"
+        },
+        {
+          "name": "Pro",
+          "price": "CNY 199/mo",
+          "credits": "8,000M credits"
+        },
+        {
+          "name": "Max",
+          "price": "CNY 699/mo",
+          "credits": "40,000M credits; listed as sold out on 11/11"
+        }
+      ],
+      "notes": "2026-11-11 snapshot. All tiers include flagship models, smart routing and multi-device login; Mini and Max showing 'sold out' means tier supply itself is unstable and should be re-checked before planning."
+    },
+    {
+      "name": "Kuaishou KAT Coding Mini",
+      "owner": "Kuaishou",
+      "billing": "subscription",
+      "plans": [
+        {
+          "name": "KAT Coding Mini",
+          "price": "CNY 29/mo",
+          "credits": "40 prompts per 5 hours, KAT-Coder-Pro V2.5"
+        }
+      ],
+      "notes": "One of the lowest-priced coding subscriptions in China; positioned as a light entry tier rather than a production plan."
+    },
+    {
+      "name": "Meta Muse Ember",
+      "owner": "Meta",
+      "billing": "pay-as-you-go API",
+      "plans": [
+        {
+          "name": "Muse Ember API",
+          "price": "$0.14 average task cost per third-party measurement",
+          "credits": "intelligence index 36, equal to Claude Haiku 5.5; positioned for repetitive sub-steps inside agents"
+        }
+      ],
+      "notes": "2026-11-10. Same intelligence score as Haiku 5.5 at roughly one third of the per-task cost ($0.14 vs $0.41), which pushes down the price of loop work rather than the price of tokens."
     }
   ],
   "model_token_prices_per_MTok": [
@@ -4364,6 +4493,25 @@
       "output_usd_per_M": "n/a",
       "date": "2026-11-11",
       "note": "First channel page price below the official list after 22 frozen days. Stability, rate limits and compliance unverified; tracked separately and NOT merged into official pricing."
+    },
+    {
+      "model": "Gemini 4 Carbon (GA, 2026-11-10)",
+      "api_price_published": "2026-11-10",
+      "input_usd_per_M": 2,
+      "cached_input_usd_per_M": 0.1,
+      "output_usd_per_M": 10,
+      "context_window": "1,048K",
+      "max_output": "n/a",
+      "date": "2026-11-10",
+      "note": "Intro price identical to Gemini 4 Argon; both double to $4/$20 on 2026-12-01. Batch $1/$5 (cache $0.05). Consumer access limited to Google AI Ultra; $20 AI Pro excluded. Official warning: Carbon consumes more tokens by design."
+    },
+    {
+      "model": "Qwen4-Max preview (subscription-only)",
+      "api_price_published": "2026-11-11",
+      "input_usd_per_M": "n/a (no pay-as-you-go price)",
+      "output_usd_per_M": "n/a",
+      "date": "2026-11-11",
+      "note": "1M context, max output 393,216. Credits consumed at 20% of standard rate, 4% overnight. Unpublished parameter count, benchmarks and API price - tracked as a subscription-only flagship."
     }
   ],
   "upcoming_deadlines": [
@@ -6178,6 +6326,42 @@
       "event": "Anthropic ANT Nasdaq listing (planned 11/19-11/20, ticker ANT, price range $70-78)",
       "status": "open",
       "days_remaining": 8
+    },
+    {
+      "date": "2026-11-18",
+      "event": "Anthropic final IPO price lock (roadshow pricing decision)",
+      "status": "open",
+      "days_remaining": 6
+    },
+    {
+      "date": "2026-11-19",
+      "event": "Anthropic ANT Nasdaq debut (Global Select Market, ticker ANT)",
+      "status": "open",
+      "days_remaining": 7
+    },
+    {
+      "date": "2026-11-19",
+      "event": "Claude Data auto-enables by default on Enterprise plans",
+      "status": "open",
+      "days_remaining": 7
+    },
+    {
+      "date": "2026-11-25",
+      "event": "Qwen4-Max preview ends 24:00 (subscription-only window closes)",
+      "status": "open",
+      "days_remaining": 13
+    },
+    {
+      "date": "2026-11-30",
+      "event": "Gemini 4 Carbon intro price ends - doubles to $4/$20 on 12/1",
+      "status": "open",
+      "days_remaining": 18
+    },
+    {
+      "date": "2026-12-10",
+      "event": "Claude one free full reset expires 2:00 PM PT",
+      "status": "open",
+      "days_remaining": 28
     }
   ],
   "latest_news": [
@@ -8243,6 +8427,56 @@
       "date": "2026-11-11",
       "head": "Channel-level price war: first sub-official-list channel price appears - Kimi K3.1-Pro at CNY 8.45/M tok.",
       "detail": "Official pay-as-you-go list prices have been frozen for 22 consecutive days since 10/20; a third-party channel page now quotes K3.1-Pro below list. Vendors are holding list prices while channels subsidize; stability, rate limits and compliance of the channel price are unverified and it is tracked separately, not merged into official pricing."
+    },
+    {
+      "date": "2026-11-12",
+      "head": "Anthropic IPO roadshow: 825M shares at $70-78, $64.35B IPO plus $26B private placement, final price 11/18 and ANT listing 11/19 - roadshow day one multiple times oversubscribed",
+      "detail": "Combined raise up to ~$90.4B, overtaking SpaceX as the largest listing ever. Nvidia and Alphabet each take $10B of the $26B private placement at the IPO price with no lock-up. A pricing email at $70-80 was retracted and the cap cut to $78. Financials: Q3 revenue $16.9B (+46% q/q), nine-month revenue $33.24B, net loss $104B (mostly convertible-note fair value), run-rate ~$81B at end-October, implying ~17x P/S. New cloud commitments in the past month add ~$11.4B (Azure to $49.2B by 2033, Google Cloud to $121.6B)."
+    },
+    {
+      "date": "2026-11-12",
+      "head": "Gemini 4 Carbon opens to all paid developers at the same $2/$10 as Argon - but only Google AI Ultra subscribers can reach it, and both prices double on 12/1",
+      "detail": "Intro price until 2026-11-30, then $4/$20. Batch $1/$5, cache $0.05-$0.10, 1,048K context. Google keeps Argon as the default recommendation and warns Carbon consumes more tokens by design. Antigravity /swarm preview lets one prompt spawn a coordinator, named parallel workers, verifiers and a dormant monitor; /swarm works on AI Pro and Ultra, Carbon does not."
+    },
+    {
+      "date": "2026-11-12",
+      "head": "GitHub Copilot adds Gemini 4 Carbon as a generally available model through the Copilot app, CLI and Codespaces",
+      "detail": "Under 48 hours from Google launch to a Copilot listing. Lab to editor same day is now the default cadence rather than an exception."
+    },
+    {
+      "date": "2026-11-12",
+      "head": "Anthropic grants one free full reset across all models and all limits to Pro, Max, Ultra and Team users, usable until 2026-12-10 2:00 PM PT",
+      "detail": "Second reset mechanism in two days: the 11/9 Fable 5.2 resets were model-scoped and tenure-based, this one is account-wide and model-agnostic. Trigger and stacking rules unpublished."
+    },
+    {
+      "date": "2026-11-12",
+      "head": "Claude ships Sheets and Whiteboards in beta and promotes Dashboards to Claude Data - the first time the paid subscription extends from chat into an office suite",
+      "detail": "All paid plans; on by default for Team, off by default for Enterprise with Data auto-enabling 11/19. Sheets: ~100,000 cells, 144 functions, no pivot tables or filter views, xlsx/CSV export. Suite usage counts against the plan allowance. Claude Meetings still officially coming soon."
+    },
+    {
+      "date": "2026-11-12",
+      "head": "Qwen4-Max preview launches on 11/11 as the first flagship sold only through a subscription - no pay-as-you-go price exists",
+      "detail": "1M context, max output 393,216, credits charged at 20% of standard rate (4% overnight), preview until 2026-11-25 24:00. Parameter count, benchmarks and API price unpublished. Choice between tiers barely changes the credits-per-dollar rate, so higher tiers buy concurrency rather than a better rate."
+    },
+    {
+      "date": "2026-11-12",
+      "head": "Alibaba Bailian cuts DeepSeek-V4.1-Flash cache-hit price to CNY 0.02 idle / 0.04 peak per M tok from 11/11 00:00, matching DeepSeek own list",
+      "detail": "Reverses the direction of 10/14 StepFun and 11/5 Tencent, both of which doubled cache-hit prices. For agent workloads where cache reads dominate token volume, this matters more than a headline 20% unit price cut."
+    },
+    {
+      "date": "2026-11-12",
+      "head": "Token becomes a standalone Double-11 category: five vendors discount below 50% on 11/11 while official list prices stay frozen",
+      "detail": "MiniMax all three monthly cards 50% off (Go 24.5 / Explore 59.5 / Build 234.5), Alibaba two Token Plan cards from 50% off, Zhipu weekly cards from 50% off, Qwen Work basic card 30% of list first month, Qoder monthly card 33% of list at CNY 19.9. Li Jiaqi 0.01 yuan card sold ~100k units (~2T tokens) in 30 minutes. CAICT: June 2026 daily domestic token consumption ~500T (nearly 4x December 2025) while normalized average price rose from CNY 6.8 to 13.46 per M tok."
+    },
+    {
+      "date": "2026-11-12",
+      "head": "OpenAI Q3 revenue tops $10B with a ~$10.9B adjusted operating loss; December shared-allowance details still missing three parameters",
+      "detail": "Revenue up about 50% q/q on ~100M paying users; ~$11B of a new round already received at a $1.25T post-money; Brockman says OpenAI will be IPO-ready in 2027. As of 11/11 OpenAI still has not published the December start date, the size of each plan merged pool, or the chat-to-token conversion rules - three weeks before the change."
+    },
+    {
+      "date": "2026-11-12",
+      "head": "Meta Muse Ember matches Claude Haiku 5.5 intelligence index at roughly one third of the per-task cost",
+      "detail": "Index 36 for both, versus 28 for GPT-6 Luna; $0.14 per average task against $0.41 on Haiku 5.5. Targets repetitive sub-steps inside agents, pressuring loop-work pricing rather than token pricing."
     }
   ],
   "trends": [
@@ -8690,6 +8924,22 @@
     {
       "date": "2026-11-11",
       "trend": "After 22 frozen days, the price war broke through to the channel layer for the first time: a third-party page quotes Kimi K3.1-Pro at CNY 8.45/M tok, below official list; meanwhile generation-side competition shifted to \"open weights on release day\" (MiniMax H3-Image, Meituan LongCat-2.5 in the same week). List prices are no longer the front line - channel subsidies and open-weight goodwill are; official price sheets carry even less information and channel prices plus self-hosting costs must enter any comparison."
+    },
+    {
+      "date": "2026-11-12",
+      "trend": "Same price no longer means same access: Google priced Gemini 4 Carbon identically to Argon ($2/$10 until 11/30, both $4/$20 from 12/1) and moved the entire layer of differentiation into the subscription gate - Carbon only on Google AI Ultra and paid API, while the $20 AI Pro tier is explicitly excluded. The bill can still differ even at an identical unit price, because Google itself says Carbon consumes more tokens by design."
+    },
+    {
+      "date": "2026-11-12",
+      "trend": "The what-is-inside-the-subscription race replaced the price race this week: Anthropic folded an office suite (Sheets, Whiteboards, Data) into every paid plan at no price change, two months after Alibaba folded 12 Harness entitlements into Credits. Neither vendor touched the monthly fee; both changed what the fee buys. Enterprise-side switches (off by default, Data delayed to 11/19) show that governance, not pricing, is now the enterprise lever."
+    },
+    {
+      "date": "2026-11-12",
+      "trend": "A flagship sold only through a subscription: Qwen4-Max preview has no pay-as-you-go price at all, so the only way to test it is to buy a Token Plan. If this pattern spreads, comparison tables must move from CNY per million tokens to monthly fee per completed task, because the unit price for the newest capability will simply not be published."
+    },
+    {
+      "date": "2026-11-12",
+      "trend": "Cache-hit pricing became the one knob vendors move in both directions within a month: StepFun doubled it on 10/14 and Tencent doubled it on 11/5, then Alibaba cut DeepSeek-V4.1-Flash cache hits to CNY 0.02/0.04 on 11/11 to match the upstream list. For agent workloads where cache reads dominate token volume, this single line moves the bill more than any headline unit-price change."
     }
   ]
 }
