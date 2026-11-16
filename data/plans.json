@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-11-13",
+    "updated": "2026-11-16",
     "cadence": "Daily 09:05",
     "currency": "USD unless noted",
     "sources": [
@@ -384,6 +384,18 @@
           "WeChat \"AI model deals daily\" 11/11 issue (domestic platforms): Double-11 closing-day grant expiries (Moyu AI five tiers, Tiangong 0-point tier, LibTV 3-model free tier, e-commerce venue grants, all end 24:00 today); Kimi K3.1-Pro third-party channel page price CNY 8.45/M tok, first sub-official-list channel price after 22 frozen days; MiniMax H3-Image released with open weights plus first-week 50% off API; Meituan LongCat-2.5 open-sourced (1.6T MoE, 1M context, MIT).",
           "Dahe Wang 11/11 Double-11 token feature: Tmall token top-up center carries DeepSeek/Aliyun/Zhipu/Kimi/MiniMax/Qwen Office/StepFun; category GMV +450% on day one; Qwen AI Lite monthly card 60 -> 19.5, Qoder Pro 59 -> 19.9.",
           "i100.work comparison page 11/11 snapshot used to re-verify Volcengine/Aliyun/Kimi/Zhipu/MiniMax tier prices."
+        ]
+      },
+      {
+        "date": "2026-11-16",
+        "items": [
+          "Anthropic IPO schedule confirmed by company 11/13: pricing 2026-11-18 (Wed), Nasdaq listing 11/19 (Thu) under ANT; demand ~6x oversubscribed; up to USD 64.4B primary plus USD 26B private placement (~USD 90.4B total); guruhk 11/14 reports bankers floating a USD 1.5T valuation push. Via Eastmoney Caifuhao 11/13, Baidu Baike entry, Cailianshe/Phoenix 11/13.",
+          "GitHub Copilot third-wave retirement executed 11/16: Claude Opus 4.8, Claude Opus 5 and GPT-5.6 Terra removed from all Copilot surfaces; annual-billed individual subscribers keep Opus 4.8; enterprise admins must audit pinned/default models. Via digintoai, sammy.hk, ainewsinfocus, agentmaps 11/15-16.",
+          "Volcengine official promo page snapshotted 11/16: Agent Plan Small & Medium 2.5-off universal promo runs 2026-06-08 to 2027-03-31, first two months only, price restores from month 3; eligibility shared across purchase/renewal/upgrade and not re-granted after cancellation. Resolves the 11/10 conflicting-report flag as two coexisting activities (monthly first-2-months promo vs 4-day annual 5-off Double-11).",
+          "OpenAI usage policy page re-verified 11/16 (effective 11/20): router/gateway prior approval plus anti-distillation clause barring use of outputs to generate/prepare/select/validate training data, tasks, RL environments and reward signals, directly or indirectly; no application channel published yet. Via openai.com and geroundtable 11/15.",
+          "Tencent: Hy3 pure-text 0-credit and WorkBuddy/CodeBuddy Hy4 free windows ended 11/15 (official window 11/4-11/15); activity tiers (Auto/K3/K2.7-Code/GLM-5.3/Flash) expire 11/16 12:00 with extended tier to 11/30 12:00; wpnews 11/15 confirms Hy4 GA is API-only with weights and system card to follow (4th period of the weights-pending flag).",
+          "Industry corroboration: Tencent Cloud developer-community piece 11/12 (2026 year-end Token Plan review) - at least 8 vendors repriced in November, Token Plan has fully displaced Coding Plan as the promo vehicle, price band CNY 38-1,000; CAICT: frontier API price fell 90-99% from ~USD 30 to USD 0.1-0.25 per million tokens since early 2023.",
+          "Third-party subscription layer example 2: AceDataCloud CodingPlus CNY 99 for 500 credits (400 base + 100 bonus, 30-day validity), bonus window to 2026-11-30 23:59. Via CSDN 11/13-15."
         ]
       }
     ],
@@ -6633,6 +6645,84 @@
       "event": "Gemini 3.8 Flash intro price ends; OpenAI 62,500 credits expire; Kimi K2 line fully delisted; SCNet MaaS session ends",
       "status": "open",
       "days_remaining": 48
+    },
+    {
+      "date": "2026-11-17",
+      "event": "Tencent MiniMax-M2.7 delisted",
+      "status": "open",
+      "days_remaining": 1
+    },
+    {
+      "date": "2026-11-17",
+      "event": "StepFun stepaudio-3 free window ends 11:59",
+      "status": "open",
+      "days_remaining": 1
+    },
+    {
+      "date": "2026-11-18",
+      "event": "Anthropic IPO pricing (range USD 70-78, 825M shares)",
+      "status": "open",
+      "days_remaining": 2
+    },
+    {
+      "date": "2026-11-18",
+      "event": "Tencent DeepSeek Search/Fetch starts counting credits (100 per 1k calls)",
+      "status": "open",
+      "days_remaining": 2
+    },
+    {
+      "date": "2026-11-18",
+      "event": "MiniMax H3-Image first-week 50% API window ends",
+      "status": "open",
+      "days_remaining": 2
+    },
+    {
+      "date": "2026-11-19",
+      "event": "Anthropic lists on Nasdaq under ANT (day-1 performance watch)",
+      "status": "open",
+      "days_remaining": 3
+    },
+    {
+      "date": "2026-11-19",
+      "event": "Claude Data enabled by default for Enterprise (counts against plan usage)",
+      "status": "open",
+      "days_remaining": 3
+    },
+    {
+      "date": "2026-11-19",
+      "event": "Volcengine Coding Plan invitation 9.5x discount ends",
+      "status": "open",
+      "days_remaining": 3
+    },
+    {
+      "date": "2026-11-20",
+      "event": "OpenAI usage policy effective: routers/gateways need prior approval; anti-distillation clause binds",
+      "status": "open",
+      "days_remaining": 4
+    },
+    {
+      "date": "2026-11-16",
+      "event": "GitHub Copilot third wave retirement executed: Claude Opus 4.8, Opus 5, GPT-5.6 Terra removed (annual individuals keep Opus 4.8)",
+      "status": "done",
+      "days_remaining": 0
+    },
+    {
+      "date": "2026-11-16",
+      "event": "Tencent activity tiers expire 12:00 (Auto/K3/K2.7-Code/GLM-5.3/Flash); extended tier to 11/30 12:00",
+      "status": "done",
+      "days_remaining": 0
+    },
+    {
+      "date": "2026-11-15",
+      "event": "Tencent Hy3 0-credit and WorkBuddy/CodeBuddy Hy4 free windows ended; Zhipu AutoClaw 50M expired 23:59",
+      "status": "done",
+      "days_remaining": -1
+    },
+    {
+      "date": "2026-11-30",
+      "event": "AceDataCloud CodingPlus bonus 100-credit window ends 23:59",
+      "status": "open",
+      "days_remaining": 14
     }
   ],
   "latest_news": [
@@ -8798,6 +8888,46 @@
       "date": "2026-11-13",
       "head": "Short notes: Tencent discount ladder, Qwen4-Max preview 20% credits, StepFun voice expiry, Cursor and Copilot pricing re-check",
       "detail": "Tencent: Hy4 inside Token Plan at 2.5x discount to 11/17 12:00 (CNY 1.5/4.5), Hy4 metered at 50% off to 12/31 (CNY 3/9, cache 0.15), V4-Pro-0813 at 30% off to 11/16, Kimi-K3 at 25% off to 11/30, Kimi-K2.7-Code at 20% off extended to 11/30 12:00. Qwen4-Max preview at 20% of standard credits to 11/25, subscription-only. StepFun stepaudio-3 free until 11/17 11:59, then CNY 0.65 per session-minute and CNY 95 per million TTS characters. Cursor now inside The X Subscription (new customers USD 8/30/100/200, legacy 20/60). Copilot Pro USD 10 includes USD 15/mo of AI credits (USD 10 base plus USD 5 flex) with unlimited completions. OpenRouter: agents now account for 80% of platform token volume, 7x human-initiated calls and 37x since February."
+    },
+    {
+      "date": "2026-11-16",
+      "head": "Anthropic IPO schedule locked: pricing Nov 18, Nasdaq listing Nov 19 under ANT",
+      "detail": "Company confirmed 11/13: pricing Wednesday 11/18, trading Thursday 11/19 under ANT on Nasdaq. Demand ~6x oversubscribed (mostly institutions); up to USD 64.4B primary plus USD 26B concurrent private placement (~USD 90.4B total); guruhk 11/14 reports bankers floating a USD 1.5T valuation push vs ~USD 1.4T fully diluted at the USD 78 cap. Watch points: whether final price reaches the USD 78 cap and whether ~20% retail allocation is absorbed on day one. Listing day+1 coincides with OpenAI usage-policy effective date 11/20."
+    },
+    {
+      "date": "2026-11-16",
+      "head": "GitHub Copilot third wave retirement executed on schedule",
+      "detail": "Claude Opus 4.8, Claude Opus 5 and GPT-5.6 Terra removed from all Copilot surfaces 11/16; annual-billed individual subscribers keep Opus 4.8 (the only exception); replacement path remains Opus 5.5 / GPT-6.1 Sol or Luna; enterprise admins must audit pinned/default models since retirement does not rewrite them. Cumulative 20 models retired 9/1-11/16; Pro tier real landing point is now Luna."
+    },
+    {
+      "date": "2026-11-16",
+      "head": "Tencent activity tiers expire 12:00; free windows ended 11/15",
+      "detail": "Auto / K3 / K2.7-Code / GLM-5.3 / Flash activity pricing expires 11/16 12:00 with the extended tier running to 11/30 12:00; whether Tencent restores list price or swaps tiers again is unverified (would be the third occurrence of its promo-expiry-swap pattern). Hy3 pure-text 0-credit and WorkBuddy/CodeBuddy Hy4 free windows ended 11/15 (official window 11/4-11/15); Zhipu AutoClaw 50M expired 11/15 23:59."
+    },
+    {
+      "date": "2026-11-16",
+      "head": "Volcengine 2.5-off promo mystery resolved: two coexisting activities",
+      "detail": "Official page (11/9 revision) confirms the Agent Plan Small & Medium 2.5-off universal promo runs 2026-06-08 to 2027-03-31 but covers only the first two months, restoring price from month 3; eligibility is shared across purchase/renewal/upgrade and not re-granted after cancellation. The third-party claim of a full-period 2.5-off to 2027-03-31 is corrected; the Double-11 annual 5-off (11/9-11/12) was a separate activity."
+    },
+    {
+      "date": "2026-11-16",
+      "head": "OpenAI usage policy: anti-distillation details; approval channel still unpublished (4 days to effect)",
+      "detail": "Policy published 10/21, effective 11/20. Beyond router/gateway prior approval, a new Training-and-developing-models clause bars using models or outputs to generate, prepare, select or validate training data, tasks and trajectories, and bars supplying RL environments and reward signals (labels, scores, rankings, preferences, rewards, corrections), directly or via third parties; research/evaluation/benchmarking/product development remain permitted. No application channel for gateway approval has been published, so unapproved gateways will be in breach on day one."
+    },
+    {
+      "date": "2026-11-16",
+      "head": "Tencent Hy4 weights still unreleased (4th period); third-party review confirms API-only GA",
+      "detail": "wpnews 11/15: Hy4 GA shipped API-only with weights and system card to follow, reversing the 8/28 preview (Apache 2.0, downloadable weights). USD pricing USD 0.834 / USD 2.501 per million tokens matches CNY 6/18. In the same window Kimi K3.1 Pro, MiniMax H3-Image and Meituan LongCat-2.5 all shipped open weights on release day."
+    },
+    {
+      "date": "2026-11-16",
+      "head": "Industry: Token Plan fully displaces Coding Plan as the promo vehicle",
+      "detail": "Tencent Cloud developer-community review 11/12: at least 8 vendors repriced in November with unchanged strategy (cut unit price, differentiate via plan design); Token Plan price band spans CNY 38 (vs USD 5) to CNY 1,000 (vs USD 100-200) and is generally wired into each vendors own agent/coding agent, while Coding Plan has gone nearly invisible. CAICT: frontier API pricing fell from ~USD 30 per million tokens in early 2023 to USD 0.1-0.25 in 2026 (90-99% down), yet opaque cache billing, throttling and routing still make cheap-and-reliable endpoints hard to pick."
+    },
+    {
+      "date": "2026-11-16",
+      "head": "Short notes: Tencent TokenHub ladder, Alibaba Double-11 extended, third-party subscription example 2",
+      "detail": "Tencent TokenHub: V4-Pro-0813 30% off ends 11/16; Kimi-K3 25% off to 11/30 (CNY 15/75); K2.7-Code 20% off extended to 11/30 12:00; Hy4 metered 50% off to 12/31. Alibaba Double-11 venue runs to 11/30 (up to 70M free tokens for new users, Token Plan from CNY 39). AceDataCloud CodingPlus CNY 99 = 500 credits (400 base + 100 bonus, 30-day validity), bonus to 11/30 23:59. Baidu Qianfan first-purchase 50% off to 11/23; Qwen4-Max preview to 11/25 24:00; Ant Ling-3.2-flash free to 11/19; StepFun stepaudio-3 free to 11/17 11:59."
     }
   ],
   "trends": [
@@ -9273,6 +9403,10 @@
     {
       "date": "2026-11-13",
       "trend": "Who may use a model has become a pricing dimension sitting next to how much it costs, and it landed the week before the largest listing. Anthropic's regional policy took effect 11/12 with ownership-chain screening, 30-day retention and a ban on consumer-subscription forwarding; OpenAI follows on 11/20 requiring routers and gateways to clear approval, with Safety ID and a ban that propagates across platforms. Anthropic simultaneously disclosed that 5%-7% of first-nine-month revenue came from later-disqualified clients and guided it down, while IPO demand reached about 6x. Compliance has turned from a cost line into a pricing lever: clearing flawed revenue buys a cleaner valuation story, and for anyone relying on relays, shared subscriptions or offshore holdcos the first gate after November 2026 is no longer price but whether the control chain can be proven clean."
+    },
+    {
+      "date": "2026-11-16",
+      "trend": "Schedule replaces price as the visible competitive variable. Official list prices have been flat for 26 days, yet three events this week changed real cost and choice: Copilot third-wave retirement executed (model pool narrows, Pro landing point drops to Luna), Tencent activity tiers expired (extended tier to 11/30), Anthropic locked listing schedule (price 11/18, list 11/19). Tracking focus shifts from price-table diffs to calendar diffs - retirement, expiry, effectiveness and listing dates are the only moving quantities; and the Volcengine 2.5-off resolution re-confirms that when two discount records conflict, the activity-time column of the official promo page is the only arbiter."
     }
   ]
 }
