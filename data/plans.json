@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-11-17",
+    "updated": "2026-11-18",
     "cadence": "Daily 09:05",
     "currency": "USD unless noted",
     "sources": [
@@ -410,6 +410,20 @@
           "Tencent: Hy3 pure-text 0-credit and WorkBuddy/CodeBuddy Hy4 free windows ended 11/15 (official window 11/4-11/15); activity tiers (Auto/K3/K2.7-Code/GLM-5.3/Flash) expire 11/16 12:00 with extended tier to 11/30 12:00; wpnews 11/15 confirms Hy4 GA is API-only with weights and system card to follow (4th period of the weights-pending flag).",
           "Industry corroboration: Tencent Cloud developer-community piece 11/12 (2026 year-end Token Plan review) - at least 8 vendors repriced in November, Token Plan has fully displaced Coding Plan as the promo vehicle, price band CNY 38-1,000; CAICT: frontier API price fell 90-99% from ~USD 30 to USD 0.1-0.25 per million tokens since early 2023.",
           "Third-party subscription layer example 2: AceDataCloud CodingPlus CNY 99 for 500 credits (400 base + 100 bonus, 30-day validity), bonus window to 2026-11-30 23:59. Via CSDN 11/13-15."
+        ]
+      },
+      {
+        "date": "2026-11-18",
+        "items": [
+          "Tencent Cloud Token Plan personal credit-deduction rules page, fetched 2026-11-18: from 2026-11-18 00:00 Beijing, DeepSeek first-party web search (Search / Fetch) inside Token Plan is deducted from plan credits at 107.162 credits per thousand successful requests each, and injected search results count as input tokens billed at the model's input coefficient. Post-paid side bills Search and Fetch at CNY 5 per thousand successful requests each (since 11/1); non-first-party models go through TokenHub generic web search at CNY 7 (light) / 12 (standard) per thousand.",
+          "Volcengine Ark 'Agent/Coding Plan designated-model deduction coefficient promotion' page, last updated 2026-11-17: deepseek-v4.1-flash runs 2026-11-07 to 2027-01-31 at coefficient 0.875; kimi-k3.1-pro runs 2026-10-24 to 2027-01-31 at 50% off with 200% usable quota; Auto mode coefficient 0.5 runs 2026-06-10 18:00 to 2027-03-31 23:59; glm-5.3-flash is a long-running 50%/200% promotion; kimi-k2.8-preview coefficient 4.8; economy coefficient 1. Only kimi-k3 (ended 10/25) and the annual 50% package (ended 11/12) actually expired.",
+          "Volcengine Ark Agent Plan overview (fetched 2026-11-18): Small CNY 40 / 20,000 AFP, Medium CNY 200 / 100,000, Large CNY 500 / 250,000, Max CNY 1,000 / 500,000; weekly quota is 35% of monthly, 5-hour quota is 10% of monthly, daily quota only applies to vision, speech and Harness items; small and medium tiers cannot generate video.",
+          "GitHub billing documentation via ByteForward 2026-11-17 and Microsoft announcement: MAI Code 2 at USD 0.50 input / 0.025 cached / 2.50 output per million tokens, MAI Code 2 Flash at USD 0.05 / 0.005 / 0.25; both double on 2027-05-17 to USD 1.00/0.05/5.00 and 0.10/0.01/0.50. Code 2 reaches Pro, Pro+, Max, Business and Enterprise; Flash also reaches Free and Student. 1,050,000 context (922K input, 128K output).",
+          "Sovereign Magazine 2026-11-17: Mistral offers three months of Vibe Pro free to European developers with code LECHONK; list price EUR 17.99 per month in France including VAT (USD 14.99 before tax). Artificial Analysis Coding Agent Index v2.1 standings on 11/17: Claude Code with Fable 5.2 = 58, Antigravity CLI with Gemini 4 Carbon = 55, Muse Code with Muse Wonder Full = 54, Codex with GPT-6 Astra = 53, Kimi Code CLI with K3.1 Pro = 49, Grok Build with Grok 4.7 = 42, Mistral Vibe with Large 4 = 41, Opencode with GLM-5.3 = 40, DeepSeek Harness with V4.1 Flash 1017 = 37.",
+          "Quartz citing Bloomberg 2026-11-17: Anthropic could join the Russell 1000 after the 12/11 close and the Nasdaq 100 before the 12/21 open if trading starts 11/19; slower than SpaceX's roughly seven-day Russell inclusion in June. CNBC TV18 and Shanghai Securities News 11/17 confirm pricing on 11/18, Nasdaq debut 11/19 under ANT, 825 million Class A shares at USD 70-78, up to USD 64 billion primary plus USD 26 billion private placement, retail allocation up to 20%, up to USD 1.4 trillion fully diluted.",
+          "TL Dev Tech and smzdm 2026-11-01: GLM-5.5 was never an official model name. The only source was a CGTN report on 6/30 saying the next GLM was expected in August. Zhipu shipped GLM-5.3 (744B total / ~40B active / 1M context / USD 1.40 and 4.40, first flagship under a custom GLM 5.3 License rather than MIT) and GLM-5.3-Flash (320B/18B, MIT, USD 0.15/0.50). Founder Tang Jie named GLM-6.0 as the next base model at the 8/31 interim results call, framed around full self-training.",
+          "readaitime 2026-11-18 model documentation review: Claude Sonnet 5's USD 2 input / 10 output is listed as the base price; the previously announced 9/1 increase to USD 3/15 never took effect.",
+          "WeChat 'AI model discount briefing' 11/18 early edition and 'cyber egg' 11/18: SenseTime Loop-9B open-sourced on release 11/17 with MetaX day-zero support; SiliconFlow free models 13 to 14 (adding GLM-Z1-9B-041); OpenCode free pool 15 to 13 with MiniMax M3.1 Flash Free retired 11/17; OpenRouter catalogue 471 to 478 with 14 :free models; Alibaba Cloud Token Plan page dropped the 'first month 19.5 yuan' wording in favour of 'personal edition up to 50% off'."
         ]
       }
     ],
@@ -4723,6 +4737,14 @@
       "output_usd_per_M": 0.281,
       "date": "2026-11-17",
       "note": "Cache hit USD 0.003. Domestic CNY 0.5 / 2 / cache 0.02. 1M context (960K max input, 64K max output), native image+text, OpenAI Chat Completions / Responses and Anthropic Messages protocols. 50% off list through 11/30 12:00 for both personal and enterprise Token Plan (promo credits 5.469 / 21.953 / 0.234). Roughly one twelfth the input price and one ninth the output price of Hy4."
+    },
+    {
+      "model": "Microsoft MAI Code 2 / Code 2 Flash (in GitHub Copilot, 11/17)",
+      "api_price_published": "2026-11-17",
+      "input_usd_per_M": 0.5,
+      "output_usd_per_M": 2.5,
+      "date": "2026-11-18",
+      "note": "These are Copilot credit rates, not a separate public API: Code 2 USD 0.50 input / 0.025 cached / 2.50 output per million; Code 2 Flash USD 0.05 / 0.005 / 0.25. Both double on 2027-05-17 to USD 1.00/0.05/5.00 and 0.10/0.01/0.50. 1,050,000 context (922K max input, 128K max output), text and image input, five reasoning-effort levels. Code 2 reaches Pro, Pro+, Max, Business, Enterprise; Flash also Free and Student. Vendor claims 98% of GPT-6.1 Sol performance at 40% of cost across four coding benchmarks, measured at maximum effort on Microsoft's harness with no subagents and at the 50% promotional price."
     }
   ],
   "upcoming_deadlines": [
@@ -6849,6 +6871,114 @@
       "event": "Hy4 weights still \"to be released later\" (fifth consecutive period on the watchlist)",
       "status": "watch",
       "days_remaining": "—"
+    },
+    {
+      "date": "2026-11-18",
+      "event": "Anthropic IPO pricing (US 11/18); Nasdaq debut 11/19 under ANT",
+      "status": "imminent",
+      "days_remaining": 0
+    },
+    {
+      "date": "2026-11-18",
+      "event": "Tencent Token Plan: DeepSeek web search now billed in credits (107.162 per thousand requests each for Search and Fetch)",
+      "status": "effective",
+      "days_remaining": 0
+    },
+    {
+      "date": "2026-11-18",
+      "event": "MiniMax H3-Image first-week 50% off window closes 24:00",
+      "status": "expiring",
+      "days_remaining": 0
+    },
+    {
+      "date": "2026-11-19",
+      "event": "Claude Data auto-enables for Enterprise",
+      "status": "active",
+      "days_remaining": 1
+    },
+    {
+      "date": "2026-11-23",
+      "event": "Qianfan Double 11 first-purchase 50% off ends",
+      "status": "active",
+      "days_remaining": 5
+    },
+    {
+      "date": "2026-11-25",
+      "event": "Qwen4-Max preview window ends 24:00",
+      "status": "active",
+      "days_remaining": 7
+    },
+    {
+      "date": "2026-11-28",
+      "event": "Tmall price protection expires 23:59",
+      "status": "active",
+      "days_remaining": 10
+    },
+    {
+      "date": "2026-11-30",
+      "event": "Tencent full ladder of promotions expires 12:00 (Hy4 2.5x, Hy4 flash 50%, Auto/K3/K2.7-Code/GLM-5.3/Flash)",
+      "status": "active",
+      "days_remaining": 12
+    },
+    {
+      "date": "2026-11-30",
+      "event": "Anthropic Sonnet 4.5 retirement; Gemini 4 Argon and Carbon double to USD 4/20",
+      "status": "active",
+      "days_remaining": 12
+    },
+    {
+      "date": "2026-12-01",
+      "event": "OpenAI shared ChatGPT and Codex token pool takes effect (start date, pool size and chat conversion still unpublished)",
+      "status": "watch",
+      "days_remaining": 13
+    },
+    {
+      "date": "2026-12-07",
+      "event": "Tencent Hy4 preview retired",
+      "status": "active",
+      "days_remaining": 19
+    },
+    {
+      "date": "2026-12-11",
+      "event": "OpenAI retires six API snapshots (gpt-5, 5-mini, 5-nano, 5-pro, o3, o3-pro)",
+      "status": "active",
+      "days_remaining": 23
+    },
+    {
+      "date": "2026-12-11",
+      "event": "Anthropic could join the Russell 1000 after the close (Bloomberg)",
+      "status": "watch",
+      "days_remaining": 23
+    },
+    {
+      "date": "2026-12-14",
+      "event": "GitHub Copilot retires six models (Fable 5, Haiku 4.5, Gemini 3.8 Flash, Gemini 4 Argon, Grok 4.6, Kimi K3)",
+      "status": "active",
+      "days_remaining": 26
+    },
+    {
+      "date": "2026-12-21",
+      "event": "Anthropic could join the Nasdaq 100 before the open (Bloomberg)",
+      "status": "watch",
+      "days_remaining": 33
+    },
+    {
+      "date": "2027-01-31",
+      "event": "Volcengine deepseek-v4.1-flash and kimi-k3.1-pro coefficient promotions end (corrected from 12/30 and 11/9)",
+      "status": "active",
+      "days_remaining": 74
+    },
+    {
+      "date": "2027-03-31",
+      "event": "Volcengine Auto mode 0.5 coefficient promotion ends",
+      "status": "active",
+      "days_remaining": 133
+    },
+    {
+      "date": "2027-05-17",
+      "event": "GitHub Copilot MAI Code 2 and Code 2 Flash promotional pricing doubles",
+      "status": "active",
+      "days_remaining": 180
     }
   ],
   "latest_news": [
@@ -9104,6 +9234,51 @@
       "date": "2026-11-17",
       "head": "Short notes: token-plan.cc 11/15 snapshot, Qiniu enterprise Token Plan, Jieyue stepaudio-3 expiring, Qianfan and Qwen4-Max windows",
       "detail": "token-plan.cc 2026-11-15: 42 plans / 8 vendors / CNY 9.9-1,399 monthly list. Qiniu Cloud enterprise Token Plan at CNY 2,999 / 4,999 / 9,999 for roughly 1.07B / 2.08B / 5B points, one key across 16 models from DeepSeek, Moonshot, Zhipu and MiniMax with both OpenAI and Anthropic protocols. Jieyue stepaudio-3 free window ends 11/17 11:59, after which realtime voice is CNY 0.65 per minute and TTS CNY 95 per million characters. Qianfan Double-11 first-purchase 50% off to 11/23; Qwen4-Max preview to 11/25 24:00. OpenAI usage policy effective 11/20 (3 days), six API snapshots retired 12/11 (24 days). Volcengine Agent Plan annual 50% off closed 11/12 without renewal; invite 5% voucher to 11/19. Tencent Hy4 preview annotated offline 2026-12-07."
+    },
+    {
+      "date": "2026-11-18",
+      "head": "Tencent turns Token Plan's last free tool into a metered item: DeepSeek web search now costs 107.162 credits per thousand requests, and injected pages bill again as input tokens",
+      "detail": "From 00:00 Beijing on 11/18, Search and Fetch calls made by DeepSeek first-party models inside Token Plan are deducted from plan credits at 107.162 credits per thousand successful requests each, and the retrieved content is counted as input tokens billed at the model's input coefficient. A single search therefore produces two deductions. Post-paid billing has charged CNY 5 per thousand since 11/1. Earlier third-party briefings reported 100 credits; the official page says 107.162."
+    },
+    {
+      "date": "2026-11-18",
+      "head": "Volcengine's own promotion page contradicts three 'expired' readings: deepseek-v4.1-flash and kimi-k3.1-pro run to 2027-01-31, Auto mode's 0.5 coefficient to 2027-03-31",
+      "detail": "The Agent/Coding Plan coefficient page (updated 11/17) shows deepseek-v4.1-flash at coefficient 0.875 from 11/7 to 2027-01-31, kimi-k3.1-pro at 50% off with 200% usable quota from 10/24 to 2027-01-31, and Auto mode at coefficient 0.5 from 6/10 to 2027-03-31. Only kimi-k3 (ended 10/25) and the annual 50% package (ended 11/12) actually expired. The 'status' column remains unreliable and should not be read."
+    },
+    {
+      "date": "2026-11-18",
+      "head": "GitHub Copilot adds Microsoft's own MAI Code 2 and Code 2 Flash on 11/17, with Code 2 Flash at USD 0.05/0.25 - half the price of GPT-6 Luna",
+      "detail": "Promotional Copilot rates are USD 0.50/0.025/2.50 for Code 2 and USD 0.05/0.005/0.25 for Code 2 Flash, both doubling on 2027-05-17. Code 2 reaches Pro and above; Flash also reaches Free and Student. Context is 1,050,000 tokens. The widest price spread inside a single credit pool therefore moves from roughly 80x to about 100x."
+    },
+    {
+      "date": "2026-11-18",
+      "head": "Mistral gives European developers three months of Vibe Pro free, and its agent score lands between GLM-5.3 and Kimi K3.1 Pro",
+      "detail": "Code LECHONK unlocks three months of a plan that lists at EUR 17.99 per month in France including VAT (USD 14.99 before tax); the offer is limited to Europe and first-come. On the Artificial Analysis Coding Agent Index v2.1 dated 11/17, Vibe with Large 4 scores 41 against 40 for GLM-5.3 in Opencode and 49 for Kimi K3.1 Pro in Kimi Code CLI. Scores are not comparable with October's v2.0."
+    },
+    {
+      "date": "2026-11-18",
+      "head": "Anthropic prices on 11/18 and lists on 11/19, but index inclusion waits until 12/11 and 12/21",
+      "detail": "Bloomberg reports Russell 1000 inclusion could come after the 12/11 close and Nasdaq 100 before the 12/21 open, assuming trading starts 11/19. That is slower than SpaceX's roughly seven-day Russell inclusion, because Anthropic's listing lands just before both providers' regular December reviews. The practical effect is that the first month trades without passive index demand, so debut-day performance and first-month performance can be observed separately for the first time."
+    },
+    {
+      "date": "2026-11-18",
+      "head": "GLM-5.5 never existed: Zhipu skipped the name and went straight to GLM-6.0",
+      "detail": "The name traces back to a single CGTN line on 6/30. Zhipu shipped GLM-5.3 (744B/40B, 1M context, USD 1.40/4.40, custom license rather than MIT) and GLM-5.3-Flash (320B/18B, MIT, USD 0.15/0.50) in August, and founder Tang Jie named GLM-6.0 as the next base model at the 8/31 interim call. Domestic GLM Coding Plan pricing is CNY 118/538/1,078 with 20% off quarterly and 30% off annual. Tracking moves from 'GLM-5.5 timing' to 'GLM-6.0 timing'."
+    },
+    {
+      "date": "2026-11-18",
+      "head": "Two prior figures corrected: Claude Sonnet 5 never rose to USD 3/15, and Alibaba's top team seat shows two different prices",
+      "detail": "Anthropic's model documentation lists Sonnet 5 at USD 2 input and 10 output as the base price; the announced 9/1 increase to 3/15 never took effect, so earlier notes citing it are void. Separately, two Alibaba Cloud developer-community posts dated 11/16-11/17 list the top team seat at CNY 1,298 per month (CNY 15,576 annually) while the 11/17 record shows CNY 1,398; both figures are kept and the console is authoritative."
+    },
+    {
+      "date": "2026-11-18",
+      "head": "Alibaba Cloud widens the free web-search allowance to a second entry point, the opposite move to Tencent's",
+      "detail": "Announced 11/17 and effective 11/30, the 2,000-call free allowance can now be consumed through the model API's enable_search (turbo/max) as well as the search MCP. It remains one shared pool per account, used calls keep accumulating and it does not reset monthly. On the same day Tencent converted its equivalent free tool into a metered item."
+    },
+    {
+      "date": "2026-11-18",
+      "head": "Short notes: SenseTime Loop-9B, OpenCode free pool shrinks, SiliconFlow free pool grows, Hy4 flash global release",
+      "detail": "SenseTime open-sourced Loop-9B on release 11/17 with day-zero MetaX support. SiliconFlow free models went from 13 to 14 (adding GLM-Z1-9B-041) while OpenCode's free pool went from 15 to 13 as MiniMax M3.1 Flash Free retired on 11/17. OpenRouter's catalogue grew from 471 to 478 with 14 :free models. Tencent published the global Hy4 flash release on 11/17 with the same terms as domestic: USD 0.07/0.281, cache 0.003, 50% off to 11/30 12:00, free inside the WorkBuddy client until 11/30."
     }
   ],
   "trends": [
@@ -9595,6 +9770,14 @@
     {
       "date": "2026-11-17",
       "trend": "The billing argument has shifted from \"how big is the allowance\" to \"how is cache counted\", which is the structural risk of any shared pool. The December shared-allowance objection peaked on 11/16, and two of the three reported failures involve caching: a single Sol conversation consuming 88.96% of a weekly allowance after cached input began billing at full price on 11/5, and a compaction spiral invalidating the shared prefix. Meanwhile Anthropic measures about 96.6% of agent workloads as cache reads and MiniMax, DeepSeek and Alibaba all cut cache-hit prices in November. Because agent cost lives almost entirely in cache hits, charging cache at list is a quieter increase than shrinking quotas - check the cache rule before the quota number."
+    },
+    {
+      "date": "2026-11-18",
+      "trend": "The billing boundary, not the list price, is where the cost changed this month, and it moved in two opposite directions on the same day. Tencent began charging Token Plan credits for DeepSeek web search at 107.162 credits per thousand requests, with retrieved pages counted again as input tokens, so one search produces two deductions. Alibaba Cloud widened its free search allowance from the MCP path to the model API's enable_search entry, still capped at 2,000 calls that do not reset monthly. Neither touched a price sheet. When checking whether a tool is free, three things must be verified together: whether the call is billed separately, whether injected content counts as input tokens, and whether the free allowance resets."
+    },
+    {
+      "date": "2026-11-18",
+      "trend": "Half of this quarter's 'discount expired' readings were wrong. Volcengine's own coefficient page shows deepseek-v4.1-flash running to 2027-01-31, kimi-k3.1-pro to 2027-01-31 and Auto mode's 0.5 coefficient to 2027-03-31; only kimi-k3 and the annual 50% package actually ended. The 'promotion expires then switches tier' narrative that this tracker has repeated for several periods needs narrowing. The lesson generalises: the only trustworthy field is the promotion's start and end time, never its status label, because reading a deadline six weeks short reverses every procurement decision built on it."
     }
   ]
 }
