@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-11-18",
+    "updated": "2026-11-23",
     "cadence": "Daily 09:05",
     "currency": "USD unless noted",
     "sources": [
@@ -424,6 +424,24 @@
           "TL Dev Tech and smzdm 2026-11-01: GLM-5.5 was never an official model name. The only source was a CGTN report on 6/30 saying the next GLM was expected in August. Zhipu shipped GLM-5.3 (744B total / ~40B active / 1M context / USD 1.40 and 4.40, first flagship under a custom GLM 5.3 License rather than MIT) and GLM-5.3-Flash (320B/18B, MIT, USD 0.15/0.50). Founder Tang Jie named GLM-6.0 as the next base model at the 8/31 interim results call, framed around full self-training.",
           "readaitime 2026-11-18 model documentation review: Claude Sonnet 5's USD 2 input / 10 output is listed as the base price; the previously announced 9/1 increase to USD 3/15 never took effect.",
           "WeChat 'AI model discount briefing' 11/18 early edition and 'cyber egg' 11/18: SenseTime Loop-9B open-sourced on release 11/17 with MetaX day-zero support; SiliconFlow free models 13 to 14 (adding GLM-Z1-9B-041); OpenCode free pool 15 to 13 with MiniMax M3.1 Flash Free retired 11/17; OpenRouter catalogue 471 to 478 with 14 :free models; Alibaba Cloud Token Plan page dropped the 'first month 19.5 yuan' wording in favour of 'personal edition up to 50% off'."
+        ]
+      },
+      {
+        "date": "2026-11-23",
+        "items": [
+          "Anthropic ANT Nasdaq debut 2026-11-19, cross-checked via Huanqiu, Securities Times (stcn.com) and Xinhua Finance (cnfin.com): priced at USD 83 above the USD 70-78 range on 980M Class A shares, ~USD 81.34B primary proceeds plus USD 25B concurrent private placement (~USD 107.3B total); opened 111.50, high 115.10, low 92.72, closed 97.17 (+17.07%), 857M shares / USD 87.7B turnover, fully diluted market cap ~USD 1.75-1.8T; nine-month revenue USD 33.24B (12x YoY); Amazon 14.7% and Alphabet 13.7%; same session Nasdaq -2.25%, S&P 500 -2.02% (sixth straight decline), Dow -2.19%, NVDA -3.30%, AMD -7.72%.",
+          "OpenAI GPT-6.2 Astra and GPT-6.2 Sol, released 2026-11-17, official pricing and model guide plus Silicon Report 11/17, Sina Tech and Phoenix Tech 11/18: Astra USD 8 input / 0.40 cached / 40 output per million (-20% input and output, -60% cached versus GPT-6 Astra), Sol unchanged at USD 2 / 0.10 / 10; 1,050,000 context (922K max input, 128K output); above 272K input tokens input and cache double and output takes a 1.5x multiplier (Astra long-context USD 16/60); Ultrafast tier starts at 3x standard API rates and rises to 6x on 2027-03-01; Pro USD 500 gets Ultrafast on both, Pro USD 200 on Sol only; AA Intelligence Index Astra 62, Sol 57, Fable 5.2 65.",
+          "OpenAI Usage Policies revision effective 2026-11-20 (changelog dated 2026-10-21), verified 11/21 via MACCUS, BlockFrame Labs and Aizano: model-access intermediaries including routers and AI gateways need prior review and approval; as of 11/21 no approved list and no application route were published; the training clause bans generating, preparing, selecting or supplying training material or signals for substitute models, including rubrics, RL environments, labels, rankings and preferences; the high-stakes clause widens from automated decisions to automated actions; OpenAI's parallel adversarial-distillation post cites 54% extraction success against GPT-6 Astra versus 0.2% against GPT-6.2 Astra.",
+          "Microsoft Azure AI Gateway GA at Ignite 2026-11-17 (BlockFrame summary): standalone service in 17 regions, model aliases, routing and failover, MCP tool federation, Entra ID access control, cost limits and per-call telemetry; first 10,000 requests per gateway per month free; paid billing from 2027-01-01 at USD 500 per gateway per month for up to 10M requests, then USD 20 per additional million.",
+          "Volcengine Ark coefficient page revised 2026-11-20: deepseek-v4.1-flash-economy and kimi-k2.8-preview promotions reworded from fixed end dates to long-running/ongoing (k2.8-preview coefficient 4.8); kimi-k3.1-pro restored to a limited-time 50% coefficient with 200% quota through 2027-01-31, reversing the earlier reading that it had returned to standard; a successor clause was added under the deepseek-v4.1-flash discount row.",
+          "DeepSeek billing note effective 2026-11-18 12:00 Beijing: model-initiated web search and fetching are no longer billed separately and are charged as tokens only, while the explicit /v1/tools Search and Fetch endpoints remain CNY 5 per thousand successful requests each.",
+          "Kimi outage and compensation, 2026-11-19 to 11-22 (SMZDM community long posts): error 4028 on the afternoon of 11/19, again on the evening of 11/20 and in the early hours of 11/22; from 11/21 every paid tier received 25% of its monthly allowance, applied as a reset of the pool rather than an addition, per the 10/26 apology letter.",
+          "Tencent Cloud Hy Token Plan 50% package discount, channel write-ups 11/20-11/21: Lite 560 credits CNY 28, Standard 1,560 CNY 78, Pro 4,760 CNY 238, Max 9,360 CNY 468, promotion page stating an end date of 2026-12-31, single API key, interactive AI-tool use only, no refunds, credits not carried over; this conflicts with the official credit-deduction page promotion 4 (11/16 to 11/30 12:00) and is recorded as two competing readings.",
+          "Google Antigravity model table and changelog, checked 11/20-11/21: Gemini 4 Neon GA 2026-11-18 for paid Google AI Pro (USD 19.99) and Ultra (USD 99.99 / 199.99), default model for new conversations, Carbon still Ultra-only and Gemini Enterprise, Orchestrator (Neon) pairing with Gemini 4 Hydrogen; three models removed 2026-11-30 (Claude Sonnet 4.6, Claude Opus 4.6, GPT-OSS-120b) after earlier 11/2 and 11/18 dates.",
+          "CNESA free-API weekly 2026-11-21: Baidu Qianfan retires seven models on 11/23 (PaddleOCR-VL, PP-StructureV3, DeepSeek-OCR, Qianfan-OCR, InternVL3-38B, Qwen-Image, Qwen-Image-Edit); qwen4-max-preview ends 11/25 24:00; PPIO retires three models 11/27; Alibaba Bailian Token Plan new-customer 50% offer ends 11/30.",
+          "WeChat daily deal roundup 2026-11-21: Zhipu ZCode switches to a WEEKEND BUILD card from 11/20 19:00 (500M tokens, active 23:00, cleared Monday 09:00); OpenCode free pool down to 12 models with a 11/23 closing date; GLM campaign USD 10 for USD 200 of GLM-5.3 usage expiring 11/22 on third-party readings.",
+          "Aliyun Bailian Token Plan page checked 11/21: four tiers at CNY 39 / 79 / 139 / 312 for 20,000 / 45,000 / 80,000 / 200,000 credits, new-customer prices CNY 19.5 / 39.5 valid to 2026-11-30 23:59, usage packs CNY 100 per 20,000 credits (max five, non-refundable, no carry-over).",
+          "GitHub Docs and changelog, GPT-6.2 Astra and Sol GA 2026-11-17: available to Copilot Pro+, Max, Business and Enterprise (Pro explicitly excluded), cache write listed separately at USD 10 and 2.50 per million, 1M context option limited to VS Code and CLI, long-context rates above 272K input."
         ]
       }
     ],
@@ -4745,6 +4763,14 @@
       "output_usd_per_M": 2.5,
       "date": "2026-11-18",
       "note": "These are Copilot credit rates, not a separate public API: Code 2 USD 0.50 input / 0.025 cached / 2.50 output per million; Code 2 Flash USD 0.05 / 0.005 / 0.25. Both double on 2027-05-17 to USD 1.00/0.05/5.00 and 0.10/0.01/0.50. 1,050,000 context (922K max input, 128K max output), text and image input, five reasoning-effort levels. Code 2 reaches Pro, Pro+, Max, Business, Enterprise; Flash also Free and Student. Vendor claims 98% of GPT-6.1 Sol performance at 40% of cost across four coding benchmarks, measured at maximum effort on Microsoft's harness with no subagents and at the 50% promotional price."
+    },
+    {
+      "model": "OpenAI GPT-6.2 Astra / Sol (released 2026-11-17)",
+      "api_price_published": "2026-11-17",
+      "input_usd_per_M": 8.0,
+      "output_usd_per_M": 40.0,
+      "date": "2026-11-23",
+      "note": "Astra USD 8 input / 0.40 cached / 40 output per million, 20% below GPT-6 Astra on input and output and 60% below on cached input; Sol unchanged at USD 2 / 0.10 / 10 versus GPT-6.1 Sol. 1,050,000 context, 128K max output. Input above 272K doubles input and cache rates and applies a 1.5x output multiplier, so long-context Astra is USD 16 / 60. Ultrafast costs 3x standard through 2027-02-28 and 6x from 2027-03-01. The flagship-to-daily multiple narrows from 5x to 4x on both input and output."
     }
   ],
   "upcoming_deadlines": [
@@ -6979,6 +7005,78 @@
       "event": "GitHub Copilot MAI Code 2 and Code 2 Flash promotional pricing doubles",
       "status": "active",
       "days_remaining": 180
+    },
+    {
+      "date": "2026-11-23",
+      "event": "Baidu Qianfan retires seven OCR and image models (PaddleOCR-VL, PP-StructureV3, DeepSeek-OCR, Qianfan-OCR, InternVL3-38B, Qwen-Image, Qwen-Image-Edit)",
+      "status": "due today",
+      "days_remaining": 0
+    },
+    {
+      "date": "2026-11-23",
+      "event": "Baidu Qianfan Token Plan new-customer 50% first-purchase offer ends",
+      "status": "due today",
+      "days_remaining": 0
+    },
+    {
+      "date": "2026-11-25",
+      "event": "Alibaba Bailian qwen4-max-preview preview window closes and the model goes offline (24:00)",
+      "status": "active",
+      "days_remaining": 2
+    },
+    {
+      "date": "2026-11-27",
+      "event": "PPIO retires three models (deepseek-ocr-2, autoglm-phone-9b-multilingual, minimax-m1-80k)",
+      "status": "active",
+      "days_remaining": 4
+    },
+    {
+      "date": "2026-11-30",
+      "event": "Google Antigravity removes Claude Sonnet 4.6, Claude Opus 4.6 and GPT-OSS-120b",
+      "status": "active",
+      "days_remaining": 7
+    },
+    {
+      "date": "2026-12-11",
+      "event": "Anthropic expected Russell 1000 index inclusion after the close",
+      "status": "active",
+      "days_remaining": 18
+    },
+    {
+      "date": "2026-12-21",
+      "event": "Anthropic expected Nasdaq 100 index inclusion before the open",
+      "status": "active",
+      "days_remaining": 28
+    },
+    {
+      "date": "2026-12-31",
+      "event": "Tencent Hy Token Plan package 50% discount end date as stated on the promotion page (conflicts with 11/30 12:00 on the official credit page)",
+      "status": "unverified",
+      "days_remaining": 38
+    },
+    {
+      "date": "2027-01-01",
+      "event": "Azure AI Gateway paid billing starts at USD 500 per gateway per month after the free 10,000 monthly requests",
+      "status": "active",
+      "days_remaining": 39
+    },
+    {
+      "date": "2027-01-31",
+      "event": "Volcengine kimi-k3.1-pro limited-time 50% coefficient with 200% quota ends",
+      "status": "active",
+      "days_remaining": 69
+    },
+    {
+      "date": "2027-03-01",
+      "event": "OpenAI Ultrafast API pricing rises from 3x to 6x standard rates",
+      "status": "active",
+      "days_remaining": 98
+    },
+    {
+      "date": "2027-03-31",
+      "event": "Volcengine Agent Plan Small and Medium first-two-month discount ends (CNY 9.9 and 49.9)",
+      "status": "active",
+      "days_remaining": 128
     }
   ],
   "latest_news": [
@@ -9279,6 +9377,46 @@
       "date": "2026-11-18",
       "head": "Short notes: SenseTime Loop-9B, OpenCode free pool shrinks, SiliconFlow free pool grows, Hy4 flash global release",
       "detail": "SenseTime open-sourced Loop-9B on release 11/17 with day-zero MetaX support. SiliconFlow free models went from 13 to 14 (adding GLM-Z1-9B-041) while OpenCode's free pool went from 15 to 13 as MiniMax M3.1 Flash Free retired on 11/17. OpenRouter's catalogue grew from 471 to 478 with 14 :free models. Tencent published the global Hy4 flash release on 11/17 with the same terms as domestic: USD 0.07/0.281, cache 0.003, 50% off to 11/30 12:00, free inside the WorkBuddy client until 11/30."
+    },
+    {
+      "date": "2026-11-23",
+      "head": "The only price cut this week was the multiple between flagship and daily, not the price sheet",
+      "detail": "OpenAI cut GPT-6.2 Astra to USD 8 input / 40 output (cached input -60% to 0.40) while leaving GPT-6.2 Sol at USD 2 / 10. The flagship-to-daily multiple therefore falls from 5x to 4x on both sides, the first time this quarter a vendor moved the price sheet itself rather than the billing boundary. Benchmarks suggest the discount buys non-coding gains: AA's coding agent index is flat for Astra and down three points for Sol."
+    },
+    {
+      "date": "2026-11-23",
+      "head": "Anthropic priced above range at USD 83 and closed its first session up 17%, while its API price list did not move at all",
+      "detail": "The 980M-share deal raised about USD 81.34B, or roughly USD 107.3B with the USD 25B private placement, the largest US listing on record. The stock opened at 111.50, peaked at 115.10 and closed at 97.17, giving a fully diluted market cap near USD 1.75-1.8T. The same session saw the Nasdaq fall 2.25% and the S&P 500 post a sixth straight decline, so the biggest AI IPO of the cycle did not lift the sector. Index inclusion is not expected before 12/11 and 12/21."
+    },
+    {
+      "date": "2026-11-23",
+      "head": "OpenAI's gateway approval rule took effect with no list and no way to apply",
+      "detail": "The 11/20 usage policies require model routers and AI gateways to obtain prior approval, yet as of 11/21 OpenAI had published neither an approved list nor an application route. Microsoft shipped the complementary product the same week: Azure AI Gateway went GA at Ignite on 11/17 across 17 regions with the first 10,000 monthly requests free and USD 500 per gateway per month from 2027-01-01. The charging point moves from tokens to permission to forward traffic."
+    },
+    {
+      "date": "2026-11-23",
+      "head": "DeepSeek made agent-initiated search free again twelve hours after Tencent made it the most expensive line in its plan",
+      "detail": "From 11/18 12:00 Beijing, search and fetching that the model initiates are billed as tokens only, while explicit /v1/tools calls stay at CNY 5 per thousand successful requests. Tencent had started charging 107.162 credits per thousand for the same capability at 00:00 the same day, plus a second deduction because injected pages count as input tokens. The boundary is now who initiates the call, not which model answers."
+    },
+    {
+      "date": "2026-11-23",
+      "head": "Volcengine rewrote two expiring discounts as permanent and restored one it had appeared to withdraw",
+      "detail": "The 11/20 documentation revision turns deepseek-v4.1-flash-economy and kimi-k2.8-preview into long-running promotions and puts kimi-k3.1-pro back to a limited-time 50% coefficient with 200% quota through 2027-01-31. A successor clause now sits under the deepseek-v4.1-flash discount row. Budgets built on the assumption that these discounts would lapse need to be rebuilt on the assumption that they are the standing rate."
+    },
+    {
+      "date": "2026-11-23",
+      "head": "Kimi went down three times in four days and its 25% make-good was a reset, not an addition",
+      "detail": "Error 4028 hit on the afternoon of 11/19, the evening of 11/20 and the early hours of 11/22, breaking long-document parsing and running agent tasks. The 25% monthly allowance credited from 11/21 rewrites the whole pool rather than topping up the remainder, so heavy users gain real runway while light users simply refill, and anyone whose cycle refreshes within a day or two loses it entirely. With conversation turns now metered and two silent daily deductions for Kimi Claw hosts and hosted sites, the month's usable volume can no longer be estimated from plan price."
+    },
+    {
+      "date": "2026-11-23",
+      "head": "Gemini 4 Neon landed on the 19.99 plan and became Antigravity's default model",
+      "detail": "Neon went GA on 11/18 for paid Google AI Pro and Ultra subscribers and is the default model for new conversations; Ultra's advantage is a higher allowance rather than access, while Gemini 4 Carbon remains Ultra-only. On the AA coding agent index, Antigravity CLI with Neon at xhigh scores 59, ahead of Claude Code with Fable 5.2 at 58 and Antigravity with Carbon at 55, so the top coding setup now sits on a USD 20 plan. Three models, including both Claude 4.6 entries, leave Antigravity on 11/30."
+    },
+    {
+      "date": "2026-11-23",
+      "head": "Seven-day expiry wall: Qianfan retires seven models today and seven things land on 11/30",
+      "detail": "Baidu Qianfan drops seven OCR and image models on 11/23 as its 50% first-purchase offer expires, qwen4-max-preview closes on 11/25, PPIO retires three models on 11/27 and Tmall price protection ends on 11/28. On 11/30 the Tencent promotion window closes at 12:00, Gemini 4 Argon and Carbon double to USD 4/20, Claude Sonnet 4.5 retires, Alibaba's cashback and widened search allowance take effect, Antigravity drops three models and the SCNet campaign ends."
     }
   ],
   "trends": [
@@ -9778,6 +9916,14 @@
     {
       "date": "2026-11-18",
       "trend": "Half of this quarter's 'discount expired' readings were wrong. Volcengine's own coefficient page shows deepseek-v4.1-flash running to 2027-01-31, kimi-k3.1-pro to 2027-01-31 and Auto mode's 0.5 coefficient to 2027-03-31; only kimi-k3 and the annual 50% package actually ended. The 'promotion expires then switches tier' narrative that this tracker has repeated for several periods needs narrowing. The lesson generalises: the only trustworthy field is the promotion's start and end time, never its status label, because reading a deadline six weeks short reverses every procurement decision built on it."
+    },
+    {
+      "date": "2026-11-23",
+      "trend": "This month the price sheet finally moved, but only at the top. OpenAI cut GPT-6.2 Astra by 20% and left Sol untouched, so the flagship-to-daily multiple narrowed from 5x to 4x rather than the whole ladder shifting down. Read together with two months of billing-boundary changes, the pattern is that vendors protect the entry tier and reprice the ceiling, because the entry tier is where volume and switching costs are decided. When evaluating a launch discount, compute the ratio between tiers, not just the headline percentage: a 20% cut applied only to the expensive tier is a different product decision from a 20% cut applied to both."
+    },
+    {
+      "date": "2026-11-23",
+      "trend": "Access became a priced product this week, with two companies taking opposite sides of the same interface. OpenAI made approval mandatory for gateways on 11/20 without publishing a list or an application route; Microsoft put a gateway on sale at USD 500 per month per instance from 2027-01-01. For teams, the practical consequence is that the cost of reaching a model now includes a permission cost and an outage-correlation risk: an unapproved intermediary can lose access, and any failover chain that runs through it breaks at the same moment as the primary. Keep one direct path per critical model even at a higher unit price."
     }
   ]
 }
