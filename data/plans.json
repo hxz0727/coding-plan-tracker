@@ -1,10 +1,25 @@
 {
   "meta": {
     "title": "AI Coding Plan & Token Plan Tracker",
-    "updated": "2026-11-23",
+    "updated": "2026-11-24",
     "cadence": "Daily 09:05",
     "currency": "USD unless noted",
     "sources": [
+      {
+        "date": "2026-11-24",
+        "items": [
+          "Z.ai blog 2026-11-23 \"GLM-5.4: Toward Generalized Coding with Our First Loop Transformer\" (fetched 11/24): first flagship on Loop Transformer, 28 layers of the GLM-5 base looped twice at ~750B scale, vendor claims 2T-3T-class intelligence; 1M context, 128K max output, video/image/text/file input; three engineering changes (gated progressive updates, hybrid KV cache with cross-loop sharing plus independent sliding window, sparse attention index reuse) so an extra loop costs only one sliding window of KV; 30B iso-parameter control with ~10% more compute cut output length 10-14%; 200 tok/s off-peak, 70-80 tok/s peak; API after safety review, weights to be open-sourced responsibly.",
+          "Zhipu announcement 2026-11-23 (Jiemian, The Paper, IT之家, smzdm x3): GLM-5.4 open to all GLM Coding Plan users (not a tiered beta), shipped same day in ZCode/Trae/WorkBuddy/Qoder; Claude Code needs model name glm-5.4[1m] for the 1M tier; V2/V3/Team quotas raised to 1.5x; Lite CNY 118 / Pro 538 / Max 1,078 monthly, quarterly 94.4 / 430.4 / 862.4 (exactly 80%, confirming Max list price 1,078 rather than the 1,018 printed in one roundup); no benchmark table, no API price, no weights on HuggingFace zai-org that evening; recognised limitation is \"marathon thinking\"; first-day congestion with throttling even on top tiers.",
+          "Volcengine Ark doc \"Agent/Coding Plan designated-model discount coefficients\", page updated 2026-11-23 (fetched 11/24): glm-5.4 added to the eligible list same day, coefficient not published; active promotions = Auto (6/10-2027-03-31), deepseek-v4.1-flash (11/7-2027-01-31), deepseek-v4.1-flash-economy (long-term), kimi-k2.8-preview (long-term, coefficient 4.8), kimi-k3.1-pro (10/24-2027-01-31); closed list includes kimi-k3 (10/12-10/25), glm-5.3-flash, glm-5.2, v4-pro, k2.6, k2.7-code.",
+          "Tencent Cloud notice on server-side search billing (relayed by Tencent News 11/23): from 2026-11-18 12:00 Beijing, Search and Fetch triggered by DeepSeek \"factory-direct\" models are no longer billed separately and only model tokens are charged; triggered via the Anthropic API web_search tool and the Responses API web_search tool; fees incurred after 11/18 12:00 refunded automatically before 11/30 23:59:59 with no application needed; standalone /v1/tools still CNY 5 per thousand successful requests. Tencent Cloud enterprise Token Plan doc (fetched 11/24) still carries the old clause \"from 11/18 00:00 counted against package credits\", so two contradictory policies are live.",
+          "Tencent Cloud Token Plan campaign page fetched 2026-11-24: all four Hy Token Plan tiers (Lite 560 / Standard 1,560 / Pro 4,760 / Max 9,360 credits) render as \"sold out / please look forward to it\" with both campaign and list prices shown as \"--\", while the general Token Plan series is still purchasable. Channel reports had the 50% price of CNY 28 / 78 / 238 / 468 with an end date of 12/31, the official credit-deduction page says 11/30 12:00 - the third state is now \"price window open, supply closed\".",
+          "Alibaba Model Studio Token Plan personal page (Last Updated 2026-11-21, read by PlanYield 11/23 and re-checked 11/24): qwen4-max now listed as a supported model (reasoning, visual understanding, text generation) above qwen4-max-preview; preview stays until 11/25 24:00 UTC+8 and is retired afterwards; no Credits multiplier published, credits per request depend on model, tokens, thinking mode and tool calls; tier prices and monthly credits unchanged at CNY 39/79/139/312 for 20k/45k/80k/200k credits. Alibaba Model Studio release notes 11/23 add qwen-audio-3.1-live, realtime duplex speech billed per session second at CNY 0.003330 (Beijing) and 0.005177 (Singapore), minimum 3 seconds per session, back-end model tokens billed separately.",
+          "Thinking Machines Lab model card and launch notes for Inkling 2 Mini (released 2026-11-20, Apache 2.0; IT之家/Fenghuang 11/23, TMTPost Edge AI Daily 11/24, Juejin 11/23): 26.4B total / 3.4B active MoE with 24 layers in four 6-layer blocks, the two middle blocks looped 3x per token for an effective 5.4B activated weights; experts pruned from 384 to 128 per layer; NVFP4 on expert layers and MXFP8 on the last four; ~20GB memory, runs on 32GB+ Apple silicon via Ollama or on DGX Spark; 1M context on weights but 256K on the hosted Tinker endpoint; first-party USD 0.15 input / 0.50 output / 0.015 cached, OpenRouter from 0.08 / 0.35; AA Intelligence Index v5.0.1 20.1, ARC-AGI-2 49.3% (USD 0.144 per task), DeepSWE v1.1 48.2%, SWE-bench Pro v2 Hard 77.9%; 500 trillion tokens on day one and first place on the OpenRouter daily leaderboard.",
+          "Anthropic 2026-11-23 Enterprise Frontier Safeguards public beta (via JianYuan AI daily 11/24): EFS can be used together with zero data retention; customer-owned storage, inputs and outputs deleted promptly after being written to customer-controlled storage; automated cross-request abuse monitoring produces a security case without raw inputs or outputs; available on Claude Platform, Claude Platform on AWS, Amazon Bedrock and Claude on Google Cloud, Microsoft Foundry coming; no separate EFS fee and no change to model behaviour, API pricing or rate limits.",
+          "WeChat \"AI model discount bulletin\" 11/24 early edition (264 items): official per-token list prices unchanged for a 35th straight day; 11/23 closed the Qianfan Double 11 bundle (five-tier 50% first purchase plus off-peak 20% credit discount), the ZCode 500M weekend card and the OpenCode 12-model free pool; next cluster of expiries is 11/25, 11/27, 11/28 and 11/30. Tencent News 11/23 \"the cache tax behind Anthropic's margins\" (11/20 back-calculation of weekly token allowances: Claude Pro USD 20 about 818M tokens/week, Claude Ultra USD 200 about 8.18B, ChatGPT Pro 200 about 9.385B, Google AI Ultra 20x about 5.164B; SemiAnalysis puts USD 200 of Claude subscription at up to USD 8,000/month of equivalent API usage and OpenAI at USD 14,000; S-1 has about 80% usage-based revenue and 1.3% consumer subscriptions).",
+          "NVIDIA 11/23 board reinstates Jensen Huang as president, CEO and director, shares up as much as 30% pre-market; investigation continues, new national security and export control committee formed. MemTensor open-sourced MemT-1.0-Pro on 11/22 (554B-A59B plus 4.23B trainable memory parameters, ~66x less storage than full KV cache at 128K history)."
+        ]
+      },
       {
         "date": "2026-11-17",
         "items": [
@@ -4058,6 +4073,57 @@
         }
       ],
       "notes": "2026-11-13. Tmall store opened 2026-09-02 with personal Lite/Pro/Max plus team standard seats, priced in line with the official site. Off-peak discount is long-running: weekdays 14:00-18:00 count as peak and everything else bills at 50% of credits. Zhipu H1 2026 revenue CNY 954M (+399.7% YoY) with open-platform/API at CNY 825M (+27x), 86.5% of total."
+    },
+    {
+      "name": "Zhipu GLM-5.4 (Coding Plan flagship)",
+      "owner": "Zhipu AI (Z.ai)",
+      "billing": "monthly / quarterly / annual via GLM Coding Plan only; no pay-as-you-go API yet",
+      "plans": [
+        {
+          "name": "Lite",
+          "price": "CNY 118 per month (quarterly 94.4)",
+          "credits": "10,000 credits per week; 1.5x GLM-5.4 allowance vs GLM-5.3"
+        },
+        {
+          "name": "Pro",
+          "price": "CNY 538 per month (quarterly 430.4)",
+          "credits": "6x Lite usage; 1.5x GLM-5.4 allowance"
+        },
+        {
+          "name": "Max",
+          "price": "CNY 1,078 per month (quarterly 862.4)",
+          "credits": "14x Lite usage; 1.5x GLM-5.4 allowance"
+        },
+        {
+          "name": "Team",
+          "price": "CNY 598 / 1,198 per seat ladder",
+          "credits": "1.5x GLM-5.4 allowance"
+        }
+      ],
+      "notes": "GLM-5.4 launched 2026-11-23 midday with no event and no benchmark table, open to all Coding Plan tiers. First Zhipu flagship on Loop Transformer: 28 layers of the GLM-5 base looped twice at ~750B scale, vendor claims 2T-3T-class intelligence, 1M context (model name glm-5.4[1m] in Claude Code), 128K max output, first mainline flagship with vision and video/image/file input. No API price yet (pending safety review), no weights yet (planned responsible open source), no published scores. Official limitation: marathon thinking loops. 200 tok/s off-peak, 70-80 tok/s peak. Same-day coverage on Volcengine Ark discount-coefficient list. Management guided a ~3T-parameter flagship for Q4 (GLM-5.5, earliest December, may reuse the Loop architecture)."
+    },
+    {
+      "name": "Thinking Machines Lab Inkling 2 Mini",
+      "owner": "Thinking Machines Lab (Mira Murati)",
+      "billing": "open weights (Apache 2.0) + first-party hosted API + OpenRouter",
+      "plans": [
+        {
+          "name": "Open weights",
+          "price": "free (Apache 2.0, ~20GB, NVFP4/MXFP8)",
+          "credits": "1M context on weights; 256K on hosted Tinker endpoint"
+        },
+        {
+          "name": "First-party API",
+          "price": "USD 0.15 input / 0.50 output / 0.015 cached per million",
+          "credits": "text + image input"
+        },
+        {
+          "name": "OpenRouter",
+          "price": "from USD 0.08 input / 0.35 output per million",
+          "credits": "third-party routing"
+        }
+      ],
+      "notes": "Released 2026-11-20. 26.4B total / 3.4B active sparse MoE; 24 layers in four 6-layer blocks, the two middle blocks looped three times per token giving 5.4B of effectively activated weights; 384 experts pruned to 128 per layer. Benchmarks (lab-reported, not independently replicated): AA Intelligence Index v5.0.1 20.1, ARC-AGI-2 49.3% at max effort (USD 0.144 per task), ARC-AGI-1 84.5%, DeepSWE v1.1 48.2%, SWE-bench Pro v2 Hard 77.9%. Runs on 32GB+ Apple silicon via Ollama pre-release, DGX Spark, vLLM Day-0, SGLang, llama.cpp, MLX, Unsloth 1-bit at ~9GB. 500 trillion tokens served on day one and #1 on the OpenRouter daily leaderboard."
     }
   ],
   "model_token_prices_per_MTok": [
@@ -4771,6 +4837,14 @@
       "output_usd_per_M": 40.0,
       "date": "2026-11-23",
       "note": "Astra USD 8 input / 0.40 cached / 40 output per million, 20% below GPT-6 Astra on input and output and 60% below on cached input; Sol unchanged at USD 2 / 0.10 / 10 versus GPT-6.1 Sol. 1,050,000 context, 128K max output. Input above 272K doubles input and cache rates and applies a 1.5x output multiplier, so long-context Astra is USD 16 / 60. Ultrafast costs 3x standard through 2027-02-28 and 6x from 2027-03-01. The flagship-to-daily multiple narrows from 5x to 4x on both input and output."
+    },
+    {
+      "model": "Thinking Machines Lab Inkling 2 Mini (released 2026-11-20)",
+      "api_price_published": "2026-11-20",
+      "input_usd_per_M": 0.15,
+      "output_usd_per_M": 0.5,
+      "date": "2026-11-24",
+      "note": "Cached input USD 0.015 per million; OpenRouter starting at USD 0.08 input / 0.35 output. 26.4B total / 3.4B active (5.4B equivalent with loops), 1M context on weights but 256K on the hosted endpoint, native text+image input. Apache 2.0 weights. New floor for the pay-as-you-go coding segment this month; compares with GLM-5.4 which has no published API price and is subscription-only for now."
     }
   ],
   "upcoming_deadlines": [
@@ -7077,6 +7151,42 @@
       "event": "Volcengine Agent Plan Small and Medium first-two-month discount ends (CNY 9.9 and 49.9)",
       "status": "active",
       "days_remaining": 128
+    },
+    {
+      "date": "2026-11-25",
+      "event": "Alibaba qwen4-max-preview retired at 24:00 (qwen4-max formal listing already in Token Plan, no Credits multiplier published)",
+      "status": "active",
+      "days_remaining": 1
+    },
+    {
+      "date": "2026-11-30",
+      "event": "Tencent Hy Token Plan restock decision: four tiers are sold out as of 11/24 while the 50% window runs to 11/30 12:00",
+      "status": "active",
+      "days_remaining": 6
+    },
+    {
+      "date": "2026-11-30",
+      "event": "Alibaba Token Plan new-customer 50% first purchase ends (Lite 19.5 / Essential 39.5)",
+      "status": "active",
+      "days_remaining": 6
+    },
+    {
+      "date": "2026-11-30",
+      "event": "Tencent general Token Plan promotion ladder ends at 12:00 (Auto 11 credits, K3 7.5x, K2.7-Code 8x, GLM-5.3 5.5x, GLM-5.3-Flash 7x)",
+      "status": "active",
+      "days_remaining": 6
+    },
+    {
+      "date": "2026-12-31",
+      "event": "Tencent Cloud enterprise Token Plan Hy4 50% discount runs to 12/31 23:59:59, later than the individual-side 11/30 12:00 deadline",
+      "status": "active",
+      "days_remaining": 37
+    },
+    {
+      "date": "2026-12-31",
+      "event": "Zhipu GLM-5.4 API price and open weights still unannounced (GLM Coding Plan remains the only access route)",
+      "status": "active",
+      "days_remaining": 37
     }
   ],
   "latest_news": [
@@ -9417,6 +9527,51 @@
       "date": "2026-11-23",
       "head": "Seven-day expiry wall: Qianfan retires seven models today and seven things land on 11/30",
       "detail": "Baidu Qianfan drops seven OCR and image models on 11/23 as its 50% first-purchase offer expires, qwen4-max-preview closes on 11/25, PPIO retires three models on 11/27 and Tmall price protection ends on 11/28. On 11/30 the Tencent promotion window closes at 12:00, Gemini 4 Argon and Carbon double to USD 4/20, Claude Sonnet 4.5 retires, Alibaba's cashback and widened search allowance take effect, Antigravity drops three models and the SCNet campaign ends."
+    },
+    {
+      "date": "2026-11-24",
+      "head": "Zhipu slips GLM-5.4 into Coding Plan with no event, no scores and no API price - and 1.5x the quota",
+      "detail": "On 2026-11-23 at midday Zhipu opened GLM-5.4 to every GLM Coding Plan tier rather than a beta, shipping it the same day in ZCode, Trae, WorkBuddy and Qoder; Claude Code users set the model name to glm-5.4[1m] to get the 1M context. V2/V3/Team quotas rise to 1.5x while Lite/Pro/Max stay at CNY 118/538/1,078 (quarterly 80%, which confirms a list price of 1,078 rather than the 1,018 in one roundup). There is no benchmark table, no API price, and no weights on HuggingFace. Volcengine added glm-5.4 to its Agent/Coding Plan discount-coefficient list the same day."
+    },
+    {
+      "date": "2026-11-24",
+      "head": "GLM-5.4 is the first Loop Transformer flagship at 750B: 28 layers run twice, and an extra loop costs one sliding window of KV",
+      "detail": "Z.ai blog details looped depth on the existing GLM-5 base instead of pretraining from scratch, with gated progressive updates per token and per iteration, a hybrid KV cache that reuses the first pass sparse KV plus an independent sliding window, and sparse attention index reuse so the second pass pays zero indexing. A 30B iso-parameter control with about 10% more compute cut output length 10-14% on GPQA-Diamond and MMLU-Pro. 1M context, 128K max output, video/image/text/file input, 200 tok/s off-peak and 70-80 tok/s at peak. Zhipu admits the model can fall into marathon thinking loops."
+    },
+    {
+      "date": "2026-11-24",
+      "head": "Tencent reverses itself in 12 hours and refunds: DeepSeek factory-direct search stops being billed from 11/18 12:00",
+      "detail": "Tencent Cloud now says Search and Fetch triggered by DeepSeek factory-direct models are charged only as model tokens from 2026-11-18 12:00, and all fees incurred after that moment are refunded before 11/30 23:59:59 without an application. The 107.162-credit-per-thousand rule recorded last period only ran for those 12 hours. Standalone /v1/tools remains at CNY 5 per thousand. The enterprise Token Plan document still carries the old clause, so two policies are live on the same account."
+    },
+    {
+      "date": "2026-11-24",
+      "head": "Tencent Hy Token Plan sells out while the 50% window is still open",
+      "detail": "All four Hy Token Plan tiers render as sold out on the campaign page on 11/24, with campaign and list prices shown as \"--\", while the general Token Plan is still purchasable. Lite/Standard/Pro/Max are 560/1,560/4,760/9,360 credits and channel prices were CNY 28/78/238/468 at 50% off. The discount end date was already contradictory (campaign page 12/31 versus credit rules 11/30 12:00); the third state is now that price is open and supply is closed."
+    },
+    {
+      "date": "2026-11-24",
+      "head": "Alibaba promotes qwen4-max from preview to a formal Token Plan entry without publishing a Credits multiplier",
+      "detail": "The Token Plan personal page (Last Updated 2026-11-21) lists qwen4-max above qwen4-max-preview for reasoning, visual understanding and text generation; the preview model retires at 11/25 24:00 and tier prices and monthly credits are unchanged at CNY 39/79/139/312 for 20k/45k/80k/200k. Alibaba explicitly ties Credits per request to model, token usage, thinking mode and tool calls, so no multiplier is available. On 11/23 Model Studio also listed qwen-audio-3.1-live at CNY 0.003330 per session second in Beijing and 0.005177 in Singapore with a 3-second minimum."
+    },
+    {
+      "date": "2026-11-24",
+      "head": "Inkling 2 Mini makes looped architecture a pay-as-you-go floor: 26.4B weights, 1M context, USD 0.15/0.50",
+      "detail": "Thinking Machines Lab released Apache 2.0 weights on 11/20 for a 26.4B-A3.4B sparse MoE whose two middle 6-layer blocks loop three times per token for 5.4B of effective activation, at about 20GB of memory so it runs on a 32GB Mac or a DGX Spark. First-party pricing is USD 0.15 input / 0.50 output / 0.015 cached with OpenRouter from 0.08/0.35; AA Intelligence Index 20.1, ARC-AGI-2 49.3% at USD 0.144 per task, DeepSWE v1.1 48.2%. It served 500 trillion tokens on day one and topped the OpenRouter daily board."
+    },
+    {
+      "date": "2026-11-24",
+      "head": "Anthropic decouples enterprise safety monitoring from zero data retention",
+      "detail": "Enterprise Frontier Safeguards entered public beta on 11/23 and can run alongside zero data retention: customer-owned storage, immediate deletion after writing, abuse monitoring that emits a case without raw prompts or completions, available on Claude Platform, Claude Platform on AWS, Bedrock and Google Cloud with Foundry to follow. Anthropic states there is no separate EFS fee and no change to model behaviour, API pricing or rate limits."
+    },
+    {
+      "date": "2026-11-24",
+      "head": "A 35-day price freeze ends a promotional cycle: Qianfan, ZCode weekend cards and the OpenCode free pool all closed on 11/23",
+      "detail": "Baidu Qianfan closed its Double 11 bundle (five-tier 50% first purchase plus off-peak 20% credit discount) on 11/23, the same day seven OCR and image models were retired; Zhipu zeroed the 500M-token ZCode weekend card at 09:00 and OpenCode shut its 12-model free pool. Official list prices have now been unchanged for 35 days, with the next cluster of expiries on 11/25, 11/27, 11/28 and six events on 11/30."
+    },
+    {
+      "date": "2026-11-24",
+      "head": "The subscription multiple finally has a denominator, and it is set by cache hit rate",
+      "detail": "A 11/20 back-calculation puts Claude Pro at about 818M tokens per week, Claude Ultra at 8.18B, ChatGPT Pro at 9.385B and Google AI Ultra 20x at 5.164B. SemiAnalysis estimates USD 200 of Claude subscription can yield up to USD 8,000 a month of equivalent API usage and OpenAI up to USD 14,000; the counter-argument is that KV cache reads are nearly free and speculative decoding makes long sessions cheap, so the subsidy is really a cache-hit-rate subsidy. Anthropic S-1 shows about 80% usage-based revenue and 1.3% consumer subscriptions, which is why the December shared token pool matters more than any single price change."
     }
   ],
   "trends": [
@@ -9924,6 +10079,18 @@
     {
       "date": "2026-11-23",
       "trend": "Access became a priced product this week, with two companies taking opposite sides of the same interface. OpenAI made approval mandatory for gateways on 11/20 without publishing a list or an application route; Microsoft put a gateway on sale at USD 500 per month per instance from 2027-01-01. For teams, the practical consequence is that the cost of reaching a model now includes a permission cost and an outage-correlation risk: an unapproved intermediary can lose access, and any failover chain that runs through it breaks at the same moment as the primary. Keep one direct path per critical model even at a higher unit price."
+    },
+    {
+      "date": "2026-11-24",
+      "trend": "Looping became the fifth way to change value without changing price. The previous four were raising quotas (Alibaba, +74-78% on four tiers on 11/9), compressing the tier gradient (OpenAI cutting Astra 20% while Sol stayed put, 5x to 4x), swapping the model (Tencent Hy4 flash, Google Hydrogen) and converting a discount into standing policy (Volcengine, two promotions rewritten as long-term). Zhipu added a fifth on 11/23: loop 28 layers of the GLM-5 base twice, keep the monthly fee identical and raise the same-tier quota to 1.5x. The same technique produced two price curves within one month - subscription (GLM-5.4) and pay-as-you-go (Inkling 2 Mini at USD 0.15/0.50, Apache 2.0) - which is what makes the question of who captures the architectural gain answerable for the first time. The catch is verifiability: GLM-5.4 has no API price to normalise per million tokens, no scores to test the 2T-3T claim, and no weights to self-host, so the only thing a user can confirm is that the quota bar moved 50%."
+    },
+    {
+      "date": "2026-11-24",
+      "trend": "Sold out is becoming a price increase that never appears on a price list. Tencent Hy Token Plan shows all four tiers as sold out on 11/24 with campaign and list prices blank while the 50% window still has six days to run, and the general Token Plan series on the same page is still purchasable, so what is scarce is the Hy quota pool rather than TokenHub. Two comparable cases already exist: Step Plan Mini and Max have been sold out for weeks, and Alibaba promotes qwen4-max to a formal entry while leaving the preview live until 11/25. The budget consequence is subtler than a price rise: a rise enters the comparison table, sold-out only leaves a blank cell - and it is also the cleanest prelude to a repricing, since restocking can either restore list price or change tier."
+    },
+    {
+      "date": "2026-11-24",
+      "trend": "Rule changes now get priced with a refund budget: Tencent kept a search-billing rule alive for 12 hours and closed it with a 12-day refund window. The DeepSeek factory-direct Search and Fetch charge took effect at 11/18 00:00 and was cancelled at 12:00 the same day, with every fee after that moment refunded before 11/30 without an application, while the enterprise document still describes the old rule. That is a third way to end a promotion, alongside Volcengine restoring the original state and OpenAI letting a policy take effect without publishing an approval list. It also tells buyers something practical: verify a new billing rule against a full announcement cycle before trusting the first invoice."
     }
   ]
 }
